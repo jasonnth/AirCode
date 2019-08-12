@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <FrameLayout android:id="@+id/photo_group" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_gravity="center" android:id="@+id/img_photo" android:background="@drawable/default_photo_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.airbnb.android.core.views.ColorizedIconView android:layout_gravity="center" android:id="@+id/img_photo_stack" android:layout_width="wrap_content" android:layout_height="match_parent" app:drawableId="@drawable/icon_photo_stack" app:colorStates="@color/c_foggy_light"/>
+        <include layout="@layout/overlay_photo_count"/>
+        <include layout="@layout/overlay_add_photos"/>
+        <LinearLayout android:gravity="bottom|right|center_vertical|center_horizontal|center" android:paddingLeft="@dimen/gutter_padding" android:paddingTop="12dp" android:paddingRight="@dimen/gutter_padding" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <CheckBox android:id="@+id/photo_check_box" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </FrameLayout>
+</merge>

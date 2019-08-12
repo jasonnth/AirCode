@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_vertical_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:paddingBottom="@dimen/n2_vertical_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_gravity="center_vertical" android:id="@+id/guests_icon" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="@dimen/n2_horizontal_padding_tiny" app:srcCompat="@drawable/n2_ic_am_dog"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:gravity="end" android:id="@+id/guests_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/n2_LargeText"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_gravity="center_vertical" android:id="@+id/bedrooms_icon" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="@dimen/n2_horizontal_padding_tiny" app:srcCompat="@drawable/n2_ic_am_dog"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:gravity="end" android:id="@+id/bedrooms_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/n2_LargeText"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/n2_vertical_padding_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_gravity="center_vertical" android:id="@+id/beds_icon" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="@dimen/n2_horizontal_padding_tiny" app:srcCompat="@drawable/n2_ic_am_dog"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:gravity="end" android:id="@+id/beds_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/n2_LargeText"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_gravity="center_vertical" android:id="@+id/baths_icon" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="@dimen/n2_horizontal_padding_tiny" app:srcCompat="@drawable/n2_ic_am_dog"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:gravity="end" android:id="@+id/baths_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/n2_LargeText"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

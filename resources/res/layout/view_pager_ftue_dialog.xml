@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="@dimen/dialog_fragment_width">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="425dp">
+        <com.airbnb.android.core.views.ClickableViewPager android:id="@+id/pager_dialog_ftue_content" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <com.airbnb.p027n2.primitives.DotsCounter android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/dots_counter" android:layout_width="match_parent" android:layout_height="10dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" app:n2_selectedColor="@color/c_special_gray" app:n2_unselectedColor="@color/c_gray_4" app:n2_dotMargin="10dp"/>
+        <com.airbnb.android.lib.views.StickyButton android:id="@+id/sticky_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1"/>
+    </LinearLayout>
+</RelativeLayout>

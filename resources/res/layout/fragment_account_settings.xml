@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:paddingTop="?attr/actionBarSize" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/notifications_settings_cell" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_settings_min_height" app:fullWidthBorder="true" app:hideTopBorder="true" app:title="@string/notifications"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/payout_settings" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_settings_min_height" app:fullWidthBorder="true" app:title="@string/host_payout_method"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/payment_info" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_settings_min_height" app:fullWidthBorder="true" app:title="@string/payment_info_title"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/currency_settings" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_settings_min_height" app:contentColor="@color/c_rausch" app:fullWidthBorder="true" app:title="@string/settings_currency"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/section_about" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_settings_min_height" app:fullWidthBorder="true" app:title="@string/airbnb_title_about"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/search_settings" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_settings_min_height" app:fullWidthBorder="true" app:title="@string/search_settings"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/advanced_settings" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_settings_min_height" app:fullWidthBorder="true" app:title="@string/advanced_settings"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/switch_account" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_settings_min_height" app:fullWidthBorder="true" app:title="@string/switch_account_cell_text"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/send_feedback" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_settings_min_height" app:fullWidthBorder="true" app:title="@string/feedback_dialog_send_feedback"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/log_out" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_settings_min_height" app:fullWidthBorder="true" app:title="@string/log_out"/>
+            <include layout="@layout/section_divider"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_navigationIcon="1" style="@style/n2_AirToolbar"/>
+</android.support.design.widget.CoordinatorLayout>

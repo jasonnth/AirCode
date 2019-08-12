@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <ScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/manage_listing_photo_section"/>
+            <include layout="@layout/manage_listing_title_section"/>
+            <LinearLayout android:orientation="vertical" android:background="@color/c_foggy_white" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/manage_listing_details_section"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/preview_listing_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="30dp" android:text="@string/ml_preview_listing" style="@style/Canonical.Button.RauschHollow"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="@dimen/sticky_btn_height"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.airbnb.android.lib.views.StickyButton android:layout_gravity="bottom" android:id="@+id/btn_list_sticky" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/list"/>
+</FrameLayout>

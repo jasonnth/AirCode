@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <View style="@style/n2_FullSectionDivider"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_gravity="center_vertical" android:id="@+id/icon" android:paddingLeft="@dimen/n2_input_row_icon_padding" android:paddingRight="@dimen/n2_input_row_icon_padding" android:visibility="gone" android:layout_width="@dimen/n2_saved_messages_icon_width" android:layout_height="match_parent" android:scaleType="center"/>
+        <View android:id="@+id/vertical_divider" android:visibility="gone" style="@style/n2_FullSectionVerticalDivider"/>
+        <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.airbnb.p027n2.primitives.AirEditTextView android:id="@+id/input_edit_text_one_row" style="@style/n2_MessageInputEditOneRowText"/>
+            <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/img_preview" android:visibility="gone" style="@style/n2_MessageItemImagePreview"/>
+        </FrameLayout>
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:id="@+id/send_button" android:background="?attr/selectableItemBackground" android:paddingLeft="?attr/n2_horizontal_side_padding" android:paddingRight="?attr/n2_horizontal_side_padding" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/n2_RegularText.Actionable"/>
+    </LinearLayout>
+</merge>

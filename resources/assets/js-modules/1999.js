@@ -1,0 +1,1 @@
+__d(function(e,t,i,r){Object.defineProperty(r,"__esModule",{value:!0});var s=t(834),u=t(814),n=babelHelpers.interopRequireDefault(u),p=t(1818);r.default=(0,s.Shape)({orientation:s.Types.oneOf(p.ORIENTATIONS),picture:n.default,title:s.Types.string.isRequired,type:s.Types.oneOf(p.PRODUCT_TYPES),subtitle:s.Types.string.isRequired})},1999);

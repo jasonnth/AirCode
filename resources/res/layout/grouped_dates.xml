@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="13dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.GroupedLayout">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.airbnb.p027n2.primitives.AirTextView android:layout_gravity="center_horizontal" android:id="@+id/txt_arriving" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/arriving" style="@style/GroupedTitle"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_rausch" android:layout_gravity="center_horizontal" android:id="@+id/txt_check_in_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/ro_select_check_in_date" style="@style/Canonical.Text.E"/>
+        </LinearLayout>
+        <View android:background="@color/c_gray_4" android:layout_width="@dimen/line_thickness" android:layout_height="match_parent"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.airbnb.p027n2.primitives.AirTextView android:layout_gravity="center_horizontal" android:id="@+id/txt_departing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/departing" style="@style/GroupedTitle"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_rausch" android:layout_gravity="center_horizontal" android:id="@+id/txt_check_out_date" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Canonical.Text.E"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:id="@+id/txt_stay_duration" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" style="@style/Canonical.Text.E.Light"/>
+</merge>

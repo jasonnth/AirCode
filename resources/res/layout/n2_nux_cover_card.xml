@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_gravity="center_horizontal" android:id="@+id/nux_cover_card_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/nux_cover_card_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/n2_vertical_padding_small" style="@style/n2_TitleText2.Inverse"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/nux_cover_card_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/n2_vertical_padding_small" style="@style/n2_LargeText.Inverse"/>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/nux_cover_card_button" style="@style/n2_NuxCoverCardButton"/>
+</LinearLayout>

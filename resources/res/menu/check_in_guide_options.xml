@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/reorder_steps_button" android:title="@string/manage_listing_check_in_guide_reorder_option" app:showAsAction="never"/>
+    <item android:id="@+id/delete_steps_button" android:title="@string/manage_listing_check_in_guide_delete_steps_option" app:showAsAction="never"/>
+    <item android:id="@+id/check_in_methods_button" android:title="@string/manage_listing_check_in_guide_edit_entry_method_button" app:showAsAction="never"/>
+    <item android:id="@+id/see_example_button" android:title="@string/manage_listing_check_in_guide_see_example_button" app:showAsAction="never"/>
+    <item android:id="@+id/unpublish_button" android:title="@string/manage_listing_check_in_guide_unpublish_option" app:showAsAction="never"/>
+</menu>

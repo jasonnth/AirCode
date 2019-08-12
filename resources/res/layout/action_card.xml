@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.android.core.views.ColorizedIconView android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:drawableId="@drawable/icon_lightbulb_sm_blue" app:colorStates="@color/n2_babu"/>
+            <android.support.p000v4.widget.Space android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <com.airbnb.android.core.views.ColorizedIconView android:id="@+id/dismiss_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:drawableId="@drawable/ic_action_close" app:colorStates="@color/n2_foggy"/>
+        </LinearLayout>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/title_text" android:paddingTop="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:n2_font="3"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/description_text" android:paddingTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <Space android:id="@+id/space" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <com.airbnb.android.lib.views.ActionCardTrendGraphView android:id="@+id/graphic" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <com.airbnb.android.lib.views.ActionCardIncreaseGraphView android:id="@+id/increase_graphic" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@android:color/white" android:gravity="center" android:id="@+id/primary_button" android:background="@drawable/c_rausch_button" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/n2_rausch" android:gravity="center" android:id="@+id/secondary_button" android:background="@color/white" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/loading_overlay" android:background="#9affffff" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</merge>

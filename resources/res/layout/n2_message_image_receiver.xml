@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="38dp">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/img_attachment" style="@style/n2_MessageItemImage"/>
+        <View android:id="@+id/img_gradient" style="@style/n2_MessageItemImageGradient"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/text_status" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@+id/img_attachment" style="@style/n2_SmallText.Inverse"/>
+    </RelativeLayout>
+    <com.airbnb.p027n2.primitives.imaging.HaloImageView android:id="@+id/image_thumbnail" android:layout_width="35dp" android:layout_height="35dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:id="@+id/thumbnail_text_placeholder" android:visibility="gone" android:layout_width="35dp" android:layout_height="35dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/n2_LargeText.Inverse"/>
+    <ImageView android:id="@+id/error_icon" android:visibility="gone" android:layout_width="35dp" android:layout_height="35dp" android:tint="@color/n2_error_color" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" app:srcCompat="@drawable/n2_error_icon_orange"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/n2_babu" android:gravity="center" android:id="@+id/report_text" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:paddingBottom="@dimen/n2_vertical_padding_tiny" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_SmallText"/>
+</merge>

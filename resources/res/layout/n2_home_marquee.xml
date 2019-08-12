@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.collections.Carousel android:id="@+id/image_carousel" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_autoScroll="true"/>
+    <View android:background="@drawable/n2_scrim_gradient" android:layout_width="match_parent" android:layout_height="@dimen/n2_toolbar_gradient_height"/>
+    <include android:layout_width="0dp" android:layout_height="0dp" android:layout_alignBottom="@+id/image_carousel" layout="@layout/n2_toolbar_pusher"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/marquee_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginTop="@dimen/n2_vertical_padding_small" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" android:layout_below="@+id/image_carousel" style="@style/n2_TitleText2"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/reviews_and_stars" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_vertical_padding_small" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/marquee_title">
+        <RatingBar android:layout_gravity="center_vertical" android:id="@+id/rating_stars" android:layout_marginRight="5dp" style="@style/n2_StarRatingBar.Babu"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/review_total" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_SmallText"/>
+    </LinearLayout>
+</merge>

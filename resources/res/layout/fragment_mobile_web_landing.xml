@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/layout_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.HeroMarquee android:id="@+id/login_landing_marquee" app:n2_captionText="@string/moweb_native_landing_caption" app:n2_icon="@drawable/airbnb_logo_white" app:n2_secondButtonText="@string/moweb_native_landing_switch_button" app:n2_titleText="@string/signin_landing_header" style="@style/n2_HeroMarquee"/>
+</FrameLayout>

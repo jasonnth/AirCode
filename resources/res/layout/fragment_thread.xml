@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/messaging_components" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0">
+        <com.airbnb.p027n2.components.StatusBanner android:id="@+id/status_banner" android:visibility="gone" app:n2_rightStatusColor="@color/n2_babu" app:n2_rightStatusText="@string/details" style="@style/n2_StatusBanner"/>
+        <android.support.p002v7.widget.RecyclerView android:id="@+id/recycler_view" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:layoutManager="LinearLayoutManager"/>
+        <FrameLayout android:id="@+id/input_loader" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/message_input_loader_height">
+            <com.airbnb.p027n2.components.LoadingView android:layout_gravity="center" style="@style/n2_LoadingView.Vertical"/>
+        </FrameLayout>
+        <com.airbnb.android.lib.views.messages.MessageThreadInputView android:id="@+id/input" style="@style/n2_MessageInput"/>
+        <com.airbnb.p027n2.components.PrimaryButton android:id="@+id/action_button" android:visibility="gone" style="@style/n2_PrimaryButton"/>
+        <com.airbnb.p027n2.components.ThreadBottomActionButton android:id="@+id/thread_bottom_action_button" android:visibility="gone" style="@style/n2_ThreadBottomActionButton"/>
+        <com.airbnb.p027n2.components.PrimaryButton android:id="@+id/host_respond_extra_service_button" android:visibility="gone" style="@style/n2_PrimaryButton"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/full_loader" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.components.LoadingView android:layout_gravity="center" style="@style/n2_LoadingView.Vertical"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/modal_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

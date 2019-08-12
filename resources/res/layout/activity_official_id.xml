@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/include_toolbar"/>
+    <FrameLayout android:id="@+id/activity_root" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="@drawable/ab_shadow">
+        <LinearLayout android:orientation="vertical" android:background="@color/c_gray_5" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.airbnb.android.lib.views.StepProgressBar android:id="@+id/step_progress_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.airbnb.android.lib.views.CircleBadgeView android:id="@+id/circle_badge_view" app:iconSrc="@drawable/icon_verified_id_offline_non_passport" style="@style/VerifiedIdBadgeError"/>
+                        <FrameLayout android:id="@+id/frag_official_id" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    </LinearLayout>
+                </ScrollView>
+                <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/id_confirmation_buttons" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/official_id_back_button" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/back" android:layout_weight="1" android:alpha="0.9" style="@style/Canonical.Button.Sticky.Gray"/>
+                    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/official_id_looks_good_button" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/verified_id_offline_looks_good" android:layout_weight="1" android:alpha="0.9" style="@style/Canonical.Button.Sticky"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

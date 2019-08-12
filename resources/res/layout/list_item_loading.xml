@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:background="@color/c_foggy_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:padding="2dp" android:layout_width="30dp" android:layout_height="30dp" android:indeterminate="true"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textSize="20sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/loading"/>
+    </LinearLayout>
+</FrameLayout>

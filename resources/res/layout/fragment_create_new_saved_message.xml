@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/n2_button_row_height" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.components.DocumentMarquee android:id="@+id/document_marquee" style="@style/n2_EntryMarquee.NoTopPadding"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/write_saved_message_title" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_vertical_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/canned_message_default_title" android:textAllCaps="true" style="@style/n2_RegularText"/>
+                <com.airbnb.p027n2.primitives.AirEditTextView android:id="@+id/edit_text" android:background="@null" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:paddingBottom="@dimen/n2_vertical_padding_tiny" android:layout_width="match_parent" android:layout_height="match_parent" android:textCursorDrawable="@drawable/n2_babu_cursor_drawable"/>
+                <View style="@style/n2_SubsectionDivider"/>
+                <TextView android:textColor="@color/n2_text_color_actionable" android:id="@+id/write_saved_message_body" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_vertical_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:paddingBottom="@dimen/n2_vertical_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/canned_messages_create_new_saved_message_write_message_body" style="@style/n2_RegularText"/>
+                <View style="@style/n2_SubsectionDivider"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/message_preview" android:background="@drawable/n2_babu_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginTop="@dimen/n2_vertical_padding_medium" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" android:layout_marginBottom="@dimen/n2_vertical_padding_medium" style="@style/n2_LargeText.Inverse"/>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/full_loader" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.airbnb.p027n2.components.LoadingView android:layout_gravity="center" style="@style/n2_LoadingView.Vertical"/>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

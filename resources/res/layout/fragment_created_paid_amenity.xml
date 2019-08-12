@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.p002v7.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:layoutManager="LinearLayoutManager"/>
+        <RelativeLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="@dimen/n2_sheet_bottom_bar_height">
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/service_terms" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="?attr/n2_horizontal_side_padding" android:text="@string/paid_amenities_created_amenity_service_term" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/n2_RegularText.Actionable"/>
+            <com.airbnb.p027n2.primitives.AirButton android:id="@+id/finish_button" android:visibility="gone" android:text="@string/paid_amenities_created_amenity_next" android:layout_toLeftOf="@+id/service_terms" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/n2_AirButton.BabuFill"/>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

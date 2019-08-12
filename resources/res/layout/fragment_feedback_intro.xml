@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.components.DocumentMarquee android:id="@+id/document_marquee" style="@style/n2_DocumentMarquee.NoTopPadding"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/txt_about" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginTop="@dimen/gutter_padding" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" style="@style/Canonical.Text.E"/>
+            <com.airbnb.p027n2.components.UserDetailsActionRow android:id="@+id/listing_host_row" android:layout_marginTop="@dimen/gutter_padding" style="@style/n2_UserDetailsActionRow"/>
+            <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/listing_image" android:layout_width="match_parent" android:layout_height="210dp" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginTop="20dp" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" android:scaleType="centerCrop"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/txt_title" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" style="@style/Canonical.Text.E"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.airbnb.android.lib.views.StickyButton android:id="@+id/sticky_button" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/verifications_welcome_get_started"/>
+</LinearLayout>

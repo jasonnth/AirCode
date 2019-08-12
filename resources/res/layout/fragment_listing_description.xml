@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/c_foggy_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginTop="@dimen/n2_vertical_padding_medium" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" android:layout_marginBottom="@dimen/n2_vertical_padding_medium">
+        <com.airbnb.android.lib.views.ManageListingTextRowView android:id="@+id/listing_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" app:title="@string/prelist_description_view_title" app:subtitle="@string/prelist_description_view_title_desc" app:drawableId="@drawable/n2_icon_right_caret" app:lib_showDivider="false"/>
+        <com.airbnb.android.lib.views.ManageListingTextRowView android:id="@+id/listing_summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" app:title="@string/prelist_description_view_sum" app:subtitle="@string/prelist_description_view_sum_desc" app:drawableId="@drawable/n2_icon_right_caret"/>
+    </LinearLayout>
+</ScrollView>

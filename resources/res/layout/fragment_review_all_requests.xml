@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/n2_Sheet">
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/n2_vertical_padding_small" android:paddingTop="@dimen/n2_horizontal_padding_small" android:paddingRight="@dimen/n2_vertical_padding_small" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.airbnb.p027n2.components.SheetMarquee android:id="@+id/review_marquee" android:paddingLeft="@dimen/n2_horizontal_padding_medium_phone" app:n2_titleText="@string/deactivate_ib_review_all_requests_title" style="@style/n2_SheetMarquee"/>
+            <android.support.p002v7.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" app:layoutManager="LinearLayoutManager"/>
+            <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="left" android:id="@+id/review_requests_button" android:layout_marginTop="@dimen/n2_vertical_padding_large" android:text="@string/deactivate_ib_review_all_requests" android:drawablePadding="@dimen/n2_vertical_padding_tiny" style="@style/n2_AirButton.WhiteFill"/>
+            <com.airbnb.p027n2.primitives.AirButton android:id="@+id/cancel_button" android:text="@string/deactivate_ib_cancel" android:drawablePadding="@dimen/n2_vertical_padding_tiny" style="@style/n2_AirButton.BabuFill"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_theme="2" app:n2_scrollWith="@+id/scroll_view" style="@style/n2_AirToolbar"/>
+</FrameLayout>

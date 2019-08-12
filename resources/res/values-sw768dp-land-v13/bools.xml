@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="is_tablet">true</bool>
+    <bool name="is_wide_tablet">true</bool>
+    <bool name="n2_is_tablet">true</bool>
+    <bool name="n2_is_wide_tablet">true</bool>
+</resources>

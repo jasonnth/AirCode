@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/buttonCorner"/>
+            <solid android:color="@color/c_rausch_dark"/>
+        </shape>
+    </item>
+    <item android:bottom="@dimen/c_grouped_layout_padding">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/buttonCorner"/>
+            <solid android:color="@color/c_rausch"/>
+        </shape>
+    </item>
+    <item android:bottom="@dimen/c_grouped_layout_padding">
+        <ripple android:color="@color/canonical_press_darken"/>
+    </item>
+</layer-list>

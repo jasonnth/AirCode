@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.p002v7.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/n2_fixed_action_footer_height" app:layoutManager="LinearLayoutManager"/>
+    <com.airbnb.p027n2.components.fixed_footers.FixedActionFooter android:layout_gravity="bottom" android:id="@+id/footer_button" app:n2_buttonText="@string/bt_add_work_email" style="@style/n2_FixedActionFooter.Babu"/>
+    <com.airbnb.p027n2.components.fixed_footers.FixedDualActionFooter android:layout_gravity="bottom" android:id="@+id/bottom_bar" style="@style/n2_FixedDualActionFooter.Babu"/>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_scrollWith="@+id/recycler_view" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+</FrameLayout>

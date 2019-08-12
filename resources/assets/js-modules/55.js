@@ -1,0 +1,1 @@
+__d(function(n,t,r,e){"use strict";var o={OS:"android",get Version(){var n=t(25).AndroidConstants;return n&&n.Version},select:function(n){return n.android}};r.exports=o},55);

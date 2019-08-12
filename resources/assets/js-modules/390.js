@@ -1,0 +1,1 @@
+__d(function(t,e,n,o){"use strict";var c=Object.prototype.toString;n.exports=function(t){var e=c.call(t),n="[object Arguments]"===e;return n||(n="[object Array]"!==e&&null!==t&&"object"==typeof t&&"number"==typeof t.length&&t.length>=0&&"[object Function]"===c.call(t.callee)),n}},390);

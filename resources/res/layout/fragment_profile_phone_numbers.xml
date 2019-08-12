@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:background="@color/c_foggy_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp">
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/header_verified" android:layout_marginTop="15dp" android:layout_marginBottom="5dp" android:text="@string/edit_profile_phone_number_verified_cap" style="@style/TextSectionHeader"/>
+            <include android:id="@+id/header_verified_divider" layout="@layout/section_divider"/>
+            <com.airbnb.android.lib.views.LinearListView android:orientation="vertical" android:id="@+id/list_verified_numbers" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/header_unverified" android:layout_marginTop="35dp" android:layout_marginBottom="5dp" android:text="@string/edit_profile_phone_number_unverified_cap" style="@style/TextSectionHeader"/>
+            <include android:id="@+id/header_unverified_divider" layout="@layout/section_divider"/>
+            <com.airbnb.android.lib.views.LinearListView android:orientation="vertical" android:id="@+id/list_unverified_numbers" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.airbnb.android.lib.views.StickyButton android:id="@+id/btn_add_number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

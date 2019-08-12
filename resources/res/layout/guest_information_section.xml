@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@style/Canonical.GroupedLayout">
+    <com.airbnb.android.lib.views.GroupedCell android:id="@+id/full_name_cell" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/additional_details_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/second_info_cell" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentColor="@color/c_gray_2" app:title="@string/guest_identification_number" app:titleColor="@color/c_babu"/>
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/third_info_cell" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentColor="@color/c_gray_2" app:title="@string/date_of_birth" app:titleColor="@color/c_babu"/>
+    </LinearLayout>
+</merge>

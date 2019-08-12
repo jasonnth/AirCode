@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/c_foggy_white" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vertical_padding">
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_hof" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/ml_unlisting_space_title" style="@style/Canonical.Text.B"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:layout_marginTop="15dp" android:layout_marginBottom="20dp" android:text="@string/ml_unlisting_space_subtitle" style="@style/TextSectionHeader"/>
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/unlist_reason_snooze_cell" app:title="@string/ml_unlist_reason_snooze" style="@style/UnlistGroupedCell"/>
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/unlist_reason_no_longer_have_access_to_space_cell" app:title="@string/ml_unlist_reason_no_access_to_space" style="@style/UnlistGroupedCell"/>
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/unlist_reason_hosting_too_much_work_cell" app:title="@string/ml_unlist_reason_hosting_too_much_work" style="@style/UnlistGroupedCell"/>
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/unlist_reason_not_earning_enough_cell" app:title="@string/ml_unlist_reason_not_earning_enough" style="@style/UnlistGroupedCell"/>
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/unlist_reason_questions_about_law_cell" app:title="@string/ml_unlist_reason_have_questions_about_law_and_taxes" style="@style/UnlistGroupedCell"/>
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/unlist_reason_questions_about_trust_cell" app:title="@string/ml_unlist_reason_have_questions_about_trust_and_safety" style="@style/UnlistGroupedCell"/>
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/unlist_reason_negative_experience_cell" app:title="@string/ml_unlist_reason_had_negative_experience_with_guest_or_airbnb" style="@style/UnlistGroupedCell"/>
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/unlist_reason_other_cell" android:layout_marginBottom="@dimen/unlist_layout_bottom_margin" app:title="@string/ml_unlist_reason_other" style="@style/UnlistGroupedCell"/>
+    </LinearLayout>
+</ScrollView>

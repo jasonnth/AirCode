@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@style/referral_row">
+    <com.airbnb.p027n2.primitives.imaging.HaloImageView android:id="@+id/image" android:layout_width="@dimen/n2_halo_image_width_small" android:layout_height="@dimen/n2_halo_image_height_small" android:layout_marginRight="@dimen/n2_horizontal_padding_small"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/n2_horizontal_padding_small" android:layout_weight="1">
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_RegularText.PlusPlus"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_RegularText"/>
+    </LinearLayout>
+    <com.airbnb.p027n2.primitives.AirTextView android:layout_gravity="center_vertical" android:id="@+id/amount_earned" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_RegularText"/>
+</LinearLayout>

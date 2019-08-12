@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="bb_bottom_bar_is_portrait_mode">true</bool>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="is_small_screen">true</bool>
+    <bool name="bottomsheet_is_tablet">false</bool>
+    <bool name="is_tablet">false</bool>
+    <bool name="is_wide_tablet">false</bool>
+    <bool name="n2_is_tablet">false</bool>
+    <bool name="n2_is_wide_tablet">false</bool>
+    <bool name="abc_allow_stacked_button_bar">true</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="abc_config_closeDialogWhenTouchOutside">true</bool>
+    <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
+    <bool name="allcaps">false</bool>
+    <bool name="bb_bottom_bar_is_tablet_mode">false</bool>
+    <bool name="caps_headers">true</bool>
+    <bool name="com_appboy_push_gcm_messaging_registration_enabled">false</bool>
+</resources>

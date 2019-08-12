@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.StaticMapView android:id="@+id/static_map" android:layout_width="match_parent" android:layout_height="200dp"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/place_info_view_field_side_padding" android:layout_marginTop="@dimen/n2_vertical_padding_small" android:layout_marginRight="@dimen/place_info_view_field_side_padding" style="@style/n2_RegularText.Plus"/>
+        <LinearLayout android:id="@+id/address_row" style="@style/PlaceInfoViewFieldLinearLayout">
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/address" style="@style/PlaceInfoViewFieldLinearLayoutText"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/address_button" android:text="@string/directions" style="@style/PlaceInfoViewFieldLinearLayoutButton"/>
+        </LinearLayout>
+        <View android:id="@+id/hours_divider" style="@style/n2_FullSectionDivider"/>
+        <LinearLayout android:id="@+id/hours_row" style="@style/PlaceInfoViewFieldLinearLayout">
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/hours" style="@style/PlaceInfoViewFieldLinearLayoutText"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/hours_button" android:text="@string/places_hours" style="@style/PlaceInfoViewFieldLinearLayoutButton"/>
+        </LinearLayout>
+        <View android:id="@+id/phone_number_divider" style="@style/n2_FullSectionDivider"/>
+        <LinearLayout android:id="@+id/phone_number_row" style="@style/PlaceInfoViewFieldLinearLayout">
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/phone_number" style="@style/PlaceInfoViewFieldLinearLayoutText"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/phone_number_button" android:text="@string/call" style="@style/PlaceInfoViewFieldLinearLayoutButton"/>
+        </LinearLayout>
+        <View android:id="@+id/website_divider" style="@style/n2_FullSectionDivider"/>
+        <LinearLayout android:id="@+id/website_row" style="@style/PlaceInfoViewFieldLinearLayout">
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/website" android:text="a\10b" style="@style/PlaceInfoViewFieldLinearLayoutText"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/website_button" android:text="@string/view" style="@style/PlaceInfoViewFieldLinearLayoutButton"/>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

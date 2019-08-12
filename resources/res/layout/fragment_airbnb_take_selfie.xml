@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/selfie_capture_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/flash" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:srcCompat="@color/white"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/selfie_capture_overlay" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/camera_overlay_margin">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageButton android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/selfie_overlay_close_button" android:background="@color/transparent" android:padding="@dimen/camera_overlay_buttons_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/white" app:srcCompat="@drawable/n2_icon_close"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/selfie_overlay_help_button" android:padding="@dimen/camera_overlay_buttons_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_help" style="@style/Canonical.Text.E.White"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.airbnb.p027n2.primitives.AirTextView android:layout_gravity="center" android:id="@+id/selfie_error_text" android:background="@drawable/id_scan_error_background" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Canonical.Text.E.White"/>
+            <android.support.percent.PercentFrameLayout android:layout_gravity="center_horizontal" android:id="@+id/selfie_overlay_id_frame" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginBottom="@dimen/camera_overlay_id_box_v_margin">
+                <View android:background="@drawable/selfie_oval" app:layout_widthPercent="80%" app:layout_heightPercent="90%" app:layout_marginBottomPercent="10%"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/selfie_tip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_verification_selfie_countdown_tip" android:layout_centerInParent="true" style="@style/n2_RegularText.Inverse"/>
+            </android.support.percent.PercentFrameLayout>
+            <RelativeLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:padding="@dimen/camera_overlay_buttons_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/selfie_overlay_captured_bg" android:layout_width="@dimen/camera_take_photo_button" android:layout_height="@dimen/camera_take_photo_button" android:layout_centerInParent="true" app:srcCompat="@drawable/hof_circle"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/selfie_countdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/n2_TitleText2.Inverse"/>
+                <com.airbnb.p027n2.components.LoadingView android:id="@+id/loader" android:visibility="gone" android:layout_centerInParent="true" style="@style/n2_LoadingView.Horizontal"/>
+                <ImageButton android:id="@+id/selfie_overlay_capture_button" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:srcCompat="@drawable/camera_overlay_capture"/>
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

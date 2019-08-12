@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/title" style="@style/n2_InlineEditTitle"/>
+    <LinearLayout style="@style/n2_InlineInputWithContactPickerRow_Layout">
+        <com.airbnb.p027n2.primitives.AirEditTextView android:id="@+id/edit_text" style="@style/n2_InlineInputWithContactPickerRow_EditText"/>
+        <ImageButton android:id="@+id/add_button" style="@style/n2_InlineInputWithContactPickerRow_AddButton"/>
+    </LinearLayout>
+    <View style="@style/n2_SubsectionDivider"/>
+</merge>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <View android:id="@+id/divider" android:layout_alignParentTop="true" style="@style/n2_FullSectionDivider"/>
+    <FrameLayout android:id="@+id/frame" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginTop="@dimen/n2_vertical_padding_small" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" android:layout_marginBottom="@dimen/n2_vertical_padding_small" android:minHeight="0dp" android:layout_below="@+id/divider">
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/button" android:layout_alignParentLeft="true" android:layout_centerInParent="true">
+                <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/price_details" style="@style/n2_BookingPriceDetailsText"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/see_price_details" style="@style/n2_BookingSeePriceDetailsText"/>
+            </LinearLayout>
+            <com.airbnb.p027n2.primitives.AirButton android:id="@+id/button" android:layout_alignParentRight="true" android:layout_centerInParent="true" style="@style/n2_BookingNavBarButton"/>
+        </RelativeLayout>
+        <com.airbnb.p027n2.components.LoadingView android:layout_gravity="center" android:id="@+id/loader_view" android:visibility="gone" android:layout_width="30dp" android:layout_height="12dp" app:n2_color="@color/n2_babu" style="@style/n2_LoadingView.Horizontal"/>
+    </FrameLayout>
+</merge>

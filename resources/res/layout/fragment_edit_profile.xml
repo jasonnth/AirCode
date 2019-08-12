@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/edit_profile_scroll_view" android:background="@color/c_gray_6" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/img_user_profile" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:contentDescription="@string/update_profile_picture" app:srcCompat="@color/c_gray_4"/>
+        <include layout="@layout/edit_profile_about_me"/>
+        <include layout="@layout/edit_profile_details"/>
+        <include android:id="@+id/section_business_travel" layout="@layout/edit_profile_business_travel"/>
+    </LinearLayout>
+</ScrollView>

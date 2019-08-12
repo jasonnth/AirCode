@@ -1,0 +1,1 @@
+__d(function(e,l,d,n){Object.defineProperty(n,"__esModule",{value:!0});var t=l(417),u=new t.Record({title:null,description:null,placeholder:null,added_details:null,checked:!1,type:null});n.default=u},2407);

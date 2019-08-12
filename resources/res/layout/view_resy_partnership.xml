@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginTop="@dimen/n2_vertical_padding_medium" android:layout_marginRight="@dimen/n2_horizontal_padding_medium">
+        <com.airbnb.p027n2.primitives.AirTextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/restaurant_partnership_title" android:layout_weight="1" style="@style/n2_LargeText.Plus"/>
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_width="24dp" android:layout_height="24dp" app:srcCompat="@drawable/resy_logo"/>
+    </LinearLayout>
+    <com.airbnb.p027n2.primitives.AirTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginTop="@dimen/n2_vertical_padding_medium" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" android:layout_marginBottom="@dimen/n2_vertical_padding_medium" android:text="@string/resy_partnership_description" style="@style/n2_RegularText"/>
+    <View android:id="@+id/section_divider" style="@style/n2_SubsectionDivider"/>
+</LinearLayout>

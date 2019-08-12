@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.airbnb.android.lib.views.ScrollViewWithCustomListener xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:fadeScrollbars="false">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/n2_vertical_padding_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_theme="3" style="@style/n2_AirToolbar"/>
+        <com.airbnb.p027n2.components.DocumentMarquee android:id="@+id/title_marquee" style="@style/n2_DocumentMarquee.NoTopPadding"/>
+        <View android:id="@+id/extra_padding" android:layout_width="match_parent" android:layout_height="@dimen/n2_vertical_padding_medium"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/row_commitment_reason_title" android:text="@string/community_commitment_cancellation_screen_why_commitment_title" style="@style/CommunityCommitmentReasonTitle"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/row_commitment_reason_body" android:text="@string/community_commitment_cancellation_screen_why_commitment_body" style="@style/CommunityCommitmentConcernsTextBody"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/row_if_decline_title" android:text="@string/community_commitment_cancellation_screen_decline_result_title" style="@style/CommunityCommitmentConcernsTitle"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textColorLink="@color/n2_babu" android:id="@+id/row_if_decline_body" android:text="@string/community_commitment_cancellation_screen_decline_result_body" style="@style/CommunityCommitmentConcernsTextBody"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/row_safety_concern_title" style="@style/CommunityCommitmentConcernsTitle"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/row_safety_concern_body" android:text="@string/community_commitment_cancellation_screen_safety_concern_body" style="@style/CommunityCommitmentConcernsTextBody"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/row_law_concern_title" android:text="@string/community_commitment_cancellation_screen_local_law_title" style="@style/CommunityCommitmentConcernsTitle"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/row_law_concern_body" android:text="@string/community_commitment_cancellation_screen_local_law_body" style="@style/CommunityCommitmentConcernsTextBody"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/row_disability_concern_title" android:text="@string/community_commitment_cancellation_screen_disability_title" style="@style/CommunityCommitmentConcernsTitle"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/row_disability_concern_body" android:text="@string/community_commitment_cancellation_screen_disability_body" style="@style/CommunityCommitmentConcernsTextBody"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/row_share_feedback_title" android:text="@string/community_commitment_cancellation_screen_share_feedback_title" style="@style/CommunityCommitmentConcernsTitle"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textColorLink="@color/n2_babu" android:id="@+id/row_share_feedback_body" android:layout_marginBottom="@dimen/n2_vertical_padding_medium" style="@style/CommunityCommitmentConcernsTextBody"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textColorLink="@color/n2_babu" android:id="@+id/row_more_help_info_body" android:layout_marginBottom="@dimen/n2_vertical_padding_medium" style="@style/CommunityCommitmentConcernsTextBody"/>
+        <com.airbnb.p027n2.primitives.AirButton android:id="@+id/go_back_button" android:layout_marginLeft="@dimen/n2_vertical_padding_medium" android:layout_marginRight="@dimen/n2_vertical_padding_medium" android:text="@string/go_back_to_previous_screen" style="@style/n2_AirButton.BabuOutline"/>
+    </LinearLayout>
+</com.airbnb.android.lib.views.ScrollViewWithCustomListener>

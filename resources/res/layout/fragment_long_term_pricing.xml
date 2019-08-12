@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:background="@color/c_foggy_white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/long_term_title" android:layout_margin="@dimen/gutter_padding" style="@style/TextSectionHeader"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/long_term_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/gutter_padding" android:layout_marginBottom="32dp"/>
+            <include android:id="@+id/weekly_value_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="32dp" layout="@layout/long_term_cells"/>
+            <include android:id="@+id/monthly_value_container" layout="@layout/long_term_cells"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.airbnb.android.core.views.LoaderFrame android:id="@+id/loading_overlay" android:background="@color/loader_overlay_background" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/c_list_selector" android:paddingLeft="@dimen/gutter_padding" android:paddingTop="@dimen/ml_vertical_padding" android:paddingRight="@dimen/gutter_padding" android:paddingBottom="@dimen/ml_vertical_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="70dp">
+    <LinearLayout android:orientation="vertical" android:paddingRight="@dimen/gutter_padding" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_rausch" android:ellipsize="end" android:id="@+id/txt_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" style="@style/Canonical.Text.D"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/txt_desc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:scrollHorizontally="false" style="@style/Canonical.Text.E.Light"/>
+    </LinearLayout>
+    <CheckBox android:id="@+id/check_box" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

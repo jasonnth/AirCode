@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/n2_fixed_action_footer_height">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.components.DocumentMarquee android:id="@+id/document_marquee" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_DocumentMarquee"/>
+            <com.airbnb.p027n2.components.InlineInputRow android:id="@+id/street_address_one" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_InlineInputRow"/>
+            <com.airbnb.p027n2.components.InlineInputRow android:id="@+id/street_address_two" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_InlineInputRow"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.p027n2.components.InlineInputRow android:id="@+id/city" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/n2_InlineInputRow"/>
+                <com.airbnb.p027n2.components.InlineInputRow android:id="@+id/state" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/n2_InlineInputRow"/>
+            </LinearLayout>
+            <com.airbnb.p027n2.components.InlineInputRow android:id="@+id/zip_code" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_InlineInputRow"/>
+            <com.airbnb.p027n2.components.InlineInputRow android:id="@+id/country" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_InlineInputRow"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_scrollWith="@+id/scroll_view" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+    <com.airbnb.p027n2.components.fixed_footers.FixedFlowActionAdvanceFooter android:layout_gravity="bottom" android:id="@+id/advance_footer" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_buttonText="@string/next" style="@style/n2_FixedFlowActionAdvanceFooter.Babu"/>
+</FrameLayout>

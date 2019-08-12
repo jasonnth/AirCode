@@ -1,0 +1,1 @@
+__d(function(e,r,t,a){Object.defineProperty(a,"__esModule",{value:!0});var c=a.rootSelector=function(e){return e.reviews},o=(a.categoryTagsSelector=function(e){var r=c(e),t={};return r.categoryTags.forEach(function(e){var r=o[e.category]||e.category;t[r]=(t[r]||[]).concat(e)}),babelHelpers.extends({},r,{categoryTags:t})},{amenities:"accuracy"})},2175);

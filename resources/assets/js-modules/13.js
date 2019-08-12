@@ -1,0 +1,1 @@
+__d(function(e,l,r,a){"use strict";var t=l(14),i=new t;i.registerCallableModule("Systrace",l(17)),i.registerCallableModule("JSTimersExecution",l(16)),i.registerCallableModule("HeapCapture",l(32)),i.registerCallableModule("SamplingProfiler",l(33)),Object.defineProperty(e,"__fbBatchedBridge",{configurable:!0,value:i}),r.exports=i},13);

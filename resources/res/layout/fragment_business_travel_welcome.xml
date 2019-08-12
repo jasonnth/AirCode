@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/bottom_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.components.LoadingView android:layout_gravity="center" android:id="@+id/loading_view" style="@style/n2_LoadingView.Vertical"/>
+            <com.airbnb.p027n2.components.EditorialMarquee android:id="@+id/editorial_marquee" android:visibility="gone" app:n2_image="@color/n2_babu" style="@style/n2_EditorialMarquee"/>
+            <com.airbnb.p027n2.primitives.AirButton android:id="@+id/got_it_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginLeft="?attr/n2_horizontal_side_padding" android:layout_marginTop="@dimen/n2_vertical_padding_medium" android:layout_marginRight="?attr/n2_horizontal_side_padding" android:layout_marginBottom="@dimen/n2_vertical_padding_small" style="@style/n2_AirButton_V2.Babu"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" android:layout_alignParentTop="true" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.LightForeground"/>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/bottom_bar" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:id="@+id/divider" style="@style/n2_FullSectionDivider"/>
+        <com.airbnb.p027n2.components.SimpleTextRow android:id="@+id/business_travel_welcome_legal_disclaimer" app:n2_showDivider="false" style="@style/n2_SimpleTextRow.Small.Muted"/>
+    </LinearLayout>
+</RelativeLayout>

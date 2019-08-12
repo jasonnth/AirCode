@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.android.core.views.AirbnbMapView android:id="@+id/airbnb_map_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/location_pin_circle" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:srcCompat="@drawable/location_pin_circle"/>
+    <ImageView android:id="@+id/location_pin_shadow" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_location_pin_shadow"/>
+    <ImageView android:id="@+id/location_pin" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/location_pin_shadow" android:layout_centerHorizontal="true" app:srcCompat="@drawable/ic_location_pin"/>
+</merge>

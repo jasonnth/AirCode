@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_bedrooms" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:layout_marginTop="10dp" android:layout_marginBottom="5dp" android:text="@string/lys_rooms_and_beds_bedrooms" style="@style/TextSectionHeader"/>
+        <com.airbnb.android.lib.views.GroupedCounter android:id="@+id/counter_bedrooms" android:layout_width="match_parent" android:layout_height="wrap_content" app:minValue="@integer/min_num_bedrooms" app:maxValue="@integer/max_num_bedrooms" app:showPlusOnMax="true" app:defaultValue="@integer/default_num_bedrooms" style="@style/Canonical.GroupedLayout"/>
+    </LinearLayout>
+</merge>

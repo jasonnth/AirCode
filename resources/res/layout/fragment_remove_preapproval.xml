@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/n2_Sheet">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.components.SheetMarquee android:id="@+id/remove_marquee" style="@style/n2_SheetMarquee"/>
+        <com.airbnb.p027n2.primitives.AirButton android:id="@+id/remove_button" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:text="@string/ro_preapprove_special_offer_remove_sheet_button" android:drawablePadding="8dp" android:layout_below="@+id/remove_marquee" android:layout_alignParentLeft="true" style="@style/n2_AirButton.WhiteFill"/>
+        <com.airbnb.p027n2.primitives.AirButton android:id="@+id/cancel_button" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:text="@string/cancel" android:drawablePadding="8dp" android:layout_below="@+id/remove_button" android:layout_alignParentLeft="true" style="@style/n2_AirButton.BabuFill"/>
+    </RelativeLayout>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" style="@style/n2_AirToolbar.Transparent.LightForeground"/>
+</FrameLayout>

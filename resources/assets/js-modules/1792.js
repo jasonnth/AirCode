@@ -1,0 +1,1 @@
+__d(function(e,r,u,i){Object.defineProperty(i,"__esModule",{value:!0});var n=r(834);i.default=(0,n.Shape)({amount:n.Types.number.isRequired,currency:n.Types.string.isRequired})},1792);

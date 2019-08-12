@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/listing_name" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_LargeText.Plus"/>
+    <com.airbnb.android.hostcalendar.views.CalendarAgendaInfoBlock android:id="@+id/top_info_block" android:paddingTop="@dimen/n2_vertical_padding_medium" android:paddingBottom="@dimen/n2_vertical_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:id="@+id/section_divider" style="@style/n2_FullSectionDivider"/>
+    <com.airbnb.android.hostcalendar.views.CalendarAgendaInfoBlock android:id="@+id/bottom_info_block" android:paddingTop="@dimen/n2_vertical_padding_medium" android:paddingBottom="@dimen/n2_vertical_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</merge>

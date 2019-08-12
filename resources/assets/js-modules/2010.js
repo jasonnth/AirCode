@@ -1,0 +1,1 @@
+__d(function(e,a,r,t){Object.defineProperty(t,"__esModule",{value:!0});var i=a(834);t.default=(0,i.Shape)({subtitle:i.Types.array,title:i.Types.array.isRequired})},2010);

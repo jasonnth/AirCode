@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_plus" android:id="@+id/menu_create_listing" android:title="@string/manage_listings_create_new_menu" app:showAsAction="always"/>
+</menu>

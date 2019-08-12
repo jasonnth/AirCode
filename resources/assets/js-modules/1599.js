@@ -1,0 +1,1 @@
+__d(function(s,e,t,a){t.exports=e(164).registerAsset({__packager_asset:!0,httpServerLocation:"/assets/apps/CityHostsGuest/images",width:750,height:1334,scales:[1],hash:"b1c1cf5d0d4d1e08b7151c92916fc867",name:"nux-homes",type:"jpg"})},1599);

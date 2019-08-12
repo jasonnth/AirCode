@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <include android:layout_width="0dp" android:layout_height="0dp" android:layout_marginTop="1dp" layout="@layout/n2_toolbar_pusher"/>
+    <LinearLayout android:gravity="top" android:orientation="horizontal" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="?attr/n2_horizontal_side_padding" android:layout_marginRight="?attr/n2_horizontal_side_padding">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_TitleText2"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/caption_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/n2_vertical_padding_tiny_half" style="@style/n2_RegularText"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/link_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/n2_vertical_padding_tiny_half" style="@style/n2_RegularText.Actionable"/>
+        </LinearLayout>
+        <com.airbnb.p027n2.primitives.imaging.HaloImageView android:id="@+id/user_image" android:visibility="gone" android:layout_width="@dimen/n2_halo_image_width" android:layout_height="@dimen/n2_halo_image_height" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium"/>
+    </LinearLayout>
+    <Space android:layout_width="match_parent" android:layout_height="@dimen/n2_vertical_padding_medium"/>
+</merge>

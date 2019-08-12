@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="horizontal" android:background="?attr/selectableItemBackground" android:paddingLeft="?attr/n2_horizontal_side_padding" android:paddingTop="@dimen/n2_vertical_padding_medium" android:paddingRight="?attr/n2_horizontal_side_padding" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/n2_horizontal_padding_small"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/n2_LargeText"/>
+        <Space android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/row_drawable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside"/>
+    </LinearLayout>
+    <Space android:layout_width="match_parent" android:layout_height="@dimen/n2_vertical_padding_medium"/>
+    <View android:id="@+id/section_divider" style="@style/n2_SubsectionDivider"/>
+</merge>

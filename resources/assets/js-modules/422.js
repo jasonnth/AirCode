@@ -1,0 +1,1 @@
+__d(function(e,t,r,l){var a=t(44),u=t(423),n=babelHelpers.interopRequireDefault(u),b=t(555),f=babelHelpers.interopRequireDefault(b),i=babelHelpers.extends({},f.default,{theme:n.default,create:function(e){return a.StyleSheet.create(e(i.theme))}});r.exports=i},422);

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <View android:id="@+id/top_border" android:layout_alignParentTop="true" style="@style/n2_FullSectionDivider"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/book_button_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/top_border">
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/n2_rausch" android:ellipsize="end" android:gravity="center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/negative_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:maxLines="2" android:includeFontPadding="false" style="@style/n2_RegularText.Inverse"/>
+        <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <FrameLayout android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/positive_action_button" android:background="@drawable/n2_rausch_button_background" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" style="@style/n2_BottomButtonBarContent">
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/n2_white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/positive_button_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/n2_horizontal_padding_small" android:layout_marginRight="@dimen/n2_horizontal_padding_small" android:maxLines="2" android:includeFontPadding="false" style="@style/n2_RegularText.Inverse"/>
+            <com.airbnb.p027n2.components.LoadingView android:layout_gravity="center" android:id="@+id/loading_view" android:visibility="gone" app:n2_color="@android:color/white" style="@style/n2_LoadingView"/>
+        </FrameLayout>
+    </LinearLayout>
+</merge>

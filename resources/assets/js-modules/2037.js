@@ -1,0 +1,1 @@
+__d(function(e,r,t,a){function n(e,r){l.default.logEvent({event_name:"guidebook_rn_error",event_data:babelHelpers.extends({},r,{errorMessage:e,react_native_app:"GuidebookApp"})})}Object.defineProperty(a,"__esModule",{value:!0}),a.default=n;var o=r(686),l=babelHelpers.interopRequireDefault(o)},2037);

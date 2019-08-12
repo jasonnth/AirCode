@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/termsTitle" android:paddingLeft="?attr/n2_horizontal_side_padding" android:paddingRight="?attr/n2_horizontal_side_padding" android:paddingBottom="@dimen/n2_vertical_padding_small" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_RegularText.PlusPlus"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:textColorLink="@color/n2_babu" android:id="@+id/termsBody" android:paddingLeft="?attr/n2_horizontal_side_padding" android:paddingRight="?attr/n2_horizontal_side_padding" android:paddingBottom="@dimen/n2_vertical_padding_small" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_RegularText"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:textColorLink="@color/n2_babu" android:id="@+id/fxBody" android:paddingLeft="?attr/n2_horizontal_side_padding" android:paddingRight="?attr/n2_horizontal_side_padding" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_RegularText"/>
+    <View android:id="@+id/section_divider" style="@style/n2_SubsectionDivider"/>
+</merge>

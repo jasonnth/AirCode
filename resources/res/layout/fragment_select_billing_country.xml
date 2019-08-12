@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.android.core.views.CountryCodeSelectionView android:id="@+id/selection_view" app:n2_titleText="@string/select_billing_country_title" app:n2_selectionMode="1" style="@style/n2_SelectionView.FocusPane"/>
+    <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/continue_button" style="@style/n2_AirButton.BabuFill.RightCaret"/>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" android:text="@string/save" app:n2_scrollWith="@+id/selection_view" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.LightForeground"/>
+</FrameLayout>

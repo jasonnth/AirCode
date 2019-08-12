@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/list_item_root" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/img_list_item" android:layout_width="@dimen/listings_list_item_photo_width" android:layout_height="@dimen/listings_list_item_photo_height" android:scaleType="centerCrop" android:indeterminate="true"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.primitives.AirTextView android:textSize="17sp" android:textColor="@color/c_hof" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/txt_listing_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.primitives.autoscale.AutoScaleTextView android:textSize="15sp" android:textColor="@color/c_foggy" android:ellipsize="end" android:id="@+id/txt_listing_info" android:layout_width="0dp" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1"/>
+            <com.airbnb.p027n2.primitives.autoscale.AutoScaleTextView android:textSize="20sp" android:textColor="@color/c_rausch" android:id="@+id/txt_listing_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="90dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

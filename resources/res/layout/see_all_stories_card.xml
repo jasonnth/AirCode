@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.SquareImageView android:background="@drawable/see_all_stories_tile_gradient" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/n2_recommendation_card_frame" android:scaleType="centerCrop"/>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:padding="@dimen/n2_horizontal_padding_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/search_term" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" style="@style/n2_LargeText.Inverse.Plus"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/n2_white_60" android:ellipsize="end" android:id="@+id/see_all_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" android:drawablePadding="4dp" app:n2_drawableColor="@color/n2_white_60" app:n2_drawableRightCompat="@drawable/n2_icon_chevron_right_white" style="@style/n2_LargeText"/>
+        </LinearLayout>
+    </FrameLayout>
+    <com.airbnb.p027n2.primitives.imaging.HaloImageView android:id="@+id/see_all_photo" android:layout_width="40dp" android:layout_height="40dp" android:layout_margin="@dimen/n2_horizontal_padding_small" app:n2_borderThickness="2dp"/>
+</merge>

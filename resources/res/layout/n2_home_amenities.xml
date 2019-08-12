@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <android.support.p000v4.widget.Space android:layout_width="match_parent" android:layout_height="@dimen/n2_vertical_padding_medium"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/amenities_heading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" style="@style/n2_RegularText.Plus"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/amenities" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:paddingBottom="@dimen/n2_vertical_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:id="@+id/divider" style="@style/n2_SubsectionDivider"/>
+</merge>

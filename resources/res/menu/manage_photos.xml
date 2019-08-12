@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/icon_take_photo" android:id="@+id/menu_camera" android:title="@string/ml_take_new_photo" app:showAsAction="always"/>
+    <item android:icon="@drawable/icon_browse_gallery" android:id="@+id/menu_gallery" android:title="@string/ml_photos_from_gallery" app:showAsAction="always"/>
+    <item android:id="@+id/menu_remove_photos" android:title="@string/ml_remove_photos" app:showAsAction="never"/>
+    <item android:id="@+id/menu_edit_captions" android:title="@string/ml_edit_captions" app:showAsAction="never"/>
+    <item android:id="@+id/menu_pro_photo" android:title="@string/pro_photo_request_menu" app:showAsAction="never"/>
+    <item android:id="@+id/menu_pro_photo_cancel" android:title="@string/pro_photo_cancel_menu" app:showAsAction="never"/>
+</menu>

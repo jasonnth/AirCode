@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.primitives.AirTextView android:textColor="@android:color/white" android:id="@+id/title_text" android:padding="@dimen/n2_horizontal_padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_TitleText2"/>
+    <com.airbnb.p027n2.components.LoadingView android:layout_gravity="center" android:id="@+id/loader" android:layout_marginBottom="@dimen/n2_vertical_padding_medium" app:n2_color="@color/n2_white" style="@style/n2_LoadingView"/>
+    <android.support.p002v7.widget.RecyclerView android:id="@+id/carousel" android:padding="@dimen/n2_horizontal_padding_small" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</merge>

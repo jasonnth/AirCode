@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <FrameLayout app:layout_widthPercent="100%" app:layout_aspectRatio="150%">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_gravity="center" android:id="@+id/photo" android:background="@color/n2_loading_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/n2_vertical_padding_small">
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_MicroText.Inverse.Label"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:layout_gravity="fill" android:id="@+id/placeholder_text" android:padding="1sp" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_textAppearance="@style/n2_SmallText"/>
+        </LinearLayout>
+    </FrameLayout>
+</merge>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_theme="3" app:n2_navigationIcon="2" style="@style/n2_AirToolbar"/>
+        <com.airbnb.p027n2.components.DocumentMarquee app:n2_titleText="@string/pricing_disclaimer" style="@style/n2_DocumentMarquee.NoTopPadding"/>
+        <com.airbnb.p027n2.components.TextRow app:n2_showDivider="false" app:n2_text="@string/pricing_disclaimer_body" style="@style/n2_TextRow"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <View android:id="@+id/grouped_icon_toggle_top_border" android:background="@color/c_gray_4" android:layout_width="match_parent" android:layout_height="@dimen/line_thickness" android:layout_marginLeft="@dimen/gutter_padding" android:layout_marginRight="@dimen/gutter_padding" android:layout_alignParentTop="true"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:gravity="center_vertical" android:id="@+id/grouped_icon_toggle_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/gutter_padding" android:minHeight="48dp" android:lines="1" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/GroupedTitle"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/grouped_icon_toggles" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/gutter_padding" android:minHeight="48dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</merge>

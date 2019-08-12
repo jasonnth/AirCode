@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/content_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <android.support.p002v7.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_alignParentTop="true" app:layoutManager="LinearLayoutManager"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/footer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginTop="@dimen/n2_vertical_padding_medium" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" android:layout_marginBottom="@dimen/n2_vertical_padding_medium" style="@style/n2_SmallText"/>
+            <com.airbnb.p027n2.components.BookingNavigationView android:layout_gravity="bottom" android:id="@+id/nav_view" android:visibility="gone" style="@style/n2_BookingNavButtonContent"/>
+        </LinearLayout>
+        <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/modal_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

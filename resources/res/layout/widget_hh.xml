@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="@dimen/widget_margin" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/hh_widget_background" android:padding="4dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="2dp" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="28dp" android:layout_marginTop="-4dp">
+            <ImageView android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/icon_widget_logo"/>
+            <TextView android:textColor="@android:color/white" android:gravity="right" android:id="@+id/txt_notifs" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_weight="1" android:lineSpacingMultiplier="1" style="@style/Canonical.Text.F.Hof"/>
+            <ImageView android:background="@android:color/white" android:paddingLeft="8dp" android:layout_width="@dimen/line_thickness" android:layout_height="match_parent" android:layout_marginTop="4dp" android:layout_marginRight="8dp" android:layout_marginBottom="4dp"/>
+            <ImageButton android:id="@+id/img_refresh" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/icon_widget_refresh"/>
+        </LinearLayout>
+        <ListView android:id="@+id/widget_content" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/c_gray_4" android:dividerHeight="@dimen/line_thickness"/>
+        <LinearLayout android:gravity="center" android:id="@+id/section_empty_state" android:background="@color/widget_content_background" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textColor="@color/c_gray_3" android:gravity="center" android:layout_gravity="center" android:id="@+id/empty_state_text_view" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.Text.C"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/toto_header_text" android:background="@color/c_foggy_light" android:padding="@dimen/host_toto_spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/toto_header_description"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/host_toto_spacing" android:text="@string/toto_opt_in"/>
+    <android.support.p002v7.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/host_toto_spacing" android:layout_marginRight="@dimen/host_toto_spacing" style="@style/AirbnbCardView">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.android.lib.views.GroupedCheck android:id="@+id/toto_yes_check" android:layout_width="match_parent" android:layout_height="wrap_content" app:hideTopBorder="true" app:title="@string/yes"/>
+            <com.airbnb.android.lib.views.GroupedCheck android:id="@+id/toto_no_check" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/no"/>
+        </LinearLayout>
+    </android.support.p002v7.widget.CardView>
+    <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_foggy" android:gravity="center" android:layout_gravity="center" android:id="@+id/toto_terms_yes" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/host_toto_spacing" android:text="@string/toto_yes_disclaimer"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_foggy" android:gravity="center" android:layout_gravity="center" android:id="@+id/toto_terms_no" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/host_toto_spacing" android:text="@string/toto_no_disclaimer"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_rausch" android:layout_gravity="center" android:id="@+id/toto_terms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/host_toto_spacing" android:layout_marginBottom="@dimen/host_toto_spacing" android:text="@string/toto_terms"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.components.SectionHeader android:id="@+id/section_header" android:paddingTop="0dp" android:paddingBottom="@dimen/n2_vertical_padding_small" android:visibility="gone" style="@style/n2_NanoSectionHeader"/>
+    <com.google.android.flexbox.FlexboxLayout android:id="@+id/flexbox" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:paddingBottom="@dimen/n2_vertical_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content" app:flexDirection="0" app:flexWrap="1" app:justifyContent="0" app:alignItems="0" app:alignContent="0" app:layout_order="1"/>
+    <View android:id="@+id/section_divider" android:visibility="gone" style="@style/n2_SubsectionDivider"/>
+</merge>

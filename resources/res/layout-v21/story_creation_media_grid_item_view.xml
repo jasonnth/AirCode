@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/media_thumbnail" android:layout_width="match_parent" android:layout_height="match_parent" android:transitionName="preview_image"/>
+    <com.airbnb.android.contentframework.imagepicker.CheckView android:layout_gravity="center" android:id="@+id/check_view" android:layout_width="@dimen/story_creation_media_grid_check_view_size" android:layout_height="@dimen/story_creation_media_grid_check_view_size"/>
+</merge>

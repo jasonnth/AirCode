@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.SheetMarquee android:id="@+id/marquee" android:minHeight="220dp" style="@style/n2_SheetMarquee.NoTopPadding"/>
+    <RatingBar android:layout_gravity="center_horizontal" android:id="@+id/review_rating_stars" android:layout_width="wrap_content" android:layout_height="wrap_content" android:progressDrawable="@drawable/bg_new_rating_bar_star" android:numStars="5" android:stepSize="1"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/description" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginTop="@dimen/n2_vertical_padding_small" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" style="@style/n2_LargeText.Inverse"/>
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <android.support.design.widget.FloatingActionButton android:id="@+id/fab" android:visibility="gone" style="@style/n2_SheetFab"/>
+</LinearLayout>

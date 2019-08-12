@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.percent.PercentFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.primitives.TriptychView android:id="@+id/triptych" app:layout_widthPercent="100%" app:layout_aspectRatio="150%"/>
+        </android.support.percent.PercentFrameLayout>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/title_text" android:paddingTop="@dimen/n2_vertical_padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:lines="2" style="@style/n2_RegularText"/>
+        <include layout="@layout/n2_explore_article_extra_row"/>
+        <Space android:id="@+id/bottom_space" android:layout_width="match_parent" android:layout_height="@dimen/n2_card_bottom_spacing"/>
+        <View android:layout_gravity="bottom" android:id="@+id/divider" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:layout_below="@+id/bottom_space" style="@style/n2_SubsectionDivider"/>
+    </LinearLayout>
+</merge>

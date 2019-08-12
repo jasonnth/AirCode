@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="50dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.android.lib.views.CircleBadgeView android:id="@+id/circle_badge_view_online" app:iconSrc="@drawable/icon_verified_id_online" style="@style/VerifiedIdBadge"/>
+        <FrameLayout android:id="@+id/verified_id_online_fragment" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</ScrollView>

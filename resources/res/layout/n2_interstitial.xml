@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <View android:id="@+id/space_top" android:layout_width="match_parent" android:layout_height="@dimen/n2_vertical_padding_medium"/>
+    <com.airbnb.p027n2.components.jellyfish.JellyfishView android:id="@+id/jellyfish_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignTop="@+id/content_container" android:layout_alignBottom="@+id/content_container"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/content_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/space_top">
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginTop="@dimen/n2_vertical_padding_large" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" style="@style/n2_TitleText3.Inverse"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/caption" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginTop="@dimen/n2_vertical_padding_tiny" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" style="@style/n2_LargeText.Inverse"/>
+        <com.airbnb.p027n2.primitives.AirButton android:id="@+id/button" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginTop="@dimen/n2_vertical_padding_medium" style="@style/n2_InterstitialButton.White"/>
+        <Space android:layout_width="0dp" android:layout_height="@dimen/n2_vertical_padding_large"/>
+    </LinearLayout>
+    <View android:id="@+id/space_bottom" android:layout_width="match_parent" android:layout_height="@dimen/n2_vertical_padding_tiny" android:layout_below="@+id/content_container" android:layout_alignParentBottom="true"/>
+</merge>

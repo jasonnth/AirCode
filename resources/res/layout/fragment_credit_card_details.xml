@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <com.airbnb.p027n2.components.DocumentMarquee android:id="@+id/marquee" app:n2_showDivider="false" style="@style/n2_DocumentMarquee"/>
+                <com.airbnb.p027n2.components.PaymentInputLayout android:id="@+id/credit_card_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/card_date_cvv_zipcode_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/n2_vertical_padding_medium" android:alpha="0">
+                    <com.airbnb.p027n2.components.PaymentInputLayout android:id="@+id/card_date_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <com.airbnb.p027n2.components.PaymentInputLayout android:id="@+id/cvv_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <com.airbnb.p027n2.components.PaymentInputLayout android:id="@+id/postal_code_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_theme="3" style="@style/n2_AirToolbar"/>
+        <com.airbnb.p027n2.primitives.AirButton android:enabled="false" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/next_button" style="@style/n2_AirButton.BabuFill.RightCaret"/>
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

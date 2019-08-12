@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.airbnb.android.contentframework.views.StoryCreationAddPhotoView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="@dimen/n2_carousel_card_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/story_creation_add_image_background" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_width="32dp" android:layout_height="32dp" android:tint="@color/n2_babu" app:srcCompat="@drawable/ic_plus"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textSize="15sp" android:textColor="@color/n2_babu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/n2_vertical_padding_tiny" android:text="@string/story_creation_add_photos"/>
+    </LinearLayout>
+</com.airbnb.android.contentframework.views.StoryCreationAddPhotoView>

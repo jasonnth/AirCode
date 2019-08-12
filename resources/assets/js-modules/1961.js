@@ -1,0 +1,1 @@
+__d(function(e,o,t,i){Object.defineProperty(i,"__esModule",{value:!0});var s=o(834),n=o(1962),l=babelHelpers.interopRequireDefault(n);i.default=(0,s.Shape)({isVerificationPending:s.Types.bool,needMtTOS:s.Types.bool,needVerification:s.Types.bool,soonestExpiresAt:l.default,soonestBookedAt:l.default,soonestExpiresTitle:s.Types.string,timezone:s.Types.string})},1961);

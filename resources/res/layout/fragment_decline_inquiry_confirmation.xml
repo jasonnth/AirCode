@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/n2_Sheet">
+    <RelativeLayout style="@style/n2_FocusPane">
+        <com.airbnb.p027n2.components.SheetMarquee android:id="@+id/marquee" app:n2_subtitleText="@string/decline_inquiry_confirmation_subtext" style="@style/n2_SheetMarquee"/>
+        <com.airbnb.p027n2.primitives.AirButton android:id="@+id/okay_button" android:text="@string/okay" android:drawablePadding="8dp" android:layout_below="@+id/marquee" android:layout_alignParentLeft="true" style="@style/n2_AirButton.BabuFill"/>
+    </RelativeLayout>
+</FrameLayout>

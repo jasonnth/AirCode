@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="?attr/n2_horizontal_side_padding" android:paddingTop="@dimen/n2_vertical_padding_medium" android:paddingRight="?attr/n2_horizontal_side_padding" android:paddingBottom="@dimen/n2_vertical_padding_tiny" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/component_name" android:paddingBottom="@dimen/n2_vertical_padding_tiny" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/n2_SmallText"/>
+        <com.airbnb.p027n2.utils.ScalingFrameLayout android:id="@+id/component_frame" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View android:id="@+id/component_click_overlay" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

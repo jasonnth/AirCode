@@ -1,0 +1,1 @@
+__d(function(o,e,n,r){"use strict";var s=function(){if(1===arguments.length&&arguments[0]instanceof Error){arguments[0]}else console.error.apply(console,arguments)};n.exports=s},95);

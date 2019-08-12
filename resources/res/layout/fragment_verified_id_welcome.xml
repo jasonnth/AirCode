@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/fragment_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@+id/reservation_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+                <ImageView android:id="@+id/listing_hero_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" app:srcCompat="@color/c_gray_3"/>
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/verified_id_welcome_request_not_sent" style="@style/Canonical.Text.B"/>
+                    <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/white" android:gravity="center" android:id="@+id/listing_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" style="@style/Canonical.Text.E"/>
+                    <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/white" android:gravity="center" android:id="@+id/reservation_description" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.Text.E"/>
+                </LinearLayout>
+            </FrameLayout>
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:id="@+id/welcome_prompt_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/verified_id_screen_margin" android:layout_marginRight="@dimen/verified_id_screen_margin" android:layout_marginBottom="20dp" android:text="@string/verified_id_welcome_header" app:n2_font="3" style="@style/Canonical.Text.B"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/verified_id_screen_margin" android:layout_marginRight="@dimen/verified_id_screen_margin" android:text="@string/verified_id_welcome_info" style="@style/Canonical.Text.E"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_rausch_text_selector" android:gravity="center" android:layout_gravity="center" android:id="@+id/learn_more_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/verified_id_screen_margin" android:layout_marginRight="@dimen/verified_id_screen_margin" android:layout_marginBottom="90dp" android:text="@string/verified_id_learn_more" style="@style/Canonical.Text.E"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.airbnb.android.lib.views.StickyButton android:id="@+id/welcome_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

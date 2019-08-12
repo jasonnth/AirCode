@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/hh_item_row" android:background="@color/c_gray_6" android:layout_width="match_parent" android:layout_height="@dimen/widget_hh_item_height">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/img_profile" android:layout_marginRight="10dp" android:scaleType="centerCrop" app:srcCompat="@drawable/n2_empty_profile_halo_large_rausch" style="@style/Canonical.ImageView.Halo.Light.Small"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="15sp" android:textColor="@color/c_gray_1" android:id="@+id/arrive_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:lineSpacingMultiplier="1" style="@style/Canonical.Text.E"/>
+            <TextView android:textSize="13sp" android:textColor="@color/c_gray_2" android:id="@+id/details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:lineSpacingMultiplier="1" style="@style/Canonical.Text.F"/>
+            <TextView android:textSize="12sp" android:textColor="@color/c_gray_2" android:ellipsize="end" android:id="@+id/listing_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:lineSpacingMultiplier="1" style="@style/Canonical.Text.F"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

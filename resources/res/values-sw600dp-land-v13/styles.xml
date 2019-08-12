@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="n2_GuideImageMarquee_Image">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="layout_widthPercent">100%</item>
+        <item name="layout_aspectRatio">200%</item>
+    </style>
+</resources>

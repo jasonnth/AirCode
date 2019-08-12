@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="joda_time_android_abbrev_in_num_days">
+        <item quantity="other">in %d days</item>
+        <item quantity="one">tomorrow</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_hours">
+        <item quantity="other">in %d hours</item>
+        <item quantity="one">in 1 hour</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_minutes">
+        <item quantity="other">in %d mins</item>
+        <item quantity="one">in 1 min</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_seconds">
+        <item quantity="other">in %d secs</item>
+        <item quantity="one">in 1 sec</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_days_ago">
+        <item quantity="other">%d days ago</item>
+        <item quantity="one">yesterday</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_hours_ago">
+        <item quantity="other">%d hours ago</item>
+        <item quantity="one">1 hour ago</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_minutes_ago">
+        <item quantity="other">%d mins ago</item>
+        <item quantity="one">1 min ago</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_seconds_ago">
+        <item quantity="other">%d secs ago</item>
+        <item quantity="one">1 sec ago</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_hours">
+        <item quantity="other">%d hours</item>
+        <item quantity="one">1 hour</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_minutes">
+        <item quantity="other">%d minutes</item>
+        <item quantity="one">1 minute</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_seconds">
+        <item quantity="other">%d seconds</item>
+        <item quantity="one">1 second</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_days">
+        <item quantity="other">in %d days</item>
+        <item quantity="one">tomorrow</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_hours">
+        <item quantity="other">in %d hours</item>
+        <item quantity="one">in 1 hour</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_minutes">
+        <item quantity="other">in %d minutes</item>
+        <item quantity="one">in 1 minute</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_seconds">
+        <item quantity="other">in %d seconds</item>
+        <item quantity="one">in 1 second</item>
+    </plurals>
+    <plurals name="joda_time_android_num_days_ago">
+        <item quantity="other">%d days ago</item>
+        <item quantity="one">yesterday</item>
+    </plurals>
+    <plurals name="joda_time_android_num_hours_ago">
+        <item quantity="other">%d hours ago</item>
+        <item quantity="one">1 hour ago</item>
+    </plurals>
+    <plurals name="joda_time_android_num_minutes_ago">
+        <item quantity="other">%d minutes ago</item>
+        <item quantity="one">1 minute ago</item>
+    </plurals>
+    <plurals name="joda_time_android_num_seconds_ago">
+        <item quantity="other">%d seconds ago</item>
+        <item quantity="one">1 second ago</item>
+    </plurals>
+    <plurals name="add_payout_choose_payout_method_in_country">
+        <item quantity="other">@string/add_payout_choose_payout_methods_in_country</item>
+        <item quantity="one">@string/add_payout_choose_payout_method_in_country_one</item>
+    </plurals>
+    <plurals name="advance_notice_status">
+        <item quantity="other">@string/advance_notice_status_multi_days</item>
+        <item quantity="one">@string/advance_notice_status_one_day</item>
+    </plurals>
+    <plurals name="at_least_x_days_before_and_after">
+        <item quantity="other">@string/at_least_multi_days_before_and_after</item>
+        <item quantity="one">@string/at_least_one_day_before_and_after</item>
+    </plurals>
+    <plurals name="at_least_x_days_notice">
+        <item quantity="other">@string/at_least_multi_days_notice</item>
+        <item quantity="one">@string/at_least_one_days_notice</item>
+    </plurals>
+    <plurals name="bathrooms">
+        <item quantity="other">@string/listing_bathrooms_other</item>
+        <item quantity="one">@string/listing_bathrooms_one</item>
+        <item quantity="few">@string/listing_bathrooms_few</item>
+        <item quantity="many">@string/listing_bathrooms_many</item>
+    </plurals>
+    <plurals name="bathrooms_plus">
+        <item quantity="other">@string/listing_bathrooms_other_plus</item>
+        <item quantity="one">@string/listing_bathrooms_one_plus</item>
+        <item quantity="few">@string/listing_bathrooms_few_plus</item>
+        <item quantity="many">@string/listing_bathrooms_many_plus</item>
+    </plurals>
+    <plurals name="bedrooms">
+        <item quantity="other">@string/listing_bedrooms_other</item>
+        <item quantity="one">@string/listing_bedrooms_one</item>
+        <item quantity="few">@string/listing_bedrooms_few</item>
+        <item quantity="many">@string/listing_bedrooms_many</item>
+    </plurals>
+    <plurals name="bedrooms_plus">
+        <item quantity="other">@string/listing_bedrooms_other_plus</item>
+        <item quantity="one">@string/listing_bedrooms_one_plus</item>
+        <item quantity="few">@string/listing_bedrooms_few_plus</item>
+        <item quantity="many">@string/listing_bedrooms_many_plus</item>
+    </plurals>
+    <plurals name="beds">
+        <item quantity="other">@string/listing_beds_other</item>
+        <item quantity="one">@string/listing_beds_one</item>
+        <item quantity="few">@string/listing_beds_few</item>
+        <item quantity="many">@string/listing_beds_many</item>
+    </plurals>
+    <plurals name="beds_plus">
+        <item quantity="other">@string/listing_beds_other_plus</item>
+        <item quantity="one">@string/listing_beds_one_plus</item>
+        <item quantity="few">@string/listing_beds_few_plus</item>
+        <item quantity="many">@string/listing_beds_many_plus</item>
+    </plurals>
+    <plurals name="calendar_availablity_expired_request">
+        <item quantity="other">@string/calendar_availablity_expired_request_other</item>
+        <item quantity="one">@string/calendar_availablity_expired_request_one</item>
+    </plurals>
+    <plurals name="calendar_availablity_max_days_notice">
+        <item quantity="other">@string/calendar_availablity_max_days_notice_other</item>
+        <item quantity="one">@string/calendar_availablity_max_days_notice_one</item>
+    </plurals>
+    <plurals name="calendar_availablity_min_days_notice">
+        <item quantity="other">@string/calendar_availablity_min_days_notice_other</item>
+        <item quantity="one">@string/calendar_availablity_min_days_notice_one</item>
+    </plurals>
+    <plurals name="calendar_availablity_reserved">
+        <item quantity="other">@string/calendar_availablity_reserved_other</item>
+        <item quantity="one">@string/calendar_availablity_reserved_one</item>
+    </plurals>
+    <plurals name="calendar_availablity_turnover_days">
+        <item quantity="other">@string/calendar_availablity_turnover_days_other</item>
+        <item quantity="one">@string/calendar_availablity_turnover_days_one</item>
+    </plurals>
+    <plurals name="calendar_host_less_than_min_nights">
+        <item quantity="other">@string/calendar_host_less_than_min_nights_other</item>
+        <item quantity="one">@string/calendar_host_less_than_min_nights_one</item>
+        <item quantity="few">@string/calendar_host_less_than_min_nights_few</item>
+        <item quantity="many">@string/calendar_host_less_than_min_nights_many</item>
+    </plurals>
+    <plurals name="calendar_host_more_than_max_nights">
+        <item quantity="other">@string/calendar_host_more_than_max_nights_other</item>
+        <item quantity="one">@string/calendar_host_more_than_max_nights_one</item>
+        <item quantity="few">@string/calendar_host_more_than_max_nights_few</item>
+        <item quantity="many">@string/calendar_host_more_than_max_nights_many</item>
+    </plurals>
+    <plurals name="calendar_nights_selected">
+        <item quantity="other">@string/calendar_nights_selected_other</item>
+        <item quantity="one">@string/calendar_nights_selected_one</item>
+        <item quantity="few">@string/calendar_nights_selected_few</item>
+        <item quantity="many">@string/calendar_nights_selected_many</item>
+    </plurals>
+    <plurals name="calendar_smart_pricing_off">
+        <item quantity="other">@string/calendar_smart_pricing_off_other</item>
+        <item quantity="one">@string/calendar_smart_pricing_off_one</item>
+    </plurals>
+    <plurals name="comments">
+        <item quantity="other">@string/comments_other</item>
+        <item quantity="one">@string/comments_one</item>
+        <item quantity="few">@string/comments_few</item>
+        <item quantity="many">@string/comments_many</item>
+    </plurals>
+    <plurals name="confirm_x_years_old">
+        <item quantity="other">@string/confirm_x_years_old_many</item>
+        <item quantity="one">@string/confirm_x_years_old_one</item>
+    </plurals>
+    <plurals name="connections_caption_connected">
+        <item quantity="other">@string/connections_caption_connected_multi_other</item>
+        <item quantity="one">@string/connections_caption_connected_multi_one</item>
+        <item quantity="few">@string/connections_caption_connected_multi_few</item>
+        <item quantity="many">@string/connections_caption_connected_multi_many</item>
+    </plurals>
+    <plurals name="connections_caption_friends">
+        <item quantity="other">@string/connections_caption_friends_multi_other</item>
+        <item quantity="one">@string/connections_caption_friends_multi_one</item>
+        <item quantity="few">@string/connections_caption_friends_multi_few</item>
+        <item quantity="many">@string/connections_caption_friends_multi_many</item>
+    </plurals>
+    <plurals name="connections_caption_reviewed">
+        <item quantity="other">@string/connections_caption_reviewed_multi_other</item>
+        <item quantity="one">@string/connections_caption_reviewed_multi_one</item>
+        <item quantity="few">@string/connections_caption_reviewed_multi_few</item>
+        <item quantity="many">@string/connections_caption_reviewed_multi_many</item>
+    </plurals>
+    <plurals name="current_trips">
+        <item quantity="other">@string/current_trips</item>
+        <item quantity="one">@string/current_trip</item>
+    </plurals>
+    <plurals name="dates_selected">
+        <item quantity="other">@string/dates_selected_other</item>
+        <item quantity="one">@string/dates_selected_one</item>
+        <item quantity="few">@string/dates_selected_few</item>
+        <item quantity="many">@string/dates_selected_many</item>
+    </plurals>
+    <plurals name="days_left_to_accept_cohosting_invitation">
+        <item quantity="other">@string/cohosting_invitation_page_remaining_days_subtitle_for_days</item>
+        <item quantity="one">@string/cohosting_invitation_page_remaining_days_subtitle_for_one_day</item>
+    </plurals>
+    <plurals name="days_left_to_write_review">
+        <item quantity="other">@string/days_left_to_review</item>
+        <item quantity="one">@string/one_day_left_to_review</item>
+    </plurals>
+    <plurals name="dismiss_x_tips">
+        <item quantity="other">@string/insight_dismiss_other</item>
+        <item quantity="one">@string/insight_dismiss_one</item>
+        <item quantity="few">@string/insight_dismiss_few</item>
+        <item quantity="many">@string/insight_dismiss_many</item>
+    </plurals>
+    <plurals name="examples">
+        <item quantity="other">@string/examples_other</item>
+        <item quantity="one">@string/examples_one</item>
+        <item quantity="few">@string/examples_few</item>
+        <item quantity="many">@string/examples_many</item>
+    </plurals>
+    <plurals name="expires_in_x_days">
+        <item quantity="other">@string/expires_in_x_days_other</item>
+        <item quantity="one">@string/expires_in_x_days_one</item>
+        <item quantity="few">@string/expires_in_x_days_few</item>
+        <item quantity="many">@string/expires_in_x_days_many</item>
+    </plurals>
+    <plurals name="expires_in_x_hrs">
+        <item quantity="other">@string/expires_in_x_hours_other</item>
+        <item quantity="one">@string/expires_in_x_hours_one</item>
+        <item quantity="few">@string/expires_in_x_hours_few</item>
+        <item quantity="many">@string/expires_in_x_hours_many</item>
+    </plurals>
+    <plurals name="expires_in_x_mins">
+        <item quantity="other">@string/expires_in_x_mins_other</item>
+        <item quantity="one">@string/expires_in_x_mins_one</item>
+        <item quantity="few">@string/expires_in_x_mins_few</item>
+        <item quantity="many">@string/expires_in_x_mins_many</item>
+    </plurals>
+    <plurals name="explore_x_homes">
+        <item quantity="other">@string/explore_x_homes_many</item>
+        <item quantity="one">@string/explore_x_homes_one</item>
+    </plurals>
+    <plurals name="failed_to_upload_x_photos">
+        <item quantity="other">@string/manage_listing_photo_upload_failed_notification_title_other</item>
+        <item quantity="one">@string/manage_listing_photo_upload_failed_notification_title_one</item>
+    </plurals>
+    <plurals name="generic_count_or_greater">
+        <item quantity="other">@string/generic_count_or_greater</item>
+        <item quantity="one">@string/generic_count_or_greater</item>
+        <item quantity="few">@string/generic_count_or_greater</item>
+        <item quantity="many">@string/generic_count_or_greater</item>
+    </plurals>
+    <plurals name="guest_count_exceeded_message">
+        <item quantity="other">@string/guest_count_exceeded_message_other</item>
+        <item quantity="one">@string/guest_count_exceeded_message_one</item>
+        <item quantity="few">@string/guest_count_exceeded_message_few</item>
+        <item quantity="many">@string/guest_count_exceeded_message_many</item>
+    </plurals>
+    <plurals name="guest_count_exceeded_please_change_message">
+        <item quantity="other">@string/guest_count_exceeded_please_change_message_other</item>
+        <item quantity="one">@string/guest_count_exceeded_please_change_message_one</item>
+        <item quantity="few">@string/guest_count_exceeded_please_change_message_few</item>
+        <item quantity="many">@string/guest_count_exceeded_please_change_message_many</item>
+    </plurals>
+    <plurals name="guest_tag_count">
+        <item quantity="other">@string/guest_tag_many</item>
+        <item quantity="one">@string/guest_tag_one</item>
+    </plurals>
+    <plurals name="hh_first_name_arrives_in_days">
+        <item quantity="other">@string/hh_first_name_arrives_in_days_other</item>
+        <item quantity="one">@string/hh_first_name_arrives_in_days_one</item>
+        <item quantity="few">@string/hh_first_name_arrives_in_days_few</item>
+        <item quantity="many">@string/hh_first_name_arrives_in_days_many</item>
+    </plurals>
+    <plurals name="hh_first_name_arrives_in_months">
+        <item quantity="other">@string/hh_first_name_arrives_in_months_other</item>
+        <item quantity="one">@string/hh_first_name_arrives_in_months_one</item>
+        <item quantity="few">@string/hh_first_name_arrives_in_months_few</item>
+        <item quantity="many">@string/hh_first_name_arrives_in_months_many</item>
+    </plurals>
+    <plurals name="hh_first_name_arrives_in_weeks">
+        <item quantity="other">@string/hh_first_name_arrives_in_weeks_other</item>
+        <item quantity="one">@string/hh_first_name_arrives_in_weeks_one</item>
+        <item quantity="few">@string/hh_first_name_arrives_in_weeks_few</item>
+        <item quantity="many">@string/hh_first_name_arrives_in_weeks_many</item>
+    </plurals>
+    <plurals name="hh_first_name_checks_out_days">
+        <item quantity="other">@string/hh_first_name_checks_out_days_other</item>
+        <item quantity="one">@string/hh_first_name_checks_out_days_one</item>
+        <item quantity="few">@string/hh_first_name_checks_out_days_few</item>
+        <item quantity="many">@string/hh_first_name_checks_out_days_many</item>
+    </plurals>
+    <plurals name="hh_first_name_checks_out_months">
+        <item quantity="other">@string/hh_first_name_checks_out_months_other</item>
+        <item quantity="one">@string/hh_first_name_checks_out_months_one</item>
+        <item quantity="few">@string/hh_first_name_checks_out_months_few</item>
+        <item quantity="many">@string/hh_first_name_checks_out_months_many</item>
+    </plurals>
+    <plurals name="hh_first_name_checks_out_weeks">
+        <item quantity="other">@string/hh_first_name_checks_out_weeks_other</item>
+        <item quantity="one">@string/hh_first_name_checks_out_weeks_one</item>
+        <item quantity="few">@string/hh_first_name_checks_out_weeks_few</item>
+        <item quantity="many">@string/hh_first_name_checks_out_weeks_many</item>
+    </plurals>
+    <plurals name="host_calendar_x_dates_updated">
+        <item quantity="other">@string/host_calendar_x_dates_updated_other</item>
+        <item quantity="one">@string/host_calendar_x_dates_updated_one</item>
+        <item quantity="few">@string/host_calendar_x_dates_updated_few</item>
+        <item quantity="many">@string/host_calendar_x_dates_updated_many</item>
+    </plurals>
+    <plurals name="hours_left_to_accept_cohosting_invitation">
+        <item quantity="other">@string/cohosting_invitation_page_remaining_hours_subtitle_for_hours</item>
+        <item quantity="one">@string/cohosting_invitation_page_remaining_hours_subtitle_for_one_hour</item>
+    </plurals>
+    <plurals name="how_many_guests_with_x_guests_maximum">
+        <item quantity="other">@string/how_many_guests_max_other</item>
+        <item quantity="one">@string/how_many_guests_max_one</item>
+        <item quantity="few">@string/how_many_guests_max_few</item>
+        <item quantity="many">@string/how_many_guests_max_many</item>
+    </plurals>
+    <plurals name="in_x_days">
+        <item quantity="other">@string/in_x_days_other</item>
+        <item quantity="one">@string/in_x_days_one</item>
+        <item quantity="few">@string/in_x_days_few</item>
+        <item quantity="many">@string/in_x_days_many</item>
+    </plurals>
+    <plurals name="in_x_months">
+        <item quantity="other">@string/in_x_months_other</item>
+        <item quantity="one">@string/in_x_months_one</item>
+        <item quantity="few">@string/in_x_months_few</item>
+        <item quantity="many">@string/in_x_months_many</item>
+    </plurals>
+    <plurals name="in_x_weeks">
+        <item quantity="other">@string/in_x_weeks_other</item>
+        <item quantity="one">@string/in_x_weeks_one</item>
+        <item quantity="few">@string/in_x_weeks_few</item>
+        <item quantity="many">@string/in_x_weeks_many</item>
+    </plurals>
+    <plurals name="infants_descriptions_with_x_guests_maximum">
+        <item quantity="other">@string/infants_detailed_description_with_guest_max_other</item>
+        <item quantity="one">@string/infants_detailed_description_with_guest_max_one</item>
+        <item quantity="few">@string/infants_detailed_description_with_guest_max_few</item>
+        <item quantity="many">@string/infants_detailed_description_with_guest_max_many</item>
+    </plurals>
+    <plurals name="itinerary_x_days_into_the_future">
+        <item quantity="other">@string/itinerary_multi_days_into_the_future</item>
+        <item quantity="one">@string/itinerary_one_day_into_the_future</item>
+    </plurals>
+    <plurals name="itinerary_x_homes_pending">
+        <item quantity="other">@string/itinerary_multi_homes_pending</item>
+        <item quantity="one">@string/itinerary_one_home_pending</item>
+    </plurals>
+    <plurals name="itinerary_x_months_into_the_future">
+        <item quantity="other">@string/itinerary_multi_months_into_the_future</item>
+        <item quantity="one">@string/itinerary_one_month_into_the_future</item>
+    </plurals>
+    <plurals name="itinerary_x_weeks_into_the_future">
+        <item quantity="other">@string/itinerary_multi_weeks_into_the_future</item>
+        <item quantity="one">@string/itinerary_one_week_into_the_future</item>
+    </plurals>
+    <plurals name="itinerary_x_years_into_the_future">
+        <item quantity="other">@string/itinerary_multi_years_into_the_future</item>
+        <item quantity="one">@string/itinerary_one_year_into_the_future</item>
+    </plurals>
+    <plurals name="listings">
+        <item quantity="other">@string/listings_other</item>
+        <item quantity="one">@string/listings_one</item>
+        <item quantity="few">@string/listings_few</item>
+        <item quantity="many">@string/listings_many</item>
+    </plurals>
+    <plurals name="listings_temporarily_suspended">
+        <item quantity="other">@string/listings_temporarily_suspended_other</item>
+        <item quantity="one">@string/listings_temporarily_suspended_one</item>
+    </plurals>
+    <plurals name="listings_temporarily_suspended_until">
+        <item quantity="other">@string/listings_temporarily_suspended_until_date_other</item>
+        <item quantity="one">@string/listings_temporarily_suspended_until_date_one</item>
+    </plurals>
+    <plurals name="minus_x_guests_capitalized">
+        <item quantity="other">@string/minus_x_guests_capitalized_other</item>
+        <item quantity="one">@string/minus_x_guests_capitalized_one</item>
+        <item quantity="few">@string/minus_x_guests_capitalized_few</item>
+        <item quantity="many">@string/minus_x_guests_capitalized_many</item>
+    </plurals>
+    <plurals name="minus_x_nights">
+        <item quantity="other">@string/minus_x_nights_other</item>
+        <item quantity="one">@string/minus_x_nights_one</item>
+        <item quantity="few">@string/minus_x_nights_few</item>
+        <item quantity="many">@string/minus_x_nights_many</item>
+    </plurals>
+    <plurals name="minutes_left_to_accept_cohosting_invitation">
+        <item quantity="other">@string/cohosting_invitation_page_remaining_minutes_subtitle_for_minutes</item>
+        <item quantity="one">@string/cohosting_invitation_page_remaining_minutes_subtitle_for_one_minute</item>
+    </plurals>
+    <plurals name="ml_edit_text_characters_remaining">
+        <item quantity="other">@string/ml_edit_text_characters_remaining_other</item>
+        <item quantity="one">@string/ml_edit_text_characters_remaining_one</item>
+    </plurals>
+    <plurals name="ml_edit_text_words_remaining">
+        <item quantity="other">@string/ml_edit_text_words_remaining_other</item>
+        <item quantity="one">@string/ml_edit_text_words_remaining_one</item>
+    </plurals>
+    <plurals name="ml_text_edit_words">
+        <item quantity="other">@string/ml_edit_text_words_other</item>
+        <item quantity="one">@string/ml_edit_text_words_one</item>
+    </plurals>
+    <plurals name="ml_x_steps_to_list_title">
+        <item quantity="other">@string/ml_x_steps_remaining_other</item>
+        <item quantity="one">@string/ml_x_steps_remaining_one</item>
+        <item quantity="few">@string/ml_x_steps_remaining_few</item>
+        <item quantity="many">@string/ml_x_steps_remaining_many</item>
+    </plurals>
+    <plurals name="nested_listing_num_other_linked">
+        <item quantity="other">@string/manage_listing_booking_item_nested_listing_num_linked_other</item>
+        <item quantity="one">@string/manage_listing_booking_item_nested_listing_num_linked_one</item>
+        <item quantity="few">@string/manage_listing_booking_item_nested_listing_num_linked_few</item>
+        <item quantity="many">@string/manage_listing_booking_item_nested_listing_num_linked_many</item>
+    </plurals>
+    <plurals name="per_night_price_x_nights">
+        <item quantity="other">@string/per_night_price_nights_other</item>
+        <item quantity="one">@string/per_night_price_nights_one</item>
+        <item quantity="few">@string/per_night_price_nights_few</item>
+        <item quantity="many">@string/per_night_price_nights_many</item>
+    </plurals>
+    <plurals name="photos">
+        <item quantity="other">@string/photos_other</item>
+        <item quantity="one">@string/photos_one</item>
+        <item quantity="few">@string/photos_few</item>
+        <item quantity="many">@string/photos_many</item>
+    </plurals>
+    <plurals name="photos_title_case">
+        <item quantity="other">@string/photos_other_title_case</item>
+        <item quantity="one">@string/photos_one_title_case</item>
+        <item quantity="few">@string/photos_few_title_case</item>
+        <item quantity="many">@string/photos_many_title_case</item>
+    </plurals>
+    <plurals name="places_meetup_rsvps">
+        <item quantity="other">@string/places_meetup_rsvps_many</item>
+        <item quantity="one">@string/places_meetup_rsvps_one</item>
+    </plurals>
+    <plurals name="plus_x_filters">
+        <item quantity="other">@string/plus_x_filters_many</item>
+        <item quantity="one">@string/plus_x_filters_one</item>
+    </plurals>
+    <plurals name="plus_x_guests_capitalized">
+        <item quantity="other">@string/plus_x_guests_capitalized_other</item>
+        <item quantity="one">@string/plus_x_guests_capitalized_one</item>
+        <item quantity="few">@string/plus_x_guests_capitalized_few</item>
+        <item quantity="many">@string/plus_x_guests_capitalized_many</item>
+    </plurals>
+    <plurals name="plus_x_nights">
+        <item quantity="other">@string/plus_x_nights_other</item>
+        <item quantity="one">@string/plus_x_nights_one</item>
+        <item quantity="few">@string/plus_x_nights_few</item>
+        <item quantity="many">@string/plus_x_nights_many</item>
+    </plurals>
+    <plurals name="price_per_night_after_x_guests">
+        <item quantity="other">@string/price_per_night_after_x_guests_other</item>
+        <item quantity="one">@string/price_per_night_after_x_guests_one</item>
+        <item quantity="few">@string/price_per_night_after_x_guests_few</item>
+        <item quantity="many">@string/price_per_night_after_x_guests_many</item>
+    </plurals>
+    <plurals name="price_tips_for_x_dates">
+        <item quantity="other">@string/host_calendar_multi_day_price_tips_title_other</item>
+        <item quantity="one">@string/host_calendar_multi_day_price_tips_title_one</item>
+        <item quantity="few">@string/host_calendar_multi_day_price_tips_title_few</item>
+        <item quantity="many">@string/host_calendar_multi_day_price_tips_title_many</item>
+    </plurals>
+    <plurals name="profile_completion_x_steps_left">
+        <item quantity="other">@string/profile_completion_x_steps_left_other</item>
+        <item quantity="one">@string/profile_completion_x_steps_left_one</item>
+        <item quantity="two">@string/profile_completion_x_steps_left_two</item>
+        <item quantity="few">@string/profile_completion_x_steps_left_few</item>
+        <item quantity="many">@string/profile_completion_x_steps_left_many</item>
+    </plurals>
+    <plurals name="rating_bar_stars_content_description">
+        <item quantity="other">@string/rating_bar_stars_content_descrption_other</item>
+        <item quantity="one">@string/rating_bar_stars_content_descrption_one</item>
+        <item quantity="few">@string/rating_bar_stars_content_descrption_few</item>
+        <item quantity="many">@string/rating_bar_stars_content_descrption_many</item>
+    </plurals>
+    <plurals name="ratings">
+        <item quantity="other">@string/ratings_other</item>
+        <item quantity="one">@string/ratings_one</item>
+        <item quantity="few">@string/ratings_few</item>
+        <item quantity="many">@string/ratings_many</item>
+    </plurals>
+    <plurals name="read_reviews">
+        <item quantity="other">@string/read_reviews_other</item>
+        <item quantity="one">@string/read_reviews_one</item>
+        <item quantity="few">@string/read_reviews_few</item>
+        <item quantity="many">@string/read_reviews_many</item>
+    </plurals>
+    <plurals name="recommendations">
+        <item quantity="other">@string/recommendations_other</item>
+        <item quantity="one">@string/recommendations_one</item>
+        <item quantity="few">@string/recommendations_few</item>
+        <item quantity="many">@string/recommendations_many</item>
+    </plurals>
+    <plurals name="request_count">
+        <item quantity="other">@string/request_count_other</item>
+        <item quantity="one">@string/request_count_one</item>
+        <item quantity="few">@string/request_count_few</item>
+        <item quantity="many">@string/request_count_many</item>
+    </plurals>
+    <plurals name="reservation_count">
+        <item quantity="other">@string/reservation_count_other</item>
+        <item quantity="one">@string/reservation_count_one</item>
+        <item quantity="few">@string/reservation_count_few</item>
+        <item quantity="many">@string/reservation_count_many</item>
+    </plurals>
+    <plurals name="respond_within_x_hrs">
+        <item quantity="other">@string/respond_within_x_hours_other</item>
+        <item quantity="one">@string/respond_within_x_hours_one</item>
+        <item quantity="few">@string/respond_within_x_hours_few</item>
+        <item quantity="many">@string/respond_within_x_hours_many</item>
+    </plurals>
+    <plurals name="respond_within_x_mins">
+        <item quantity="other">@string/respond_within_x_mins_other</item>
+        <item quantity="one">@string/respond_within_x_mins_one</item>
+        <item quantity="few">@string/respond_within_x_mins_few</item>
+        <item quantity="many">@string/respond_within_x_mins_many</item>
+    </plurals>
+    <plurals name="reviews">
+        <item quantity="other">@string/reviews_other</item>
+        <item quantity="one">@string/reviews_one</item>
+        <item quantity="few">@string/reviews_few</item>
+        <item quantity="many">@string/reviews_many</item>
+    </plurals>
+    <plurals name="reviews_for">
+        <item quantity="other">@string/reviews_for_other</item>
+        <item quantity="one">@string/reviews_for_one</item>
+        <item quantity="few">@string/reviews_for_few</item>
+        <item quantity="many">@string/reviews_for_many</item>
+    </plurals>
+    <plurals name="reviews_verified">
+        <item quantity="other">@string/reviews_other_verified</item>
+        <item quantity="one">@string/reviews_one_verified</item>
+        <item quantity="few">@string/reviews_few_verified</item>
+        <item quantity="many">@string/reviews_many_verified</item>
+    </plurals>
+    <plurals name="ro_response_dialog_host_subtitle_for_x_nights">
+        <item quantity="other">@string/ro_response_dialog_host_subtitle_nights_other</item>
+        <item quantity="one">@string/ro_response_dialog_host_subtitle_nights_one</item>
+        <item quantity="few">@string/ro_response_dialog_host_subtitle_nights_few</item>
+        <item quantity="many">@string/ro_response_dialog_host_subtitle_nights_many</item>
+    </plurals>
+    <plurals name="rooms">
+        <item quantity="other">@string/listing_rooms_other</item>
+        <item quantity="one">@string/listing_rooms_one</item>
+        <item quantity="few">@string/listing_rooms_few</item>
+        <item quantity="many">@string/listing_rooms_many</item>
+    </plurals>
+    <plurals name="search_x_limited_listings_title">
+        <item quantity="other">@string/search_limited_listings_title_other</item>
+        <item quantity="one">@string/search_limited_listings_title_one</item>
+    </plurals>
+    <plurals name="search_x_limited_listings_title_no_dates">
+        <item quantity="other">@string/search_limited_listings_title_no_dates_other</item>
+        <item quantity="one">@string/search_limited_listings_title_no_dates_one</item>
+    </plurals>
+    <plurals name="selected">
+        <item quantity="other">@string/selected_other</item>
+        <item quantity="one">@string/selected_one</item>
+        <item quantity="few">@string/selected_few</item>
+        <item quantity="many">@string/selected_many</item>
+    </plurals>
+    <plurals name="share_your_trip_x_nights_in_city">
+        <item quantity="other">@string/share_your_trip_x_nights_in_city_other</item>
+        <item quantity="one">@string/share_your_trip_x_nights_in_city_one</item>
+    </plurals>
+    <plurals name="tooltip_set_price_will_disable_smart_pricing">
+        <item quantity="other">@string/tooltip_set_price_will_disable_smart_pricing_other</item>
+        <item quantity="one">@string/tooltip_set_price_will_disable_smart_pricing_one</item>
+    </plurals>
+    <plurals name="tooltip_turn_smart_pricing_back_on">
+        <item quantity="other">@string/tooltip_turn_smart_pricing_back_on_other</item>
+        <item quantity="one">@string/tooltip_turn_smart_pricing_back_on_one</item>
+    </plurals>
+    <plurals name="trip_coming_up_in_x_days">
+        <item quantity="other">@string/trip_coming_up_in_days_other</item>
+        <item quantity="one">@string/trip_coming_up_in_days_one</item>
+    </plurals>
+    <plurals name="user_has_x_verifications">
+        <item quantity="other">@string/user_has_x_verifications_other</item>
+        <item quantity="one">@string/user_has_x_verifications_one</item>
+        <item quantity="few">@string/user_has_x_verifications_few</item>
+        <item quantity="many">@string/user_has_x_verifications_many</item>
+    </plurals>
+    <plurals name="view_count">
+        <item quantity="other">@string/view_count_other</item>
+        <item quantity="one">@string/view_count_one</item>
+        <item quantity="few">@string/view_count_few</item>
+        <item quantity="many">@string/view_count_many</item>
+    </plurals>
+    <plurals name="view_count_string">
+        <item quantity="other">@string/view_count_string_other</item>
+        <item quantity="one">@string/view_count_string_one</item>
+        <item quantity="few">@string/view_count_string_few</item>
+        <item quantity="many">@string/view_count_string_many</item>
+    </plurals>
+    <plurals name="view_x_business_travel_ready_listings">
+        <item quantity="other">@string/view_x_business_travel_ready_listings_many</item>
+        <item quantity="one">@string/view_x_business_travel_ready_listings_one</item>
+    </plurals>
+    <plurals name="view_x_experiences">
+        <item quantity="other">@string/view_x_experiences_many</item>
+        <item quantity="one">@string/view_x_experiences_one</item>
+    </plurals>
+    <plurals name="view_x_listings">
+        <item quantity="other">@string/view_x_listings_many</item>
+        <item quantity="one">@string/view_x_listings_one</item>
+    </plurals>
+    <plurals name="view_x_places">
+        <item quantity="other">@string/view_x_places_many</item>
+        <item quantity="one">@string/view_x_places_one</item>
+    </plurals>
+    <plurals name="x_adults">
+        <item quantity="other">@string/x_adults_other</item>
+        <item quantity="one">@string/x_adults_one</item>
+        <item quantity="few">@string/x_adults_few</item>
+        <item quantity="many">@string/x_adults_many</item>
+    </plurals>
+    <plurals name="x_air_mattresses">
+        <item quantity="other">@string/bed_type_name_air_mattress_multi</item>
+        <item quantity="one">@string/bed_type_name_air_mattress_1</item>
+    </plurals>
+    <plurals name="x_amenities_selected">
+        <item quantity="other">@string/x_amenities_selected_many</item>
+        <item quantity="one">@string/x_amenities_selected_one</item>
+    </plurals>
+    <plurals name="x_arriving_in_days">
+        <item quantity="other">@string/arriving_in_days_other</item>
+        <item quantity="zero">@string/arriving_in_days_zero</item>
+        <item quantity="one">@string/arriving_in_days_one</item>
+        <item quantity="few">@string/arriving_in_days_few</item>
+        <item quantity="many">@string/arriving_in_days_many</item>
+    </plurals>
+    <plurals name="x_arriving_in_months">
+        <item quantity="other">@string/arriving_in_months_other</item>
+        <item quantity="one">@string/arriving_in_months_one</item>
+        <item quantity="few">@string/arriving_in_months_few</item>
+        <item quantity="many">@string/arriving_in_months_many</item>
+    </plurals>
+    <plurals name="x_arriving_in_weeks">
+        <item quantity="other">@string/arriving_in_weeks_other</item>
+        <item quantity="one">@string/arriving_in_weeks_one</item>
+        <item quantity="few">@string/arriving_in_weeks_few</item>
+        <item quantity="many">@string/arriving_in_weeks_many</item>
+    </plurals>
+    <plurals name="x_bunk_beds">
+        <item quantity="other">@string/bed_type_name_bunk_bed_multi</item>
+        <item quantity="one">@string/bed_type_name_bunk_bed_1</item>
+    </plurals>
+    <plurals name="x_children">
+        <item quantity="other">@string/x_children_other</item>
+        <item quantity="one">@string/x_children_one</item>
+    </plurals>
+    <plurals name="x_children_and_description">
+        <item quantity="other">@string/x_children_and_description_other</item>
+        <item quantity="one">@string/x_children_and_description_one</item>
+        <item quantity="few">@string/x_children_and_description_few</item>
+        <item quantity="many">@string/x_children_and_description_many</item>
+    </plurals>
+    <plurals name="x_connections">
+        <item quantity="other">@string/connections_other</item>
+        <item quantity="one">@string/connections_one</item>
+        <item quantity="few">@string/connections_few</item>
+        <item quantity="many">@string/connections_many</item>
+    </plurals>
+    <plurals name="x_couches">
+        <item quantity="other">@string/bed_type_name_couch_multi</item>
+        <item quantity="one">@string/bed_type_name_couch_1</item>
+    </plurals>
+    <plurals name="x_cribs">
+        <item quantity="other">@string/bed_type_name_crib_multi</item>
+        <item quantity="one">@string/bed_type_name_crib_1</item>
+    </plurals>
+    <plurals name="x_days">
+        <item quantity="other">@string/days_other</item>
+        <item quantity="one">@string/days_one</item>
+        <item quantity="few">@string/days_few</item>
+        <item quantity="many">@string/days_many</item>
+    </plurals>
+    <plurals name="x_days_ago">
+        <item quantity="other">@string/days_ago_other</item>
+        <item quantity="one">@string/days_ago_one</item>
+        <item quantity="few">@string/days_ago_few</item>
+        <item quantity="many">@string/days_ago_many</item>
+    </plurals>
+    <plurals name="x_days_into_the_future">
+        <item quantity="other">@string/multi_days_into_the_future</item>
+        <item quantity="one">@string/one_day_into_the_future</item>
+    </plurals>
+    <plurals name="x_days_notice_request_to_book">
+        <item quantity="other">@string/multi_days_notice_request_to_book</item>
+        <item quantity="one">@string/one_day_notice_request_to_book</item>
+    </plurals>
+    <plurals name="x_days_open">
+        <item quantity="other">@string/x_days_open_other</item>
+        <item quantity="one">@string/x_days_open_one</item>
+        <item quantity="few">@string/x_days_open_few</item>
+        <item quantity="many">@string/x_days_open_many</item>
+    </plurals>
+    <plurals name="x_double_beds">
+        <item quantity="other">@string/bed_type_name_double_multi</item>
+        <item quantity="one">@string/bed_type_name_double_1</item>
+    </plurals>
+    <plurals name="x_experiences_available">
+        <item quantity="other">@string/x_experiences_available_many</item>
+        <item quantity="one">@string/x_experiences_available_one</item>
+    </plurals>
+    <plurals name="x_experiences_capitalized">
+        <item quantity="other">@string/x_experiences_capitalized_many</item>
+        <item quantity="one">@string/x_experiences_capitalized_one</item>
+    </plurals>
+    <plurals name="x_experiences_unavailable">
+        <item quantity="other">@string/x_experiences_unavailable_other</item>
+        <item quantity="one">@string/x_experiences_unavailable_one</item>
+        <item quantity="few">@string/x_experiences_unavailable_few</item>
+        <item quantity="many">@string/x_experiences_unavailable_many</item>
+    </plurals>
+    <plurals name="x_floor_mattresses">
+        <item quantity="other">@string/bed_type_name_floor_mattress_multi</item>
+        <item quantity="one">@string/bed_type_name_floor_mattress_1</item>
+    </plurals>
+    <plurals name="x_guest_profiles">
+        <item quantity="other">@string/guest_profiles_other</item>
+        <item quantity="one">@string/guest_profiles_one</item>
+    </plurals>
+    <plurals name="x_guests">
+        <item quantity="other">@string/x_guests_other</item>
+        <item quantity="one">@string/x_guests_one</item>
+        <item quantity="few">@string/x_guests_few</item>
+        <item quantity="many">@string/x_guests_many</item>
+    </plurals>
+    <plurals name="x_guests_capitalized">
+        <item quantity="other">@string/x_guests_capitalized_other</item>
+        <item quantity="one">@string/x_guests_capitalized_one</item>
+        <item quantity="few">@string/x_guests_capitalized_few</item>
+        <item quantity="many">@string/x_guests_capitalized_many</item>
+    </plurals>
+    <plurals name="x_hammocks">
+        <item quantity="other">@string/bed_type_name_hammock_multi</item>
+        <item quantity="one">@string/bed_type_name_hammock_1</item>
+    </plurals>
+    <plurals name="x_homes">
+        <item quantity="other">@string/x_homes_many</item>
+        <item quantity="one">@string/x_homes_one</item>
+    </plurals>
+    <plurals name="x_homes_available">
+        <item quantity="other">@string/x_available_homes_many</item>
+        <item quantity="one">@string/x_available_homes_one</item>
+    </plurals>
+    <plurals name="x_homes_capitalized">
+        <item quantity="other">@string/x_homes_capitalized_many</item>
+        <item quantity="one">@string/x_homes_capitalized_one</item>
+    </plurals>
+    <plurals name="x_homes_unavailable">
+        <item quantity="other">@string/x_homes_unavailable_other</item>
+        <item quantity="one">@string/x_homes_unavailable_one</item>
+        <item quantity="few">@string/x_homes_unavailable_few</item>
+        <item quantity="many">@string/x_homes_unavailable_many</item>
+    </plurals>
+    <plurals name="x_hours_ago">
+        <item quantity="other">@string/hours_ago_other</item>
+        <item quantity="one">@string/hours_ago_one</item>
+        <item quantity="few">@string/hours_ago_few</item>
+        <item quantity="many">@string/hours_ago_many</item>
+    </plurals>
+    <plurals name="x_hrs">
+        <item quantity="other">@string/hrs_other</item>
+        <item quantity="one">@string/hrs_one</item>
+        <item quantity="few">@string/hrs_few</item>
+        <item quantity="many">@string/hrs_many</item>
+    </plurals>
+    <plurals name="x_immersions_available">
+        <item quantity="other">@string/x_immersions_available_many</item>
+        <item quantity="one">@string/x_immersions_available_one</item>
+    </plurals>
+    <plurals name="x_infants">
+        <item quantity="other">@string/x_infants_other</item>
+        <item quantity="one">@string/x_infants_one</item>
+    </plurals>
+    <plurals name="x_infants_and_description">
+        <item quantity="other">@string/x_infants_and_description_other</item>
+        <item quantity="one">@string/x_infants_and_description_one</item>
+        <item quantity="few">@string/x_infants_and_description_few</item>
+        <item quantity="many">@string/x_infants_and_description_many</item>
+    </plurals>
+    <plurals name="x_king_beds">
+        <item quantity="other">@string/bed_type_name_king_multi</item>
+        <item quantity="one">@string/bed_type_name_king_1</item>
+    </plurals>
+    <plurals name="x_mins">
+        <item quantity="other">@string/mins_other</item>
+        <item quantity="one">@string/mins_one</item>
+        <item quantity="few">@string/mins_few</item>
+        <item quantity="many">@string/mins_many</item>
+    </plurals>
+    <plurals name="x_minutes_ago">
+        <item quantity="other">@string/minutes_ago_other</item>
+        <item quantity="one">@string/minutes_ago_one</item>
+        <item quantity="few">@string/minutes_ago_few</item>
+        <item quantity="many">@string/minutes_ago_many</item>
+    </plurals>
+    <plurals name="x_months">
+        <item quantity="other">@string/months_other</item>
+        <item quantity="one">@string/months_one</item>
+    </plurals>
+    <plurals name="x_months_ago">
+        <item quantity="other">@string/months_ago_other</item>
+        <item quantity="one">@string/months_ago_one</item>
+        <item quantity="few">@string/months_ago_few</item>
+        <item quantity="many">@string/months_ago_many</item>
+    </plurals>
+    <plurals name="x_months_into_the_future">
+        <item quantity="other">@string/multi_months_into_the_future</item>
+        <item quantity="one">@string/one_month_into_the_future</item>
+    </plurals>
+    <plurals name="x_new_alerts">
+        <item quantity="other">@string/x_new_alerts_other</item>
+        <item quantity="one">@string/x_new_alerts_one</item>
+        <item quantity="few">@string/x_new_alerts_few</item>
+        <item quantity="many">@string/x_new_alerts_many</item>
+    </plurals>
+    <plurals name="x_nights">
+        <item quantity="other">@string/nights_other</item>
+        <item quantity="one">@string/nights_one</item>
+        <item quantity="few">@string/nights_few</item>
+        <item quantity="many">@string/nights_many</item>
+    </plurals>
+    <plurals name="x_nights_for_price">
+        <item quantity="other">@string/x_nights_for_price_other</item>
+        <item quantity="one">@string/x_nights_for_price_one</item>
+        <item quantity="few">@string/x_nights_for_price_few</item>
+        <item quantity="many">@string/x_nights_for_price_many</item>
+    </plurals>
+    <plurals name="x_nights_in_city">
+        <item quantity="other">@string/x_nights_in_city_other</item>
+        <item quantity="one">@string/x_nights_in_city_one</item>
+        <item quantity="few">@string/x_nights_in_city_few</item>
+        <item quantity="many">@string/x_nights_in_city_many</item>
+    </plurals>
+    <plurals name="x_nights_min">
+        <item quantity="other">@string/x_min_nights_other</item>
+        <item quantity="one">@string/x_min_nights_one</item>
+        <item quantity="few">@string/x_min_nights_few</item>
+        <item quantity="many">@string/x_min_nights_many</item>
+    </plurals>
+    <plurals name="x_nights_minimum">
+        <item quantity="other">@string/x_minimum_nights_other</item>
+        <item quantity="one">@string/x_minimum_nights_one</item>
+        <item quantity="few">@string/x_minimum_nights_few</item>
+        <item quantity="many">@string/x_minimum_nights_many</item>
+    </plurals>
+    <plurals name="x_nights_minimum_new_check_in">
+        <item quantity="other">@string/x_min_nights_new_check_in_other</item>
+        <item quantity="one">@string/x_min_nights_new_check_in_one</item>
+        <item quantity="few">@string/x_min_nights_new_check_in_few</item>
+        <item quantity="many">@string/x_min_nights_new_check_in_many</item>
+    </plurals>
+    <plurals name="x_nights_total">
+        <item quantity="other">@string/x_nights_total_other</item>
+        <item quantity="one">@string/x_nights_total_one</item>
+        <item quantity="few">@string/x_nights_total_few</item>
+        <item quantity="many">@string/x_nights_total_many</item>
+    </plurals>
+    <plurals name="x_orders">
+        <item quantity="other">@string/purchase_amenities_num_orders_other</item>
+        <item quantity="one">@string/purchase_amenities_num_orders_one</item>
+        <item quantity="few">@string/purchase_amenities_num_orders_few</item>
+        <item quantity="many">@string/purchase_amenities_num_orders_many</item>
+    </plurals>
+    <plurals name="x_other_beds">
+        <item quantity="other">@string/bed_type_name_other_multi</item>
+        <item quantity="one">@string/bed_type_name_other_1</item>
+    </plurals>
+    <plurals name="x_places">
+        <item quantity="other">@string/x_places_many</item>
+        <item quantity="one">@string/x_places_one</item>
+    </plurals>
+    <plurals name="x_places_capitalized">
+        <item quantity="other">@string/x_places_capitalized_many</item>
+        <item quantity="one">@string/x_places_capitalized_one</item>
+    </plurals>
+    <plurals name="x_queen_beds">
+        <item quantity="other">@string/bed_type_name_queen_multi</item>
+        <item quantity="one">@string/bed_type_name_queen_1</item>
+    </plurals>
+    <plurals name="x_recommendations">
+        <item quantity="other">@string/x_recommendations_other</item>
+        <item quantity="one">@string/x_recommendations_one</item>
+        <item quantity="few">@string/x_recommendations_few</item>
+        <item quantity="many">@string/x_recommendations_many</item>
+    </plurals>
+    <plurals name="x_reservations">
+        <item quantity="other">@string/reservations_other</item>
+        <item quantity="one">@string/reservations_one</item>
+        <item quantity="few">@string/reservations_few</item>
+        <item quantity="many">@string/reservations_many</item>
+    </plurals>
+    <plurals name="x_reviews_google">
+        <item quantity="other">@string/x_reviews_google_other</item>
+        <item quantity="one">@string/x_reviews_google_one</item>
+        <item quantity="few">@string/x_reviews_google_few</item>
+        <item quantity="many">@string/x_reviews_google_many</item>
+    </plurals>
+    <plurals name="x_single_beds">
+        <item quantity="other">@string/bed_type_name_single_multi</item>
+        <item quantity="one">@string/bed_type_name_single_1</item>
+    </plurals>
+    <plurals name="x_sofa_beds">
+        <item quantity="other">@string/bed_type_name_sofa_bed_multi</item>
+        <item quantity="one">@string/bed_type_name_sofa_bed_1</item>
+    </plurals>
+    <plurals name="x_steps_left">
+        <item quantity="other">@string/steps_left_other</item>
+        <item quantity="one">@string/steps_left_one</item>
+        <item quantity="few">@string/steps_left_few</item>
+        <item quantity="many">@string/steps_left_many</item>
+    </plurals>
+    <plurals name="x_steps_remaining">
+        <item quantity="other">@string/steps_remaining_other</item>
+        <item quantity="one">@string/steps_remaining_one</item>
+        <item quantity="few">@string/steps_remaining_few</item>
+        <item quantity="many">@string/steps_remaining_many</item>
+    </plurals>
+    <plurals name="x_steps_to_checkin">
+        <item quantity="other">@string/steps_to_check_in_other</item>
+        <item quantity="one">@string/steps_to_check_in_one</item>
+    </plurals>
+    <plurals name="x_stories">
+        <item quantity="other">@string/x_stories_many</item>
+        <item quantity="one">@string/x_stories_one</item>
+    </plurals>
+    <plurals name="x_toddler_beds">
+        <item quantity="other">@string/bed_type_name_toddler_bed_multi</item>
+        <item quantity="one">@string/bed_type_name_toddler_bed_1</item>
+    </plurals>
+    <plurals name="x_travelers">
+        <item quantity="other">@string/x_travelers_other</item>
+        <item quantity="one">@string/x_travelers_one</item>
+        <item quantity="few">@string/x_travelers_few</item>
+        <item quantity="many">@string/x_travelers_many</item>
+    </plurals>
+    <plurals name="x_water_beds">
+        <item quantity="other">@string/bed_type_name_water_bed_multi</item>
+        <item quantity="one">@string/bed_type_name_water_bed_1</item>
+    </plurals>
+    <plurals name="x_ways_attract_bookings">
+        <item quantity="other">@string/action_card_button_title_other</item>
+        <item quantity="one">@string/action_card_button_title_one</item>
+        <item quantity="few">@string/action_card_button_title_few</item>
+        <item quantity="many">@string/action_card_button_title_many</item>
+    </plurals>
+    <plurals name="x_weeks_ago">
+        <item quantity="other">@string/weeks_ago_other</item>
+        <item quantity="one">@string/weeks_ago_one</item>
+        <item quantity="few">@string/weeks_ago_few</item>
+        <item quantity="many">@string/weeks_ago_many</item>
+    </plurals>
+    <plurals name="x_wishlist_friends">
+        <item quantity="other">@string/wishlist_friend_count_other</item>
+        <item quantity="one">@string/wishlist_friend_count_one</item>
+        <item quantity="few">@string/wishlist_friend_count_few</item>
+        <item quantity="many">@string/wishlist_friend_count_many</item>
+    </plurals>
+    <plurals name="x_years_ago">
+        <item quantity="other">@string/years_ago_other</item>
+        <item quantity="one">@string/years_ago_one</item>
+        <item quantity="few">@string/years_ago_few</item>
+        <item quantity="many">@string/years_ago_many</item>
+    </plurals>
+</resources>

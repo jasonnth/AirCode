@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/c_foggy_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_foggy" android:gravity="center" android:id="@+id/txt_prompt" android:paddingLeft="@dimen/lys_title_padding_horizontal" android:paddingTop="30dp" android:paddingRight="@dimen/lys_title_padding_horizontal" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.Text.B"/>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/lys_rooms_beds_max_guests"/>
+                <include layout="@layout/lys_rooms_beds_beds"/>
+                <include layout="@layout/lys_rooms_beds_bedrooms"/>
+                <include layout="@layout/lys_rooms_beds_bathrooms"/>
+                <View android:layout_width="match_parent" android:layout_height="@dimen/sticky_btn_height" android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.airbnb.android.lib.views.StickyButton android:layout_gravity="bottom" android:id="@+id/btn_next" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/next"/>
+</FrameLayout>

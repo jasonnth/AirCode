@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/action" android:layout_alignParentLeft="true" android:layout_toStartOf="@+id/action" style="@style/n2_LargeText"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentRight="true" style="@style/n2_ActionText_CityRegistrationIconActionRow"/>
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/icon" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="@dimen/n2_row_inner_vertical_padding" android:layout_marginRight="@dimen/n2_horizontal_padding_tiny" android:scaleType="centerInside" android:layout_below="@+id/title" android:layout_alignParentLeft="true"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/icon" android:layout_below="@+id/title" android:layout_alignTop="@+id/icon" style="@style/n2_SmallText"/>
+</RelativeLayout>

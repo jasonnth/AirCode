@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/cancellation_scroll_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingTop="?attr/actionBarSize" android:paddingBottom="56dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.components.DocumentMarquee android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_titleText="@string/confirm_cancellation"/>
+            <com.airbnb.p027n2.components.UserDetailsActionRow android:id="@+id/guest_summary" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_showDivider="false"/>
+            <com.airbnb.p027n2.components.MicroSectionHeader android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_titleText="@string/cancellation_payout_breakdown_section_title" style="@style/n2_MicroSectionHeader.Secondary"/>
+            <com.airbnb.p027n2.components.StandardRow android:id="@+id/payout_breakdown_original_payout_row" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_titleText="@string/cancellation_original_payout_row_title"/>
+            <com.airbnb.p027n2.components.StandardRow android:id="@+id/payout_breakdown_fee_row" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_titleText="@string/cancellation_fee_row_title"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+    <com.airbnb.p027n2.components.PrimaryButton android:layout_gravity="bottom" android:id="@+id/submit_button" app:n2_buttonText="@string/cancel_reservation" style="@style/n2_PrimaryButton"/>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_scrollWith="@+id/cancellation_scroll_view" app:n2_navigationIcon="1" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.components.DocumentMarquee android:id="@+id/reservation_details_marquee" style="@style/n2_DocumentMarquee"/>
+            <include android:id="@+id/loading_overlay" layout="@layout/view_holder_loading_row"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/content_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.p027n2.components.MicroRow android:id="@+id/listing_name_micro_row" style="@style/n2_MicroRow"/>
+                <com.airbnb.p027n2.components.UserDetailsActionRow android:id="@+id/listing_details_summary" style="@style/n2_UserDetailsActionRow"/>
+                <com.airbnb.p027n2.components.RangeDisplay android:id="@+id/date_range_display" style="@style/n2_RangeDisplay"/>
+                <com.airbnb.p027n2.components.StandardRow android:id="@+id/nights_standard_row" app:n2_titleText="@string/p4_nights" style="@style/n2_StandardRow"/>
+                <com.airbnb.p027n2.components.StandardRow android:id="@+id/guests_standard_row" app:n2_titleText="@string/guests" style="@style/n2_StandardRow"/>
+                <com.airbnb.p027n2.components.PriceSummary android:id="@+id/price_summary" style="@style/n2_PriceSummary"/>
+                <com.airbnb.p027n2.components.SmallTextRow android:id="@+id/fx_text_row" android:visibility="gone" app:n2_showDivider="false" style="@style/n2_SmallTextRow"/>
+                <com.airbnb.p027n2.components.StandardRow android:id="@+id/fully_refundable_row" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_StandardRow"/>
+                <com.airbnb.p027n2.components.StandardRow android:id="@+id/coupon_standard_row" app:n2_showDivider="false" app:n2_titleText="@string/p4_coupon_code" style="@style/n2_StandardRow"/>
+                <com.airbnb.p027n2.components.MicroSectionHeader app:n2_titleText="@string/p4_steps_left_to_book" style="@style/n2_MicroSectionHeader"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/steps_to_book_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.airbnb.p027n2.components.StandardRow android:id="@+id/government_id_standard_row" android:visibility="gone" app:n2_inputText="@string/p4_add" app:n2_titleText="@string/p4_provide_id_title_numbered" style="@style/n2_StandardRow"/>
+                    <com.airbnb.p027n2.components.StandardRow android:id="@+id/payment_standard_row" app:n2_inputText="@string/p4_add" app:n2_titleText="@string/p4_payment_title_numbered" style="@style/n2_StandardRow"/>
+                    <com.airbnb.p027n2.components.StandardRow android:id="@+id/arrival_details_standard_row" android:visibility="gone" app:n2_inputText="@string/p4_add" app:n2_titleText="@string/p4_arrival_time_title_numbered" style="@style/n2_StandardRow"/>
+                    <com.airbnb.p027n2.components.StandardRow android:id="@+id/host_message_standard_row" android:visibility="gone" app:n2_inputText="@string/p4_add" app:n2_titleText="@string/p4_message_host_title_numbered" style="@style/n2_StandardRow"/>
+                    <com.airbnb.p027n2.components.StandardRow android:id="@+id/house_rules_standard_row" android:visibility="gone" app:n2_inputText="@string/p4_read" app:n2_titleText="@string/p4_house_rules_title_numbered" style="@style/n2_StandardRow"/>
+                    <com.airbnb.p027n2.components.StandardRow android:id="@+id/guest_identifications_standard_row" android:visibility="gone" app:n2_inputText="@string/p4_add" app:n2_titleText="@string/p4_guest_identifications_numbered" style="@style/n2_StandardRow"/>
+                    <com.airbnb.p027n2.components.StandardRow android:id="@+id/phone_number_standard_row" android:visibility="gone" app:n2_inputText="@string/confirm" app:n2_titleText="@string/p4_phone_number_title_numbered" style="@style/n2_StandardRow"/>
+                    <com.airbnb.p027n2.components.StandardRow android:id="@+id/email_address_standard_row" android:visibility="gone" app:n2_inputText="@string/confirm" app:n2_titleText="@string/p4_email_address_title_numbered" style="@style/n2_StandardRow"/>
+                </LinearLayout>
+                <android.support.design.widget.CoordinatorLayout android:id="@+id/p4_terms_and_conditions_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.airbnb.p027n2.components.SmallTextRow android:id="@+id/terms_text_row" app:n2_showDivider="false" app:n2_text="@string/p4_terms_and_conditions" style="@style/n2_SmallTextRow"/>
+                </android.support.design.widget.CoordinatorLayout>
+                <com.airbnb.p027n2.components.PrimaryButton android:id="@+id/confirm_and_pay_primary_button" style="@style/n2_PrimaryButton.InFocusPane"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_scrollWith="@+id/scroll_view" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+</FrameLayout>

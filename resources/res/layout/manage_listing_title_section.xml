@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/listing_title_group" android:background="@drawable/c_clear_to_gray_background_selector" android:paddingLeft="@dimen/gutter_padding" android:paddingTop="20dp" android:paddingRight="@dimen/gutter_padding" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="center_horizontal" android:id="@+id/listing_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.Text.B"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:layout_marginTop="20dp" android:text="@string/ml_edit_title" style="@style/Canonical.Text.RauschEmpty"/>
+        </LinearLayout>
+        <include layout="@layout/gutter_divider"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/listing_summary_group" android:background="@drawable/c_clear_to_gray_background_selector" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.primitives.AirTextView android:text="@string/description" style="@style/TextSectionHeader"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/listing_summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="4" style="@style/Canonical.Text.E"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:layout_marginTop="20dp" android:text="@string/ml_edit_description" style="@style/Canonical.Text.RauschEmpty"/>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

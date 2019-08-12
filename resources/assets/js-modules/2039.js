@@ -1,0 +1,1 @@
+__d(function(t,e,l,n){function u(t){return{ne_lat:t.latitude+t.latitudeDelta/2,sw_lat:t.latitude-t.latitudeDelta/2,ne_lng:t.longitude+t.longitudeDelta/2,sw_lng:t.longitude-t.longitudeDelta/2}}Object.defineProperty(n,"__esModule",{value:!0}),n.default=u},2039);

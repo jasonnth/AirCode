@@ -1,0 +1,1 @@
+__d(function(e,n,i,t){function f(e){return e&&"string"==typeof e&&e.includes(".")?e.slice(e.lastIndexOf(".")+1):""}function g(e){var n=f(e);return"png"===n?"image/png":"gif"===n?"image/gif":"image/jpeg"}Object.defineProperty(t,"__esModule",{value:!0}),t.default=g},2345);

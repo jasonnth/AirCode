@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/ftue_overlay" android:background="@color/c_kazan" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_beach" android:id="@+id/ftue_header_text" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:alpha="0" style="@style/Canonical.Text.B"/>
+    <ImageView android:id="@+id/ftue_image" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/ftue_header_text" android:layout_centerHorizontal="true"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/white" android:gravity="center" android:id="@+id/ftue_text" android:paddingLeft="50dp" android:paddingRight="50dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/ftue_header_text" android:layout_centerHorizontal="true" android:alpha="0" style="@style/Canonical.Text.B"/>
+    <com.airbnb.android.core.views.ColorizedIconView android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" app:drawableId="@drawable/ic_action_close" app:colorStates="@color/white"/>
+</RelativeLayout>

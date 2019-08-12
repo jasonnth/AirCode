@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/image" android:scaleType="centerCrop" app:layout_widthPercent="100%" app:layout_aspectRatio="150%"/>
+    <View android:id="@+id/icon_visibility_gradient" android:background="@drawable/n2_top_right_icon_visibility_gradient" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_alignTop="@+id/image" android:layout_alignBottom="@+id/image"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:layout_alignRight="@+id/image" android:layout_alignBottom="@+id/image">
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/first_tag" android:visibility="gone" style="@style/n2_HomeCardTagText"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/second_tag" android:visibility="gone" android:layout_marginLeft="4dp" style="@style/n2_HomeCardTagText"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/third_tag" android:visibility="gone" android:layout_marginLeft="4dp" style="@style/n2_HomeCardTagText"/>
+    </LinearLayout>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/booking_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:maxLines="1" android:includeFontPadding="false" android:layout_below="@+id/image" android:layout_alignParentLeft="true" style="@style/n2_LargeText.PlusPlus"/>
+    <com.airbnb.p027n2.primitives.imaging.HaloImageView android:id="@+id/host_avatar" android:layout_width="@dimen/n2_home_card_avatar_size" android:layout_height="@dimen/n2_home_card_avatar_size" android:layout_marginTop="6dp" android:layout_below="@+id/booking_details" android:layout_alignParentRight="true"/>
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/host_badge" android:layout_width="wrap_content" android:layout_height="@dimen/n2_home_card_badge_height" android:adjustViewBounds="true" android:layout_alignRight="@+id/host_avatar" android:layout_alignBottom="@+id/host_avatar"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/reviews_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_alignTop="@+id/booking_details" android:layout_alignParentRight="true">
+        <RatingBar android:id="@+id/rating_bar" android:visibility="gone" android:layout_marginRight="4dp" style="@style/n2_StarRatingBar.Babu"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:layout_gravity="center_vertical" android:id="@+id/num_reviews" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/n2_MiniText"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/details_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginRight="32dp" android:layout_toLeftOf="@+id/host_avatar" android:layout_below="@+id/booking_details" android:layout_alignParentLeft="true">
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/n2_hof_dark" android:ellipsize="end" android:gravity="left" android:id="@+id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:maxLines="1" android:includeFontPadding="false" style="@style/n2_SmallText.Plus"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/n2_foggy" android:ellipsize="end" android:gravity="left" android:id="@+id/listing_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" style="@style/n2_MiniText"/>
+    </LinearLayout>
+    <View android:id="@+id/click_overlay" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/image" android:layout_alignBottom="@+id/details_container"/>
+    <com.airbnb.p027n2.primitives.WishListIconView android:id="@+id/wish_list_heart" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/n2_WishListHeart"/>
+</merge>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/vertical_divider" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" style="@style/n2_FullSectionVerticalDivider"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/n2_horizontal_padding_small" android:paddingRight="@dimen/n2_horizontal_padding_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:gravity="left" android:id="@+id/title" android:paddingTop="@dimen/n2_vertical_padding_small" android:paddingBottom="@dimen/n2_vertical_padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" style="@style/n2_SmallText"/>
+            <View android:id="@+id/sub_row_divider" style="@style/n2_FullSectionDivider"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/divider" android:visibility="gone" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginTop="@dimen/n2_vertical_padding_medium" style="@style/n2_FullSectionDivider"/>
+</merge>

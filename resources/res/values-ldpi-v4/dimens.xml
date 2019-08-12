@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="com_appboy_card_background_border_bottom">1.5dp</dimen>
+    <dimen name="com_appboy_card_background_border_left">1.5dp</dimen>
+    <dimen name="com_appboy_card_background_border_right">1.5dp</dimen>
+    <dimen name="com_appboy_card_background_border_top">1dp</dimen>
+    <dimen name="com_appboy_card_background_shadow_bottom">1dp</dimen>
+    <dimen name="ftue_dots_counter_margin_bottom">15dp</dimen>
+    <dimen name="ftue_title_margin_bottom">8dp</dimen>
+    <dimen name="ftue_view_pager_padding_bottom">20dp</dimen>
+</resources>

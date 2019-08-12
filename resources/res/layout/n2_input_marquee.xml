@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <FrameLayout android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="?attr/actionBarSize" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:paddingBottom="@dimen/n2_vertical_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/n2_input_marquee_min_height">
+        <include android:layout_width="0dp" android:layout_height="0dp" android:layout_marginTop="1dp" layout="@layout/n2_toolbar_pusher"/>
+        <com.airbnb.p027n2.primitives.AirEditTextView android:textColor="@drawable/n2_text_color_actionable_invertable" android:textColorHint="@drawable/n2_input_marquee_hint_text_color" android:id="@+id/edit_text" android:background="@null" android:paddingTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" android:selectAllOnFocus="true" android:freezesText="true" android:inputType="textCapWords" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/n2_babu_cursor_drawable" style="@style/n2_TitleText3.PlusPlus"/>
+    </FrameLayout>
+</merge>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/gutter_padding" android:paddingTop="16dp" android:paddingRight="@dimen/gutter_padding" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:textSize="21sp" android:textColor="@color/c_hof" android:id="@+id/pick_wish_list_title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/choose_a_list" android:layout_weight="1" style="@style/n2_TitleText3"/>
+        <com.airbnb.android.core.views.ColorizedIconView android:id="@+id/btn_create_wishlist" android:background="?attr/selectableItemBackgroundBorderless" android:padding="8dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="@dimen/gutter_padding" android:layout_marginRight="6dp" android:scaleType="fitCenter" app:drawableId="@drawable/icon_plus" app:colorStates="@color/n2_babu"/>
+    </LinearLayout>
+    <com.airbnb.p027n2.collections.Carousel android:id="@+id/pick_wish_list_recycler_view" style="@style/n2_Carousel"/>
+</LinearLayout>

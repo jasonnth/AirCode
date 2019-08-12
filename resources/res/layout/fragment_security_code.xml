@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.jellyfish.JellyfishView android:id="@+id/jellyfish_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ScrollView style="@style/n2_FocusPane">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.components.SheetMarquee android:id="@+id/security_code_marquee" style="@style/n2_SheetMarquee"/>
+            <com.airbnb.p027n2.components.SheetInputText android:id="@+id/security_code_sheetInput" android:inputType="number" android:imeOptions="actionNext" app:n2_hintText="@string/p4_security_code_field" style="@style/n2_SheetInputText"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.airbnb.p027n2.primitives.AirButton android:enabled="false" android:id="@+id/next_button" style="@style/n2_AirButton.WhiteFill.RightCaret"/>
+</FrameLayout>

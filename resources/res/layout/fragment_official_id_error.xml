@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:text="@string/verified_id_offline_unable_to_verify" style="@style/Canonical.Text.B"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:id="@+id/unable_to_verify_details_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" style="@style/Canonical.Text.E"/>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/try_again_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/verified_id_button_margin" android:layout_marginTop="20dp" android:layout_marginRight="@dimen/verified_id_button_margin" android:text="@string/verified_id_offline_try_again" style="@style/Canonical.Button.Raised"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.DocumentMarquee android:layout_gravity="bottom" android:id="@+id/document_marquee" android:background="@color/white" android:paddingBottom="@dimen/lottie_nux_view_pager_bottom_bar_height" android:layout_width="match_parent" app:layout_heightPercent="@dimen/lottie_nux_view_pager_text_height"/>
+</android.support.percent.PercentFrameLayout>

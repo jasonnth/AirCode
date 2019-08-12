@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:padding="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.p027n2.primitives.AirTextView android:textSize="23sp" android:textColor="@color/c_hof_dark" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/demand_based_pricing_finish_title" app:n2_font="3"/>
+                <com.airbnb.lottie.LottieAnimationView android:id="@+id/dbp_finish_video_layout" android:layout_width="150dp" android:layout_height="150dp" android:layout_marginTop="64dp"/>
+            </LinearLayout>
+            <com.airbnb.android.core.views.ColorizedIconView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/btn_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/search_landing_gutter_margin" app:drawableId="@drawable/ic_action_close" app:colorStates="@color/c_babu"/>
+        </FrameLayout>
+        <com.airbnb.p027n2.primitives.AirTextView android:layout_gravity="bottom" android:id="@+id/view_calendar_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gutter_padding" android:layout_marginRight="@dimen/gutter_padding" android:layout_marginBottom="@dimen/dbp_finish_screen_margin" android:text="@string/demand_based_pricing_view_calendar" style="@style/Canonical.Button.Babu"/>
+    </LinearLayout>
+</ScrollView>

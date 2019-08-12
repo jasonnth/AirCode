@@ -1,0 +1,672 @@
+{
+  "deeplinks": [
+    {
+      "uri": "airbnb://d/Airlock/AOVEmailCodeInput",
+      "moduleName": "Airlock/AOVEmailCodeInput"
+    },
+    {
+      "uri": "airbnb://d/Airlock/AOVEmailSelection",
+      "moduleName": "Airlock/AOVEmailSelection"
+    },
+    {
+      "uri": "airbnb://d/Airlock/AOVFailureScreenTest",
+      "moduleName": "Airlock/AOVFailureScreenTest"
+    },
+    {
+      "uri": "airbnb://d/Airlock/AOVFrictionFailure",
+      "moduleName": "Airlock/AOVFrictionFailure"
+    },
+    {
+      "uri": "airbnb://d/Airlock/AOVKBA",
+      "moduleName": "Airlock/AOVKBA"
+    },
+    {
+      "uri": "airbnb://d/Airlock/AOVMethodSelection",
+      "moduleName": "Airlock/AOVMethodSelection"
+    },
+    {
+      "uri": "airbnb://d/Airlock/AOVPhoneCodeInput",
+      "moduleName": "Airlock/AOVPhoneCodeInput"
+    },
+    {
+      "uri": "airbnb://d/Airlock/AOVPhoneNumberSelection",
+      "moduleName": "Airlock/AOVPhoneNumberSelection"
+    },
+    {
+      "uri": "airbnb://d/Airlock/AOV_KBA_RETRY",
+      "moduleName": "Airlock/AOV_KBA_RETRY"
+    },
+    {
+      "uri": "airbnb://d/Airlock/ChargebackAppeal",
+      "moduleName": "Airlock/ChargebackAppeal"
+    },
+    {
+      "uri": "airbnb://d/Airlock/FileUploadSuccess",
+      "moduleName": "Airlock/FileUploadSuccess"
+    },
+    {
+      "uri": "airbnb://d/Airlock/FrictionManager",
+      "moduleName": "Airlock/FrictionManager"
+    },
+    {
+      "uri": "airbnb://d/Airlock/FrictionSuccess",
+      "moduleName": "Airlock/FrictionSuccess"
+    },
+    {
+      "uri": "airbnb://d/Airlock/MicroAuthorization",
+      "moduleName": "Airlock/MicroAuthorization"
+    },
+    {
+      "uri": "airbnb://d/Airlock/MicroAuthorizationAmountsInput",
+      "moduleName": "Airlock/MicroAuthorizationAmountsInput"
+    },
+    {
+      "uri": "airbnb://d/Airlock/MicroAuthorizationExplanation",
+      "moduleName": "Airlock/MicroAuthorizationExplanation"
+    },
+    {
+      "uri": "airbnb://d/Airlock/MicroAuthorizationFailure",
+      "moduleName": "Airlock/MicroAuthorizationFailure"
+    },
+    {
+      "uri": "airbnb://d/Airlock/MicroAuthorizationSendChargesFailed",
+      "moduleName": "Airlock/MicroAuthorizationSendChargesFailed"
+    },
+    {
+      "uri": "airbnb://d/Airlock/MicroAuthorizationSuccess",
+      "moduleName": "Airlock/MicroAuthorizationSuccess"
+    },
+    {
+      "uri": "airbnb://d/Airlock/UploadCardStatementScreen",
+      "moduleName": "Airlock/UploadCardStatementScreen"
+    },
+    {
+      "uri": "airbnb://d/Alterations/CreateAlteration",
+      "moduleName": "Alterations/CreateAlteration"
+    },
+    {
+      "uri": "airbnb://d/Alterations/PriceBreakdownScreen",
+      "moduleName": "Alterations/PriceBreakdownScreen"
+    },
+    {
+      "uri": "airbnb://d/Alterations/PriceDifferenceScreen",
+      "moduleName": "Alterations/PriceDifferenceScreen"
+    },
+    {
+      "uri": "airbnb://d/Alterations/RequestSuccessScreen",
+      "moduleName": "Alterations/RequestSuccessScreen"
+    },
+    {
+      "uri": "airbnb://d/Alterations/ResponseConfirmationScreen",
+      "moduleName": "Alterations/ResponseConfirmationScreen"
+    },
+    {
+      "uri": "airbnb://d/Alterations/ViewAlteration",
+      "moduleName": "Alterations/ViewAlteration"
+    },
+    {
+      "uri": "airbnb://d/Articles",
+      "moduleName": "Articles"
+    },
+    {
+      "uri": "airbnb://d/CityHostsGuest",
+      "moduleName": "CityHostsGuest"
+    },
+    {
+      "uri": "airbnb://d/CityHostsGuest/booking/additional_travelers",
+      "moduleName": "CityHostsGuest/booking/additional_travelers"
+    },
+    {
+      "uri": "airbnb://d/CityHostsGuest/booking/booking_confirmed",
+      "moduleName": "CityHostsGuest/booking/booking_confirmed"
+    },
+    {
+      "uri": "airbnb://d/CityHostsGuest/booking/cuba_attestation_flow",
+      "moduleName": "CityHostsGuest/booking/cuba_attestation_flow"
+    },
+    {
+      "uri": "airbnb://d/CityHostsGuest/booking/cuba_guest_address",
+      "moduleName": "CityHostsGuest/booking/cuba_guest_address"
+    },
+    {
+      "uri": "airbnb://d/CityHostsGuest/booking/date_picker_calendar",
+      "moduleName": "CityHostsGuest/booking/date_picker_calendar"
+    },
+    {
+      "uri": "airbnb://d/CityHostsGuest/booking/date_picker_plain",
+      "moduleName": "CityHostsGuest/booking/date_picker_plain"
+    },
+    {
+      "uri": "airbnb://d/CityHostsGuest/booking/group_size_info",
+      "moduleName": "CityHostsGuest/booking/group_size_info"
+    },
+    {
+      "uri": "airbnb://d/CityHostsGuest/booking/price_breakdown",
+      "moduleName": "CityHostsGuest/booking/price_breakdown"
+    },
+    {
+      "uri": "airbnb://d/CityHostsGuest/booking/simple_web_view",
+      "moduleName": "CityHostsGuest/booking/simple_web_view"
+    },
+    {
+      "uri": "airbnb://d/CityHostsGuest/booking/social_impact_program",
+      "moduleName": "CityHostsGuest/booking/social_impact_program"
+    },
+    {
+      "uri": "airbnb://d/CityHostsGuest/booking/travel_requirements",
+      "moduleName": "CityHostsGuest/booking/travel_requirements"
+    },
+    {
+      "uri": "airbnb://d/CityHostsGuest/booking/waitlist_dates",
+      "moduleName": "CityHostsGuest/booking/waitlist_dates"
+    },
+    {
+      "uri": "airbnb://d/CityHostsGuest/contact_host",
+      "moduleName": "CityHostsGuest/contact_host"
+    },
+    {
+      "uri": "airbnb://d/CityHostsGuest/contact_host_sheet",
+      "moduleName": "CityHostsGuest/contact_host_sheet"
+    },
+    {
+      "uri": "airbnb://d/CityHostsGuest/explore",
+      "moduleName": "CityHostsGuest/explore"
+    },
+    {
+      "uri": "airbnb://d/CityHostsGuest/new_user_experience",
+      "moduleName": "CityHostsGuest/new_user_experience"
+    },
+    {
+      "uri": "airbnb://d/CityHostsGuest/single_experience_template",
+      "moduleName": "CityHostsGuest/single_experience_template"
+    },
+    {
+      "uri": "airbnb://d/CityHostsGuest/template",
+      "moduleName": "CityHostsGuest/template"
+    },
+    {
+      "uri": "airbnb://d/CityHostsGuest/template/experience",
+      "moduleName": "CityHostsGuest/template/experience"
+    },
+    {
+      "uri": "airbnb://d/CityHostsGuest/template/experience/review_photo",
+      "moduleName": "CityHostsGuest/template/experience/review_photo"
+    },
+    {
+      "uri": "airbnb://d/CityHostsGuest/template/reviews",
+      "moduleName": "CityHostsGuest/template/reviews"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Availability",
+      "moduleName": "CityHostsManager/Availability"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Availability/AddTripInstanceConfirmation",
+      "moduleName": "CityHostsManager/Availability/AddTripInstanceConfirmation"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Availability/AddTripInstancePickDate",
+      "moduleName": "CityHostsManager/Availability/AddTripInstancePickDate"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Availability/AddTripInstancePickTripTemplate",
+      "moduleName": "CityHostsManager/Availability/AddTripInstancePickTripTemplate"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Availability/EditExperienceInstanceLocation",
+      "moduleName": "CityHostsManager/Availability/EditExperienceInstanceLocation"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Availability/EditExperienceInstanceLocationAddress",
+      "moduleName": "CityHostsManager/Availability/EditExperienceInstanceLocationAddress"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Availability/EditExperienceInstanceLocationConfirmation",
+      "moduleName": "CityHostsManager/Availability/EditExperienceInstanceLocationConfirmation"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Availability/EditExperienceInstanceLocationDirections",
+      "moduleName": "CityHostsManager/Availability/EditExperienceInstanceLocationDirections"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Availability/EditExperienceInstanceLocationMap",
+      "moduleName": "CityHostsManager/Availability/EditExperienceInstanceLocationMap"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Availability/EditExperienceInstanceTime",
+      "moduleName": "CityHostsManager/Availability/EditExperienceInstanceTime"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Availability/EditExperienceInstanceTimeConfirmation",
+      "moduleName": "CityHostsManager/Availability/EditExperienceInstanceTimeConfirmation"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Availability/RemoveTripInstanceConfirmation",
+      "moduleName": "CityHostsManager/Availability/RemoveTripInstanceConfirmation"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Availability/RemoveTripInstanceContactAirbnb",
+      "moduleName": "CityHostsManager/Availability/RemoveTripInstanceContactAirbnb"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Availability/ViewExperienceInstance",
+      "moduleName": "CityHostsManager/Availability/ViewExperienceInstance"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Availability/ViewGuestProfile",
+      "moduleName": "CityHostsManager/Availability/ViewGuestProfile"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Availability/ViewTripInstancePayouts",
+      "moduleName": "CityHostsManager/Availability/ViewTripInstancePayouts"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Experiences",
+      "moduleName": "CityHostsManager/Experiences"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Feedback/ConfirmGuestAttendance",
+      "moduleName": "CityHostsManager/Feedback/ConfirmGuestAttendance"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Feedback/NoAttendeesConfirmationScreen",
+      "moduleName": "CityHostsManager/Feedback/NoAttendeesConfirmationScreen"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Feedback/ReportSeriousIssueConfirmationScreen",
+      "moduleName": "CityHostsManager/Feedback/ReportSeriousIssueConfirmationScreen"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Feedback/ReviewGuestAddDetails",
+      "moduleName": "CityHostsManager/Feedback/ReviewGuestAddDetails"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Feedback/ReviewGuestConfirmation",
+      "moduleName": "CityHostsManager/Feedback/ReviewGuestConfirmation"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Feedback/ReviewGuestPickReasons",
+      "moduleName": "CityHostsManager/Feedback/ReviewGuestPickReasons"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Feedback/ReviewGuestsList",
+      "moduleName": "CityHostsManager/Feedback/ReviewGuestsList"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Stats",
+      "moduleName": "CityHostsManager/Stats"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Stats/ViewPayoutsList",
+      "moduleName": "CityHostsManager/Stats/ViewPayoutsList"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Stats/ViewReviewStats",
+      "moduleName": "CityHostsManager/Stats/ViewReviewStats"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/Stats/ViewReviewsList",
+      "moduleName": "CityHostsManager/Stats/ViewReviewsList"
+    },
+    {
+      "uri": "airbnb://d/CityHostsManager/view_trip_instance",
+      "moduleName": "CityHostsManager/view_trip_instance"
+    },
+    {
+      "uri": "airbnb://d/ContactFlow",
+      "moduleName": "ContactFlow"
+    },
+    {
+      "uri": "airbnb://d/EmailFlowIssueSelector",
+      "moduleName": "EmailFlowIssueSelector"
+    },
+    {
+      "uri": "airbnb://d/EmailFlowTripSelector",
+      "moduleName": "EmailFlowTripSelector"
+    },
+    {
+      "uri": "airbnb://d/EmergencyCall",
+      "moduleName": "EmergencyCall"
+    },
+    {
+      "uri": "airbnb://d/FlagContent",
+      "moduleName": "FlagContent"
+    },
+    {
+      "uri": "airbnb://d/FlagContent/FlagContentInfo",
+      "moduleName": "FlagContent/FlagContentInfo"
+    },
+    {
+      "uri": "airbnb://d/FlagContent/FlagContentTextInput",
+      "moduleName": "FlagContent/FlagContentTextInput"
+    },
+    {
+      "uri": "airbnb://d/GiftCards",
+      "moduleName": "GiftCards"
+    },
+    {
+      "uri": "airbnb://d/GiftCards/addName",
+      "moduleName": "GiftCards/addName"
+    },
+    {
+      "uri": "airbnb://d/GiftCards/chooseCard",
+      "moduleName": "GiftCards/chooseCard"
+    },
+    {
+      "uri": "airbnb://d/GiftCards/customize",
+      "moduleName": "GiftCards/customize"
+    },
+    {
+      "uri": "airbnb://d/GiftCards/details",
+      "moduleName": "GiftCards/details"
+    },
+    {
+      "uri": "airbnb://d/GiftCards/redeemDetails",
+      "moduleName": "GiftCards/redeemDetails"
+    },
+    {
+      "uri": "airbnb://d/GiftCards/redeemRoot",
+      "moduleName": "GiftCards/redeemRoot"
+    },
+    {
+      "uri": "airbnb://d/GiftCards/redeemVideo",
+      "moduleName": "GiftCards/redeemVideo"
+    },
+    {
+      "uri": "airbnb://d/GiftCards/sent",
+      "moduleName": "GiftCards/sent"
+    },
+    {
+      "uri": "airbnb://d/GiftCards/theme",
+      "moduleName": "GiftCards/theme"
+    },
+    {
+      "uri": "airbnb://d/Guidebook/DateTimePicker",
+      "moduleName": "Guidebook/DateTimePicker"
+    },
+    {
+      "uri": "airbnb://d/Guidebook/Feedback",
+      "moduleName": "Guidebook/Feedback"
+    },
+    {
+      "uri": "airbnb://d/Guidebook/HomeHostMap",
+      "moduleName": "Guidebook/HomeHostMap"
+    },
+    {
+      "uri": "airbnb://d/Guidebook/InsiderMap",
+      "moduleName": "Guidebook/InsiderMap"
+    },
+    {
+      "uri": "airbnb://d/Guidebook/PhotoCarousel",
+      "moduleName": "Guidebook/PhotoCarousel"
+    },
+    {
+      "uri": "airbnb://d/Guidebook/city",
+      "moduleName": "Guidebook/city"
+    },
+    {
+      "uri": "airbnb://d/Guidebook/detour",
+      "moduleName": "Guidebook/detour"
+    },
+    {
+      "uri": "airbnb://d/Guidebook/hours",
+      "moduleName": "Guidebook/hours"
+    },
+    {
+      "uri": "airbnb://d/Guidebook/insider",
+      "moduleName": "Guidebook/insider"
+    },
+    {
+      "uri": "airbnb://d/Guidebook/map",
+      "moduleName": "Guidebook/map"
+    },
+    {
+      "uri": "airbnb://d/Guidebook/meetupCollection",
+      "moduleName": "Guidebook/meetupCollection"
+    },
+    {
+      "uri": "airbnb://d/Guidebook/place",
+      "moduleName": "Guidebook/place"
+    },
+    {
+      "uri": "airbnb://d/Guidebook/placeMapDetail",
+      "moduleName": "Guidebook/placeMapDetail"
+    },
+    {
+      "uri": "airbnb://d/Guidebook/recommendations",
+      "moduleName": "Guidebook/recommendations"
+    },
+    {
+      "uri": "airbnb://d/Guidebook/subcategory",
+      "moduleName": "Guidebook/subcategory"
+    },
+    {
+      "uri": "airbnb://d/GuidebookApp",
+      "moduleName": "GuidebookApp"
+    },
+    {
+      "uri": "airbnb://d/HelpCenter",
+      "moduleName": "HelpCenter"
+    },
+    {
+      "uri": "airbnb://d/Hero",
+      "moduleName": "Hero"
+    },
+    {
+      "uri": "airbnb://d/HostStats/Earnings/AllListings",
+      "moduleName": "HostStats/Earnings/AllListings"
+    },
+    {
+      "uri": "airbnb://d/HostStats/SimpleWebView",
+      "moduleName": "HostStats/SimpleWebView"
+    },
+    {
+      "uri": "airbnb://d/HostStats/Superhost/Progress",
+      "moduleName": "HostStats/Superhost/Progress"
+    },
+    {
+      "uri": "airbnb://d/HostStats/Transactions",
+      "moduleName": "HostStats/Transactions"
+    },
+    {
+      "uri": "airbnb://d/HouseRulesAndExpectations/EditExpectationDetails",
+      "moduleName": "HouseRulesAndExpectations/EditExpectationDetails"
+    },
+    {
+      "uri": "airbnb://d/HouseRulesAndExpectations/EditExpectationsScreen",
+      "moduleName": "HouseRulesAndExpectations/EditExpectationsScreen"
+    },
+    {
+      "uri": "airbnb://d/Itinerary",
+      "moduleName": "Itinerary"
+    },
+    {
+      "uri": "airbnb://d/Itinerary/CancellationPolicySheet",
+      "moduleName": "Itinerary/CancellationPolicySheet"
+    },
+    {
+      "uri": "airbnb://d/Itinerary/HomeReservationReceiptSheet",
+      "moduleName": "Itinerary/HomeReservationReceiptSheet"
+    },
+    {
+      "uri": "airbnb://d/Itinerary/ItineraryCardScreen",
+      "moduleName": "Itinerary/ItineraryCardScreen"
+    },
+    {
+      "uri": "airbnb://d/Itinerary/ItineraryPendingScreen",
+      "moduleName": "Itinerary/ItineraryPendingScreen"
+    },
+    {
+      "uri": "airbnb://d/Itinerary/ItineraryTimelineScreen",
+      "moduleName": "Itinerary/ItineraryTimelineScreen"
+    },
+    {
+      "uri": "airbnb://d/Itinerary/SimpleSheet",
+      "moduleName": "Itinerary/SimpleSheet"
+    },
+    {
+      "uri": "airbnb://d/ListingSelfCheckinSettings/chooseType",
+      "moduleName": "ListingSelfCheckinSettings/chooseType"
+    },
+    {
+      "uri": "airbnb://d/ListingSelfCheckinSettings/editInstructions",
+      "moduleName": "ListingSelfCheckinSettings/editInstructions"
+    },
+    {
+      "uri": "airbnb://d/Listings",
+      "moduleName": "Listings"
+    },
+    {
+      "uri": "airbnb://d/Messaging/Inbox",
+      "moduleName": "Messaging/Inbox"
+    },
+    {
+      "uri": "airbnb://d/Messaging/Thread",
+      "moduleName": "Messaging/Thread"
+    },
+    {
+      "uri": "airbnb://d/PostExpCheckin",
+      "moduleName": "PostExpCheckin"
+    },
+    {
+      "uri": "airbnb://d/RNAppsMenu",
+      "moduleName": "RNAppsMenu"
+    },
+    {
+      "uri": "airbnb://d/Reviews",
+      "moduleName": "Reviews"
+    },
+    {
+      "uri": "airbnb://d/Reviews/CategoryFeedbackScreen",
+      "moduleName": "Reviews/CategoryFeedbackScreen"
+    },
+    {
+      "uri": "airbnb://d/Reviews/ListingAttributesScreen",
+      "moduleName": "Reviews/ListingAttributesScreen"
+    },
+    {
+      "uri": "airbnb://d/Reviews/PrivateFeedbackScreen",
+      "moduleName": "Reviews/PrivateFeedbackScreen"
+    },
+    {
+      "uri": "airbnb://d/Reviews/PublicFeedbackScreen",
+      "moduleName": "Reviews/PublicFeedbackScreen"
+    },
+    {
+      "uri": "airbnb://d/Reviews/ThankYouScreen",
+      "moduleName": "Reviews/ThankYouScreen"
+    },
+    {
+      "uri": "airbnb://d/Reviews/TripAccessScreen",
+      "moduleName": "Reviews/TripAccessScreen"
+    },
+    {
+      "uri": "airbnb://d/Reviews/TripCategoryFeedbackScreen",
+      "moduleName": "Reviews/TripCategoryFeedbackScreen"
+    },
+    {
+      "uri": "airbnb://d/Reviews/TripExpectationsScreen",
+      "moduleName": "Reviews/TripExpectationsScreen"
+    },
+    {
+      "uri": "airbnb://d/Reviews/TripParticipationScreen",
+      "moduleName": "Reviews/TripParticipationScreen"
+    },
+    {
+      "uri": "airbnb://d/Reviews/TripPrivateFeedbackForAirbnbScreen",
+      "moduleName": "Reviews/TripPrivateFeedbackForAirbnbScreen"
+    },
+    {
+      "uri": "airbnb://d/Reviews/TripPrivateFeedbackScreen",
+      "moduleName": "Reviews/TripPrivateFeedbackScreen"
+    },
+    {
+      "uri": "airbnb://d/Reviews/TripPublicFeedbackScreen",
+      "moduleName": "Reviews/TripPublicFeedbackScreen"
+    },
+    {
+      "uri": "airbnb://d/Reviews/TripThankYouScreen",
+      "moduleName": "Reviews/TripThankYouScreen"
+    },
+    {
+      "uri": "airbnb://d/Search",
+      "moduleName": "Search"
+    },
+    {
+      "uri": "airbnb://d/Stories/search",
+      "moduleName": "Stories/search"
+    },
+    {
+      "uri": "airbnb://d/SupportChat",
+      "moduleName": "SupportChat"
+    },
+    {
+      "uri": "airbnb://d/SupportChat/FULLSCREEN_IMAGE_SCREEN",
+      "moduleName": "SupportChat/FULLSCREEN_IMAGE_SCREEN"
+    },
+    {
+      "uri": "airbnb://d/SupportChat/NewThreadScreen",
+      "moduleName": "SupportChat/NewThreadScreen"
+    },
+    {
+      "uri": "airbnb://d/SupportChat/ThreadScreen",
+      "moduleName": "SupportChat/ThreadScreen"
+    },
+    {
+      "uri": "airbnb://d/TripCards",
+      "moduleName": "TripCards"
+    },
+    {
+      "uri": "airbnb://d/TripHelp",
+      "moduleName": "TripHelp"
+    },
+    {
+      "uri": "airbnb://d/TripSupport",
+      "moduleName": "TripSupport"
+    },
+    {
+      "uri": "airbnb://d/Verifications",
+      "moduleName": "Verifications"
+    },
+    {
+      "uri": "airbnb://d/Verifications/GovernmentIDCountry",
+      "moduleName": "Verifications/GovernmentIDCountry"
+    },
+    {
+      "uri": "airbnb://d/Verifications/GovernmentIDCountryLight",
+      "moduleName": "Verifications/GovernmentIDCountryLight"
+    },
+    {
+      "uri": "airbnb://d/Verifications/GovernmentIDType",
+      "moduleName": "Verifications/GovernmentIDType"
+    },
+    {
+      "uri": "airbnb://d/Verifications/GovernmentIDTypeLight",
+      "moduleName": "Verifications/GovernmentIDTypeLight"
+    },
+    {
+      "uri": "airbnb://d/Verifications/GovernmentIDTypeNotSupported",
+      "moduleName": "Verifications/GovernmentIDTypeNotSupported"
+    },
+    {
+      "uri": "airbnb://d/Verifications/GovernmentIDTypeV2",
+      "moduleName": "Verifications/GovernmentIDTypeV2"
+    },
+    {
+      "uri": "airbnb://d/Verifications/IdReview",
+      "moduleName": "Verifications/IdReview"
+    },
+    {
+      "uri": "airbnb://d/Verifications/IdentityIntro",
+      "moduleName": "Verifications/IdentityIntro"
+    },
+    {
+      "uri": "airbnb://d/Verifications/Info",
+      "moduleName": "Verifications/Info"
+    },
+    {
+      "uri": "airbnb://d/Verifications/SelfieReview",
+      "moduleName": "Verifications/SelfieReview"
+    }
+  ]
+}

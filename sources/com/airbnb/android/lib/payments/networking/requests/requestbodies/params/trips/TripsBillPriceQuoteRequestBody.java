@@ -1,0 +1,30 @@
+package com.airbnb.android.lib.payments.networking.requests.requestbodies.params.trips;
+
+import com.airbnb.android.lib.payments.networking.requests.requestbodies.BillPriceQuoteRequestBodyV2;
+import com.airbnb.android.lib.payments.networking.requests.requestbodies.params.PaymentParam;
+import com.airbnb.android.lib.payments.networking.requests.requestbodies.params.ProductParam;
+import java.util.List;
+
+public abstract class TripsBillPriceQuoteRequestBody extends BillPriceQuoteRequestBodyV2 {
+
+    public static abstract class Builder {
+        /* access modifiers changed from: 0000 */
+        public abstract TripsBillPriceQuoteRequestBody autoBuild();
+
+        public abstract Builder paymentParams(PaymentParam paymentParam);
+
+        public abstract Builder products(List<ProductParam> list);
+
+        /* access modifiers changed from: 0000 */
+        public abstract Builder version(int i);
+
+        public TripsBillPriceQuoteRequestBody build() {
+            version(2);
+            return autoBuild();
+        }
+    }
+
+    public static Builder builder() {
+        return new Builder();
+    }
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/title_text" style="@style/n2_SheetFormattedIntegerInputTextTitle"/>
+    <com.airbnb.p027n2.components.IntegerFormatInputView android:id="@+id/input" android:saveEnabled="false" style="@style/n2_SheetFormattedIntegerInputText"/>
+</merge>

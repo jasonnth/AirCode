@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="button_background">@android:color/transparent</drawable>
+    <drawable name="button_wrapper_background">@drawable/background_right</drawable>
+    <drawable name="root_background">@android:color/transparent</drawable>
+    <drawable name="undo_bar_message_background">@drawable/background_left</drawable>
+</resources>

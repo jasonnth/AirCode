@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/sticky_btn_height" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.components.EntryMarquee android:id="@+id/marquee" app:n2_showDivider="false" style="@style/n2_EntryMarquee.NoTopPadding"/>
+            <com.airbnb.p027n2.components.UserDetailsActionRow android:id="@+id/listing_host_row" style="@style/n2_UserDetailsActionRow"/>
+            <com.airbnb.p027n2.components.StandardRow android:id="@+id/public_feedback" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_inputText="@string/edit_guests_menu_title" app:n2_maxLines="10" app:n2_showDivider="false"/>
+            <com.airbnb.p027n2.components.StandardRow android:id="@+id/private_feedback" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_inputText="@string/edit_guests_menu_title" app:n2_maxLines="10" app:n2_showDivider="false"/>
+            <com.airbnb.p027n2.components.StandardRow android:id="@+id/overall_rating" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_showDivider="false" app:n2_titleText="@string/review_overall_rating"/>
+            <com.airbnb.p027n2.components.StandardRow android:id="@+id/recommend_title" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_showDivider="false" app:n2_titleText="@string/review_recommended"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.airbnb.p027n2.components.PrimaryButton android:layout_gravity="bottom" android:id="@+id/submit" app:n2_buttonText="@string/submit" style="@style/n2_PrimaryButton"/>
+</FrameLayout>

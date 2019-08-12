@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <View android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/mapscale_miles_bar" android:background="@drawable/map_scale_top" android:layout_width="wrap_content" android:layout_height="24dp"/>
+    <View android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/mapscale_km_bar" android:background="@drawable/map_scale_bottom" android:layout_width="wrap_content" android:layout_height="24dp"/>
+    <LinearLayout android:gravity="right" android:layout_gravity="right|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:textSize="11sp" android:id="@+id/mapscale_miles_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" style="@style/Canonical.Text"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textSize="11sp" android:id="@+id/mapscale_km_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" style="@style/Canonical.Text"/>
+    </LinearLayout>
+</merge>

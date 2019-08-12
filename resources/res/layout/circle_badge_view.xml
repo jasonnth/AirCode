@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center" android:id="@+id/cbv_drop_shadow_circle" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/cbv_outer_background_circle" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/cbv_border_circle" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/cbv_inner_background_circle" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_gravity="center" android:id="@+id/cbv_badge_icon" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

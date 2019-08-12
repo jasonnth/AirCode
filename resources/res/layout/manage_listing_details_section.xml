@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/list_price_header" android:text="@string/ml_price_title" style="@style/TextSectionHeader"/>
+    <FrameLayout android:id="@+id/dbp_fragment_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/gutter_padding"/>
+    <com.airbnb.android.lib.views.LinearListView android:id="@+id/list_price" style="@style/Canonical.GroupedLayout"/>
+    <include android:id="@+id/instant_book_root" layout="@layout/manage_listing_instant_book_section"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:text="@string/ml_details_title" style="@style/TextSectionHeader"/>
+    <com.airbnb.android.lib.views.LinearListView android:id="@+id/list_details" style="@style/Canonical.GroupedLayout"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:text="@string/ml_manage_title" style="@style/TextSectionHeader"/>
+    <com.airbnb.android.lib.views.GroupedCell android:id="@+id/cohosts" android:layout_width="match_parent" android:layout_height="wrap_content" app:hideTopBorder="true" app:title="@string/manage_listing_booking_item_cohosts" style="@style/Canonical.GroupedLayout"/>
+    <com.airbnb.android.lib.views.GroupedCell android:id="@+id/unlist_listing" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:hideTopBorder="true" style="@style/Canonical.GroupedLayout"/>
+    <com.airbnb.android.lib.views.GroupedCell android:id="@+id/listing_status_cell" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:hideTopBorder="true" style="@style/Canonical.GroupedLayout"/>
+    <com.airbnb.android.lib.views.GroupedCell android:id="@+id/delete_listing" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vertical_padding" app:hideTopBorder="true" app:title="@string/ml_delete_listing" style="@style/Canonical.GroupedLayout"/>
+</merge>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.jellyfish.JellyfishView android:id="@+id/jellyfish_view" android:layout_width="match_parent" android:layout_height="match_parent" app:n2_palette="1"/>
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:layout_above="@+id/bottom_bar" style="@style/n2_FocusPane">
+        <LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.components.SheetMarquee android:id="@+id/sheet_marquee" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_titleText="@string/bt_auto_enroll_title" style="@style/n2_SheetMarquee"/>
+            <com.airbnb.p027n2.primitives.AirButton android:textColor="@color/n2_babu" android:id="@+id/got_it_button" android:layout_width="wrap_content" android:layout_marginLeft="?attr/n2_horizontal_side_padding" android:layout_marginTop="@dimen/n2_vertical_padding_medium" android:layout_marginRight="?attr/n2_horizontal_side_padding" android:layout_marginBottom="@dimen/n2_vertical_padding_small" android:text="@string/bt_auto_enroll_confirm_button" style="@style/n2_AirButton_V2.White"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/bottom_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:id="@+id/divider" style="@style/n2_FullSectionDivider.Sheet"/>
+        <com.airbnb.p027n2.components.SimpleTextRow android:id="@+id/legal_disclaimer" app:n2_font="2" app:n2_showDivider="false" style="@style/n2_SimpleTextRow.Small.Inverse"/>
+    </LinearLayout>
+</RelativeLayout>

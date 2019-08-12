@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.components.SheetMarquee android:id="@+id/profile_photo_sheet_marquee" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="@dimen/n2_profile_photo_size" android:layout_height="@dimen/n2_profile_photo_size" android:layout_marginTop="@dimen/n2_vertical_padding_large" android:layout_marginBottom="@dimen/n2_sheet_bottom_bar_height">
+            <com.airbnb.p027n2.primitives.imaging.HaloImageView android:id="@+id/profile_photo_sheet_image" style="@style/n2_ProfilePhoto"/>
+            <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/profile_photo_sheet_image_error" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="130dp" android:layout_marginTop="130dp" android:scaleType="fitCenter" app:srcCompat="@drawable/n2_icon_warning"/>
+        </FrameLayout>
+    </LinearLayout>
+</merge>

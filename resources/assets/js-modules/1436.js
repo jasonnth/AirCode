@@ -1,0 +1,1 @@
+__d(function(t,e,i,n){function d(t){return"https://placeholdit.imgix.net/~text?txtsize=75&txt="+t+"&w="+(arguments.length>1&&void 0!==arguments[1]?arguments[1]:800)+"&h="+(arguments.length>2&&void 0!==arguments[2]?arguments[2]:800)}Object.defineProperty(n,"__esModule",{value:!0}),n.default=d},1436);

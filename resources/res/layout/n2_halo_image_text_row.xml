@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/first_row_text" android:paddingTop="@dimen/n2_vertical_padding_small" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/halo_image" style="@style/n2_RegularText"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/second_row_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/halo_image" android:layout_below="@+id/first_row_text" style="@style/n2_RegularText"/>
+    <com.airbnb.p027n2.primitives.imaging.HaloImageView android:id="@+id/halo_image" android:layout_width="@dimen/n2_halo_image_width" android:layout_height="@dimen/n2_halo_image_height" android:layout_alignParentRight="true" app:n2_drawBorder="true" app:n2_borderColor="@color/n2_divider_color" app:n2_borderThickness="2dp"/>
+</RelativeLayout>

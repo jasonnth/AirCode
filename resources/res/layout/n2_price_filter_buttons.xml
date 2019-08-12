@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/n2_button_white_babu_border" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium_phone" android:layout_marginRight="@dimen/n2_horizontal_padding_medium_phone">
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/button1" android:background="@drawable/n2_price_filter_button1_selector" style="@style/n2_PriceFilterButtons_Button"/>
+        <View android:id="@+id/button1_divider" android:background="@color/n2_foggy_haze" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="1dp" android:layout_marginBottom="1dp"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/button2" android:background="@drawable/n2_price_filter_button2_selector" style="@style/n2_PriceFilterButtons_Button"/>
+        <View android:id="@+id/button2_divider" android:background="@color/n2_foggy_haze" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="1dp" android:layout_marginBottom="1dp"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/button3" android:background="@drawable/n2_price_filter_button3_selector" style="@style/n2_PriceFilterButtons_Button"/>
+    </LinearLayout>
+</merge>

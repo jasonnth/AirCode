@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top_border" layout="@layout/section_divider"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="5dp" android:paddingTop="15dp" android:paddingRight="5dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="80dp" android:animateLayoutChanges="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingRight="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gutter_padding" style="@style/Canonical.Text.C"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/details_text_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Canonical.Text.F"/>
+            </LinearLayout>
+            <CheckBox android:id="@+id/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/content_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <include layout="@layout/section_divider"/>
+</merge>

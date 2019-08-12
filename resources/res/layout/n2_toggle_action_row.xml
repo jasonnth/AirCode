@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingRight="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_LargeText"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/n2_row_inner_vertical_padding" style="@style/n2_SmallText"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/n2_row_inner_vertical_padding" style="@style/n2_MicroText.Label"/>
+    </LinearLayout>
+    <com.airbnb.p027n2.primitives.ToggleView android:id="@+id/toggle" android:saveEnabled="false" android:layout_width="32dp" android:layout_height="32dp"/>
+</LinearLayout>

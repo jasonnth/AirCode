@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/c_gray_6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:paddingLeft="25dp" android:paddingTop="20dp" android:paddingRight="25dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_rausch" android:id="@+id/tooltip_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/Canonical.Text.D"/>
+        <com.airbnb.android.core.views.ColorizedIconView android:id="@+id/tooltip_image" android:layout_width="36dp" android:layout_height="36dp" app:drawableId="@drawable/icon_lightbulb_lg_blue" app:colorStates="@color/c_rausch"/>
+    </LinearLayout>
+    <include layout="@layout/section_divider"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="25dp" android:paddingTop="25dp" android:paddingRight="25dp" android:paddingBottom="25dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.primitives.AirTextView android:textColorLink="@color/c_rausch" android:linksClickable="true" android:id="@+id/tooltip_help" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.Text.D"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/tooltip_example_header" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Canonical.Text.E"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/tooltip_examples" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.Text.E"/>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/section_divider"/>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/dismiss_button" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.Button.Sticky"/>
+</LinearLayout>

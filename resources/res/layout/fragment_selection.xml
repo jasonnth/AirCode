@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/selection_container" android:background="?android:attr/windowBackground" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="100dp" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17sp" android:textColor="?attr/netverify_scanOptionsSectionHeader" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/scan_option_country_title" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="32dp" android:layout_marginLeft="64dp" android:layout_marginTop="20dp" android:layout_marginBottom="0dp" android:contentDescription="@string/netverify_accessibility_select_your_country" android:fontFamily="sans-serif"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@+id/scan_option_country_selection" layout="@layout/item_scan_option"/>
+            <ImageView android:id="@+id/scan_option_country_flag" android:paddingTop="0dp" android:layout_width="61dp" android:layout_height="64dp" android:layout_marginLeft="-7dp" android:scaleType="centerInside"/>
+        </FrameLayout>
+        <TextView android:textSize="17sp" android:textColor="?attr/netverify_scanOptionsSectionHeader" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/scan_option_document_type_title" android:paddingRight="16dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="32dp" android:layout_marginLeft="64dp" android:layout_marginTop="20dp" android:layout_marginBottom="0dp" android:contentDescription="@string/netverify_accessibility_select_your_type_of_document" android:fontFamily="sans-serif"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/scan_options_document_selection" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+    </LinearLayout>
+</ScrollView>

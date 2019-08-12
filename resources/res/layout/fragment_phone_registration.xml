@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/registration_phone_number_root" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/n2_Sheet">
+    <com.airbnb.p027n2.components.jellyfish.JellyfishView android:id="@+id/jellyfish_view" android:layout_width="match_parent" android:layout_height="match_parent" app:n2_palette="1"/>
+    <com.airbnb.p027n2.collections.SheetScrollView style="@style/n2_SheetScrollView">
+        <LinearLayout style="@style/n2_SheetInputFieldContainer">
+            <com.airbnb.p027n2.components.SheetMarquee app:n2_titleText="@string/registration_phone_header" style="@style/n2_SheetMarquee"/>
+            <com.airbnb.android.core.views.PhoneNumberInputSheet android:id="@+id/phone_number_input_sheet" android:imeOptions="actionNext" style="@style/n2_SheetInputText">
+                <requestFocus/>
+            </com.airbnb.android.core.views.PhoneNumberInputSheet>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.SheetScrollView>
+    <RelativeLayout android:layout_gravity="bottom" android:background="@color/n2_transparent" android:layout_width="match_parent" android:layout_height="@dimen/n2_sheet_bottom_bar_height">
+        <com.airbnb.p027n2.primitives.AirButton android:id="@+id/registration_phone_btn_swap_to_email" android:focusable="false" android:text="@string/switch_to_use_email_address" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/n2_AirButton.TransparentFill.Baby"/>
+        <com.airbnb.p027n2.primitives.AirButton android:enabled="false" android:id="@+id/registration_phone_btn_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/n2_AirButton.WhiteFill.RightCaret"/>
+    </RelativeLayout>
+</FrameLayout>

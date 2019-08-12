@@ -1,0 +1,1 @@
+__d(function(e,t,a,d){var n=t(42),u=babelHelpers.interopRequireDefault(n),i=t(44),l=i.NativeModules.StatusBarManager,s=u.default.module({moduleName:"ReactStatusBarBridge",mock:{setHidden:function(){},setStyle:function(){}}});l&&(l.setHidden=s.setHidden,l.setStyle=s.setStyle)},704);

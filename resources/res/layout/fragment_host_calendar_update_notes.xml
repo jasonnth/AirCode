@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/calendar_update_notes_frame" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_menu="@menu/fragment_calendar_update_notes_menu" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <EditText android:id="@+id/note_text" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/calendar_add_note_hint" android:inputType="none|text|textCapSentences|textMultiLine" style="@style/HostCalendarText.EditNote">
+            <requestFocus/>
+        </EditText>
+    </ScrollView>
+</LinearLayout>

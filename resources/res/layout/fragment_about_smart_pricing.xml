@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginRight="@dimen/n2_horizontal_padding_medium">
+            <com.airbnb.p027n2.components.SheetMarquee android:id="@+id/smart_pricing_marquee" android:paddingLeft="0dp" android:paddingRight="0dp" android:paddingBottom="0dp" app:n2_titleText="@string/smart_pricing_title" app:n2_sheetStyle="1" style="@style/n2_SheetMarquee"/>
+            <View android:layout_marginTop="@dimen/n2_vertical_padding_large" style="@style/n2_PipDivider"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/adjust_price_text" android:paddingTop="@dimen/n2_vertical_padding_medium" android:paddingBottom="@dimen/n2_vertical_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/adjust_price_text" style="@style/n2_RegularText"/>
+            <com.airbnb.p027n2.primitives.AirButton android:id="@+id/price_settings_button" android:layout_margin="0dp" android:text="@string/pricing_settings" style="@style/n2_AirButton.BabuOutline"/>
+            <View android:layout_marginTop="@dimen/n2_vertical_padding_medium" style="@style/n2_FullSectionDivider"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/about_smart_pricing_text" android:paddingTop="@dimen/n2_vertical_padding_medium" android:paddingBottom="@dimen/n2_vertical_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/smart_pricing_learn_more_text" style="@style/n2_RegularText"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+</FrameLayout>

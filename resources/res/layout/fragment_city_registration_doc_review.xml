@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <android.support.p002v7.widget.RecyclerView android:id="@+id/recycler_view" android:paddingBottom="@dimen/n2_sheet_bottom_bar_height" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize" app:layoutManager="LinearLayoutManager"/>
+        <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" style="@style/n2_AirToolbar.Transparent.DarkForeground">
+            <TextView android:layout_gravity="center" android:id="@+id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:n2_font="3" style="@style/n2_RegularText"/>
+        </com.airbnb.p027n2.components.AirToolbar>
+        <View android:id="@+id/divider" android:layout_marginTop="?attr/actionBarSize" style="@style/n2_FullSectionDivider"/>
+        <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/save_button" android:text="@string/save" app:layout_behavior="com.airbnb.n2.utils.SnackbarDodger" style="@style/n2_AirButton.BabuFill"/>
+    </FrameLayout>
+    <com.airbnb.android.listing.views.TipView android:id="@+id/tip" android:visibility="visible" style="@style/TipView"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_itinerary_email_item" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="2dp">
+    <RelativeLayout android:background="@color/c_hof_light" android:paddingLeft="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="center_vertical" android:id="@+id/txt_email" android:paddingRight="30dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:minHeight="33dp" style="@style/Canonical.Text.F"/>
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:gravity="center_vertical" android:id="@+id/share_itin_close_icon" android:background="?attr/selectableItemBackground" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:n2_drawableColor="@color/c_foggy" app:srcCompat="@drawable/icon_close"/>
+    </RelativeLayout>
+</LinearLayout>

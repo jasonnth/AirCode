@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.primitives.AirEditTextView android:id="@+id/debug_menu_filter" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/search" android:maxLines="1"/>
+    <ScrollView android:id="@+id/debug_menu_item_scroll_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/debug_menu_item_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/switch_server_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/lys_choice"/>
+            </LinearLayout>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/override_trebuchet_layout" app:title="@string/debug_menu_override_trebuchet" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/override_erf_layout" app:title="@string/debug_menu_override_erf" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/dls_component_browser" app:title="@string/debug_menu_dls_component_browser" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/go_to_listing_details" app:title="@string/debug_menu_go_to_listing" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/go_to_experience" app:title="@string/debug_menu_go_to_experience" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/go_to_article" app:title="@string/debug_menu_go_to_article" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/go_to_trip_assistant" app:title="@string/debug_menu_go_to_trip_assistant" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/test_superhero" app:title="@string/debug_menu_test_superhero" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/clear_itinerary_cache" app:title="@string/debug_menu_clear_itinerary_cache" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/clear_super_hero_cache" app:title="@string/debug_menu_clear_super_hero_cache" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/force_profile" app:title="@string/debug_menu_test_user_profile" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/launch_resy_quick_pay" app:title="@string/debug_menu_launch_resy_quick_pay" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/launch_react_native_giftcards" app:title="@string/launch_react_native_giftcards_activity" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/launch_add_payment_method" app:title="@string/debug_menu_launch_add_payment_method" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/launch_new_verification_flow" app:title="@string/debug_menu_launch_new_verification" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/set_user_verifications_layout" app:title="@string/debug_menu_set_user_verifications" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/launch_verifications_flow" app:title="@string/debug_menu_launch_verifications" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/launch_react_verifications_flow" app:title="@string/debug_menu_launch_verifications_react" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/launch_react_verifications_info" app:title="@string/debug_menu_launch_verifications_react_info" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/launch_redesigned_referrals" app:title="@string/debug_menu_launch_redesigned_referrals" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/launch_new_p5" app:title="@string/debug_menu_launch_p5" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/clear_message_storage" app:title="@string/debug_menu_clear_message_storage" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/show_experience_host_inbox" app:title="@string/debug_show_experience_host_inbox" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/write_reviews_layout" app:title="@string/debug_write_review" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/adaptive_reviews_layout" app:title="@string/debug_adaptive_review" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/launch_react_native_explorer" app:title="@string/launch_react_native_activity" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/launch_react_native_apps_menu" app:title="@string/launch_react_native_apps_menu_activity" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/launch_react_native_guidebooks" app:title="@string/launch_react_native_guidebook_activity" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/launch_react_native_guidebooks_subcategory" app:title="@string/launch_react_native_guidebook_subcategory_activity" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/launch_react_native_guidebook_insider" app:title="@string/launch_react_native_guidebook_insider_activity" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/launch_react_native_guidebook_detour" app:title="@string/launch_react_native_guidebook_detour_activity" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/launch_react_native_guidebook_meetupcollection" app:title="@string/launch_react_native_guidebook_meetupcollection_activity" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/launch_react_native_support_chat" app:title="@string/launch_react_native_support_chat_activity" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/airrequest_debug" app:title="@string/airrequest_debug" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/show_git_sha" app:title="@string/advanced_setting_show_git_sha" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/build_config" app:title="@string/show_build_config" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/gcm_token" app:title="@string/advanced_setting_gcm_token" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/launch_mt_host_app" app:title="@string/debug_menu_launch_mt_host_app" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/go_to_activity_pdp" app:title="@string/debug_menu_activity_pdp" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/view_checkin" app:title="@string/debug_menu_view_checkin" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/view_phb_page" app:title="@string/debug_menu_phb" style="@style/DebugMenuItem"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/go_to_mythbusters_quiz" app:title="@string/debug_menu_go_to_mythbusters_quiz" style="@style/DebugMenuItem"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

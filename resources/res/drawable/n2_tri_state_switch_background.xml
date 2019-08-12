@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape android:shape="rectangle">
+            <size android:height="@dimen/n2_tri_state_switch_height" android:width="@dimen/n2_tri_state_switch_width"/>
+            <corners android:radius="@dimen/n2_tri_state_switch_corner_radius"/>
+            <stroke android:width="2dp" android:color="@android:color/white"/>
+            <solid android:color="@color/n2_babu"/>
+        </shape>
+    </item>
+</layer-list>

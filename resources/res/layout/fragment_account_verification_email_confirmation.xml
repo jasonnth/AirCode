@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.jellyfish.JellyfishView android:id="@+id/jellyfish_view" android:layout_width="match_parent" android:layout_height="match_parent" app:n2_palette="1"/>
+    <com.airbnb.p027n2.components.SheetMarquee android:id="@+id/sheet_marquee" app:n2_titleText="@string/verifications_email_confirm" style="@style/n2_SheetMarquee"/>
+    <include layout="@layout/n2_sheet_bottom_baby_secondary_button_toolbar"/>
+</FrameLayout>

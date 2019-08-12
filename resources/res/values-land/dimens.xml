@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_default_height_material">48dp</dimen>
+    <dimen name="abc_action_bar_progress_bar_size">32dp</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">12dp</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">14dp</dimen>
+    <dimen name="dialog_fragment_width">500dp</dimen>
+    <dimen name="ftue_dots_counter_margin_bottom">10dp</dimen>
+    <dimen name="ftue_text_max_width">450dp</dimen>
+    <dimen name="ftue_title_margin_bottom">6dp</dimen>
+    <dimen name="ftue_view_pager_padding_bottom">15dp</dimen>
+    <dimen name="milestone_image_margin">25dp</dimen>
+    <dimen name="milestone_image_weight_sum">4</dimen>
+    <dimen name="ml_pin_location_subtitle_max_width">700dp</dimen>
+    <dimen name="p3_book_button_max_width">300dp</dimen>
+    <dimen name="p3_book_button_num_reviews_max_width">150dp</dimen>
+    <dimen name="reviews_dots_margin_bottom">10dp</dimen>
+    <dimen name="reviews_pager_padding_top">10dp</dimen>
+    <dimen name="reviews_rating_exclamation_margin_top">15dp</dimen>
+    <dimen name="reviews_rating_recommend_margin_top">15dp</dimen>
+    <dimen name="sliding_header_max_width">400dp</dimen>
+    <dimen name="tablet_earnings_subtitle_text_size">18sp</dimen>
+    <dimen name="tablet_earnings_title_text_size">81sp</dimen>
+</resources>

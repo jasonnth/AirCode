@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/span" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="@dimen/mc_border_width" android:layout_marginBottom="@dimen/mc_border_width"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:textSize="18sp" android:id="@+id/txt_date" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/Canonical.Text.C"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:textSize="12sp" android:textColor="@color/c_gray_3" android:id="@+id/month_name" android:paddingTop="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    <View android:id="@+id/unselected_overlay" android:background="@color/calendar_unselected_overlay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

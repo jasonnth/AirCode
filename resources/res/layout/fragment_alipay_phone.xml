@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.jellyfish.JellyfishView android:id="@+id/jellyfish_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ScrollView style="@style/n2_SheetScrollView">
+        <LinearLayout style="@style/n2_SheetInputFieldContainer">
+            <com.airbnb.p027n2.components.SheetMarquee app:n2_titleText="@string/alipay_phone_title" style="@style/n2_SheetMarquee"/>
+            <com.airbnb.android.core.views.PhoneNumberInputSheet android:id="@+id/phone_number_input_sheet" android:imeOptions="actionNext" style="@style/n2_SheetInputText">
+                <requestFocus/>
+            </com.airbnb.android.core.views.PhoneNumberInputSheet>
+        </LinearLayout>
+    </ScrollView>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/next_button" style="@style/n2_AirButton.WhiteFill.RightCaret"/>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" style="@style/n2_AirToolbar.Transparent.LightForeground"/>
+</FrameLayout>

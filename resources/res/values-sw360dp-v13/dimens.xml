@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="exomedia_big_notification_button_spacing">44dp</dimen>
+    <dimen name="lottie_nux_view_pager_image_height">55%</dimen>
+    <dimen name="lottie_nux_view_pager_text_height">45%</dimen>
+</resources>

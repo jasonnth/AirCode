@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:srcCompat="@drawable/gift_cards_sell_background"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textSize="28sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/gift_card_send_header_title_text"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginTop="10dp" android:layout_marginRight="50dp" android:text="@string/gift_card_send_header_subtitle_text"/>
+            <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="center_horizontal" android:id="@+id/btn_send_gift_credit" android:layout_width="match_parent" android:layout_height="@dimen/gift_card_send_claim_button_height" android:layout_margin="20dp" android:text="@string/gift_card_button_launch_send_text" style="@style/Canonical.Button.Raised"/>
+            <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="center_horizontal" android:id="@+id/btn_redeem_gift_credit" android:layout_width="match_parent" android:layout_height="@dimen/gift_card_send_claim_button_height" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="100dp" android:text="@string/gift_card_button_launch_redeem_text" style="@style/Canonical.Button.WhiteFoggyBackground"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

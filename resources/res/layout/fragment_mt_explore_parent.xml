@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/coordinator_root" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.android.explore.views.MTExploreMarquee android:id="@+id/explore_marquee" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.airbnb.p027n2.components.LoadingView android:layout_gravity="center_horizontal" android:id="@+id/loading_view" style="@style/n2_LoadingView.Vertical"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/modal_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/filter_sheet_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</android.support.design.widget.CoordinatorLayout>

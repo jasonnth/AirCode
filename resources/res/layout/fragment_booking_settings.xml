@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/c_foggy_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vertical_padding" android:layout_marginBottom="@dimen/vertical_padding">
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ml_ib_who_can_book_instantly_title" style="@style/TextSectionHeader"/>
+        <android.support.p002v7.widget.RecyclerView android:id="@+id/booking_settings_list" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="LinearLayoutManager"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/booking_settings_tooltip" android:paddingLeft="@dimen/gutter_padding" android:paddingTop="@dimen/booking_requirement_vertical_padding" android:paddingBottom="@dimen/booking_requirement_vertical_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.primitives.AirTextView android:textSize="12sp" android:textColor="@color/c_gray_2" android:paddingLeft="@dimen/lys_booking_tip_padding" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/booking_settings_tip" android:layout_weight="1" style="@style/GroupedTitle"/>
+            <com.airbnb.android.core.views.ColorizedIconView android:background="?attr/selectableItemBackground" android:paddingRight="@dimen/lys_booking_tip_padding" android:layout_width="@dimen/tooltip_image_size" android:layout_height="@dimen/tooltip_image_size" android:scaleType="center" app:drawableId="@drawable/icon_lightbulb_lg_blue" app:colorStates="@color/c_babu"/>
+        </LinearLayout>
+        <include layout="@layout/airbnb_guest_requirements"/>
+        <include layout="@layout/gutter_divider"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/booking_settings_house_rules" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gutter_padding" android:layout_marginRight="@dimen/gutter_padding" android:minHeight="@dimen/tooltip_image_size">
+            <com.airbnb.p027n2.primitives.AirTextView android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/house_rules" android:layout_weight="1" style="@style/GroupedTitle"/>
+            <com.airbnb.android.core.views.ColorizedIconView android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" app:drawableId="@drawable/ic_chevron" app:colorStates="@color/c_hof"/>
+        </LinearLayout>
+        <android.support.p000v4.widget.Space android:layout_width="match_parent" android:layout_height="@dimen/c_layout_margin_vertical"/>
+    </LinearLayout>
+</ScrollView>

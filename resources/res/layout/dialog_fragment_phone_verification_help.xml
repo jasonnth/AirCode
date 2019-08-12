@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/btn_change_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/verifications_phone_change_my_number" style="@style/Canonical.Button.Rausch"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/btn_send_code" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:text="@string/verifications_phone_send_code_again" style="@style/Canonical.Button.Rausch"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/btn_call_instead" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/verifications_phone_call_me_instead" style="@style/Canonical.Button.Rausch"/>
+</LinearLayout>

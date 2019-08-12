@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" style="@style/n2_AirToolbar"/>
+    <com.airbnb.android.core.views.AirbnbSlidingTabLayout android:id="@+id/tabs" app:viewPager="@+id/view_pager" style="@style/AirbnbSlidingTabLayoutStyle"/>
+    <com.airbnb.android.core.views.OptionalSwipingViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

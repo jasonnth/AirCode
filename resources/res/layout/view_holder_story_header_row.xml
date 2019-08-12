@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.airbnb.android.contentframework.views.StoryHeaderRowView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:layout_width="match_parent" android:layout_height="@dimen/story_detail_page_profile_row_height"/>

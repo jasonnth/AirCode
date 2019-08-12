@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/n2_Sheet">
+    <com.airbnb.p027n2.components.SheetMarquee android:id="@+id/sheet_marquee" app:n2_subtitleText="@string/gift_card_redemption_add_credit_card_landing_caption" app:n2_titleText="@string/gift_card_redemption_add_credit_card_landing_title" style="@style/n2_SheetMarquee"/>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/next_button" android:text="@string/gift_card_redemption_add_credit_card_button" style="@style/n2_AirButton.WhiteFill.RightCaret.WithText"/>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" app:n2_font="3" style="@style/Canonical.Text.B"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/progress_text" android:layout_alignParentLeft="true" style="@style/Canonical.Text.D"/>
+    <com.airbnb.android.lib.views.AirProgressBar android:layout_gravity="center_vertical" android:id="@+id/progress_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/goal_popup_container" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/progress_bar" android:layout_alignLeft="@+id/progress_bar">
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/goal_popup_text" android:background="@drawable/c_green_background" android:paddingLeft="6dp" android:paddingTop="2dp" android:paddingRight="6dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" style="@style/Canonical.Text.F"/>
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="5.5dp" android:layout_height="4dp" android:layout_marginTop="-0.9dp" android:tint="@color/c_green" app:srcCompat="@drawable/calendar_popup_arrow"/>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <FrameLayout android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_vertical_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:paddingBottom="@dimen/n2_vertical_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/price_summary_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/price_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/n2_TitleText2"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="right" android:id="@+id/currency_text_view" android:paddingLeft="6sp" android:paddingTop="6sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/price_text_view" android:layout_alignTop="@+id/price_text_view" style="@style/n2_SmallText"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/price_breakdown_text_view" android:paddingTop="@dimen/n2_vertical_padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/price_text_view" android:layout_alignParentRight="true" style="@style/n2_RegularText.Actionable"/>
+        </RelativeLayout>
+        <com.airbnb.p027n2.components.LoadingView android:layout_gravity="center" android:id="@+id/loading_view" style="@style/n2_LoadingView.Vertical"/>
+    </FrameLayout>
+    <View android:id="@+id/section_divider" style="@style/n2_SubsectionDivider"/>
+</merge>

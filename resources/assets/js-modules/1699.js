@@ -1,0 +1,1 @@
+__d(function(e,t,a,d){Object.defineProperty(d,"__esModule",{value:!0});var r=t(412),u=babelHelpers.interopRequireDefault(r);d.default=u.default.shape({experience_id:u.default.number.isRequired,start_date:u.default.string,end_date:u.default.string,starts_at:u.default.string,time_zone:u.default.string})},1699);

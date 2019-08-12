@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_gravity="center" android:id="@+id/icon" android:layout_width="@dimen/explore_marquee_icon_size" android:layout_height="@dimen/explore_marquee_icon_size" android:layout_marginLeft="4dp" android:layout_marginRight="@dimen/explore_marquee_icon_space" android:tint="@color/n2_text_color_main"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/text_view" style="@style/SearchViewBarText"/>
+</merge>

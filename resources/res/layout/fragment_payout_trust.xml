@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/dob_label" android:text="@string/date_of_birth" style="@style/TextSectionHeader"/>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/dob_selection" android:background="@drawable/c_grouped_layout" android:layout_width="match_parent" android:layout_height="@dimen/card_cell_height">
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/txt_selected_dob" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gutter_padding" android:layout_weight="1" style="@style/Canonical.Text.E"/>
+            <View android:background="@color/c_gray_4" android:layout_width="@dimen/line_thickness" android:layout_height="match_parent"/>
+            <com.airbnb.android.core.views.ColorizedIconView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" app:drawableId="@drawable/icon_other_type_caret" app:colorStates="@color/c_foggy"/>
+        </LinearLayout>
+        <com.airbnb.p027n2.primitives.AirTextView android:text="@string/address_for_payout" style="@style/TextSectionHeader"/>
+        <LinearLayout android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" style="@style/Canonical.GroupedLayout">
+            <com.airbnb.p027n2.primitives.AirEditTextView android:id="@+id/address_street_input" android:hint="@string/address_street_hint" android:lines="1" android:imeOptions="actionNext" style="@style/Canonical.GroupedEditText"/>
+            <include layout="@layout/section_divider"/>
+            <com.airbnb.p027n2.primitives.AirEditTextView android:id="@+id/address_apt_input" android:hint="@string/address_apt_hint" android:lines="1" android:imeOptions="actionNext" style="@style/Canonical.GroupedEditText"/>
+            <include layout="@layout/section_divider"/>
+            <com.airbnb.p027n2.primitives.AirEditTextView android:id="@+id/address_city_input" android:hint="@string/address_city_hint" android:lines="1" android:imeOptions="actionNext" style="@style/Canonical.GroupedEditText"/>
+            <include layout="@layout/section_divider"/>
+            <com.airbnb.p027n2.primitives.AirEditTextView android:id="@+id/address_state_input" android:hint="@string/address_state_hint" android:lines="1" android:imeOptions="actionNext" style="@style/Canonical.GroupedEditText"/>
+            <include layout="@layout/section_divider"/>
+            <com.airbnb.p027n2.primitives.AirEditTextView android:id="@+id/address_zip_input" android:hint="@string/address_zip_hint" android:lines="1" android:imeOptions="actionDone" style="@style/Canonical.GroupedEditText"/>
+            <include layout="@layout/section_divider"/>
+            <com.airbnb.p027n2.primitives.AirEditTextView android:id="@+id/address_country_input" android:focusable="false" android:hint="@string/address_country_hint" style="@style/Canonical.GroupedEditText"/>
+        </LinearLayout>
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:padding="@dimen/gutter_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payout_country_note" style="@style/Canonical.Text.E.Light"/>
+        <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <com.airbnb.p027n2.primitives.AirButton android:id="@+id/payout_start" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="15dp" android:text="@string/next" style="@style/Canonical.Button.Raised"/>
+    </LinearLayout>
+</ScrollView>

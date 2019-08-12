@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/sheet_input_text_hint" android:layout_alignParentLeft="true" android:textAllCaps="true" style="@style/n2_SheetInputTextHintLabel"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:layout_gravity="end" android:id="@+id/sheet_input_text_show_password" android:background="?attr/selectableItemBackgroundBorderless" android:padding="@dimen/n2_horizontal_padding_tiny" android:visibility="gone" android:layout_alignParentRight="true" style="@style/n2_SheetInputTextHintLabel"/>
+    </RelativeLayout>
+    <LinearLayout android:id="@+id/sheet_input_text_edit_text_container" style="@style/n2_SheetInputTextEditTextContainer">
+        <com.airbnb.p027n2.primitives.autoscale.AutoScaleEditText android:id="@+id/sheet_input_text" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:paddingBottom="@dimen/n2_vertical_padding_tiny" android:visibility="gone" style="@style/n2_SheetInputTextEditText"/>
+        <com.airbnb.p027n2.primitives.AirAutoCompleteTextView android:id="@+id/sheet_input_text_auto_complete" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:paddingBottom="@dimen/n2_vertical_padding_tiny" android:visibility="gone" style="@style/n2_SheetInputTextEditText"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/sheet_input_text_action" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:paddingBottom="@dimen/n2_vertical_padding_tiny" style="@style/n2_SheetInputTextActionText"/>
+    </LinearLayout>
+</merge>

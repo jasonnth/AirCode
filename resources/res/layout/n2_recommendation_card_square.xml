@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <android.support.percent.PercentFrameLayout android:id="@+id/image_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/image" android:background="@color/n2_loading_background" android:scaleType="centerCrop" app:layout_widthPercent="100%" app:layout_aspectRatio="100%" app:n2_fade="true"/>
+        <View android:background="@drawable/n2_recommendation_card_frame" app:layout_widthPercent="100%" app:layout_aspectRatio="100%"/>
+    </android.support.percent.PercentFrameLayout>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/subtext" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/n2_MicroText"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/title_text" android:paddingTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:textSize="15sp" android:ellipsize="end" android:id="@+id/description_text" android:paddingTop="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" app:n2_font="4"/>
+</merge>

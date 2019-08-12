@@ -1,0 +1,1 @@
+__d(function(e,t,n,r){"use strict";function u(e){if((e*=a)<1)e-=1-Math.exp(-e);else{e=1-Math.exp(1-e),e=.36787944117+e*(1-.36787944117)}return e}Object.defineProperty(r,"__esModule",{value:!0});var a=8,i=1/u(1),o=1-i*u(1),f={getInterpolation:function(e){var t=i*u(e);return t>0?t+o:t}};r.default=f},2370);

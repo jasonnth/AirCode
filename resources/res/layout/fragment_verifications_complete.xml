@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/img_background" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/img_gradient" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@+id/container_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_gravity="center_horizontal" android:layout_width="75dp" android:layout_height="75dp" android:layout_margin="25dp" app:srcCompat="@drawable/icon_white_success"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/verifications_complete_all_set" style="@style/Canonical.Text.B"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/white" android:gravity="center" android:paddingLeft="40dp" android:paddingRight="40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="25dp" android:text="@string/verifications_complete_you_can_now_travel" style="@style/Canonical.Text.E"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/white" android:gravity="center" android:paddingLeft="40dp" android:paddingRight="40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/verifications_complete_cant_wait" style="@style/Canonical.Text.E"/>
+        <com.airbnb.android.lib.views.StickyButton android:id="@+id/btn_complete_verifications" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/gutter_padding" app:title="@string/verifications_complete_start_exploring"/>
+    </LinearLayout>
+</FrameLayout>

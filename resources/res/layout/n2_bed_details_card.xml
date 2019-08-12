@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/n2_outlined_card_background_drawable" android:padding="@dimen/n2_bed_details_card_padding" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="@dimen/n2_bed_details_card_min_width">
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/icons" android:paddingBottom="@dimen/n2_bed_details_card_icons_bottom_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/n2_bed_details_card_text_max_width" android:maxLines="2"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/n2_bed_details_card_text_max_width" style="@style/n2_RegularText.Plus"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/n2_bed_details_card_text_max_width" android:maxLines="5" style="@style/n2_RegularText"/>
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

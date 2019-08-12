@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" app:n2_font="4" style="@style/Canonical.Text.A"/>
+    <View android:background="@drawable/new_listing_details_short_divider" android:layout_width="@dimen/new_p3_line_width" android:layout_height="@dimen/new_p3_line_thickness" android:layout_marginTop="10dp"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/n2_sheet_bottom_bar_height" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.components.DocumentMarquee app:n2_titleText="@string/lys_dls_select_pricing_type_title" style="@style/n2_DocumentMarquee"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/radio_row_group" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.airbnb.p027n2.components.LinkActionRow android:id="@+id/disclaimer" android:layout_width="wrap_content" android:layout_height="match_parent" app:n2_text="@string/manage_listing_pricing_disclaimer_call_to_action" style="@style/n2_LinkActionRow"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_scrollWith="@+id/scroll_view" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/next_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lys_dls_next" style="@style/n2_AirButton.BabuFill.RightCaret.RightBottom"/>
+</FrameLayout>

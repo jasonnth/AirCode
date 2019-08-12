@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <android.support.percent.PercentFrameLayout android:layout_gravity="center_horizontal" android:id="@+id/image_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/image" android:background="@color/n2_need_a_color_from_design_4" android:scaleType="centerCrop" app:layout_widthPercent="100%" app:layout_aspectRatio="150%" app:n2_fade="true"/>
+    </android.support.percent.PercentFrameLayout>
+    <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:gravity="left" android:id="@+id/text" android:background="@android:color/white" android:paddingTop="@dimen/n2_vertical_padding_small" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_below="@+id/image_container" style="@style/n2_RegularText"/>
+    <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@+id/extra_row" android:background="@android:color/white" android:paddingTop="@dimen/n2_vertical_padding_small" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/text">
+        <include layout="@layout/n2_article_extra_row"/>
+    </LinearLayout>
+    <View android:id="@+id/click_overlay" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="0dp" android:layout_alignTop="@+id/image_container" android:layout_alignBottom="@+id/text"/>
+    <Space android:id="@+id/bottom_space" android:layout_width="match_parent" android:layout_height="@dimen/n2_vertical_padding_medium" android:layout_below="@+id/text"/>
+    <View android:layout_gravity="bottom" android:id="@+id/divider" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:layout_below="@+id/bottom_space" style="@style/n2_SubsectionDivider"/>
+</merge>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingTop="?attr/actionBarSize" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.components.DocumentMarquee android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_captionText="@string/cancellation_undergoing_maintenance_subtitle" app:n2_titleText="@string/cancellation_undergoing_maintenance_title"/>
+        <com.airbnb.p027n2.components.SimpleTextRow app:n2_text="@string/cancellation_undergoing_maintenance_message" style="@style/n2_SimpleTextRow"/>
+    </LinearLayout>
+    <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/continue_button" android:text="@string/continue_text" style="@style/n2_AirButton.BabuFill"/>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_navigationIcon="1" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+</android.support.design.widget.CoordinatorLayout>

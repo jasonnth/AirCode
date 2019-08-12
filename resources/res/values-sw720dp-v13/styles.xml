@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="n2_HomeMarqueeImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">512dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <style name="n2_fullscreen_image_marquee_subtitle">
+        <item name="android:paddingTop">@dimen/n2_vertical_padding_medium</item>
+    </style>
+    <style name="n2_fullscreen_image_marquee_title">
+        <item name="android:paddingTop">@dimen/n2_vertical_padding_large</item>
+    </style>
+</resources>

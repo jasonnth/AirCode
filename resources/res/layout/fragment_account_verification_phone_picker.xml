@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="?attr/actionBarSize" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.android.core.views.ColorizedIconView android:layout_width="100dp" android:layout_height="100dp" android:layout_marginTop="30dp" android:layout_marginBottom="30dp" app:drawableId="@drawable/icon_android_phone" app:colorStates="@color/c_rausch"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:id="@+id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_verification_phone_picker_title" style="@style/Canonical.Text.B"/>
+            <com.airbnb.android.lib.views.LinearListView android:orientation="vertical" android:id="@+id/phone_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/c_gray_3" android:showDividers="none|beginning|middle|end" app:dividerThickness="@dimen/line_thickness"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/section_phone_sms" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.p027n2.primitives.AirButton android:id="@+id/btn_sms" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/account_verification_sms" style="@style/Canonical.Button.Raised"/>
+                <com.airbnb.p027n2.primitives.AirButton android:id="@+id/btn_phone_call" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/account_verification_phone_call" style="@style/Canonical.Button.Raised"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.airbnb.android.lib.views.AccountVerificationHelp android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30dp"/>
+</LinearLayout>

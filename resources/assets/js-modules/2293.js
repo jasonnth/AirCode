@@ -1,0 +1,1 @@
+__d(function(e,r,t,u){Object.defineProperty(u,"__esModule",{value:!0});var l=r(654),n=r(2294),a=babelHelpers.interopRequireDefault(n);u.default=(0,l.combineReducers)({governmentID:a.default})},2293);

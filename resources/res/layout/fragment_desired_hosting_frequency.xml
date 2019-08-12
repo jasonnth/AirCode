@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/hosting_frequency_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/nights_booked_title" android:text="@string/ml_ideal_nights_booked" android:layout_alignParentTop="true" style="@style/TextSectionHeader"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/tooltip_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gutter_padding">
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_babu" android:gravity="center_vertical" android:id="@+id/tooltip_title" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/see_how_it_works" android:layout_weight="1"/>
+        <com.airbnb.android.core.views.ColorizedIconView android:background="?attr/selectableItemBackground" android:layout_width="@dimen/tooltip_image_size" android:layout_height="@dimen/tooltip_image_size" android:scaleType="center" android:layout_alignParentBottom="true" app:drawableId="@drawable/icon_lightbulb_sm_blue" app:colorStates="@color/c_babu"/>
+    </LinearLayout>
+</LinearLayout>

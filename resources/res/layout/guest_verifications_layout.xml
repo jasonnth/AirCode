@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <include layout="@layout/user_info_layout"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/verification_panel" android:paddingBottom="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/section_divider"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/verifications_title" android:paddingTop="@dimen/gutter_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/section_header_verified_info" style="@style/Canonical.Text.E"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/verifications_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" style="@style/Canonical.Text.F"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/account_verification_learn_more_link" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/GroupedTitle"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/connected_accounts_title" android:paddingTop="@dimen/gutter_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/section_header_connected_accounts" style="@style/Canonical.Text.E"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/connected_accounts" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.Text.F"/>
+    </LinearLayout>
+</merge>

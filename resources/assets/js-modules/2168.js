@@ -1,0 +1,1 @@
+__d(function(e,t,n,o){Object.defineProperty(o,"__esModule",{value:!0}),o.flagContentSelector=void 0;var r=t(1471);o.flagContentSelector=(0,r.createSelector)(function(e){return e.flagContent},function(e){return e.toJS()})},2168);

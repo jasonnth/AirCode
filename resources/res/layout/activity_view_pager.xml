@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/content_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.android.lib.views.FtueClickableViewPager android:id="@+id/clickable_view_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.airbnb.p027n2.primitives.DotsCounter android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/dots_counter" android:layout_width="match_parent" android:layout_height="@dimen/dot_size" android:layout_marginBottom="@dimen/ftue_dots_counter_margin_bottom" app:n2_selectedColor="@color/n2_babu" app:n2_unselectedColor="@color/n2_background_gray" app:n2_dotMargin="@dimen/dot_margin" app:n2_unselectedAlpha="255"/>
+        <com.airbnb.p027n2.components.fixed_footers.FixedDualActionFooter android:layout_gravity="bottom" android:id="@+id/action_footer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_FixedDualActionFooter.Babu.NoDivider"/>
+        <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.LightForeground"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/modal_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

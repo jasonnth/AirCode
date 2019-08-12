@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/content_box" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="30dp" android:textColor="@android:color/white" android:id="@+id/tv_title" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp"/>
+    <TextView android:textSize="20dp" android:textColor="@android:color/white" android:id="@+id/tv_content" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textSize="22dp" android:textColor="@android:color/white" android:id="@+id/tv_dismiss" android:background="?android:attr/selectableItemBackground" android:paddingLeft="5dp" android:paddingTop="10dp" android:paddingRight="5dp" android:paddingBottom="10dp" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+</LinearLayout>

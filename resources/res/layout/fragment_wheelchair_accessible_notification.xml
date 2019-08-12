@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.components.HeroMarquee android:id="@+id/marquee" app:n2_captionColor="@color/n2_text_color_main" app:n2_captionText="@string/amenity_wheelchair_accessible_notification_body" app:n2_firstButtonBackground="@drawable/n2_sheet_button_babu_background" app:n2_firstButtonText="@string/amenity_wheelchair_accessible_notification_acknowledge" app:n2_firstButtonTextColor="@color/white" app:n2_icon="@drawable/ic_wheelchair_large" app:n2_titleColor="@color/n2_text_color_main" app:n2_titleText="@string/amenity_wheelchair_accessible_notification_title" style="@style/n2_HeroMarquee"/>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/c_gray_5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.android.lib.views.CircleBadgeView android:id="@+id/circle_badge_view_photo" app:inactiveForegroundColor="@color/c_rausch" app:iconSrc="@drawable/icon_edit_profile_camera" style="@style/VerifiedIdBadge"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:text="@string/pro_photo_title" style="@style/Canonical.Text.A"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pro_photo_how_much_it_costs" style="@style/Canonical.Text.D"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pro_photo_how_much_it_costs_info" style="@style/Canonical.Text.E"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pro_photo_how_long_it_takes" style="@style/Canonical.Text.D"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pro_photo_how_long_it_takes_info" style="@style/Canonical.Text.E"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pro_photo_what_is_next" style="@style/Canonical.Text.D"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pro_photo_what_is_next_info" style="@style/Canonical.Text.E"/>
+            <View android:layout_width="match_parent" android:layout_height="@dimen/sticky_btn_height"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.airbnb.android.lib.views.StickyButton android:id="@+id/btn_apply_now" android:layout_width="match_parent" android:layout_height="@dimen/sticky_btn_height" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

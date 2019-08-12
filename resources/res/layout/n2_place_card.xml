@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <android.support.percent.PercentFrameLayout android:id="@+id/image_container" android:background="@color/n2_babu" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/image" android:background="@color/n2_loading_background" android:scaleType="centerCrop" app:layout_widthPercent="100%" app:layout_aspectRatio="100%" app:n2_fade="true"/>
+        <View android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/selection_highlight" android:background="@color/n2_babu" android:visibility="gone" android:layout_width="match_parent" android:layout_height="4dp"/>
+        <View android:id="@+id/icon_visibility_gradient" android:background="@drawable/n2_top_right_icon_visibility_gradient" android:visibility="gone" app:layout_widthPercent="100%" app:layout_aspectRatio="100%"/>
+        <com.airbnb.p027n2.primitives.WishListIconView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/wish_list_heart" android:visibility="gone" style="@style/n2_WishListHeart.Small"/>
+        <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/card_details" android:background="@drawable/n2_place_card_gradient" android:visibility="gone" app:layout_widthPercent="100%" app:layout_aspectRatio="150%">
+            <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/card_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_vertical_padding_tiny" style="@style/n2_PlaceCard_Text.Tag"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/card_title" android:paddingLeft="@dimen/n2_vertical_padding_tiny" android:paddingRight="@dimen/n2_vertical_padding_tiny" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/n2_vertical_padding_tiny_half" style="@style/n2_PlaceCard_Text.CardTitle"/>
+        </LinearLayout>
+    </android.support.percent.PercentFrameLayout>
+    <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/title_text" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/n2_SmallText"/>
+    <Space android:id="@+id/bottom_space" android:layout_width="match_parent" android:layout_height="@dimen/n2_card_bottom_spacing"/>
+</merge>

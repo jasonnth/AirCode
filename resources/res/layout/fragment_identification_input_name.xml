@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.jellyfish.JellyfishView android:id="@+id/jellyfish_view" android:layout_width="match_parent" android:layout_height="match_parent" app:n2_palette="1"/>
+    <ScrollView style="@style/n2_FocusPane">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.components.SheetMarquee android:id="@+id/sheet_header" style="@style/n2_SheetMarquee"/>
+            <com.airbnb.p027n2.components.SheetInputText android:id="@+id/given_names_input_text" android:inputType="textPersonName" app:n2_hintText="@string/first_name" style="@style/n2_SheetInputText"/>
+            <com.airbnb.p027n2.components.SheetInputText android:id="@+id/surname_input_text" android:inputType="textPersonName" app:n2_hintText="@string/last_name" style="@style/n2_SheetInputText"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.airbnb.p027n2.primitives.AirButton android:enabled="false" android:id="@+id/next_button" style="@style/n2_AirButton.WhiteFill.RightCaret"/>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/booking_next_button" android:text="@string/next" style="@style/n2_BookingChinaNavButton"/>
+</FrameLayout>

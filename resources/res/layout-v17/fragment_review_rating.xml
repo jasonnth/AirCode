@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/reviews_pager_padding_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/review_rating_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" style="@style/Canonical.Text.B"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_gray_2" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/review_rating_description" android:paddingLeft="30dp" android:paddingRight="30dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="center" style="@style/Canonical.Text.G"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_rausch" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/review_rating_exclamation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="@dimen/reviews_rating_exclamation_margin_top" android:layout_marginRight="6dp" android:layout_marginBottom="10dp" android:lines="1" app:n2_font="3" style="@style/Canonical.Text.D"/>
+        <FrameLayout android:layout_gravity="center_horizontal" android:background="@drawable/bg_review_rating_stars" android:paddingTop="@dimen/reviews_stars_padding_top" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gutter_padding" android:layout_marginRight="@dimen/gutter_padding">
+            <RatingBar android:layout_gravity="center" android:id="@+id/review_rating_stars" android:layout_width="wrap_content" android:layout_height="wrap_content" android:progressDrawable="@drawable/bg_rating_bar_star" android:numStars="5" android:stepSize="1"/>
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

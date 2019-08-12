@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/c_gray_6" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/title_text" style="@style/TextSectionHeader"/>
+            <com.airbnb.p027n2.primitives.AirEditTextView android:gravity="top" android:id="@+id/editable_field" android:scrollHorizontally="false" android:inputType="none|text|textCapSentences|textAutoCorrect|textMultiLine" style="@style/Canonical.EditText.Grouped"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/title_text_2" android:visibility="gone" style="@style/TextSectionHeader"/>
+            <com.airbnb.p027n2.primitives.AirEditTextView android:gravity="top" android:id="@+id/editable_field_2" android:visibility="gone" android:scrollHorizontally="false" android:inputType="none|text|textCapSentences|textAutoCorrect|textMultiLine" style="@style/Canonical.EditText.Grouped"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/description_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" style="@style/Canonical.Text.E.Light"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/tooltip_section" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/text_remaining" android:paddingLeft="@dimen/gutter_padding" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/Canonical.Text.E"/>
+        <com.airbnb.android.core.views.ColorizedIconView android:id="@+id/tooltip_image" android:background="?attr/selectableItemBackground" android:layout_width="@dimen/tooltip_image_size" android:layout_height="@dimen/tooltip_image_size" android:scaleType="center" app:drawableId="@drawable/icon_lightbulb_sm_blue" app:colorStates="@color/c_babu"/>
+    </LinearLayout>
+</LinearLayout>

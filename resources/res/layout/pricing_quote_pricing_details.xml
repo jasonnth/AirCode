@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="vertical" android:id="@+id/price_breakdown" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/subtotal_cell" android:layout_width="match_parent" android:layout_height="wrap_content" app:hideTopBorder="true" app:title="@string/price_subtotal"/>
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/cleaning_fee_cell" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/price_cleaning_fee"/>
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/service_fee_cell" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/price_service_fee"/>
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/taxes_cell" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/price_taxes"/>
+    </LinearLayout>
+    <com.airbnb.android.lib.views.GroupedCell android:id="@+id/total_price_cell" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentColor="@color/c_green" app:title="@string/price_total"/>
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.components.DocumentMarquee app:n2_showDivider="true" app:n2_titleText="@string/calendar" style="@style/n2_DocumentMarquee"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/descriptive_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="?attr/n2_horizontal_side_padding" android:layout_marginTop="@dimen/n2_vertical_padding_medium" android:layout_marginRight="?attr/n2_horizontal_side_padding" style="@style/n2_LargeText.Muted"/>
+    </LinearLayout>
+</FrameLayout>

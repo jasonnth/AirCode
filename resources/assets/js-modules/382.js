@@ -1,0 +1,1 @@
+__d(function(o,t,n,e){function i(o){var t=r.call(o);return"[object Function]"===t||"function"==typeof o&&"[object RegExp]"!==t||"undefined"!=typeof window&&(o===window.setTimeout||o===window.alert||o===window.confirm||o===window.prompt)}n.exports=i;var r=Object.prototype.toString},382);

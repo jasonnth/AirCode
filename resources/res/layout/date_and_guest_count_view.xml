@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/p4_dates_section_header" android:visibility="gone" android:text="@string/dates" style="@style/TextSectionHeader"/>
+    <com.airbnb.android.lib.views.GroupedDates android:id="@+id/grouped_dates" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:contentDescription="@string/select_dates"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/p4_guests_section_header" android:visibility="gone" android:layout_marginTop="15dp" android:text="@string/guests" style="@style/TextSectionHeader"/>
+    <com.airbnb.android.lib.views.GenericGuestCounter android:id="@+id/grouped_guest_counter" android:paddingLeft="@dimen/search_filters_side_padding" android:paddingRight="@dimen/search_filters_side_padding" android:layout_width="match_parent" android:layout_height="wrap_content" app:quantityString="@plurals/x_guests" app:minValue="@integer/min_num_guests" app:maxValue="@integer/max_num_guests" app:minusButtonContentDescription="@string/guest_counter_minus_button_description" app:plusButtonContentDescription="@string/guest_counter_plus_button_description" style="@style/Canonical.GroupedLayout"/>
+</LinearLayout>

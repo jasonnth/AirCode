@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_HomeCard.Carousel">
+    <android.support.percent.PercentRelativeLayout android:id="@+id/listing_image_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/listing_image" android:background="@color/n2_loading_background" app:layout_widthPercent="100%" app:layout_aspectRatio="150%"/>
+    </android.support.percent.PercentRelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/details_box" android:paddingTop="@dimen/n2_vertical_padding_small" android:paddingRight="@dimen/listing_review_card_detail_box_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:layout_below="@+id/listing_image_container" android:layout_alignParentLeft="true">
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/label" android:visibility="gone" android:layout_marginBottom="@dimen/n2_vertical_padding_tiny" style="@style/n2_StandardRowWithLabel_Label"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/listing_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/n2_RegularText"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/rating_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/n2_RegularText"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/recent_rating_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" style="@style/n2_RegularText"/>
+    </LinearLayout>
+</RelativeLayout>

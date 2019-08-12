@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <tab id="@+id/nav_trip_host_inbox" icon="@drawable/ic_core_nav_hostinbox" title="@string/bottom_tab_label_inbox_uppercase"/>
+    <tab id="@+id/nav_trip_host_calendar" icon="@drawable/ic_core_nav_hostcalendar" title="@string/bottom_tab_label_calendar_uppercase"/>
+    <tab id="@+id/nav_trip_host_experiences" icon="@drawable/ic_core_nav_triphost_experiences" title="@string/bottom_tab_label_experiences_uppercase"/>
+    <tab id="@+id/nav_account" icon="@drawable/ic_core_nav_hostprofile" title="@string/bottom_tab_label_profile_uppercase" hideBadgeWhenSelected="false"/>
+</tabs>

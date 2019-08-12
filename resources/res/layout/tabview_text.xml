@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.airbnb.p027n2.primitives.AirTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="14sp" android:textStyle="bold" android:textColor="@color/c_foggy" android:gravity="center" android:background="?attr/selectableItemBackground" android:padding="16dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textAllCaps="true"/>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.components.MessageInputOneRow android:id="@+id/message_input_one_row" android:visibility="gone" style="@style/n2_MessageInput"/>
+    <com.airbnb.p027n2.components.MessageInputTwoRows android:id="@+id/message_input_two_rows" android:visibility="gone" style="@style/n2_MessageInput"/>
+</merge>

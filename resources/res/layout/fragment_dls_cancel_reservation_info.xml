@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" style="@style/n2_FocusPane">
+        <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Space style="@style/n2_ToolbarSpacer"/>
+                <include android:layout_width="0dp" android:layout_height="0dp" android:layout_marginTop="1dp" layout="@layout/n2_toolbar_pusher"/>
+                <com.airbnb.p027n2.components.DocumentMarquee android:id="@+id/marquee" style="@style/n2_DocumentMarquee.NoTopPadding"/>
+                <com.airbnb.p027n2.components.SimpleTextRow android:id="@+id/simple_text" app:n2_showDivider="false" style="@style/n2_SimpleTextRow.Regular"/>
+            </LinearLayout>
+        </com.airbnb.p027n2.collections.VerboseScrollView>
+        <com.airbnb.p027n2.primitives.AirButton android:enabled="true" android:layout_gravity="right" android:id="@+id/btn" android:layout_width="wrap_content" style="@style/n2_AirButton.BabuFill.RightCaret"/>
+    </LinearLayout>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_scrollWith="@+id/scroll_view" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+</FrameLayout>

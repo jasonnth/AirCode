@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" style="?android:attr/actionButtonStyle">
+    <ImageView android:id="@+id/icon" android:background="@android:color/transparent" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+    <ImageView android:id="@+id/badge" android:paddingTop="16dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:translationX="24dp" app:srcCompat="@drawable/n2_icon_badge"/>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/c_foggy_white" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/share_itin_info_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/p5_header_text" style="@style/Canonical.Text.C"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/share_itin_info_subtext" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/p5_subheader_text" style="@style/Canonical.Text.F.Hof"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <View android:background="@color/search_tween_divider_color" android:layout_width="30dp" android:layout_height="2dp"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <com.android.p305ex.chips.RecipientEditTextView android:id="@+id/share_itin_recipient_edit_text" android:background="@color/c_foggy_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/add_email_addesses" android:minLines="1" android:inputType="textEmailAddress" android:imeOptions="actionDone" style="@style/Canonical.Text.E"/>
+    </ScrollView>
+    <com.airbnb.android.lib.views.LoaderRecyclerView android:id="@+id/loader_recycler_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="10dp" android:layout_weight="1"/>
+    <RelativeLayout android:id="@+id/share_itin_button_footer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_kazan" android:id="@+id/btn_skip" android:background="?attr/selectableItemBackground" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/action_skip" android:layout_alignParentLeft="true" app:n2_font="3" style="@style/Canonical.Text.E.Light"/>
+        <com.airbnb.p027n2.primitives.AirButton android:enabled="false" android:id="@+id/share_itin_send_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/referrals_send_button" android:layout_alignParentRight="true" style="@style/Canonical.Button.Raised"/>
+    </RelativeLayout>
+</LinearLayout>

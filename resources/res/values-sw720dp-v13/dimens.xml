@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_fixed_height_major">70%</dimen>
+    <dimen name="activity_fixed_height_minor">90%</dimen>
+    <dimen name="activity_fixed_width_major">50%</dimen>
+    <dimen name="activity_fixed_width_minor">70%</dimen>
+    <dimen name="bottomsheet_default_sheet_width">480dp</dimen>
+    <dimen name="travel_feed_header_card_title_text_size">52sp</dimen>
+    <dimen name="travel_feed_header_divider_padding">40dp</dimen>
+    <dimen name="travel_feed_header_subtitle_text_size">38sp</dimen>
+    <dimen name="dot_size">10dp</dimen>
+    <dimen name="n2_fullscreen_image_margin_bottom_percent">18%</dimen>
+    <dimen name="n2_fullscreen_image_margin_top_percent">6%</dimen>
+</resources>

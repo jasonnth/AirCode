@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.airbnb.p027n2.primitives.SquareImageView android:id="@+id/image" android:background="@color/n2_babu" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/story_feed_top_tile_foreground"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/n2_horizontal_padding_small" android:paddingRight="@dimen/n2_horizontal_padding_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:id="@+id/main_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/n2_TitleText3.Inverse.Plus"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/n2_white_60" android:gravity="center" android:id="@+id/secondary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/n2_vertical_padding_tiny" android:maxLines="1" style="@style/n2_MicroText"/>
+    </LinearLayout>
+</merge>

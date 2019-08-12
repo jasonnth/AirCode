@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/sheet_input_text_hint" android:text="@string/title_phone" android:textAllCaps="true" style="@style/n2_SheetInputTextHintLabel"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/sheet_input_edit_text_container" android:background="@drawable/n2_sheet_input_text_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/btn_calling_code" style="@style/n2_PhoneNumberCountrySelector"/>
+        <com.airbnb.p027n2.primitives.AirEditTextView android:id="@+id/edittext_phone_number" style="@style/n2_SheetInputTextEditText.PhoneInput"/>
+    </LinearLayout>
+</merge>

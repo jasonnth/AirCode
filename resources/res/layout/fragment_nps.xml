@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.android.lib.views.StickyButton android:id="@+id/submit_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/submit" android:layout_alignParentBottom="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/submit_button">
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp" android:text="@string/nps_likelihood" style="@style/Canonical.Text.C"/>
+        <FrameLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nps_unlikely" style="@style/Canonical.Text.F.Hof"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nps_likely" style="@style/Canonical.Text.F.Hof"/>
+        </FrameLayout>
+        <RadioGroup android:orientation="horizontal" android:id="@+id/rating_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginRight="3dp">
+            <RadioButton android:text="0" style="@style/NPSRadioButton"/>
+            <RadioButton android:text="1" style="@style/NPSRadioButton"/>
+            <RadioButton android:text="2" style="@style/NPSRadioButton"/>
+            <RadioButton android:text="3" style="@style/NPSRadioButton"/>
+            <RadioButton android:text="4" style="@style/NPSRadioButton"/>
+            <RadioButton android:text="5" style="@style/NPSRadioButton"/>
+            <RadioButton android:text="6" style="@style/NPSRadioButton"/>
+            <RadioButton android:text="7" style="@style/NPSRadioButton"/>
+            <RadioButton android:text="8" style="@style/NPSRadioButton"/>
+            <RadioButton android:text="9" style="@style/NPSRadioButton"/>
+            <RadioButton android:text="10" style="@style/NPSRadioButton"/>
+        </RadioGroup>
+    </LinearLayout>
+</RelativeLayout>

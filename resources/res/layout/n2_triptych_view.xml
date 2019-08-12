@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/image_left" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_toLeftOf="@+id/right_images_container" android:layout_alignParentLeft="true" android:layout_alignWithParentIfMissing="true" app:n2_alignTop="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/right_images_container" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:layout_alignParentRight="true" app:layout_widthPercent="33%">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/image_right_top" android:layout_width="match_parent" android:layout_height="0dp" android:scaleType="centerCrop" android:layout_weight="1" app:n2_alignTop="true"/>
+        <Space android:layout_width="match_parent" android:layout_height="2dp"/>
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/image_right_bottom" android:layout_width="match_parent" android:layout_height="0dp" android:scaleType="centerCrop" android:layout_weight="1" app:n2_alignTop="true"/>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_gravity="top|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+        <com.airbnb.p027n2.primitives.AirTextView android:textSize="14sp" android:textColor="@color/c_gray_2" android:gravity="center" android:id="@+id/txt_remove" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ml_remove_photo" android:drawableLeft="@drawable/icon_text_delete" android:drawablePadding="6dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:textIsSelectable="false"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?attr/actionBarSize">
+        <ImageView android:id="@+id/img_photo_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="33dp" android:layout_marginRight="27dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" app:srcCompat="@drawable/icon_indicator_arrow_up"/>
+    </RelativeLayout>
+    <com.airbnb.p027n2.primitives.AirTextView android:textSize="36sp" android:textColor="@color/c_gray_3" android:gravity="center" android:layout_gravity="center" android:id="@+id/txt_photo_prompt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="45dp" android:text="@string/ml_add_photos" android:textIsSelectable="false"/>
+    <com.airbnb.android.lib.views.PhotoRearranger android:id="@+id/photo_rearranger" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</FrameLayout>

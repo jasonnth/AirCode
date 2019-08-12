@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/c_gray_6" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.android.lib.views.LinearListView android:orientation="vertical" android:id="@+id/list_credits" android:background="@drawable/book_it_flow_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/c_layout_padding_horizontal" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/c_layout_padding_horizontal" android:layout_marginBottom="10dp" android:divider="@color/c_gray_5" android:showDividers="none|middle|end" app:dividerThickness="@dimen/line_thickness"/>
+</ScrollView>

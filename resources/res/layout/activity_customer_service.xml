@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:paddingLeft="@dimen/gutter_padding" android:paddingTop="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/offline_help_info" style="@style/Canonical.Text.E"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_rausch" android:gravity="center_horizontal" android:id="@+id/offline_visit_help_website" android:background="@drawable/c_bg_transparent" android:padding="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/offline_visit_help_website" style="@style/Canonical.Text.D"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/container_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="center_horizontal" android:id="@+id/offline_cant_find_country_text" android:padding="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/offline_help_other_country" style="@style/Canonical.Text.E"/>
+    </LinearLayout>
+</ScrollView>

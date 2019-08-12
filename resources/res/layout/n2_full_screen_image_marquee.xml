@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/n2_babu" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize">
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/image" android:background="@color/n2_babu" android:paddingTop="?attr/actionBarSize" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:layout_marginLeftPercent="12%" app:layout_marginTopPercent="@dimen/n2_fullscreen_image_margin_top_percent" app:layout_marginRightPercent="12%" app:layout_marginBottomPercent="@dimen/n2_fullscreen_image_margin_bottom_percent"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/image_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" app:layout_marginLeftPercent="21%" app:layout_marginTopPercent="22%" app:layout_marginRightPercent="21%" style="@style/n2_TitleText2"/>
+    <include layout="@layout/n2_toolbar_pusher"/>
+    <RelativeLayout android:layout_gravity="bottom" android:background="@color/n2_white" android:layout_width="match_parent" app:layout_heightPercent="@dimen/n2_fullscreen_image_marquee_text_height">
+        <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_above="@+id/empty_footer" android:layout_alignParentTop="true">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_fullscreen_image_marquee_title"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/description" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_fullscreen_image_marquee_subtitle"/>
+            </LinearLayout>
+        </ScrollView>
+        <View android:id="@+id/empty_footer" android:layout_width="match_parent" android:layout_height="@dimen/n2_fixed_action_footer_height" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</android.support.percent.PercentFrameLayout>

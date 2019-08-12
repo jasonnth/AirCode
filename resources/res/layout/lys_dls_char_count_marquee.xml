@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/layout_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.airbnb.android.core.views.AirEditTextPageView android:id="@+id/edit_text_page" style="@style/AirEditTextPage"/>
+        <com.airbnb.p027n2.primitives.AirButton android:id="@+id/preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/preview" style="@style/n2_AirButton.WhiteFill.BabuBorder.LeftBottom"/>
+        <com.airbnb.p027n2.primitives.AirButton android:id="@+id/next_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lys_dls_next" style="@style/n2_AirButton.BabuFill.RightCaret.RightBottom"/>
+        <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_scrollWith="@+id/edit_text_page" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+    </FrameLayout>
+    <com.airbnb.android.listing.views.TipView android:id="@+id/tip" android:visibility="gone" style="@style/TipView"/>
+</LinearLayout>

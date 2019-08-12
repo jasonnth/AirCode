@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+        <com.airbnb.p027n2.collections.AirRecyclerView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:layoutManager="LinearLayoutManager"/>
+        <com.airbnb.p027n2.components.fixed_footers.FixedFlowActionFooter android:id="@+id/footer" app:n2_buttonText="@string/wmpw_get_started" app:n2_subtitleStyle="@style/WhatsMyPlaceWorthFooterSubtitleStyle" app:n2_subtitleText="@string/wmpw_enter_your_address" style="@style/n2_FixedFlowActionFooter.Babu"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/disclaimer_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" android:layout_marginBottom="@dimen/n2_vertical_padding_medium" android:text="@string/wmpw_disclaimer" style="@style/n2_SmallText.Muted"/>
+    </LinearLayout>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_scrollWith="@+id/scroll_view" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.LightForeground"/>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <include android:id="@+id/row_divider" android:paddingLeft="@dimen/c_layout_padding_horizontal" android:paddingRight="@dimen/c_layout_padding_horizontal" android:layout_width="match_parent" android:layout_height="@dimen/line_thickness" layout="@layout/gutter_divider"/>
+    <android.support.p000v4.widget.Space android:layout_width="match_parent" android:layout_height="@dimen/n2_vertical_padding_tiny"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:textSize="12sp" android:gravity="left" android:id="@+id/upsell_view" android:background="@drawable/foggy_pill" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/c_layout_padding_horizontal" android:layout_marginTop="@dimen/n2_vertical_padding_small"/>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/c_layout_padding_horizontal" android:paddingRight="@dimen/c_layout_padding_horizontal" android:paddingBottom="@dimen/n2_vertical_padding_tiny" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/booking_requirement_vertical_padding">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/booking_requirement_vertical_padding" android:layout_marginBottom="@dimen/lys_booking_option_vertical_padding" android:layout_weight="1">
+            <com.airbnb.p027n2.primitives.AirTextView android:textSize="17sp" android:id="@+id/row_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textSize="15sp" android:ellipsize="end" android:id="@+id/row_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_centerVertical="true"/>
+        </LinearLayout>
+        <com.airbnb.android.core.views.ColorizedIconView android:layout_gravity="center_vertical" android:id="@+id/row_check_mark" android:paddingLeft="@dimen/c_layout_padding_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:colorStates="@color/c_hof"/>
+    </LinearLayout>
+</merge>

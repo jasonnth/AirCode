@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/text_scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:layout_width="match_parent" android:layout_height="match_parent">
+            <Space android:id="@+id/n2_toolbar_pusher" android:layout_width="match_parent" android:layout_height="@dimen/n2_vertical_padding_small" android:layout_marginTop="?attr/actionBarSize"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/n2_text_color_main" android:id="@+id/text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_scrollWith="@+id/text_scroll_view" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_height="wrap_content" style="@style/n2_FocusPane">
+            <com.airbnb.android.core.views.guestpicker.GuestsPickerView android:id="@+id/base_guests_picker" android:layout_width="match_parent" android:layout_height="wrap_content" app:type="3"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/infant_description_text" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_vertical_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/infants_detailed_description" style="@style/n2_SheetBodyText"/>
+            <Space android:layout_width="match_parent" android:layout_height="0dp" android:minHeight="@dimen/n2_vertical_padding_large" android:layout_weight="1"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+    <com.airbnb.p027n2.components.fixed_footers.FixedActionFooter android:id="@+id/save_button" app:n2_buttonText="@string/save" style="@style/n2_FixedActionFooter.Babu"/>
+</merge>

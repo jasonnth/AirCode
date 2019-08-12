@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/guest_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_RegularText.Inverse"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/guests_nights_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_SmallText.Plus"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_SmallText.Plus"/>
+        <android.support.p000v4.widget.Space android:layout_width="wrap_content" android:layout_height="0dp" android:minHeight="@dimen/n2_vertical_padding_large" android:layout_weight="1"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/message_action" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_SmallText.Plus"/>
+    </LinearLayout>
+    <com.airbnb.p027n2.primitives.imaging.HaloImageView android:id="@+id/guest_image" android:layout_width="@dimen/calendar_guest_image_diameter" android:layout_height="@dimen/calendar_guest_image_diameter" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+</merge>

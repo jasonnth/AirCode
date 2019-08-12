@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <tab id="@+id/nav_inbox_host" icon="@drawable/ic_core_nav_hostinbox" hideBadgeWhenSelected="false"/>
+    <tab id="@+id/nav_calendar" icon="@drawable/ic_core_nav_hostcalendar"/>
+    <tab id="@+id/nav_listings" icon="@drawable/ic_core_nav_hostlisting"/>
+    <tab id="@+id/nav_performance" icon="@drawable/ic_core_nav_hoststats"/>
+    <tab id="@+id/nav_cohosting" icon="@drawable/ic_core_nav_cohosting"/>
+    <tab id="@+id/nav_account" icon="@drawable/ic_core_nav_hostprofile" hideBadgeWhenSelected="false"/>
+</tabs>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/c_clear_to_gray_background_selector" android:paddingLeft="@dimen/c_layout_padding_horizontal" android:paddingTop="12dp" android:paddingRight="@dimen/c_layout_padding_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.GroupedLayout">
+    <com.airbnb.p027n2.primitives.AirTextView android:gravity="center_horizontal" android:id="@+id/user_name" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.Text.B"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/btn_edit_name" android:background="?attr/selectableItemBackground" android:layout_marginTop="10dp" android:layout_marginBottom="5dp" android:text="@string/edit_profile_edit_name" style="@style/Canonical.Text.RauschEmpty"/>
+    <include layout="@layout/section_divider_profile"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/edit_profile_about_me" style="@style/GroupedTitle"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/about_me_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="35dp" android:maxLines="3" style="@style/Canonical.Text.E"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/btn_edit_about_me" android:background="?attr/selectableItemBackground" android:layout_marginTop="10dp" android:text="@string/edit_profile_edit_about_me" style="@style/Canonical.Text.RauschEmpty"/>
+    <include layout="@layout/section_divider_profile"/>
+</LinearLayout>

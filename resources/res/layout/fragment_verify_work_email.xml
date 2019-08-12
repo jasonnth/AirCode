@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.components.DocumentMarquee android:id="@+id/document_marquee" app:n2_showDivider="false" style="@style/n2_DocumentMarquee"/>
+        <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="left" android:id="@+id/got_it_button" android:layout_width="wrap_content" android:layout_marginLeft="?attr/n2_horizontal_side_padding" android:layout_marginTop="@dimen/n2_vertical_padding_medium" android:layout_marginRight="?attr/n2_horizontal_side_padding" android:layout_marginBottom="@dimen/n2_vertical_padding_small" android:text="@string/bt_verify_work_email_finish_button" style="@style/n2_AirButton_V2.Babu"/>
+        <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="left" android:id="@+id/resend_email_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginLeft="?attr/n2_horizontal_side_padding" android:layout_marginRight="?attr/n2_horizontal_side_padding" android:layout_marginBottom="@dimen/n2_vertical_padding_small" android:text="@string/bt_verify_work_email_resend_button" style="@style/n2_AirButton_V2.BabuOutline"/>
+    </LinearLayout>
+</FrameLayout>

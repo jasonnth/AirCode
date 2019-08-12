@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="@dimen/payout_padding" android:paddingRight="@dimen/payout_padding" android:paddingBottom="@dimen/payout_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/continue_button" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/payout_padding" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/check_w_label"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:text="@string/payout_ach_routing" style="@style/TextSectionHeader"/>
+            <com.airbnb.p027n2.primitives.AirEditTextView android:id="@+id/payout_ach_routing" android:hint="@string/routing_number" android:maxLength="9" android:inputType="number" style="@style/Canonical.EditText.Grouped"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:text="@string/payout_ach_account" style="@style/TextSectionHeader"/>
+            <com.airbnb.p027n2.primitives.AirEditTextView android:id="@+id/payout_ach_account" android:hint="@string/account_number" android:maxLength="30" android:inputType="number" style="@style/Canonical.EditText.Grouped"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:text="@string/payout_ach_name" style="@style/TextSectionHeader"/>
+            <com.airbnb.p027n2.primitives.AirEditTextView android:id="@+id/payout_ach_person_name" android:hint="@string/your_name_account" android:inputType="textPersonName" style="@style/Canonical.EditText.Grouped"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/continue_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/submit" android:layout_alignParentBottom="true" style="@style/Canonical.Button.Raised"/>
+</RelativeLayout>

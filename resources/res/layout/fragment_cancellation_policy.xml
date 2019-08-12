@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/c_foggy_white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/gutter_padding" android:layout_marginTop="@dimen/vertical_padding" android:layout_marginRight="@dimen/gutter_padding">
+    <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cancellation_policy" style="@style/TextSectionHeader"/>
+    <android.support.p002v7.widget.RecyclerView android:id="@+id/cancellation_policies_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="LinearLayoutManager"/>
+</LinearLayout>

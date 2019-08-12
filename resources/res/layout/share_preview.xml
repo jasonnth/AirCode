@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <View android:background="@drawable/n2_scrim_gradient" android:layout_width="match_parent" android:layout_height="@dimen/n2_toolbar_gradient_height"/>
+    <include android:layout_width="0dp" android:layout_height="0dp" android:layout_alignBottom="@+id/preview_card" layout="@layout/n2_toolbar_pusher"/>
+    <android.support.p002v7.widget.CardView android:id="@+id/preview_card" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="48dp" android:layout_marginTop="@dimen/n2_toolbar_gradient_height" android:layout_marginRight="48dp" android:layout_marginBottom="@dimen/n2_toolbar_gradient_height" android:layout_centerInParent="true" app:cardCornerRadius="8dp" app:cardElevation="4dp" app:cardMaxElevation="4dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="250dp" android:scaleType="centerCrop"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/title" android:padding="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" style="@style/n2_TitleText3.PlusPlus"/>
+        </LinearLayout>
+    </android.support.p002v7.widget.CardView>
+</merge>

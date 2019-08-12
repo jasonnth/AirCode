@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.airbnb.android.lib.views.RatingCell android:id="@+id/rating_accuracy" app:title="@string/review_accuracy_title" style="@style/ListingDetailsRatingCell"/>
+    <com.airbnb.android.lib.views.RatingCell android:id="@+id/rating_location" app:title="@string/review_location_title" style="@style/ListingDetailsRatingCell"/>
+    <com.airbnb.android.lib.views.RatingCell android:id="@+id/rating_communication" app:title="@string/review_communication_title" style="@style/ListingDetailsRatingCell"/>
+    <com.airbnb.android.lib.views.RatingCell android:id="@+id/rating_checkin" app:title="@string/review_check_in_title" style="@style/ListingDetailsRatingCell"/>
+    <com.airbnb.android.lib.views.RatingCell android:id="@+id/rating_cleanliness" app:title="@string/review_cleanliness_title" style="@style/ListingDetailsRatingCell"/>
+    <com.airbnb.android.lib.views.RatingCell android:id="@+id/rating_value" app:title="@string/review_value_title" style="@style/ListingDetailsRatingCell"/>
+</merge>

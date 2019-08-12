@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.airbnb.p027n2.primitives.AirTextView android:textSize="18sp" android:id="@+id/txt_counter" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/GroupedCounterRoundTextField"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:textSize="18sp" android:gravity="left" android:id="@+id/txt_facet_count" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" style="@style/GroupedCounterRoundTextField"/>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/grouped_stepper_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/search_filters_vertical_padding" android:layout_marginBottom="@dimen/search_filters_vertical_padding">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/btn_minus" android:background="@drawable/grouped_stepper_left_btn_selector" style="@style/GroupedStepperButton"/>
+        <View android:layout_gravity="center" android:background="@color/grouped_stepper_btn_stroke" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/btn_plus" android:background="@drawable/grouped_stepper_right_btn_selector" style="@style/GroupedStepperButton"/>
+    </LinearLayout>
+</LinearLayout>

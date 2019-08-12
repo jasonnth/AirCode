@@ -1,0 +1,1 @@
+__d(function(e,n,t,r){Object.defineProperty(r,"__esModule",{value:!0}),r.governmentIDSelector=void 0;var o=n(1471);r.governmentIDSelector=(0,o.createSelector)(function(e){return e.verifications.governmentID},function(e){return e.toJS()})},2297);

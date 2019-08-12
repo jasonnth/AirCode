@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.android.lib.views.GroupedCheck android:id="@+id/profile_picture_groupedCheck" android:layout_width="match_parent" android:layout_height="@dimen/account_settings_min_height" app:title="@string/profile_pic_completed"/>
+    <com.airbnb.android.lib.views.GroupedCheck android:id="@+id/email_groupedCheck" android:layout_width="match_parent" android:layout_height="@dimen/account_settings_min_height" app:title="@string/email_completed"/>
+    <com.airbnb.android.lib.views.GroupedCheck android:id="@+id/phone_groupedCheck" android:layout_width="match_parent" android:layout_height="@dimen/account_settings_min_height" app:title="@string/phone_completed"/>
+    <com.airbnb.android.lib.views.GroupedCheck android:id="@+id/offline_groupedCheck" android:layout_width="match_parent" android:layout_height="@dimen/account_settings_min_height" app:title="@string/offline_id_completed"/>
+    <com.airbnb.android.lib.views.GroupedCheck android:id="@+id/online_groupedCheck" android:layout_width="match_parent" android:layout_height="@dimen/account_settings_min_height" app:title="@string/online_id_completed"/>
+</LinearLayout>

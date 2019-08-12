@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:paddingTop="@dimen/verifications_header_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="50dp" android:text="@string/verifications_email_confirm" style="@style/Canonical.Text.B"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:id="@+id/container_current_email" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.airbnb.p027n2.primitives.AirEditTextView android:textColorHint="@color/c_foggy_light" android:layout_gravity="center" android:id="@+id/edittext_email" android:background="@null" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/verifications_email_email_hint"/>
+            <include layout="@layout/verification_horizontal_separator"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:text="@string/verifications_email_will_send_email" style="@style/Canonical.Text.E"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:enabled="false" android:id="@+id/btn_send_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gutter_padding" android:layout_marginTop="25dp" android:layout_marginRight="@dimen/gutter_padding" android:text="@string/verifications_email_send_me_email" style="@style/Canonical.Button.Rausch"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/container_change_email" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0">
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_foggy" android:layout_gravity="center" android:id="@+id/txt_email" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Canonical.Text.E.Light"/>
+            <include layout="@layout/verification_horizontal_separator"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:text="@string/verifications_email_tap_link" style="@style/Canonical.Text.E"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_rausch" android:layout_gravity="center" android:id="@+id/btn_link_change_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@string/verifications_email_change_email"/>
+        </LinearLayout>
+    </FrameLayout>
+    <include layout="@layout/verifications_skip_container"/>
+</LinearLayout>

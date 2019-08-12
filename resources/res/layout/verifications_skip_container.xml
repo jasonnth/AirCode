@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/btn_verifications_skip" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="50dp">
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_gray_3" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/verifications_skip"/>
+        <com.airbnb.android.core.views.ColorizedIconView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="12dp" android:layout_marginLeft="5dp" app:drawableId="@drawable/n2_icon_right_caret" app:colorStates="@color/c_gray_3"/>
+    </LinearLayout>
+</FrameLayout>

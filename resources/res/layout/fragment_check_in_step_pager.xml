@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <android.support.p000v4.view.ViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.LightForeground"/>
+    </FrameLayout>
+    <View android:background="@color/n2_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/n2_divider_height"/>
+    <android.support.design.widget.TabLayout android:layout_gravity="center" android:id="@+id/dots_indicator" android:layout_width="wrap_content" android:layout_height="@dimen/n2_sheet_bottom_bar_height" app:tabIndicatorHeight="0dp" app:tabBackground="@drawable/dots_selector" app:tabMode="1" app:tabGravity="1" app:tabMaxWidth="16dp"/>
+    <com.airbnb.p027n2.components.fixed_footers.FixedActionFooter android:id="@+id/action_footer" style="@style/n2_FixedActionFooter.Babu"/>
+</LinearLayout>

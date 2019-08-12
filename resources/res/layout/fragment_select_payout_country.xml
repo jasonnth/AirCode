@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/n2_Sheet">
+    <com.airbnb.p027n2.components.jellyfish.JellyfishView android:id="@+id/jellyfish_view" android:layout_width="match_parent" android:layout_height="match_parent" app:n2_palette="1"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.components.InputMarquee android:id="@+id/input_marquee" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:id="@+id/input_divider" android:background="@color/n2_divider_color_inverted_10" style="@style/n2_FullSectionDivider"/>
+        <com.airbnb.android.core.views.CountryCodeSelectionView android:id="@+id/selection_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_withMarquee="false" app:n2_selectionMode="1"/>
+    </LinearLayout>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" style="@style/n2_AirToolbar.Transparent.LightForeground"/>
+</FrameLayout>

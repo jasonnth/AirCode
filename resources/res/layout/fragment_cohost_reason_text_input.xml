@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/n2_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.android.core.views.AirEditTextPageView android:id="@+id/edit_text_page" style="@style/AirEditTextPage"/>
+    <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/next_btn" style="@style/n2_AirButton.BabuFill"/>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_menu="@menu/cohost_reason_text_input" app:n2_scrollWith="@+id/edit_text_page" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+</FrameLayout>

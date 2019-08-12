@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/c_gray_6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/how_it_works" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_settings_min_height" app:hideTopBorder="true" app:title="@string/how_it_works"/>
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/why_host" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_settings_min_height" app:fullWidthBorder="true" app:title="@string/options_menu_how_to_host"/>
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/terms_of_service" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_settings_min_height" app:fullWidthBorder="true" app:title="@string/terms_of_service"/>
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/anti_discrimination" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_settings_min_height" app:fullWidthBorder="true" app:title="@string/about_screen_anti_discrimination"/>
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/payments_terms_of_service" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_settings_min_height" app:fullWidthBorder="true" app:title="@string/payments_terms_of_service"/>
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/privacy_policy" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_settings_min_height" app:fullWidthBorder="true" app:title="@string/privacy_policy"/>
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/version_settings" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_settings_min_height" app:fullWidthBorder="true" app:title="@string/settings_build_version"/>
+        <include layout="@layout/section_divider"/>
+    </LinearLayout>
+</ScrollView>

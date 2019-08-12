@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/gutter_padding" android:paddingTop="30dp" android:paddingRight="@dimen/gutter_padding" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:textSize="@dimen/ro_profile_font" android:id="@+id/no_verifications_text_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_verifications" style="@style/Canonical.Text.E.Light"/>
+        <com.airbnb.android.lib.views.LinearListView android:orientation="vertical" android:id="@+id/verifications_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/c_gray_4" android:showDividers="none|beginning|middle|end" app:dividerThickness="@dimen/line_thickness"/>
+        <com.airbnb.p027n2.primitives.AirButton android:id="@+id/btn_verify_your_identity" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/verify_your_identity" style="@style/Canonical.Button.Raised"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="center_horizontal" android:id="@+id/txt_verify_your_identity_info" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/no_verifications_info" style="@style/Canonical.Text.F"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/verified_id_what_is" style="@style/Canonical.Text.E.Light"/>
+    </LinearLayout>
+</ScrollView>

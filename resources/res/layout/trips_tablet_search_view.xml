@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/search_fields_container" android:background="@drawable/search_rounded_bg" android:layout_width="match_parent" android:layout_height="@dimen/explore_input_field_height" android:layout_marginLeft="32dp" android:layout_marginTop="28dp" android:layout_marginRight="32dp" android:layout_marginBottom="16dp">
+        <com.airbnb.android.explore.views.MTSearchInputField android:id="@+id/location_row" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:icon="@drawable/ic_trips_search_anywhere"/>
+        <View android:id="@+id/separator_1" android:background="@color/n2_foggy" android:layout_width="1dp" android:layout_height="34dp"/>
+        <com.airbnb.android.explore.views.MTSearchInputField android:id="@+id/dates_row" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:icon="@drawable/ic_trips_search_calendar"/>
+        <View android:id="@+id/separator_2" android:background="@color/n2_foggy" android:layout_width="1dp" android:layout_height="34dp"/>
+        <com.airbnb.android.explore.views.MTSearchInputField android:id="@+id/guests_row" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:icon="@drawable/ic_trips_search_guest"/>
+    </LinearLayout>
+</merge>

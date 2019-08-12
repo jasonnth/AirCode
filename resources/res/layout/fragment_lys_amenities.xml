@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/c_foggy_white" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:paddingBottom="@dimen/ml_vertical_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:text="@string/amenity_section_header_most_common" style="@style/TextSectionHeader"/>
+        <com.airbnb.android.lib.views.LinearListView android:orientation="vertical" android:id="@+id/most_common" android:background="@drawable/c_grouped_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/c_gray_5" android:showDividers="middle" app:dividerThickness="@dimen/line_thickness"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:text="@string/amenity_section_header_extras" style="@style/TextSectionHeader"/>
+        <com.airbnb.android.lib.views.LinearListView android:orientation="vertical" android:id="@+id/extras" android:background="@drawable/c_grouped_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/c_gray_5" android:showDividers="middle" app:dividerThickness="@dimen/line_thickness"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:text="@string/amenity_section_header_special_features" style="@style/TextSectionHeader"/>
+        <com.airbnb.android.lib.views.LinearListView android:orientation="vertical" android:id="@+id/special_features" android:background="@drawable/c_grouped_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/c_gray_5" android:showDividers="middle" app:dividerThickness="@dimen/line_thickness"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:text="@string/amenity_section_header_home_safety" style="@style/TextSectionHeader"/>
+        <com.airbnb.android.lib.views.LinearListView android:orientation="vertical" android:id="@+id/home_safety" android:background="@drawable/c_grouped_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/c_gray_5" android:showDividers="middle" app:dividerThickness="@dimen/line_thickness"/>
+    </LinearLayout>
+</ScrollView>

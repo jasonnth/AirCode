@@ -1,0 +1,1 @@
+__d(function(e,t,s,a){s.exports=t(164).registerAsset({__packager_asset:!0,httpServerLocation:"/assets/node_modules/react-native-datepicker",width:64,height:64,scales:[1],hash:"1edd5017f455b09c608e175b1285c06d",name:"date_icon",type:"png"})},2083);

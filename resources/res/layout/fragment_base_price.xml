@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/c_foggy_white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/gutter_padding" android:layout_marginRight="@dimen/gutter_padding">
+    <ScrollView android:gravity="center_horizontal" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="40dp" android:paddingBottom="@dimen/ml_vertical_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/black" android:gravity="center_horizontal" android:id="@+id/edit_price_header" android:paddingBottom="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.Text.F"/>
+            <com.airbnb.android.lib.views.PriceEditText android:id="@+id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" app:units_sign_size="24sp" app:number_size="24sp"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp">
+        <com.airbnb.p027n2.primitives.AirTextView android:textSize="15sp" android:gravity="center_vertical" android:id="@+id/edit_price_sub_text" android:padding="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:minLines="2" android:layout_weight="1"/>
+        <com.airbnb.android.core.views.ColorizedIconView android:id="@+id/tooltip_image" android:background="?attr/selectableItemBackground" android:layout_width="@dimen/tooltip_image_size" android:layout_height="@dimen/tooltip_image_size" android:scaleType="center" app:drawableId="@drawable/icon_lightbulb_sm_blue" app:colorStates="@color/c_babu"/>
+    </LinearLayout>
+</LinearLayout>

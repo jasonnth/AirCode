@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.android.lib.views.PriceEditText android:id="@+id/price_field" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="80dp" android:layout_alignParentLeft="true" app:units_sign_size="@dimen/number_edit_text_size" app:number_size="@dimen/number_edit_text_size"/>
+    <LinearLayout android:id="@+id/counter_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <com.airbnb.android.core.views.ColorizedIconView android:layout_gravity="center" android:id="@+id/btn_decrease" android:background="@null" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="center" app:drawableId="@drawable/icon_decrement" app:colorStates="@color/c_rausch"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_gravity="center" android:id="@+id/txt_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="1" style="@style/Canonical.Text.A"/>
+        <com.airbnb.android.core.views.ColorizedIconView android:layout_gravity="center" android:id="@+id/btn_increase" android:background="@null" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="center" app:drawableId="@drawable/icon_increment" app:colorStates="@color/c_rausch"/>
+    </LinearLayout>
+    <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lys_additional_guests_after" android:layout_toLeftOf="@+id/counter_group" android:layout_toRightOf="@+id/price_field" style="@style/Canonical.Text.E"/>
+</RelativeLayout>

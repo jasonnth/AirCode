@@ -1,0 +1,1 @@
+__d(function(t,o,n,e){function u(t){return t&&t.contentInset?t.contentInset:{top:0,bottom:0}}function r(t,o){var n=0,e=0;return o&&(n=o.top||n,e=o.bottom||e),(t||[]).map(u).reduce(function(t,o){return t.top+=o.top,t.bottom+=o.bottom,t},{top:n||0,bottom:e||0})}Object.defineProperty(e,"__esModule",{value:!0}),e.default=r},785);

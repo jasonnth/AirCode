@@ -1,0 +1,1 @@
+__d(function(e,n,t,u){function d(e,n,t){return{x:.5*n-n*e.x,y:.5*t-t*e.y}}Object.defineProperty(u,"__esModule",{value:!0}),u.default=d},2070);

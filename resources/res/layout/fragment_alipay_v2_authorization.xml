@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/n2_black_20" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.LoadingText android:layout_gravity="center" app:n2_loadingViewColor="@color/white" app:n2_messageTextColor="@color/n2_text_color_muted_inverted" app:n2_messageText="@string/alipay_v2_loading" style="@style/n2_LoadingText"/>
+</FrameLayout>

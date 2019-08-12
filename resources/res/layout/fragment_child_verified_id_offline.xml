@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginRight="25dp" android:text="@string/verified_id_offline_scan_instructions" style="@style/Canonical.Text.E"/>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/verified_id_scan_id_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="15dp" android:layout_marginRight="25dp" android:layout_marginBottom="15dp" android:text="@string/verified_id_offline_begin" style="@style/Canonical.Button.Raised"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:textSize="20sp" android:textColor="@color/verified_id_secure" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" app:n2_font="1"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/verified_id_secure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/verified_id_offline_secure"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:minHeight="24dp" android:layout_weight="1"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:textColorLink="@color/c_rausch" android:gravity="center" android:id="@+id/offline_privacy" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" style="@style/Canonical.Text.F"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/verified_id_switch_to_sesame_credit_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/section_divider"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_rausch_text_selector" android:gravity="center" android:id="@+id/verified_id_switch_to_sesame_credit" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="44dp" android:text="@string/verified_id_switch_to_seesame_credit" style="@style/Canonical.Text.E"/>
+    </LinearLayout>
+</LinearLayout>

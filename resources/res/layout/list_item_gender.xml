@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:background="@drawable/c_list_selector" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.airbnb.p027n2.primitives.AirTextView android:layout_gravity="center_vertical" android:id="@+id/txt_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/Canonical.Text.D"/>
+    <RadioButton android:id="@+id/radio_button" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

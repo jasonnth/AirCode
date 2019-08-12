@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.jellyfish.JellyfishView android:id="@+id/jellyfish_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ScrollView style="@style/n2_SheetScrollView">
+        <LinearLayout style="@style/n2_SheetInputFieldContainer">
+            <com.airbnb.p027n2.components.SheetMarquee app:n2_subtitleText="@string/alipay_verification_subtitle" app:n2_titleText="@string/alipay_verification_title" style="@style/n2_SheetMarquee"/>
+            <com.airbnb.p027n2.components.SheetInputText android:id="@+id/alipay_verification_sheetInput" android:inputType="number" app:n2_hintText="@string/alipay_sms_verification" app:n2_actionText="@string/alipay_sms_resend_code" style="@style/n2_SheetInputText">
+                <requestFocus/>
+            </com.airbnb.p027n2.components.SheetInputText>
+            <com.airbnb.p027n2.primitives.AirTextView android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alipay_alipay_charges" style="@style/n2_SmallText.Inverse"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/next_button" android:text="@string/submit" style="@style/n2_AirButton.WhiteFill"/>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" style="@style/n2_AirToolbar.Transparent.LightForeground"/>
+</FrameLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.collections.Carousel android:id="@+id/image_carousel" android:paddingLeft="@dimen/n2_horizontal_padding_tiny" android:paddingTop="@dimen/n2_carousel_horizontal_padding" android:paddingRight="@dimen/n2_horizontal_padding_tiny" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</merge>

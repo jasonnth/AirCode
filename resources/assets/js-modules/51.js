@@ -1,0 +1,1 @@
+__d(function(r,t,n,e){"use strict";var u={},i=1,c={},s=function(){function r(){babelHelpers.classCallCheck(this,r)}return r.register=function(r){var t=++i;return u[t]=r,t},r.getByID=function(r){if(!r)return c;var t=u[r];return t||c},r}();n.exports=s},51);

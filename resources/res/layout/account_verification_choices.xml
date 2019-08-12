@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="bottom" android:orientation="vertical" android:id="@+id/choiceLayout" android:background="@color/twenty_percent_black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/action_menu_description_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_gravity="left" android:paddingLeft="?attr/n2_horizontal_side_padding" android:paddingTop="@dimen/n2_vertical_padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/trust_logo"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/choiceInfoText" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_vertical_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:paddingBottom="@dimen/n2_vertical_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_RegularText"/>
+    </LinearLayout>
+    <com.airbnb.p027n2.components.LinkActionRow android:id="@+id/choiceOneText" android:background="@color/white" style="@style/n2_LinkActionRow"/>
+    <com.airbnb.p027n2.components.LinkActionRow android:id="@+id/choiceTwoText" android:background="@color/white" style="@style/n2_LinkActionRow"/>
+    <com.airbnb.p027n2.components.LinkActionRow android:id="@+id/choiceThreeText" android:background="@color/white" style="@style/n2_LinkActionRow"/>
+    <com.airbnb.p027n2.components.LinkActionRow android:id="@+id/choiceCancelText" android:background="@color/white" app:n2_text="@string/cancel" style="@style/n2_LinkActionRow"/>
+</LinearLayout>

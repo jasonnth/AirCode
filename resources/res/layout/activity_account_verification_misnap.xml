@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/misnap_capture_container" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/misnap_capture_overlay" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/camera_overlay_margin">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@+id/camera_overlay_close_button" android:background="@color/transparent" android:padding="@dimen/camera_overlay_buttons_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/white" android:layout_alignParentLeft="true" app:srcCompat="@drawable/n2_icon_close"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/camera_overlay_capture_mode_button" android:padding="@dimen/camera_overlay_buttons_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/Canonical.Text.E.White"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <android.support.p000v4.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+                <android.support.percent.PercentFrameLayout android:layout_gravity="center" android:id="@+id/camera_overlay_id_frame" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginBottom="@dimen/camera_overlay_id_box_v_margin">
+                    <com.airbnb.p027n2.primitives.AirTextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/camera_error_text" android:background="@drawable/id_scan_error_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Canonical.Text.E.White"/>
+                    <View android:background="@drawable/id_scan_background" app:layout_heightPercent="100%" app:layout_aspectRatio="150%"/>
+                </android.support.percent.PercentFrameLayout>
+            </FrameLayout>
+            <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageButton android:layout_gravity="center" android:id="@+id/camera_overlay_capture_button" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/camera_overlay_capture"/>
+            </FrameLayout>
+        </LinearLayout>
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/white" android:gravity="center" android:id="@+id/camera_overlay_status_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/camera_overlay_margin" android:text="@string/verified_id_camera_overlay_desc"/>
+    </LinearLayout>
+</FrameLayout>

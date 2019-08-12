@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/n2_Sheet">
+    <LinearLayout style="@style/n2_SheetInputFieldContainer">
+        <com.airbnb.p027n2.components.SheetMarquee android:id="@+id/selfie_marquee" app:n2_subtitleText="@string/account_verification_selfie_desc" app:n2_titleText="@string/account_verification_selfie_header" style="@style/n2_SheetMarquee"/>
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/account_verification_selfie_illustration"/>
+    </LinearLayout>
+    <com.airbnb.p027n2.primitives.AirButtonExpandable android:id="@+id/account_verification_selfie_take_photo" android:text="@string/verifications_photo_take_photo" style="@style/n2_AirButton.WhiteFill.RightCaret.WithText"/>
+</FrameLayout>

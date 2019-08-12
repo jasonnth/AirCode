@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/coordinator_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout android:id="@+id/appBarLayout" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+        <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.p002v7.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:layoutManager="LinearLayoutManager"/>
+    <com.airbnb.android.core.views.LoaderFrame android:id="@+id/loader_frame" android:background="@color/loader_overlay_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</android.support.design.widget.CoordinatorLayout>

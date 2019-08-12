@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/image_row_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@+id/image_row_image" android:layout_alignParentLeft="true" style="@style/n2_LargeText"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/image_row_subtitle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/n2_row_inner_vertical_padding" android:layout_toLeftOf="@+id/image_row_image" android:layout_below="@+id/image_row_title" style="@style/n2_SmallText"/>
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/image_row_image" android:layout_width="72dp" android:layout_height="54dp" android:layout_marginLeft="@dimen/n2_horizontal_padding_tiny" android:scaleType="centerCrop" android:layout_alignParentRight="true"/>
+</RelativeLayout>

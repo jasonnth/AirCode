@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_width="40dp" android:layout_height="40dp" app:srcCompat="@drawable/icon_sad"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_gray_2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ml_address_could_not_find" style="@style/Canonical.Text.E"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_rausch" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ml_address_use_form" style="@style/Canonical.Text.E.Red"/>
+</LinearLayout>

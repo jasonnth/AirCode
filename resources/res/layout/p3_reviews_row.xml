@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/p3_reviews_header" android:paddingTop="@dimen/n2_vertical_padding_medium" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" style="@style/n2_RegularText.Plus"/>
+    <com.airbnb.p027n2.components.HomeReviewRow android:id="@+id/review_row_1" style="@style/n2_HomeReviewRow"/>
+    <com.airbnb.p027n2.components.HomeReviewRow android:id="@+id/review_row_2" style="@style/n2_HomeReviewRow"/>
+    <com.airbnb.p027n2.components.HomeReviewRow android:id="@+id/review_row_3" style="@style/n2_HomeReviewRow"/>
+    <com.airbnb.p027n2.components.RefreshLoader android:layout_gravity="center" android:id="@+id/loading_row" android:visibility="gone" style="@style/n2_RefreshLoader"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/see_all_container" android:background="?attr/selectableItemBackground" android:paddingLeft="?attr/n2_horizontal_side_padding" android:paddingTop="@dimen/n2_vertical_padding_medium" android:paddingRight="?attr/n2_horizontal_side_padding" android:paddingBottom="@dimen/n2_vertical_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="center_vertical" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/user_input" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_weight="1" style="@style/n2_RegularText.Actionable"/>
+        <RatingBar android:id="@+id/all_rating_bar" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginTop="@dimen/n2_row_inner_vertical_padding" style="@style/n2_StarRatingBar.Babu"/>
+    </LinearLayout>
+    <View android:id="@+id/p3_reviews_divider" style="@style/n2_SubsectionDivider"/>
+</merge>

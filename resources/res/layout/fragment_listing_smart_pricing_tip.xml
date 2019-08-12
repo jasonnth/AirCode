@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.airbnb.p027n2.components.DocumentMarquee android:id="@+id/document_marquee" app:n2_captionText="@string/manage_listing_smart_pricing_tip_subtitle" app:n2_titleText="@string/manage_listing_smart_pricing_tip_title" style="@style/n2_DocumentMarquee"/>
+            <com.airbnb.p027n2.components.SimpleTextRow app:n2_showDivider="false" app:n2_text="@string/manage_listing_smart_pricing_tip_text_start" style="@style/n2_SimpleTextRow.Regular"/>
+            <com.airbnb.p027n2.components.BulletTextRow app:n2_showDivider="false" app:n2_text="@string/manage_listing_smart_pricing_tip_text_1" style="@style/n2_BulletTextRow"/>
+            <com.airbnb.p027n2.components.BulletTextRow app:n2_showDivider="false" app:n2_text="@string/manage_listing_smart_pricing_tip_text_2" style="@style/n2_BulletTextRow"/>
+            <com.airbnb.p027n2.components.BulletTextRow app:n2_showDivider="false" app:n2_text="@string/manage_listing_smart_pricing_tip_text_3" style="@style/n2_BulletTextRow"/>
+            <com.airbnb.p027n2.components.BulletTextRow app:n2_showDivider="false" app:n2_text="@string/manage_listing_smart_pricing_tip_text_4" style="@style/n2_BulletTextRow"/>
+            <com.airbnb.p027n2.components.SimpleTextRow app:n2_showDivider="false" app:n2_text="@string/manage_listing_smart_pricing_end" style="@style/n2_SimpleTextRow.Regular"/>
+            <Space android:layout_width="match_parent" android:layout_height="@dimen/n2_vertical_padding_large"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+    <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/button" android:text="@string/manage_listing_smart_pricing_try_it_button" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/n2_AirButton.BabuFill"/>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_scrollWith="@+id/scroll_view" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+</FrameLayout>

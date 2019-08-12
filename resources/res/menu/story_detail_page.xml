@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/n2_ic_share" android:id="@+id/share" android:visible="true" android:title="@string/share" app:showAsAction="always"/>
+    <item android:id="@+id/wishlist" android:title="@string/save_to_wish_list" app:showAsAction="always" app:actionLayout="@layout/toolbar_wishlist_icon"/>
+    <item android:id="@+id/delete" android:visible="false" android:title="@string/story_action_delete" app:showAsAction="never"/>
+</menu>

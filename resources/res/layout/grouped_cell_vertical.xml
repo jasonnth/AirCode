@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/grouped_cell_top_border" layout="@layout/section_divider"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/grouped_cell_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" style="@style/GroupedTitle"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/grouped_cell_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:minLines="2" style="@style/Canonical.Text.E"/>
+</LinearLayout>

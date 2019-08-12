@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/sunday_text" android:text="@string/sunday_abbrev" style="@style/WeekDaysStripView"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/monday_text" android:text="@string/monday_abbrev" style="@style/WeekDaysStripView"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/tuesday_text" android:text="@string/tuesday_abbrev" style="@style/WeekDaysStripView"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/wednesday_text" android:text="@string/wednesday_abbrev" style="@style/WeekDaysStripView"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/thursday_text" android:text="@string/thursday_abbrev" style="@style/WeekDaysStripView"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/friday_text" android:text="@string/friday_abbrev" style="@style/WeekDaysStripView"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/saturday_text" android:text="@string/saturday_abbrev" style="@style/WeekDaysStripView"/>
+    </LinearLayout>
+    <View android:id="@+id/week_days_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

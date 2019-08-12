@@ -1,0 +1,1 @@
+__d(function(e,r,l,t){var u=r(654),a=r(2028),i=babelHelpers.interopRequireDefault(a),o=r(2032),b=babelHelpers.interopRequireDefault(o);l.exports=(0,u.combineReducers)({core:i.default,views:b.default})},2027);

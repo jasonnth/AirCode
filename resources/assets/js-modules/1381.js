@@ -1,0 +1,1 @@
+__d(function(e,r,n,t){function u(e,r,n){var t=e[r];return null==t?null:o.test(t)?null:new Error(n+" requires the "+r+' prop to be of the format "YYYY-MM-DD".')}Object.defineProperty(t,"__esModule",{value:!0}),t.default=u;var o=/^\d{4}-\d{2}-\d{2}$/;u.isRequired=function(e,r,n){return null==e[r]?new Error(n+" requires a "+r+" prop, but received nothing."):u(e,r,n)}},1381);

@@ -1,0 +1,25 @@
+package android.support.p000v4.view;
+
+import android.annotation.TargetApi;
+import android.view.View;
+import android.view.View.AccessibilityDelegate;
+
+@TargetApi(14)
+/* renamed from: android.support.v4.view.ViewCompatICS */
+class ViewCompatICS {
+    public static boolean canScrollHorizontally(View v, int direction) {
+        return v.canScrollHorizontally(direction);
+    }
+
+    public static boolean canScrollVertically(View v, int direction) {
+        return v.canScrollVertically(direction);
+    }
+
+    public static void setAccessibilityDelegate(View v, Object delegate) {
+        v.setAccessibilityDelegate((AccessibilityDelegate) delegate);
+    }
+
+    public static void setFitsSystemWindows(View view, boolean fitSystemWindows) {
+        view.setFitsSystemWindows(fitSystemWindows);
+    }
+}

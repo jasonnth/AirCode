@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/photo_section" android:layout_width="match_parent" android:layout_height="@dimen/n2_check_in_card_image_height">
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/empty_photo_content" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/step_number_view" android:paddingBottom="@dimen/n2_vertical_padding_small" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_TitleText2"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/step_instructions_view" android:paddingBottom="@dimen/n2_vertical_padding_small" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_RegularText"/>
+                <com.airbnb.p027n2.primitives.AirButton android:id="@+id/add_photo_button" android:layout_width="wrap_content" style="@style/n2_AirButton_V2.Babu"/>
+            </LinearLayout>
+            <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/photo" android:background="@color/n2_background_gray" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+            <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/edit_image_icon" android:background="@drawable/n2_edit_step_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/n2_card_edit_step_icon_inset"/>
+            <com.airbnb.p027n2.components.RefreshLoader android:layout_gravity="center" android:id="@+id/photo_loader" android:visibility="gone" style="@style/n2_RefreshLoader"/>
+            <RelativeLayout android:id="@+id/error_state" android:background="?attr/selectableItemBackground" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/error_state_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/n2_hof" android:layout_centerInParent="true" app:srcCompat="@drawable/n2_ic_refresh"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/error_state_text" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/error_state_icon" android:layout_centerHorizontal="true" style="@style/n2_RegularText.Plus"/>
+            </RelativeLayout>
+        </FrameLayout>
+        <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/note_row" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_check_in_card_note_vertical_padding" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:paddingBottom="@dimen/n2_check_in_card_note_vertical_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="@integer/n2_check_in_card_note_text_lines" style="@style/n2_SmallText"/>
+    </LinearLayout>
+</merge>

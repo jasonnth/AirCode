@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" style="@style/n2_AirToolbar.Transparent.LightForeground"/>
+        <com.airbnb.p027n2.components.SheetMarquee android:id="@+id/account_verifications_start_header" android:layout_marginTop="0dp" app:n2_titleText="@string/message_send_success_title" app:n2_sheetStyle="1" style="@style/n2_SheetMarquee"/>
+        <View android:id="@+id/section_divider_top" android:layout_marginLeft="?attr/n2_horizontal_side_padding" android:layout_marginTop="@dimen/n2_vertical_padding_small" android:layout_marginBottom="@dimen/n2_vertical_padding_large" style="@style/n2_PipDivider"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="?attr/n2_horizontal_side_padding" android:layout_marginRight="?attr/n2_horizontal_side_padding" android:layout_marginBottom="@dimen/n2_vertical_padding_small" android:text="@string/verifications_be_ready_to_book" style="@style/n2_TitleText3Base"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/subtitle_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="?attr/n2_horizontal_side_padding" android:layout_marginRight="?attr/n2_horizontal_side_padding" android:layout_marginBottom="@dimen/n2_vertical_padding_medium" android:text="@string/verifications_be_ready_to_book_desc" style="@style/n2_RegularTextBase"/>
+        <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="left" android:id="@+id/provide_id_button" android:text="@string/account_verification_provide_your_id" style="@style/n2_AirButton.WhiteFill.BabuBorder"/>
+    </LinearLayout>
+</ScrollView>

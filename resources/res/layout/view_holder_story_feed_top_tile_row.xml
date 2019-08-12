@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.airbnb.android.contentframework.views.StoryFeedTopTileRow xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:paddingBottom="@dimen/story_feed_top_tile_bottom_padding" android:layout_width="match_parent" android:layout_height="wrap_content"/>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/sheet" android:background="@color/n2_babu" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" style="@style/n2_FocusPane">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.components.SheetMarquee app:n2_titleText="@string/payout_address_title" style="@style/n2_SheetMarquee"/>
+            <com.airbnb.p027n2.components.SheetInputText android:id="@+id/address_street_one_input" android:inputType="text" app:n2_hintText="@string/payout_address_street_hint" app:n2_inlineHint="true" style="@style/n2_SheetInputText"/>
+            <com.airbnb.p027n2.components.SheetInputText android:id="@+id/address_street_two_input" android:layout_marginTop="@dimen/n2_vertical_padding_tiny" android:inputType="text" app:n2_hintText="@string/payout_address_apartment_hint" app:n2_inlineHint="true" style="@style/n2_SheetInputText"/>
+            <com.airbnb.p027n2.components.SheetInputText android:id="@+id/address_city_input" android:layout_marginTop="@dimen/n2_vertical_padding_tiny" android:inputType="text" app:n2_hintText="@string/payout_address_city_hint" app:n2_inlineHint="true" style="@style/n2_SheetInputText"/>
+            <com.airbnb.p027n2.components.SheetInputText android:id="@+id/address_state_input" android:layout_marginTop="@dimen/n2_vertical_padding_tiny" android:inputType="text" app:n2_hintText="@string/payout_address_state_hint" app:n2_inlineHint="true" style="@style/n2_SheetInputText"/>
+            <com.airbnb.p027n2.components.SheetInputText android:id="@+id/address_postal_code_input" android:layout_marginTop="@dimen/n2_vertical_padding_tiny" android:inputType="text" app:n2_hintText="@string/payout_address_postal_code_hint" app:n2_inlineHint="true" style="@style/n2_SheetInputText"/>
+            <com.airbnb.p027n2.components.SheetInputText android:id="@+id/address_country_input" android:layout_marginTop="@dimen/n2_vertical_padding_tiny" android:layout_marginBottom="48dp" android:inputType="text" app:n2_hintText="@string/payout_address_country_hint" app:n2_inlineHint="true" app:n2_actionText="@string/edit" app:n2_inputTextMode="3" style="@style/n2_SheetInputText"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/next_button" style="@style/n2_AirButton.WhiteFill.RightCaret"/>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_scrollWith="@+id/scroll_view" style="@style/n2_AirToolbar.Transparent.LightForeground"/>
+</FrameLayout>

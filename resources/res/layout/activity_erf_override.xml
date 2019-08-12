@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.android.lib.views.StickyButton android:id="@+id/button_refresh" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/erf_refresh_experiments"/>
+        <com.airbnb.p027n2.primitives.AirEditTextView android:id="@+id/erf_filter_text" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/search"/>
+        <ListView android:id="@+id/experiment_list" android:padding="10dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/button_add_experiment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/gutter_padding"/>
+</FrameLayout>

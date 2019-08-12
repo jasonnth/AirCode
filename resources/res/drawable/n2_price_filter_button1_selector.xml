@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/n2_canonical_press_darken"/>
+            <corners android:topLeftRadius="@dimen/n2_price_filter_buttons_radius" android:bottomLeftRadius="@dimen/n2_price_filter_buttons_radius"/>
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/n2_babu"/>
+            <corners android:topLeftRadius="@dimen/n2_price_filter_buttons_radius" android:bottomLeftRadius="@dimen/n2_price_filter_buttons_radius"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+            <corners android:topLeftRadius="@dimen/n2_price_filter_buttons_radius" android:bottomLeftRadius="@dimen/n2_price_filter_buttons_radius"/>
+        </shape>
+    </item>
+</selector>

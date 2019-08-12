@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/complete_profile_scrollView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/photo_confirmation_buttons">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.android.lib.views.CircleBadgeView android:id="@+id/circle_badge_view" app:iconSrc="@drawable/icon_edit_profile_camera" style="@style/VerifiedIdBadge"/>
+            <FrameLayout android:id="@+id/complete_profile_child_fragment" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/photo_confirmation_buttons" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.airbnb.p027n2.primitives.AirButton android:id="@+id/change_profile_photo" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/verified_id_change_button" android:layout_weight="1" android:alpha="0.9" style="@style/Canonical.Button.Sticky.Gray"/>
+        <com.airbnb.p027n2.primitives.AirButton android:id="@+id/submit_photo" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/profile_photo_confirm" android:layout_weight="1" android:alpha="0.9" style="@style/Canonical.Button.Sticky"/>
+    </LinearLayout>
+</RelativeLayout>

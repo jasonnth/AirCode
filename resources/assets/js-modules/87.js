@@ -1,0 +1,1 @@
+__d(function(e,t,r,s){"use strict";var i=t(88),n=function(e){function t(r,s,i,n){babelHelpers.classCallCheck(this,t);var o=babelHelpers.possibleConstructorReturn(this,e.call(this,s));return o.emitter=r,o.listener=i,o.context=n,o}return babelHelpers.inherits(t,e),t.prototype.remove=function(){this.emitter.removeSubscription(this)},t}(i);r.exports=n},87);

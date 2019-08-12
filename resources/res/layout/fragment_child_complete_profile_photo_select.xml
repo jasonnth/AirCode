@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginRight="25dp" android:text="@string/complete_profile_photo_instructions" style="@style/Canonical.Text.E"/>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/complete_profile_take_photo_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="25dp" android:layout_marginRight="15dp" android:text="@string/complete_profile_take_photo" style="@style/Canonical.Button.Raised"/>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/complete_profile_choose_photo_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp" android:text="@string/complete_profile_select_from_your_device" style="@style/Canonical.Button.Raised"/>
+</LinearLayout>

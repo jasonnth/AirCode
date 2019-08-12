@@ -1,0 +1,1 @@
+__d(function(e,s,t,a){t.exports=s(164).registerAsset({__packager_asset:!0,httpServerLocation:"/assets/apps/Airlock/icons",width:72,height:72,scales:[1],hash:"f2382c44acd955042465479be11e9c16",name:"phone_via_sms",type:"png"})},1492);

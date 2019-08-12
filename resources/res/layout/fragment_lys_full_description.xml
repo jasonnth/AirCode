@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/c_foggy_white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:paddingBottom="@dimen/ml_vertical_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/details_summary_header" android:visibility="gone" android:text="@string/overview" style="@style/TextSectionHeader"/>
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/details_summary" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:custom_layout="@layout/grouped_cell_vertical" app:hideTopBorder="true" app:hint="@string/ml_summary_hint" app:maxLines="@integer/ml_description_max_lines" app:title="@string/ml_summary_title" style="@style/Canonical.GroupedLayout"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:text="@string/details" style="@style/TextSectionHeader"/>
+        <LinearLayout style="@style/Canonical.GroupedLayout">
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/details_the_space" android:layout_width="match_parent" android:layout_height="wrap_content" app:custom_layout="@layout/grouped_cell_vertical" app:hideTopBorder="true" app:hint="@string/lys_the_space_hint" app:maxLines="@integer/ml_description_max_lines" app:title="@string/lys_the_space"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/details_guest_access" android:layout_width="match_parent" android:layout_height="wrap_content" app:custom_layout="@layout/grouped_cell_vertical" app:hint="@string/lys_guest_access_hint" app:maxLines="@integer/ml_description_max_lines" app:title="@string/lys_guest_access_title"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/details_interaction_with_guests" android:layout_width="match_parent" android:layout_height="wrap_content" app:custom_layout="@layout/grouped_cell_vertical" app:hint="@string/lys_interaction_with_guests_hint" app:maxLines="@integer/ml_description_max_lines" app:title="@string/lys_interaction_with_guests_title"/>
+        </LinearLayout>
+        <com.airbnb.p027n2.primitives.AirTextView android:text="@string/the_neighborhood" style="@style/TextSectionHeader"/>
+        <LinearLayout style="@style/Canonical.GroupedLayout">
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/neighborhood_overview" android:layout_width="match_parent" android:layout_height="wrap_content" app:custom_layout="@layout/grouped_cell_vertical" app:hideTopBorder="true" app:hint="@string/lys_neighborhood_overview_hint" app:maxLines="@integer/ml_description_max_lines" app:title="@string/lys_neighborhood_overview_title"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/neighborhood_getting_around" android:layout_width="match_parent" android:layout_height="wrap_content" app:custom_layout="@layout/grouped_cell_vertical" app:hint="@string/lys_neighborhood_getting_around_hint" app:maxLines="@integer/ml_description_max_lines" app:title="@string/lys_neighborhood_getting_around_title"/>
+        </LinearLayout>
+        <com.airbnb.p027n2.primitives.AirTextView android:text="@string/extra_details" style="@style/TextSectionHeader"/>
+        <LinearLayout style="@style/Canonical.GroupedLayout">
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/extra_details_other_things_to_know" android:layout_width="match_parent" android:layout_height="wrap_content" app:custom_layout="@layout/grouped_cell_vertical" app:hideTopBorder="true" app:hint="@string/lys_extra_details_other_hint" app:maxLines="@integer/ml_description_max_lines" app:title="@string/lys_extra_details_other_title"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/extra_details_house_rules" android:layout_width="match_parent" android:layout_height="wrap_content" app:custom_layout="@layout/grouped_cell_vertical" app:hint="@string/lys_extra_details_house_hint" app:maxLines="@integer/ml_description_max_lines" app:title="@string/lys_extra_details_house_title"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/label" android:visibility="gone" android:layout_marginBottom="@dimen/n2_row_inner_vertical_padding" android:layout_below="@+id/top_space" style="@style/n2_StandardRowWithLabel_Label"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/text_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="?attr/n2_horizontal_side_padding" android:layout_toLeftOf="@+id/image" android:layout_below="@+id/label">
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/n2_LargeText"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/optional_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/n2_row_inner_vertical_padding" style="@style/n2_SmallText"/>
+        <ProgressBar android:id="@+id/progress_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_marginTop="@dimen/n2_row_inner_vertical_padding" android:max="100" style="@style/n2_ProgressBar"/>
+    </LinearLayout>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/primary_button" android:visibility="gone" android:layout_marginTop="@dimen/n2_vertical_padding_medium" android:layout_below="@+id/text_container" style="@style/n2_ListingInfoRow_Button"/>
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/image" android:layout_width="@dimen/n2_image_row_image_width" android:layout_height="@dimen/n2_image_row_image_height" android:scaleType="fitCenter" android:layout_below="@+id/label" android:layout_alignParentRight="true"/>
+</RelativeLayout>

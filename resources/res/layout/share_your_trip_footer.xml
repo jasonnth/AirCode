@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:layout_gravity="center_horizontal" android:id="@+id/share_your_trip_header_divider" style="@style/n2_FullSectionDivider"/>
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/share_your_trip_qr_code" android:layout_width="@dimen/share_your_trip_qr_code_size" android:layout_height="@dimen/share_your_trip_qr_code_size" android:layout_marginTop="@dimen/n2_vertical_padding_medium" android:layout_marginBottom="@dimen/n2_vertical_padding_medium"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:gravity="center_horizontal" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/n2_vertical_padding_large" android:text="@string/share_your_trip_branding_footer" style="@style/n2_RegularText.Plus"/>
+</LinearLayout>

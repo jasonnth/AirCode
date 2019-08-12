@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+            <com.airbnb.p027n2.components.DocumentMarquee android:id="@+id/marquee" app:n2_titleText="@string/list_create_new" style="@style/n2_DocumentMarquee.NoTopPadding"/>
+            <com.airbnb.p027n2.components.InlineInputRow android:id="@+id/wish_list_name_input" app:n2_showDivider="true" app:n2_titleText="@string/wish_list_title" style="@style/n2_InlineInputRow"/>
+            <com.airbnb.p027n2.components.MicroSectionHeader app:n2_titleText="@string/wish_list_privacy_section_header" style="@style/n2_MicroSectionHeader.First"/>
+            <com.airbnb.p027n2.components.ToggleActionRow android:id="@+id/public_toggle" app:n2_subtitleText="@string/wishlist_public_description" app:n2_titleText="@string/wishlist_public_title" style="@style/n2_ToggleActionRow"/>
+            <com.airbnb.p027n2.components.ToggleActionRow android:id="@+id/private_toggle" app:n2_showDivider="false" app:n2_subtitleText="@string/wishlist_private_description" app:n2_titleText="@string/wishlist_private_title" style="@style/n2_ToggleActionRow"/>
+            <Space android:layout_width="match_parent" android:layout_height="@dimen/n2_button_row_height"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+    <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/create_wish_list_button" android:text="@string/create_wish_list" style="@style/n2_AirButton.BabuFill.RightCaret.WithText"/>
+</FrameLayout>

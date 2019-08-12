@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_network_name" android:padding="7dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ml_wireless_info_network_name"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/tv_network_name" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View android:background="@color/c_gray_1" android:layout_width="match_parent" android:layout_height="@dimen/line_thickness"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_network_password" android:padding="7dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ml_wireless_info_network_password"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/tv_network_password" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View android:background="@color/c_gray_1" android:layout_width="match_parent" android:layout_height="@dimen/line_thickness"/>
+</LinearLayout>

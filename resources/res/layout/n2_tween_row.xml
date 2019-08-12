@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_vertical_padding_large" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:paddingBottom="@dimen/n2_vertical_padding_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/text_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="left" android:layout_gravity="center_vertical" android:id="@+id/title" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" style="@style/n2_TitleText3"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:gravity="right" android:layout_gravity="center_vertical" android:id="@+id/user_input" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_alignParentRight="true" style="@style/n2_TitleText3.Actionable"/>
+            <com.airbnb.p027n2.primitives.AirSwitch android:id="@+id/switch_view" android:visibility="gone" android:layout_alignParentRight="true" app:n2_switchStyle="1" style="@style/n2_AirSwitch"/>
+        </RelativeLayout>
+        <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:gravity="left" android:id="@+id/optional_subtitle" android:paddingTop="@dimen/n2_row_inner_vertical_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/n2_RegularText"/>
+    </LinearLayout>
+    <View android:id="@+id/section_divider" style="@style/n2_FullSectionDivider"/>
+</merge>

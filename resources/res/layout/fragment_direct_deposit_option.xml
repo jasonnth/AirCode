@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/n2_Sheet">
+    <com.airbnb.android.lib.presenters.p338n2.paymentinfo.DirectDepositOptionSelectionView android:id="@+id/selection_view" app:n2_titleText="@string/payout_direct_deposit_option_title" app:n2_selectionMode="1" style="@style/n2_SelectionView.FocusPane"/>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/next_button" style="@style/n2_AirButton.WhiteFill.RightCaret"/>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_scrollWith="@+id/selection_view" style="@style/n2_AirToolbar.Transparent.LightForeground"/>
+</FrameLayout>

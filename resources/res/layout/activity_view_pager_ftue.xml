@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/img_ftue_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <View android:id="@+id/darken_ftue_pic" android:background="@color/black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.2"/>
+    <FrameLayout android:id="@+id/toolbar_holder" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.p002v7.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/ftue_top_spacing" android:layout_below="@+id/toolbar_holder">
+        <ImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/ftue_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp"/>
+    </FrameLayout>
+    <LinearLayout android:id="@+id/sticky_button_holder" android:background="@color/c_rausch" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.airbnb.android.lib.views.FtueStickyButton android:id="@+id/main_sticky_button" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <View android:id="@+id/sticky_button_divider" android:background="#000" android:visibility="gone" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:alpha="0.3"/>
+        <com.airbnb.android.lib.views.FtueStickyButton android:id="@+id/second_sticky_button" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <com.airbnb.p027n2.primitives.DotsCounter android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/dots_counter" android:layout_width="match_parent" android:layout_height="10dp" android:layout_marginBottom="@dimen/ftue_dots_counter_margin_bottom" android:layout_above="@+id/sticky_button_holder" android:layout_alignWithParentIfMissing="true" app:n2_selectedColor="@android:color/white" app:n2_unselectedColor="@android:color/white" app:n2_dotMargin="10dp" app:n2_unselectedAlpha="70"/>
+    <com.airbnb.android.lib.views.FtueClickableViewPager android:id="@+id/pager_ftue_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/ftue_view_pager_padding_bottom" android:layout_above="@+id/dots_counter" android:layout_below="@+id/toolbar_holder"/>
+</RelativeLayout>

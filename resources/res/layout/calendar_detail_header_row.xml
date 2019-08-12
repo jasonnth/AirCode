@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.android.hostcalendar.views.CalendarDetailMonthRow android:id="@+id/month_header" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <Space android:layout_width="1dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/today_nav" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/n2_vertical_padding_small" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" android:layout_marginBottom="@dimen/n2_vertical_padding_small" android:text="Today" style="@style/n2_RegularText.Actionable"/>
+    </LinearLayout>
+    <View android:id="@+id/section_divider" style="@style/n2_FullSectionDivider"/>
+</merge>

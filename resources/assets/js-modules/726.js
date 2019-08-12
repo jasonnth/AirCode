@@ -1,0 +1,1 @@
+__d(function(e,a,s,t){Object.defineProperty(t,"__esModule",{value:!0}),t.CalendarMonthsResource=void 0;var i=a(727),n=babelHelpers.interopRequireDefault(i);n.default.configure({host:"api",hosts:{api:"https://airbnbapi/v2",bessie:"https://support-api.airbnb.com/messaging/api/v1"}});t.CalendarMonthsResource=new n.default("calendar_months")},726);

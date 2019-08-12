@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_navigationIcon="3" style="@style/n2_AirToolbar"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.airbnb.android.core.views.OptionalSwipingViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent" app:swipingEnabled="false"/>
+            <com.airbnb.android.core.views.AirbnbSlidingTabLayout android:id="@+id/tabs" style="@style/AirbnbSlidingTabLayoutStyle"/>
+        </FrameLayout>
+    </LinearLayout>
+    <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/edit_button" android:visibility="gone" android:text="@string/edit" style="@style/n2_AirButton.BabuFill.RightCaret.WithText"/>
+</android.support.design.widget.CoordinatorLayout>

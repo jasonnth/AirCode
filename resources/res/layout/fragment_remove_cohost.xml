@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+            <com.airbnb.p027n2.components.DocumentMarquee android:id="@+id/titleMarquee" app:n2_showDivider="false" style="@style/n2_DocumentMarquee.NoTopPadding"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/explanation" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_RegularText"/>
+            <com.airbnb.p027n2.components.SimpleTextRow android:id="@+id/listingOwnerResponsibility" app:n2_showDivider="true" style="@style/n2_SimpleTextRow.Regular"/>
+            <com.airbnb.p027n2.components.SimpleTextRow android:id="@+id/explanationForCurrentHosting" app:n2_showDivider="false" style="@style/n2_SimpleTextRow.Small.Muted"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/confirm_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_vertical_padding_medium" android:layout_marginRight="@dimen/n2_vertical_padding_medium" android:text="@string/remove" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/n2_AirButton.BabuFill"/>
+</RelativeLayout>

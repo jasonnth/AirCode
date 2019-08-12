@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.p002v7.widget.RecyclerView android:layout_gravity="top" android:id="@+id/recycler_view" android:paddingBottom="@dimen/n2_sheet_bottom_bar_height" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="LinearLayoutManager"/>
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/action_buttons_container" android:layout_width="match_parent" android:layout_height="90dp">
+        <com.airbnb.p027n2.primitives.AirButton android:id="@+id/cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/deactivate_ib_cancel" style="@style/n2_AirButton.BabuOutline"/>
+        <android.support.p000v4.widget.Space android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <com.airbnb.p027n2.primitives.AirButton android:id="@+id/deactivate_button" style="@style/n2_AirButton.BabuFill.RightCaret"/>
+    </LinearLayout>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_theme="3" app:n2_scrollWith="@+id/recycler_view" style="@style/n2_AirToolbar"/>
+</FrameLayout>

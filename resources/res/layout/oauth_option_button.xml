@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.airbnb.android.login.p339ui.views.OAuthOptionButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/oauth_option_button" android:layout_width="match_parent" android:layout_marginLeft="0dp" android:layout_marginTop="16dp" android:layout_marginRight="0dp" android:layout_marginBottom="0dp" style="@style/n2_AirButton.WhiteFill"/>

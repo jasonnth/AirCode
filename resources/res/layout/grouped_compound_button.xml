@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <View android:id="@+id/grouped_btn_top_border" android:background="@color/c_gray_4" android:layout_width="match_parent" android:layout_height="@dimen/line_thickness" android:layout_marginLeft="@dimen/gutter_padding" android:layout_marginRight="@dimen/gutter_padding" android:layout_alignParentTop="true"/>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/gutter_padding" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/grouped_btn_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" style="@style/GroupedTitle"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/grouped_btn_content" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.Text.E"/>
+        </LinearLayout>
+        <com.airbnb.android.lib.views.GroupedTooltip android:id="@+id/grouped_btn_tooltip" style="@style/Canonical.GroupedTooltip"/>
+        <ViewStub android:layout_gravity="center_vertical" android:id="@+id/grouped_btn_compound_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp"/>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/n2_sheet_bottom_bar_height" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.airbnb.p027n2.components.DocumentMarquee app:n2_titleText="@string/lys_airbnb_review_your_settings_title" style="@style/n2_DocumentMarquee"/>
+            <com.airbnb.p027n2.components.StandardRow android:id="@+id/guest_requirements" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_inputText="@string/lys_dls_edit_setting" app:n2_titleText="@string/lys_airbnb_requirements_title"/>
+            <com.airbnb.p027n2.components.StandardRow android:id="@+id/house_rules" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_inputText="@string/lys_dls_edit_setting" app:n2_titleText="@string/amenities_house_rules"/>
+            <com.airbnb.p027n2.components.StandardRow android:id="@+id/availability" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_inputText="@string/lys_dls_edit_setting" app:n2_titleText="@string/availability"/>
+            <com.airbnb.p027n2.components.StandardRow android:id="@+id/pricing" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_inputText="@string/lys_dls_edit_setting" app:n2_titleText="@string/ml_demand_based_pricing"/>
+            <com.airbnb.p027n2.components.StandardRow android:id="@+id/additional_pricing" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_inputText="@string/lys_dls_edit_setting" app:n2_titleText="@string/lys_dls_additional_pricing"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_scrollWith="@+id/scroll_view" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/next_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lys_dls_next" style="@style/n2_AirButton.BabuFill.RightCaret.RightBottom"/>
+</FrameLayout>

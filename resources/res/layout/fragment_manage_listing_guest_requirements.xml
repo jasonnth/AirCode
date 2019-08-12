@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.components.DocumentMarquee app:n2_captionText="@string/guest_requirements_description" app:n2_titleText="@string/guest_requirements_title" style="@style/n2_DocumentMarquee"/>
+            <com.airbnb.p027n2.components.SimpleTextRow app:n2_text="@string/guest_requirements_email_phone_number" style="@style/n2_SimpleTextRow.Regular"/>
+            <com.airbnb.p027n2.components.SimpleTextRow app:n2_text="@string/guest_requirements_profile_photo" style="@style/n2_SimpleTextRow.Regular"/>
+            <com.airbnb.p027n2.components.SimpleTextRow app:n2_text="@string/guest_requirements_introductory_message" style="@style/n2_SimpleTextRow.Regular"/>
+            <com.airbnb.p027n2.components.SimpleTextRow app:n2_text="@string/guest_requirements_payment_information" style="@style/n2_SimpleTextRow.Regular"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_scrollWith="@+id/scroll_view" app:n2_navigationIcon="1" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+</FrameLayout>

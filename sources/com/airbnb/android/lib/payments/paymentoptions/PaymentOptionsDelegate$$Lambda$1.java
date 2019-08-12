@@ -1,0 +1,20 @@
+package com.airbnb.android.lib.payments.paymentoptions;
+
+import com.airbnb.android.core.responses.payments.PaymentOptionsResponse;
+import p032rx.functions.Action1;
+
+final /* synthetic */ class PaymentOptionsDelegate$$Lambda$1 implements Action1 {
+    private final PaymentOptionsDelegate arg$1;
+
+    private PaymentOptionsDelegate$$Lambda$1(PaymentOptionsDelegate paymentOptionsDelegate) {
+        this.arg$1 = paymentOptionsDelegate;
+    }
+
+    public static Action1 lambdaFactory$(PaymentOptionsDelegate paymentOptionsDelegate) {
+        return new PaymentOptionsDelegate$$Lambda$1(paymentOptionsDelegate);
+    }
+
+    public void call(Object obj) {
+        this.arg$1.getPaymentOptionsDelegateListener().onPaymentOptionsRequestSuccess(((PaymentOptionsResponse) obj).paymentOptions);
+    }
+}

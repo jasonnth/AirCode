@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.AppCompat.DialogWhenLarge">
+    </style>
+    <style name="Base.Theme.AppCompat.Light.DialogWhenLarge">
+    </style>
+    <style name="Theme.TabNav.DialogWhenLarge">
+        <item name="android:colorBackground">@color/background_floating_material_light</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowFixedWidthMajor">@dimen/activity_fixed_width_major</item>
+        <item name="windowFixedHeightMinor">@dimen/activity_fixed_height_minor</item>
+        <item name="windowFixedWidthMinor">@dimen/activity_fixed_width_minor</item>
+        <item name="windowFixedHeightMajor">@dimen/activity_fixed_height_major</item>
+    </style>
+    <style name="Theme.TabNav.DialogWhenLarge.NotDismissable">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="Theme.TabNav.SplitPane">
+        <item name="android:colorBackground">@color/background_floating_material_light</item>
+        <item name="android:windowBackground">@color/darken_split_pane</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+</resources>

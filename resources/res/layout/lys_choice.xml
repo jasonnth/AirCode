@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:background="@drawable/c_bg_white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="@dimen/lys_choice_icon_size">
+    <ImageView android:id="@+id/img_icon" android:paddingRight="15dp" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/txt_title" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.Text.E"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/txt_desc" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.Text.F"/>
+    </LinearLayout>
+</LinearLayout>

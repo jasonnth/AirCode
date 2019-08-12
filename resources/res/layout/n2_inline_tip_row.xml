@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@drawable/n2_tip_background_drawable" android:padding="@dimen/n2_inline_tip_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/n2_hof" android:id="@+id/tip_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <ImageView android:id="@+id/close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_inline_tip_padding" android:tint="@color/n2_tip_dimiss_tint" app:srcCompat="@drawable/n2_icon_close"/>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.airbnb.p027n2.components.EntryMarquee android:id="@+id/marquee" app:n2_captionText="@string/ro_special_offer_caption" app:n2_titleText="@string/special_offer" style="@style/n2_EntryMarquee"/>
+            <com.airbnb.p027n2.components.StandardRow android:id="@+id/listing_row" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_titleText="@string/listing"/>
+            <com.airbnb.p027n2.components.StandardRow android:id="@+id/dates_row" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_titleText="@string/dates"/>
+            <com.airbnb.p027n2.components.InlineInputRow android:id="@+id/price_row" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_titleText="@string/trip_charges_total" style="@style/n2_InlineInputRow"/>
+            <com.airbnb.p027n2.components.StandardRow android:id="@+id/guests_row" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="85dp" app:n2_titleText="@string/guests"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/submit_button" android:text="@string/submit" style="@style/n2_AirButton.BabuFill"/>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_navigationIcon="1" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+</android.support.design.widget.CoordinatorLayout>

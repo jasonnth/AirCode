@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/com_accountkit_background_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44dp" style="@style/AccountKit.SpinnerItem">
+        <TextView android:textSize="@dimen/com_accountkit_country_code_text_size" android:id="@+id/label" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/AccountKit.Text"/>
+        <Space android:layout_width="@dimen/com_accountkit_input_spacing" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/com_accountkit_country_code_text_size" android:gravity="end" android:id="@+id/country_code" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AccountKit.Text"/>
+    </LinearLayout>
+    <View android:background="#cdcdcd" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

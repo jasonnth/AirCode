@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.jellyfish.JellyfishView android:id="@+id/jellyfish_view" android:layout_width="match_parent" android:layout_height="match_parent" app:n2_palette="1"/>
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" style="@style/n2_FocusPane">
+        <LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.components.SheetMarquee android:id="@+id/sheet_marquee" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_subtitleText="@string/add_payout_thank_you_marquee_caption" app:n2_titleText="@string/add_payout_thank_you_marquee_title" style="@style/n2_SheetMarquee"/>
+            <com.airbnb.p027n2.primitives.AirButton android:textColor="@color/n2_babu" android:id="@+id/manage_payments_button" android:layout_width="wrap_content" android:layout_marginLeft="?attr/n2_horizontal_side_padding" android:layout_marginTop="@dimen/n2_vertical_padding_small" android:layout_marginRight="?attr/n2_horizontal_side_padding" android:layout_marginBottom="@dimen/n2_vertical_padding_small" android:text="@string/manage_payout_method_button" style="@style/n2_AirButton_V2.White"/>
+            <com.airbnb.p027n2.primitives.AirButton android:id="@+id/add_another_button" android:background="@drawable/n2_button_background_outline_white" android:layout_width="wrap_content" android:layout_marginLeft="?attr/n2_horizontal_side_padding" android:layout_marginRight="?attr/n2_horizontal_side_padding" android:layout_marginBottom="@dimen/n2_vertical_padding_small" android:text="@string/add_another_payout_method_button" style="@style/n2_AirButton_V2"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+</FrameLayout>

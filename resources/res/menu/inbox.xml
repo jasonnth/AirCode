@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/n2_icon_archive" android:id="@+id/menu_switch_inbox" android:title="@string/inbox_switch_to_archived" app:showAsAction="always"/>
+    <item android:id="@+id/menu_alerts" android:title="@string/inbox_alerts" app:showAsAction="always" app:actionLayout="@layout/menu_item_alert"/>
+    <item android:id="@+id/action_search" android:title="@string/search" app:showAsAction="always" app:actionLayout="@layout/menu_item_search"/>
+</menu>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/n2_toolbar_pusher"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/n2_TitleText2"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/caption_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/n2_marquee_inner_vertical_padding" android:layout_below="@+id/title_text" style="@style/n2_RegularText"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/n2_babu" android:layout_gravity="right" android:id="@+id/label_text" android:paddingBottom="@dimen/n2_vertical_padding_tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:textAllCaps="true" style="@style/n2_MiniText.Bold"/>
+    </RelativeLayout>
+</LinearLayout>

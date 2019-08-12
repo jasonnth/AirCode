@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" app:srcCompat="@drawable/snooze_clock"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:paddingLeft="@dimen/snooze_subtext_padding" android:paddingRight="@dimen/snooze_subtext_padding" android:layout_marginTop="15dp" android:layout_marginBottom="20dp" android:text="@string/ml_unlisting_snooze_subtitle" style="@style/TextSectionHeader"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textStyle="bold" android:id="@+id/submit_snooze_date_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/snooze_submit_margin" android:layout_marginRight="@dimen/snooze_submit_margin" android:layout_marginBottom="20dp" android:text="@string/set_snooze_date_action" style="@style/Canonical.Button.Raised"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/snooze_start_date_button" android:background="@drawable/c_white_hof_light_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/snooze_start" style="@style/Canonical.Button.RauschHollow"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/snooze_end_date_button" android:background="@drawable/c_white_hof_light_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/snooze_end" style="@style/Canonical.Button.RauschHollow"/>
+    </LinearLayout>
+</ScrollView>

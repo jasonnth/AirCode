@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/airbnb_requirements" style="@style/TextSectionHeader"/>
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" app:srcCompat="@drawable/instant_book_requirements"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:background="@color/white" android:padding="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/airbnb_requirements_from_guests_title" style="@style/GroupedTitle"/>
+    <android.support.p002v7.widget.RecyclerView android:id="@+id/booking_requirements_list" android:background="@color/white" android:paddingBottom="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="LinearLayoutManager"/>
+</LinearLayout>

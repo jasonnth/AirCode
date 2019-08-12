@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.p000v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/c_foggy_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.p002v7.widget.RecyclerView android:id="@+id/guest_controls_list" android:padding="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="LinearLayoutManager" style="@style/Canonical.GroupedLayout.Unselectable"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_rausch" android:id="@+id/suitable_for_children_tooltip" android:paddingLeft="@dimen/n2_vertical_padding_tiny_half" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:paddingBottom="@dimen/n2_vertical_padding_small" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ml_suitable_for_children_tooltip_label"/>
+        <android.support.p000v4.widget.Space android:layout_width="match_parent" android:layout_height="@dimen/vertical_padding"/>
+        <com.airbnb.android.lib.views.ManageListingTextRowView android:id="@+id/check_in_rules" android:minHeight="48dp" app:title="@string/ml_checkin_checkout_rules" app:drawableId="@drawable/n2_icon_right_caret" app:lib_showDivider="false" style="@style/Canonical.GroupedLayout"/>
+        <com.airbnb.android.lib.views.ManageListingTextRowView android:id="@+id/additional_rules" android:minHeight="@dimen/ml_text_row_min_height" app:title="@string/ml_additional_rules" app:drawableId="@drawable/n2_icon_right_caret" style="@style/Canonical.GroupedLayout"/>
+        <com.airbnb.android.lib.views.ManageListingTextRowView android:id="@+id/guest_expectations" android:minHeight="@dimen/ml_text_row_min_height" app:title="@string/ml_listing_expectations" app:drawableId="@drawable/n2_icon_right_caret" style="@style/Canonical.GroupedLayout"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/booking_setting_tip" android:paddingLeft="@dimen/n2_vertical_padding_tiny_half" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_gray_2" android:paddingTop="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/ml_ib_tooltip" android:layout_weight="1"/>
+            <com.airbnb.android.core.views.ColorizedIconView android:background="?attr/selectableItemBackground" android:layout_width="@dimen/tooltip_image_size" android:layout_height="@dimen/tooltip_image_size" android:scaleType="center" app:drawableId="@drawable/icon_lightbulb_lg_blue" app:colorStates="@color/c_babu"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.p000v4.widget.NestedScrollView>

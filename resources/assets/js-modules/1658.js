@@ -1,0 +1,1 @@
+__d(function(e,u,d,i){Object.defineProperty(i,"__esModule",{value:!0});var r=u(834);i.default=(0,r.Shape)({latitude:r.Types.number.isRequired,longitude:r.Types.number.isRequired})},1658);

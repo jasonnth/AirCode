@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/gutter_padding">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout style="@style/Canonical.GroupedLayout">
+            <com.airbnb.android.lib.views.EditableCell android:id="@+id/surname_cell" android:layout_width="match_parent" android:layout_height="wrap_content" app:hideTopBorder="true" app:title="@string/surname" app:freezeEditText="true"/>
+            <com.airbnb.android.lib.views.EditableCell android:id="@+id/given_name_cell" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/given_name" app:freezeEditText="true"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/nationality_cell" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/nationality"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/identity_type_cell" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/guest_identification_type"/>
+            <com.airbnb.android.lib.views.EditableCell android:id="@+id/identity_number_cell" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/guest_identification_number" app:freezeEditText="true"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/date_of_expiry_cell" android:layout_width="match_parent" android:layout_height="wrap_content" app:content="-" app:title="@string/date_of_expiry"/>
+        </LinearLayout>
+        <com.airbnb.p027n2.primitives.AirTextView android:textSize="14sp" android:gravity="center_horizontal" android:id="@+id/disclaimer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/gutter_padding" style="@style/Canonical.Text.E.Light"/>
+    </LinearLayout>
+</ScrollView>

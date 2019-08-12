@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="vertical" android:id="@+id/pricing_item_container" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/n2_horizontal_padding_medium" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/total_price_title" android:paddingRight="@dimen/n2_horizontal_padding_tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/n2_LargeText"/>
+        <Space android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/total_price_infoText" android:paddingRight="@dimen/n2_horizontal_padding_tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/n2_LargeText.Plus"/>
+    </LinearLayout>
+    <View android:id="@+id/section_divider" style="@style/n2_SubsectionDivider"/>
+</merge>

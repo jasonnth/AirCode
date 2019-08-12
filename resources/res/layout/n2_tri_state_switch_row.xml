@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_TitleText3.Inverse.Plus"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_LargeText.Inverse"/>
+    </LinearLayout>
+    <com.airbnb.p027n2.primitives.TriStateSwitch android:id="@+id/tri_state_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/n2_horizontal_padding_medium"/>
+</merge>

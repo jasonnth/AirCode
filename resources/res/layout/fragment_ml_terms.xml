@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/c_foggy_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:paddingBottom="@dimen/ml_vertical_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/min_max_stay_has_moved_layout" android:background="@color/c_gray_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gutter_padding">
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_hof" android:gravity="center" android:layout_gravity="center" android:id="@+id/min_max_stay_has_moved_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/gutter_padding" style="@style/GroupedTitle"/>
+        </FrameLayout>
+        <com.airbnb.p027n2.primitives.AirTextView android:text="@string/ml_terms_arrival_time" style="@style/TextSectionHeader"/>
+        <LinearLayout style="@style/Canonical.GroupedLayout">
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/check_in_after" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentColor="@color/c_rausch" app:hideTopBorder="true" app:title="@string/ml_check_in_after"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/check_out_before" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentColor="@color/c_rausch" app:title="@string/ml_check_out_before"/>
+        </LinearLayout>
+        <com.airbnb.p027n2.primitives.AirTextView android:text="@string/ml_terms_cancellation" style="@style/TextSectionHeader"/>
+        <LinearLayout style="@style/Canonical.GroupedLayout">
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/cancellation_policy" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentColor="@color/c_rausch" app:hideTopBorder="true" app:title="@string/ml_terms_cancellation"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

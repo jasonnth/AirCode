@@ -1,0 +1,1 @@
+__d(function(e,a,n,o){function t(e){l.default.logJitneyEvent({schema:u.DurationEvent,event_data:e})}Object.defineProperty(o,"__esModule",{value:!0}),o.ACTIONS=void 0,o.logDuration=t;var i=a(686),l=babelHelpers.interopRequireDefault(i),u=a(1456);o.ACTIONS={INACTIVE:u.CloseReason.AppBackgrounded,NAVIGATED_AWAY:u.CloseReason.NavigatedAway}},1455);

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.DocumentMarquee android:id="@+id/referral_credit_marquee" android:paddingLeft="@dimen/n2_horizontal_padding_small" android:paddingRight="@dimen/n2_horizontal_padding_small" android:paddingBottom="@dimen/n2_vertical_padding_large" app:n2_showDivider="true" app:n2_titleText="@string/referral_credit_fragment_header" style="@style/n2_DocumentMarquee"/>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+</FrameLayout>

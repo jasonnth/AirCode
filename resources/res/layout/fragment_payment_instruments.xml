@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/n2_Sheet">
+    <com.airbnb.p027n2.components.jellyfish.JellyfishView android:id="@+id/jellyfish_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.airbnb.android.booking.p336n2.PaymentInstrumentSelectionView android:id="@+id/selection_view" app:n2_titleText="@string/p4_payment_option_title" app:n2_selectionMode="1" app:n2_hasStableIds="false" style="@style/n2_SelectionView.FocusPane"/>
+    <RelativeLayout android:layout_gravity="bottom" android:background="@color/n2_transparent" android:focusable="false" android:layout_width="match_parent" android:layout_height="@dimen/n2_sheet_bottom_bar_height">
+        <com.airbnb.p027n2.primitives.AirButton android:id="@+id/add_payment_button" android:text="@string/p4_add_payment" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/n2_AirButton.TransparentFill.Baby"/>
+        <com.airbnb.p027n2.primitives.AirButton android:enabled="false" android:id="@+id/continue_button" android:text="@string/save" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/n2_AirButton.WhiteFill.RightCaret.WithText"/>
+    </RelativeLayout>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" android:text="@string/save" app:n2_scrollWith="@+id/selection_view" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.LightForeground"/>
+</FrameLayout>

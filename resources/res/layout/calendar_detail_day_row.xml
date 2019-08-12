@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <Space android:id="@+id/top_space" android:layout_width="match_parent" android:layout_height="@dimen/n2_vertical_padding_small"/>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/host_calendar_detail_side_padding" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:paddingRight="@dimen/host_calendar_detail_side_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/collapsed_icon" android:layout_width="@dimen/calendar_collapsed_icon_width" android:layout_height="@dimen/calendar_collapsed_icon_height" app:srcCompat="@drawable/collapsed_icon"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/day_container" android:layout_width="@dimen/calendar_day_text_size" android:layout_height="@dimen/calendar_day_text_size" android:layout_marginRight="@dimen/n2_horizontal_padding_medium_phone">
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:id="@+id/day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:minEms="1" android:singleLine="true" style="@style/n2_SmallText.Plus"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/day_of_week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" style="@style/n2_MicroText"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/availability" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" style="@style/n2_RegularText"/>
+                <Space android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" style="@style/n2_RegularText.Actionable"/>
+            </LinearLayout>
+            <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/busy_reason" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" style="@style/n2_SmallText"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/smart_Pricing_off_text" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/smart_pricing_off_text" style="@style/n2_SmallText"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/smart_promo" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_SmallText"/>
+            <com.airbnb.p027n2.components.SmallTextRow android:id="@+id/notes" android:visibility="gone" app:n2_showDivider="false" style="@style/CalendarDetailDayNotesReadMore"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:minHeight="@dimen/n2_vertical_padding_medium" android:layout_weight="1"/>
+    <View android:id="@+id/section_divider" style="@style/n2_FullSectionDivider"/>
+</merge>

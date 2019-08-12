@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/root" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_width="@dimen/n2_halo_image_width_small" android:layout_height="@dimen/n2_halo_image_height_small" android:layout_marginTop="@dimen/n2_vertical_padding_medium" android:layout_marginBottom="@dimen/n2_vertical_padding_medium" android:tint="@color/white" android:contentDescription="@string/referrals_sync_contacts_permission_affirmative_button" app:srcCompat="@drawable/contactsync"/>
+    <com.airbnb.p027n2.components.SheetMarquee android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_subtitleText="@string/referrals_sync_contacts_permission_request_body" app:n2_titleText="@string/referrals_sync_contacts_permission_request_header"/>
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/n2_vertical_padding_medium" android:layout_marginBottom="@dimen/n2_vertical_padding_medium">
+        <com.airbnb.p027n2.primitives.AirButton android:textSize="@dimen/n2_baby_button_text_font_size" android:id="@+id/skip_button" android:layout_height="32dp" android:layout_margin="0dp" android:text="@string/referrals_sync_contacts_permission_negative_button" style="@style/n2_AirButton.WhiteOutline"/>
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="top" android:id="@+id/sync_button" android:layout_margin="0dp" android:text="@string/referrals_sync_contacts_permission_affirmative_button" style="@style/n2_AirButton.WhiteFill"/>
+    </LinearLayout>
+</LinearLayout>

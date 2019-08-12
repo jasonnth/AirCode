@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/poster_image" android:background="@color/n2_loading_background" android:scaleType="centerCrop" app:layout_widthPercent="100%" app:layout_aspectRatio="66%" app:n2_fade="true"/>
+    <View android:id="@+id/icon_visibility_gradient" android:background="@drawable/n2_top_right_icon_visibility_gradient" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_alignTop="@+id/poster_image" android:layout_alignBottom="@+id/poster_image"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/details_box" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/poster_image">
+        <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/price_and_description_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/n2_SmallText"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/n2_vertical_padding_tiny_half">
+            <RatingBar android:id="@+id/rating_bar" android:visibility="gone" android:layout_marginRight="4dp" style="@style/n2_StarRatingBar.Babu"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/n2_hof" android:id="@+id/num_reviews" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/n2_MiniText"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/click_overlay" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/poster_image" android:layout_alignBottom="@+id/details_box"/>
+    <com.airbnb.p027n2.primitives.WishListIconView android:id="@+id/wish_list_heart" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/n2_WishListHeart.Small"/>
+    <Space android:id="@+id/bottom_space" android:layout_width="match_parent" android:layout_height="@dimen/n2_card_bottom_spacing" android:layout_below="@+id/details_box"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/poster_tag" android:background="@drawable/n2_poster_pill_background" android:padding="@dimen/n2_vertical_padding_tiny_half" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_vertical_padding_tiny_half" android:layout_marginBottom="@dimen/n2_vertical_padding_tiny" android:layout_alignLeft="@+id/poster_image" android:layout_alignBottom="@+id/poster_image" style="@style/n2_MicroText.Inverse"/>
+</merge>

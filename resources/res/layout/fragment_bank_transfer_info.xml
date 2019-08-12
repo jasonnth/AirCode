@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/n2_babu" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView style="@style/n2_FocusPane">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.components.SheetMarquee app:n2_titleText="@string/payout_bank_transfer_title" style="@style/n2_SheetMarquee"/>
+            <com.airbnb.p027n2.components.SheetInputText android:id="@+id/iban_sheetInput" android:inputType="text" app:n2_hintText="@string/payout_iban" style="@style/n2_SheetInputText"/>
+            <com.airbnb.p027n2.components.SheetInputText android:id="@+id/swift_code_sheetInput" android:inputType="text" app:n2_hintText="@string/payout_swift_id" style="@style/n2_SheetInputText"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/submit_button" android:text="@string/payment_info_submit" style="@style/n2_AirButton.WhiteFill"/>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" style="@style/n2_AirToolbar.Transparent.LightForeground"/>
+</FrameLayout>

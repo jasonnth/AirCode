@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/cards_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+        <com.airbnb.p027n2.components.RecommendationCard android:id="@+id/left_card" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Space android:id="@+id/left_space" android:layout_width="@dimen/n2_recommendation_row_divider_width" android:layout_height="match_parent"/>
+        <com.airbnb.p027n2.components.RecommendationCard android:id="@+id/center_card" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Space android:id="@+id/right_space" android:layout_width="@dimen/n2_recommendation_row_divider_width" android:layout_height="match_parent"/>
+        <com.airbnb.p027n2.components.RecommendationCard android:id="@+id/right_card" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <Space android:id="@+id/bottom_space" android:layout_width="match_parent" android:layout_height="@dimen/n2_card_bottom_spacing"/>
+</merge>

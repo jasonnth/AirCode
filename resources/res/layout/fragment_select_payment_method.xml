@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/n2_Sheet">
+    <com.airbnb.p027n2.components.jellyfish.JellyfishView android:id="@+id/jellyfish_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.airbnb.android.booking.p336n2.PaymentMethodSelectionView android:id="@+id/selection_view" app:n2_titleText="@string/p4_payment_method_title" app:n2_selectionMode="1" style="@style/n2_SelectionView.FocusPane"/>
+    <com.airbnb.p027n2.primitives.AirButton android:enabled="false" android:id="@+id/next_button" style="@style/n2_AirButton.WhiteFill.RightCaret"/>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.jellyfish.JellyfishView android:id="@+id/jellyfish_view" android:layout_width="match_parent" android:layout_height="match_parent" app:n2_palette="1"/>
+    <LinearLayout android:orientation="vertical" style="@style/n2_FocusPane">
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:id="@+id/single_day_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" style="@style/n2_RegularText.Plus"/>
+        <com.airbnb.p027n2.components.RangeDisplay android:gravity="center_horizontal" android:id="@+id/check_in_check_out_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?attr/actionBarSize" app:n2_font="2" app:n2_startTitleText="@string/check_in" app:n2_endTitleText="@string/check_out" app:n2_invertColors="true"/>
+        <include layout="@layout/week_days_strip_view"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.airbnb.android.core.views.calendar.VerticalCalendarView android:id="@+id/vertical_calendar" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <com.airbnb.p027n2.components.LoadingView android:layout_gravity="center_horizontal" android:id="@+id/progress" android:visibility="gone" style="@style/n2_LoadingView.Vertical"/>
+        </FrameLayout>
+        <ViewStub android:layout_gravity="bottom" android:id="@+id/bottom_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</merge>

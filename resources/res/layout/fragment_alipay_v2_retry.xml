@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.HeroMarquee android:id="@+id/hero_marquee" android:layout_width="match_parent" android:layout_height="match_parent" app:n2_captionColor="@color/n2_text_color_muted_inverted" app:n2_captionText="@string/alipay_v2_retry_subtitle" app:n2_firstButtonText="@string/alipay_v2_retry_button_retry" app:n2_secondButtonText="@string/alipay_v2_retry_button_close" app:n2_themeColor="@color/n2_jellyfish_babu_bg" app:n2_titleText="@string/alipay_v2_retry_title"/>
+</FrameLayout>

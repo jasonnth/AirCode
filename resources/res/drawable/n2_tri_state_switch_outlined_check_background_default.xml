@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/n2_white"/>
+            <corners android:topRightRadius="30dp" android:bottomRightRadius="30dp"/>
+            <stroke android:width="1dp" android:color="@color/n2_babu"/>
+            <size android:height="48dp" android:width="60dp"/>
+        </shape>
+    </item>
+    <item android:gravity="center" android:height="24dp" android:width="24dp" android:drawable="@drawable/n2_ic_check_babu" android:left="18dp" android:top="12dp" android:right="18dp" android:bottom="12dp"/>
+</layer-list>

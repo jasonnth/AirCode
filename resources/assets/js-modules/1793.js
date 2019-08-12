@@ -1,0 +1,1 @@
+__d(function(e,n,s,t){Object.defineProperty(t,"__esModule",{value:!0});var r=n(834);t.default=(0,r.Shape)({experienceInstanceId:r.Types.number,tripInstanceId:r.Types.number,name:r.Types.string,image:r.Types.string,guestsString:r.Types.string,durationString:r.Types.string})},1793);

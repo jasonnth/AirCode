@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/n2_white"/>
+            <size android:height="@dimen/n2_card_edit_step_icon_diameter" android:width="@dimen/n2_card_edit_step_icon_diameter"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/n2_ic_edit_pencil_hof"/>
+</layer-list>

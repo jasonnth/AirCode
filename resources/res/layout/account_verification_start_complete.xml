@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.jellyfish.JellyfishView android:id="@+id/jellyfish_view" android:layout_width="match_parent" android:layout_height="match_parent" app:n2_palette="1"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.components.SheetMarquee android:id="@+id/account_verifications_start_header" app:n2_subtitleText="@string/account_verifications_thanks_for_providing_id" style="@style/n2_SheetMarquee"/>
+        <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="left" android:id="@+id/account_verifications_start_btn" android:text="@string/okay" style="@style/n2_AirButton.WhiteFill.RightCaret.WithText"/>
+        <Space android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/n2_vertical_padding_large" android:layout_weight="1"/>
+        <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/account_verifications_next_btn" android:layout_marginBottom="@dimen/n2_vertical_padding_medium" android:text="@string/next" style="@style/n2_BookingNavButton"/>
+    </LinearLayout>
+</FrameLayout>

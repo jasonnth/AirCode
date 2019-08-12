@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.p000v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/c_foggy_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/gutter_padding">
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ml_ib_who_can_book_instantly_title" style="@style/TextSectionHeader"/>
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/who_can_book_instantly_selector" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentColor="@color/c_hof" app:hideTopBorder="true" app:withRightCaret="true" style="@style/GroupedTitle"/>
+        <android.support.p000v4.widget.Space android:layout_width="match_parent" android:layout_height="@dimen/n2_vertical_padding_medium"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ml_ib_guest_requirements" style="@style/TextSectionHeader"/>
+        <android.support.p002v7.widget.RecyclerView android:id="@+id/guest_requirements_list" android:background="@color/white" android:paddingTop="@dimen/booking_requirement_vertical_padding" android:paddingBottom="@dimen/booking_requirement_vertical_padding" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="LinearLayoutManager"/>
+        <android.support.p000v4.widget.Space android:layout_width="match_parent" android:layout_height="@dimen/n2_vertical_padding_large"/>
+    </LinearLayout>
+</android.support.p000v4.widget.NestedScrollView>

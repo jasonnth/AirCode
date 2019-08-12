@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" style="@style/n2_FocusPane">
+        <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:id="@+id/business_details" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Space style="@style/n2_ToolbarSpacer"/>
+                <include android:layout_width="0dp" android:layout_height="0dp" android:layout_marginTop="1dp" layout="@layout/n2_toolbar_pusher"/>
+                <com.airbnb.p027n2.components.DocumentMarquee app:n2_titleText="@string/business_details_title" style="@style/n2_DocumentMarquee.NoTopPadding"/>
+                <com.airbnb.p027n2.components.SimpleTextRow android:id="@+id/business_details_text" app:n2_showDivider="false" style="@style/n2_SimpleTextRow.Regular"/>
+                <com.airbnb.p027n2.components.LoadingView android:layout_gravity="center" android:id="@+id/loading_view" android:visibility="gone" style="@style/n2_LoadingView.Vertical"/>
+            </LinearLayout>
+        </com.airbnb.p027n2.collections.VerboseScrollView>
+    </LinearLayout>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_scrollWith="@+id/scroll_view" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+</FrameLayout>

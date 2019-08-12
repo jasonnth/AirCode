@@ -1,0 +1,1 @@
+__d(function(n,e,t,o){function r(n){return{name:n.country_name,countryCodeAlpha2:n.country_code,countryCodeAlpha3:n.country_code_alpha_3,idTypes:n.identification_types}}function u(n,e){return n.name<e.name?-1:n.name>e.name?1:0}function a(n){return n.map(function(n){return r(n)}).sort(u)}Object.defineProperty(o,"__esModule",{value:!0}),o.parseIDCountries=a},2303);

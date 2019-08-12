@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/payout_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/paypal_logo" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/payout_padding_header" app:srcCompat="@drawable/logo_paypal"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/payout_padding" android:layout_marginTop="@dimen/payout_padding_title" android:layout_marginRight="@dimen/payout_padding" android:text="@string/payout_paypal_what_is_your_email" style="@style/Canonical.Text.E"/>
+        <com.airbnb.p027n2.primitives.AirEditTextView android:id="@+id/pp_email" android:layout_marginTop="10dp" android:inputType="textEmailAddress" style="@style/Canonical.EditText.Grouped"/>
+        <Spinner android:id="@+id/currency_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+        <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <com.airbnb.p027n2.primitives.AirButton android:id="@+id/button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/submit" style="@style/Canonical.Button.Raised"/>
+    </LinearLayout>
+</ScrollView>

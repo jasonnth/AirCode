@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/n2_error_sheet_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.SheetMarquee android:id="@+id/offline_id_expired_marquee" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_subtitleText="@string/account_verification_id_expired_desc" app:n2_titleText="@string/account_verification_id_expired_header" style="@style/n2_SheetMarquee"/>
+    <com.airbnb.p027n2.primitives.AirButtonExpandable android:textColor="@color/n2_error_sheet_background" android:id="@+id/offline_id_rescan_button" android:text="@string/account_verification_offlin_id_rescan" android:drawableTint="@color/n2_error_sheet_background" style="@style/n2_AirButton.WhiteFill.RightCaret.WithText" n2_drawableRightCompat="@drawable/n2_icon_chevron_right_arches"/>
+</FrameLayout>

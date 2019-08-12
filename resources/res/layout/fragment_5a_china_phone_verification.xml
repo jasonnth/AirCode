@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.collections.SheetScrollView style="@style/n2_SheetScrollView">
+        <LinearLayout style="@style/n2_SheetInputFieldContainer">
+            <com.airbnb.p027n2.components.SheetMarquee android:id="@+id/phone_confirmation_sheet_marquee" app:n2_subtitleText="@string/china_phone_email_verification_body" app:n2_titleText="@string/china_phone_email_verification_title" style="@style/n2_SheetMarquee"/>
+            <com.airbnb.android.core.views.PhoneNumberInputSheet android:id="@+id/phone_number_input_view" android:imeOptions="actionNext" style="@style/n2_SheetInputText">
+                <requestFocus/>
+            </com.airbnb.android.core.views.PhoneNumberInputSheet>
+            <RelativeLayout android:id="@+id/code_sheetInput_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.airbnb.p027n2.components.SheetInputText android:id="@+id/code_sheetInput" android:inputType="number" app:n2_hintText="@string/phone_code_verification_code_title" style="@style/n2_SheetInputText">
+                    <requestFocus/>
+                </com.airbnb.p027n2.components.SheetInputText>
+                <com.airbnb.p027n2.primitives.AirButton android:enabled="false" android:id="@+id/send_code_btn" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_marginLeft="0dp" android:layout_marginBottom="8dp" android:text="@string/phone_code_verification_send" android:layout_alignRight="@+id/code_sheetInput" android:layout_alignBottom="@+id/code_sheetInput" style="@style/n2_AirButton.WhiteFill.BabuBorder.Baby"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.SheetScrollView>
+    <com.airbnb.p027n2.primitives.AirButton android:enabled="false" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/next_btn" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" android:layout_marginBottom="@dimen/n2_vertical_padding_small" style="@style/n2_AirButton.BabuFill.RightCaret"/>
+    <FrameLayout android:id="@+id/modal_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

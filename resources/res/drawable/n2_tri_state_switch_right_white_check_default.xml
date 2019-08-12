@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_selected="false" android:drawable="@drawable/n2_tristate_check_white" android:left="@dimen/n2_tri_state_switch_img_inside_padding" android:top="@dimen/n2_tri_state_switch_img_top_bottom_padding" android:right="@dimen/n2_tri_state_switch_img_outside_padding" android:bottom="@dimen/n2_tri_state_switch_img_top_bottom_padding"/>
+</layer-list>

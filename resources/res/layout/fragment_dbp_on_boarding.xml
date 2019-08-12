@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/ml_gray" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:paddingBottom="@dimen/ml_vertical_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/page_header" style="@style/TextSectionHeader"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_gray_2" android:text="@string/ml_demand_based_pricing_info" style="@style/TextSectionHeaderLeftAlign"/>
+            <FrameLayout android:id="@+id/dbp_fragment_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/gutter_padding"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gutter_padding">
+            <com.airbnb.p027n2.primitives.AirButton android:id="@+id/turn_on_dbp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/gutter_padding" android:text="@string/activate_demand_based_pricing" style="@style/Canonical.Button.Babu"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_gray_3" android:id="@+id/dbp_on_boarding_disclaimer" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/smart_pricing_on_boarding_disclaimer_help"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

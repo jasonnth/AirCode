@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_navigationIcon="1" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.airbnb.p027n2.primitives.DrawOnImageView android:id="@+id/draw_on_image_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <FrameLayout android:id="@+id/color_picker" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/photo_editor_color_picker_height" android:layout_marginLeft="?attr/n2_horizontal_side_padding" android:layout_marginBottom="@dimen/n2_vertical_padding_tiny_half" android:layout_alignParentBottom="true">
+                <View android:id="@+id/color_hof" android:background="@drawable/color_picker_circle" style="@style/PhotoMarkupEditorColorPickerOption"/>
+                <View android:id="@+id/color_beach" android:background="@drawable/color_picker_circle" style="@style/PhotoMarkupEditorColorPickerOption"/>
+                <View android:id="@+id/color_babu" android:background="@drawable/color_picker_circle" style="@style/PhotoMarkupEditorColorPickerOption"/>
+                <View android:id="@+id/color_rausch" android:background="@drawable/color_picker_circle" style="@style/PhotoMarkupEditorColorPickerOption"/>
+            </FrameLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/n2_bottom_button_bar_content_height" android:layout_marginLeft="@dimen/n2_horizontal_padding_tiny_half">
+            <ImageView android:id="@+id/icon_draw" android:layout_alignParentLeft="true" app:srcCompat="@drawable/ic_photo_editor_draw" style="@style/PhotoMarkupEditorToolIcon"/>
+            <ImageView android:id="@+id/icon_crop" android:layout_toRightOf="@+id/icon_draw" app:srcCompat="@drawable/ic_photo_editor_crop" style="@style/PhotoMarkupEditorToolIcon"/>
+            <com.airbnb.p027n2.primitives.AirButton android:id="@+id/undo_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="?attr/n2_horizontal_side_padding" android:text="@string/undo" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/n2_AirButton_V2.Link.Babu"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.airbnb.android.core.views.LoaderFrame android:id="@+id/full_screen_loader" android:background="@color/loader_overlay_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

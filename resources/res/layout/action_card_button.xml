@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.p002v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/action_card_button" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="24dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="16dp">
+        <com.airbnb.android.core.views.ColorizedIconView android:layout_width="16dp" android:layout_height="28dp" android:layout_marginRight="8dp" app:drawableId="@drawable/icon_lightbulb_sm_blue" app:colorStates="@color/n2_babu"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/action_card_button_title" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_font="3"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/n2_foggy" android:id="@+id/action_card_button_subtitle" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <com.airbnb.android.core.views.ColorizedIconView android:layout_width="8dp" android:layout_height="12dp" app:drawableId="@drawable/n2_icon_chevron_right_babu" app:colorStates="@color/n2_rausch"/>
+    </LinearLayout>
+</android.support.p002v7.widget.CardView>

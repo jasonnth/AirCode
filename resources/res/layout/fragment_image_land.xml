@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_gravity="center" android:id="@+id/img_listing" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:textSize="16sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="bottom|left|right|center_vertical|center_horizontal|fill_horizontal|center" android:id="@+id/txt_photo_caption" android:background="@drawable/listing_gradient" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="4"/>
+</FrameLayout>

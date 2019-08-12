@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="64dp" android:layout_width="match_parent" android:layout_height="48dp">
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="?attr/netverify_scanOptionsSubItemHeader" android:id="@+id/label" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true"/>
+    <View android:background="?attr/netverify_scanOptionsSeperator" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="63dp"/>
+</RelativeLayout>

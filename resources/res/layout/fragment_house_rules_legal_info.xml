@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_scrollWith="@+id/scroll_view" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.components.DocumentMarquee app:n2_titleText="@string/house_rules_legal_info_title" style="@style/n2_DocumentMarquee"/>
+            <com.airbnb.p027n2.components.MicroSectionHeader android:id="@+id/infants_title" android:paddingTop="0dp" app:n2_showDivider="false" app:n2_titleText="@string/house_rules_legal_info_infants_subtitle" style="@style/n2_MicroSectionHeader"/>
+            <com.airbnb.p027n2.components.TextRow android:id="@+id/infants_description" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:paddingBottom="0dp" app:n2_showDivider="false" app:n2_text="@string/house_rules_legal_info_infants_description" style="@style/n2_TextRow"/>
+            <com.airbnb.p027n2.components.LinkActionRow android:id="@+id/infants_learn_more_link" android:paddingTop="@dimen/n2_vertical_padding_tiny" app:n2_showDivider="false" app:n2_text="@string/house_rules_legal_info_learn_more" style="@style/n2_LinkActionRow"/>
+            <com.airbnb.p027n2.components.MicroSectionHeader android:id="@+id/pets_title" app:n2_showDivider="false" app:n2_titleText="@string/house_rules_legal_info_pets_subtitle" style="@style/n2_MicroSectionHeader"/>
+            <com.airbnb.p027n2.components.TextRow android:id="@+id/pets_description" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:paddingBottom="0dp" app:n2_showDivider="false" app:n2_text="@string/house_rules_legal_info_pets_description" style="@style/n2_TextRow"/>
+            <com.airbnb.p027n2.components.LinkActionRow android:id="@+id/pets_learn_more_link" android:paddingTop="@dimen/n2_vertical_padding_tiny" app:n2_showDivider="false" app:n2_text="@string/house_rules_legal_info_learn_more" style="@style/n2_LinkActionRow"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/content_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/frame_inbox" android:layout_width="@dimen/tab_pager_activity_master_width" android:layout_height="match_parent"/>
+        <View android:background="@color/c_gray_4" android:layout_width="3dp" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/frame_detail" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <com.airbnb.android.lib.views.EmptyResultsCardView android:id="@+id/empty_results_card" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize" app:topTitleText="@string/messages" app:cardTitleText="@string/no_messages_title_text" app:cardSubTitleText="@string/no_messages_subtitle_text"/>
+</FrameLayout>

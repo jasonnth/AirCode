@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.p000v4.widget.Space style="@style/n2_ToolbarSpacer"/>
+            <include android:layout_width="0dp" android:layout_height="0dp" android:layout_marginTop="1dp" layout="@layout/n2_toolbar_pusher"/>
+            <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_width="48dp" android:layout_height="48dp" android:layout_marginTop="@dimen/n2_vertical_padding_small" app:srcCompat="@drawable/airbnb_logo_white"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/signin_landing_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/signin_landing_header" app:n2_font="4" style="@style/n2_TitleText2.Inverse"/>
+            <include android:id="@+id/primary_sign_in_option_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="48dp" layout="@layout/oauth_option_button"/>
+            <include layout="@layout/create_account_button"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/sign_in_landing_more_options" android:background="?attr/selectableItemBackground" android:paddingTop="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/signin_more_options" style="@style/LoginPageLink"/>
+            <Space android:layout_width="match_parent" android:layout_height="0dp" android:minHeight="@dimen/n2_vertical_padding_small" android:layout_weight="1"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textColorLink="@color/white" android:id="@+id/txt_agreement" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" style="@style/n2_SmallText.Inverse"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

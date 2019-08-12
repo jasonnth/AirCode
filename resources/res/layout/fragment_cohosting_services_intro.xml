@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.airbnb.p027n2.collections.VerboseScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/n2_vertical_padding_medium" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+        <com.airbnb.p027n2.components.DocumentMarquee android:id="@+id/explanation_title" app:n2_showDivider="false" app:n2_titleText="@string/cohosting_cohosts_explanation_title" style="@style/n2_DocumentMarquee.NoTopPadding"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/explanation_subtitle" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_vertical_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:paddingBottom="@dimen/n2_vertical_padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cohosting_cohosts_explanation_function_title_for_listing_admin" style="@style/n2_RegularText"/>
+        <com.airbnb.p027n2.components.BulletTextRow app:n2_text="@string/cohosting_cohosts_explanation_function_first" style="@style/n2_BulletTextRow"/>
+        <com.airbnb.p027n2.components.BulletTextRow app:n2_text="@string/cohosting_cohosts_explanation_function_second" style="@style/n2_BulletTextRow"/>
+        <com.airbnb.p027n2.components.BulletTextRow app:n2_text="@string/cohosting_cohosts_explanation_function_third" style="@style/n2_BulletTextRow"/>
+        <com.airbnb.p027n2.components.BulletTextRow app:n2_text="@string/cohosting_cohosts_explanation_function_fourth" style="@style/n2_BulletTextRow"/>
+        <com.airbnb.p027n2.components.BulletTextRow android:id="@+id/interaction_text_for_listing_admin" android:visibility="visible" app:n2_text="@string/cohosting_cohosts_explanation_function_fifth" style="@style/n2_BulletTextRow"/>
+        <com.airbnb.p027n2.components.BulletTextRow android:id="@+id/interaction_text_for_cohost" android:paddingBottom="@dimen/n2_vertical_padding_medium" android:visibility="gone" app:n2_text="@string/cohosting_cohosts_explanation_function_fifth" style="@style/n2_BulletTextRow"/>
+        <View android:id="@+id/section_divider" android:visibility="gone" style="@style/n2_SubsectionDivider"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/cohosts_constrains" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_vertical_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cohosting_cohosts_constrains" style="@style/n2_RegularText"/>
+        <com.airbnb.p027n2.components.SimpleTextRow android:id="@+id/cohosts_what_guests_see" android:visibility="visible" app:n2_text="@string/cohosting_cohosts_what_guests_see" style="@style/n2_SimpleTextRow.Regular"/>
+        <com.airbnb.p027n2.components.LinkActionRow android:id="@+id/learn_more" app:n2_showDivider="true" app:n2_text="@string/learn_more_info_text" style="@style/n2_LinkActionRow"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textColorLink="@color/n2_text_color_muted" android:id="@+id/terms" android:padding="@dimen/n2_horizontal_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_SmallText.Muted"/>
+    </LinearLayout>
+</com.airbnb.p027n2.collections.VerboseScrollView>

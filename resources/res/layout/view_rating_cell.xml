@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.primitives.AirTextView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txt_rating" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/n2_RegularText"/>
+    <FrameLayout android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/stars_rating_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RatingBar android:id="@+id/stars_rating_bar" android:layout_width="wrap_content" android:layout_height="12dp" android:progressDrawable="@drawable/bg_rating_bar_star_small" android:numStars="5" android:stepSize="0.5" android:isIndicator="true"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/stars_rating_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/n2_starbar_star_drawable_padding" app:n2_drawableRightCompat="@drawable/n2_ic_babu_star_small" style="@style/n2_RegularText"/>
+    </FrameLayout>
+    <include android:layout_gravity="bottom" android:id="@+id/divider" android:layout_width="match_parent" android:layout_height="@dimen/line_thickness" layout="@layout/section_divider"/>
+</merge>

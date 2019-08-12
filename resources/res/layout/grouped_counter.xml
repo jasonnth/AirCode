@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <include android:id="@+id/grouped_counter_top_border" android:visibility="gone" layout="@layout/gutter_divider"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <com.airbnb.android.core.views.ColorizedIconView android:id="@+id/btn_minus" android:background="?attr/selectableItemBackground" app:drawableId="@drawable/icon_minus" app:colorStates="@color/grouped_counter_selector" style="@style/GroupedCounterButtons"/>
+        <View android:background="@color/c_gray_4" android:layout_width="@dimen/line_thickness" android:layout_height="match_parent" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+        <com.airbnb.p027n2.primitives.autoscale.AutoScaleTextView android:textSize="17sp" android:textColor="@color/c_gray_1" android:gravity="center" android:layout_gravity="center" android:id="@+id/txt_counter" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_weight="1"/>
+        <View android:background="@color/c_gray_4" android:layout_width="@dimen/line_thickness" android:layout_height="match_parent" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+        <com.airbnb.android.core.views.ColorizedIconView android:id="@+id/btn_plus" android:background="?attr/selectableItemBackground" app:drawableId="@drawable/icon_plus" app:colorStates="@color/grouped_counter_selector" style="@style/GroupedCounterButtons"/>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/gutter_padding" android:paddingTop="@dimen/reviews_pager_padding_top" android:paddingRight="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.autoscale.AutoScaleTextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/recommend_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" style="@style/Canonical.Text.B"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_gray_2" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/recommend_subtitle" android:paddingLeft="30dp" android:paddingRight="30dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" style="@style/Canonical.Text.G"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/bg_review_rating_stars" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/reviews_rating_recommend_margin_top">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/recommend_no_holder" android:padding="20dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/recommend_no" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/no" style="@style/Canonical.Text.E.Medium"/>
+            </LinearLayout>
+            <View android:background="@color/c_gray_5" android:layout_width="@dimen/line_thickness" android:layout_height="match_parent" android:layout_marginTop="@dimen/line_thickness" android:layout_marginBottom="@dimen/line_thickness"/>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/recommend_yes_holder" android:padding="20dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/recommend_yes" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/yes" style="@style/Canonical.Text.E.Medium"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/c_layout_padding_horizontal" android:layout_marginRight="@dimen/c_layout_padding_horizontal" android:text="@string/contact_host_tips_header" style="@style/Canonical.Text.E"/>
+    <LinearLayout android:layout_gravity="left|right|center_vertical|center_horizontal|fill_horizontal|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.android.core.views.ColorizedIconView android:id="@+id/left_arrow" android:layout_width="22dp" android:layout_height="45dp" android:scaleType="center" app:drawableId="@drawable/icon_left_caret" app:colorStates="@color/babu_color_selector"/>
+        <com.airbnb.android.core.views.ClickableViewPager android:layout_gravity="center_vertical" android:id="@+id/hint_view_pager" android:layout_width="0dp" android:layout_height="45dp" android:layout_weight="1" android:overScrollMode="never"/>
+        <com.airbnb.android.core.views.ColorizedIconView android:id="@+id/right_arrow" android:layout_width="22dp" android:layout_height="45dp" android:scaleType="center" app:drawableId="@drawable/n2_icon_right_caret" app:colorStates="@color/babu_color_selector"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@style/n2_PricingRowItem">
+    <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/price_item_title" android:paddingRight="@dimen/n2_horizontal_padding_tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/n2_LargeText"/>
+    <Space android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/price_item_info" android:paddingRight="@dimen/n2_horizontal_padding_tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/n2_LargeText"/>
+</LinearLayout>

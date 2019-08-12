@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.airbnb.p027n2.primitives.AirTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:ellipsize="marquee" android:id="@+id/dropdown_text" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:layout_width="wrap_content" android:layout_height="?android:attr/listPreferredItemHeight" android:lines="1" style="?android:attr/spinnerDropDownItemStyle"/>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/content_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.components.jellyfish.JellyfishView android:id="@+id/jellyfish_view" android:layout_width="match_parent" android:layout_height="match_parent" app:n2_palette="1"/>
+        <com.airbnb.p027n2.collections.SheetScrollView style="@style/n2_SheetScrollView">
+            <LinearLayout style="@style/n2_SheetInputFieldContainer">
+                <com.airbnb.p027n2.components.SheetMarquee android:id="@+id/phone_confirmation_sheet_marquee" app:n2_subtitleText="@string/verifications_phone_explanation" app:n2_titleText="@string/verifications_phone_confirm_phone" style="@style/n2_SheetMarquee"/>
+                <com.airbnb.android.core.views.PhoneNumberInputSheet android:id="@+id/phone_number_input_view" android:imeOptions="actionNext" style="@style/n2_SheetInputText">
+                    <requestFocus/>
+                </com.airbnb.android.core.views.PhoneNumberInputSheet>
+            </LinearLayout>
+        </com.airbnb.p027n2.collections.SheetScrollView>
+        <com.airbnb.p027n2.primitives.AirButton android:enabled="false" android:id="@+id/account_verification_phone_number_next_btn" style="@style/n2_AirButton.WhiteFill.RightCaret"/>
+        <com.airbnb.p027n2.primitives.AirButton android:enabled="false" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/account_verification_phone_number_booking_next_btn" android:layout_marginBottom="@dimen/n2_vertical_padding_medium" android:text="@string/next" style="@style/n2_BookingNavButton"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/modal_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

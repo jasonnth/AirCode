@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/lys_dls_landing" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.components.ImpactMarquee android:id="@+id/landing_marquee" android:background="@color/n2_babu" app:n2_titleText="@string/lys_dls_landing_title" style="@style/n2_ImpactMarquee"/>
+            <com.airbnb.p027n2.components.StandardButtonRow android:id="@+id/landing_basics" app:n2_buttonText="@string/lys_dls_landing_collection_status_continue" app:n2_subtitleText="@string/lys_dls_landing_basics_subtitle" app:n2_titleText="@string/lys_dls_landing_basics_title" style="@style/n2_StandardButtonRow"/>
+            <com.airbnb.p027n2.components.StandardButtonRow android:id="@+id/landing_marketing" app:n2_buttonText="@string/lys_dls_landing_collection_status_locked" app:n2_subtitleText="@string/lys_dls_landing_marketing_subtitle" app:n2_titleText="@string/lys_dls_landing_marketing_title" style="@style/n2_StandardButtonRow"/>
+            <com.airbnb.p027n2.components.StandardButtonRow android:id="@+id/landing_booking" app:n2_buttonText="@string/lys_dls_landing_collection_status_locked" app:n2_subtitleText="@string/lys_dls_landing_booking_subtitle" app:n2_titleText="@string/lys_dls_landing_booking_title" style="@style/n2_StandardButtonRow"/>
+            <Space android:id="@+id/space_for_preview" style="@style/n2_ButtonRowSpacer"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_scrollWith="@+id/scroll_view" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.LightForeground"/>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/preview" android:visibility="invisible" android:layout_marginLeft="?attr/n2_horizontal_side_padding" android:layout_marginRight="?attr/n2_horizontal_side_padding" android:text="@string/preview" style="@style/n2_AirButton.WhiteFill.BabuBorder.LeftBottom"/>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/publish" android:visibility="invisible" android:layout_marginLeft="?attr/n2_horizontal_side_padding" android:layout_marginRight="?attr/n2_horizontal_side_padding" android:text="@string/lys_dls_finish_and_publish_button_text" style="@style/n2_AirButton.BabuFill.RightBottom"/>
+</FrameLayout>

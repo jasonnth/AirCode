@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/section_divider"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/daily_price_list" android:paddingTop="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <include layout="@layout/section_divider"/>
+        <include android:id="@+id/price_without_discount" layout="@layout/list_item_long_term_pricing_example"/>
+        <include android:id="@+id/weekly_discount" layout="@layout/list_item_long_term_pricing_example"/>
+        <include android:id="@+id/price_before_fees" layout="@layout/list_item_long_term_pricing_example"/>
+    </LinearLayout>
+</ScrollView>

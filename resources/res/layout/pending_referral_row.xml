@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@style/referral_row">
+    <com.airbnb.p027n2.primitives.imaging.HaloImageView android:id="@+id/image" android:layout_width="@dimen/n2_halo_image_width_small" android:layout_height="@dimen/n2_halo_image_height_small" android:layout_marginRight="@dimen/n2_horizontal_padding_small"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:layout_gravity="center_vertical" android:id="@+id/status" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/n2_RegularText"/>
+</LinearLayout>

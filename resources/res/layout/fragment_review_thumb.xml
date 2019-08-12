@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.SheetMarquee android:id="@+id/document_marquee" style="@style/n2_SheetMarquee.NoTopPadding"/>
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp">
+        <ImageView android:id="@+id/recommend_no" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/review_recommend_no"/>
+        <ImageView android:id="@+id/recommend_yes" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gutter_padding" app:srcCompat="@drawable/review_recommend_yes"/>
+    </LinearLayout>
+</LinearLayout>

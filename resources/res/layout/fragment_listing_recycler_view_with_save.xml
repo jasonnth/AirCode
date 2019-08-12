@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/n2_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.design.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.airbnb.p027n2.collections.AirRecyclerView android:id="@+id/recycler_view" android:paddingBottom="@dimen/n2_sheet_bottom_bar_height" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="LinearLayoutManager"/>
+        <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" android:layout_alignParentTop="true" app:n2_scrollWith="@+id/recycler_view" app:n2_navigationIcon="1" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+        <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/save_button" android:text="@string/save" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:layout_behavior="com.airbnb.n2.utils.SnackbarDodger" style="@style/n2_AirButton.BabuFill"/>
+    </android.support.design.widget.CoordinatorLayout>
+    <com.airbnb.android.listing.views.TipView android:id="@+id/tip" android:visibility="gone" style="@style/TipView"/>
+</LinearLayout>

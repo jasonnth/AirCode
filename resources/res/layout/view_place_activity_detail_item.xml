@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingBottom="@dimen/n2_vertical_padding_small" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/airmoji" android:layout_width="26dp" android:layout_height="wrap_content" style="@style/n2_RegularText"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/body" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/n2_SmallText"/>
+</LinearLayout>

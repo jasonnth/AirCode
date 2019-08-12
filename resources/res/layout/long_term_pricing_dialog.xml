@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/section_divider"/>
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.primitives.AirTextView android:paddingBottom="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lt_modal_header" style="@style/Canonical.Text.D"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/date_description" android:paddingBottom="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.Text.D"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textSize="@dimen/lt_modal_small_text_size" android:paddingBottom="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lt_modal_offered_discounts" style="@style/Canonical.Text.D"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textSize="@dimen/lt_modal_small_text_size" android:id="@+id/weekly_discount" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.Text.D"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textSize="@dimen/lt_modal_small_text_size" android:id="@+id/monthly_discount" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.Text.D"/>
+            <com.airbnb.p027n2.primitives.AirButton android:id="@+id/edit_prices" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/edit_lt_prices" style="@style/Canonical.Button.RauschHollow"/>
+            <com.airbnb.p027n2.primitives.AirButton android:id="@+id/accept_changes" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lt_modal_button_padding" android:text="@string/accept_changes" style="@style/Canonical.Button.Rausch"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_rausch" android:gravity="center" android:id="@+id/dismiss_button" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lt_modal_button_padding" android:text="@string/not_now"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+    <View android:layout_gravity="bottom" android:id="@+id/img_gradient" android:background="@drawable/scroll_view_gradient" android:visibility="gone" android:layout_width="match_parent" android:layout_height="24dp" android:scaleType="center"/>
+</FrameLayout>

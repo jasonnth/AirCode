@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/dbp_root" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/gutter_padding" android:animateLayoutChanges="true">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/first_time_up_sell" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" app:srcCompat="@drawable/demand_based_pricing_upsell"/>
+        <LinearLayout android:padding="@dimen/gutter_padding" style="@style/Canonical.GroupedLayout">
+            <com.airbnb.p027n2.primitives.AirTextView android:textSize="16sp" android:textColor="@color/c_hof" android:gravity="center_horizontal" android:id="@+id/up_sell_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gutter_padding" app:n2_font="3"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_foggy" android:gravity="center_horizontal" android:id="@+id/up_sell_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gutter_padding" android:layout_marginBottom="@dimen/gutter_padding" android:text="@string/demand_based_pricing_sell_body" style="@style/Canonical.Text.E"/>
+            <com.airbnb.p027n2.primitives.AirButton android:id="@+id/try_demand_based_pricing_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/demand_based_pricing_try_it_out" style="@style/Canonical.Button.Babu"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/pricing_control" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.GroupedLayout">
+        <com.airbnb.android.lib.views.GroupedSwitch android:id="@+id/enable_demand_based_pricing" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:hideTopBorder="true" app:title="@string/ml_enable_demand_based_pricing"/>
+        <com.airbnb.android.lib.views.GroupedCell android:id="@+id/grouped_cell_up_sell" android:layout_width="match_parent" android:layout_height="wrap_content" app:custom_layout="@layout/grouped_cell_dbp_up_sell"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/pricing_cells" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/min_price_cell" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentColor="@color/c_rausch" app:hideTopBorder="true" app:title="@string/ml_min_price"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/max_price_cell" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentColor="@color/c_rausch" app:title="@string/ml_max_price"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/hosting_frequency_cell" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentColor="@color/c_rausch"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

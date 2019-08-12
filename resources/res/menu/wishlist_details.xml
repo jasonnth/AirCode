@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/n2_ic_filters" android:id="@+id/menu_filter" android:title="@string/filter" app:showAsAction="always"/>
+    <item android:icon="@drawable/n2_ic_share" android:id="@+id/menu_share" android:title="@string/share" app:showAsAction="always"/>
+    <item android:id="@+id/menu_delete" android:title="@string/delete" app:showAsAction="collapseActionView"/>
+    <item android:id="@+id/menu_toggle_privacy" android:title="@string/wishlist_change_privacy_private" app:showAsAction="collapseActionView"/>
+</menu>

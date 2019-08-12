@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.p002v7.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="LinearLayoutManager"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/trip_picker_empty_state_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.components.DocumentMarquee app:n2_captionText="@string/story_creation_pick_trip_empty_subtitle" app:n2_titleText="@string/story_creation_pick_trip_empty_title" style="@style/n2_DocumentMarquee"/>
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_gravity="center" android:layout_width="152dp" android:layout_height="224dp" android:layout_marginTop="@dimen/n2_vertical_padding_medium" app:srcCompat="@drawable/ic_trip_picker_empty_state"/>
+    </LinearLayout>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_scrollWith="@+id/recycler_view" app:n2_navigationIcon="1" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+    <com.airbnb.android.core.views.LoaderFrame android:id="@+id/loader_frame" android:background="@color/loader_overlay_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

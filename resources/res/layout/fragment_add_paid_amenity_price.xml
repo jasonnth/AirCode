@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.components.DocumentMarquee app:n2_titleText="@string/paid_amenities_add_price_title" style="@style/n2_DocumentMarquee"/>
+            <com.airbnb.p027n2.components.SwitchRow android:id="@+id/complimentary_switch_row" app:n2_titleText="@string/paid_amenities_toggle_price_free" style="@style/n2_SwitchRow"/>
+            <com.airbnb.p027n2.components.InlineInputRow android:id="@+id/price_input_row" app:n2_titleText="@string/paid_amenities_add_price_input_title" style="@style/n2_InlineInputRow"/>
+            <com.airbnb.p027n2.components.SimpleTextRow android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_showDivider="false" app:n2_text="@string/paid_amenities_add_price_disclaimer" style="@style/n2_SimpleTextRow"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_scrollWith="@+id/scroll_view" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+    <com.airbnb.p027n2.primitives.AirButton android:enabled="true" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/next_button" style="@style/n2_AirButton.BabuFill.RightCaret"/>
+</FrameLayout>

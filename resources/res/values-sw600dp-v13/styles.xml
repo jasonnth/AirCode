@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Design.TabLayout">
+        <item name="tabMode">1</item>
+        <item name="tabGravity">1</item>
+    </style>
+    <style name="Appboy.InAppMessage.Full">
+        <item name="android:background">@drawable/com_appboy_inappmessage_modal_background</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_width">375dp</item>
+        <item name="android:layout_height">600dp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="GuestHomeRecyclerView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="GuidebookButtonStyle">
+        <item name="android:layout_gravity">left</item>
+    </style>
+    <style name="ListingInsightsView">
+        <item name="android:layout_width">450dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/n2_horizontal_padding_small</item>
+        <item name="android:layout_marginTop">@dimen/n2_vertical_padding_small</item>
+        <item name="android:layout_marginBottom">@dimen/n2_vertical_padding_small</item>
+    </style>
+    <style name="MTSlidingTabLayoutStyle">
+        <item name="android:paddingLeft">52dp</item>
+        <item name="android:paddingRight">52dp</item>
+    </style>
+    <style name="monthly_activity_unlisted_title">
+        <item name="n2_font">2</item>
+    </style>
+    <style name="n2_EditorialMarqueeImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">432dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <style name="n2_FocusPane">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">?attr/n2_focus_pane_width</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="n2_ListingInfoRow_Button">
+        <item name="android:layout_marginLeft">?attr/n2_horizontal_side_padding</item>
+        <item name="android:layout_marginRight">?attr/n2_horizontal_side_padding</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="n2_PrimaryButton.InFocusPane">
+        <item name="android:layout_marginLeft">@dimen/n2_horizontal_padding_medium</item>
+        <item name="android:layout_marginRight">@dimen/n2_horizontal_padding_medium</item>
+    </style>
+</resources>

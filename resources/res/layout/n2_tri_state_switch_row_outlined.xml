@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/n2_vertical_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_LargeText"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_SmallText"/>
+        </LinearLayout>
+        <com.airbnb.p027n2.primitives.TriStateSwitch android:id="@+id/tri_state_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" app:n2_triStateSwitchStyle="1"/>
+    </LinearLayout>
+    <Space android:layout_width="match_parent" android:layout_height="@dimen/n2_vertical_padding_medium"/>
+    <View android:id="@+id/section_divider" style="@style/n2_SubsectionDivider"/>
+</merge>

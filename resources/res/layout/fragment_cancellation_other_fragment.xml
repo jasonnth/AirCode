@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingTop="?attr/actionBarSize" android:paddingBottom="56dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.components.DocumentMarquee android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_captionText="@string/cancellation_other_subtitle" app:n2_titleText="@string/cancellation_other_title"/>
+            <com.airbnb.p027n2.components.SimpleTextRow app:n2_text="@string/cancellation_other_message" style="@style/n2_SimpleTextRow.Regular"/>
+            <com.airbnb.p027n2.components.LinkActionRow android:id="@+id/edit_row" android:visibility="gone" app:n2_text="@string/cancellation_other_edit" style="@style/n2_LinkActionRow"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/white" android:id="@+id/report_message" android:background="@drawable/n2_babu_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="?attr/n2_horizontal_side_padding"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/edit_button" android:text="@string/cancellation_other_edit_button_text" style="@style/n2_AirButton.BabuFill"/>
+    <com.airbnb.p027n2.components.PrimaryButton android:layout_gravity="bottom" android:id="@+id/continue_button" android:visibility="gone" app:n2_buttonText="@string/continue_text" style="@style/n2_PrimaryButton"/>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_navigationIcon="1" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+</android.support.design.widget.CoordinatorLayout>

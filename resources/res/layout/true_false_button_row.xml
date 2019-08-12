@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@style/true_false_button_row">
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/true_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/n2_horizontal_padding_tiny" android:text="@string/mythbusters_true_button_text" style="@style/n2_AirButton_V2.BabuOutline"/>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/false_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/n2_horizontal_padding_tiny" android:text="@string/mythbusters_false_button_text" style="@style/n2_AirButton_V2.BabuOutline"/>
+</LinearLayout>

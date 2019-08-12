@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/n2_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/search_empty_state_view" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_vertical_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:paddingBottom="@dimen/n2_vertical_padding_medium" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize">
+        <com.airbnb.p027n2.primitives.AirTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/story_search_no_result" style="@style/n2_LargeText"/>
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/search_empty_state" android:scaleType="centerInside"/>
+    </LinearLayout>
+    <com.airbnb.android.core.views.AirSwipeRefreshLayout android:id="@+id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.p002v7.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.airbnb.android.core.views.AirSwipeRefreshLayout>
+    <com.airbnb.p027n2.components.NavigationPill android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/story_composer_pill" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" app:layout_behavior="com.airbnb.n2.utils.SnackbarDodger" app:n2_rightText="@string/story_creation_write_story" app:n2_rightDrawable="@drawable/ic_plus" app:n2_mode="1"/>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_menu="@menu/story_feed" app:n2_scrollWith="@+id/recycler_view" app:n2_navigationIcon="0" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+</FrameLayout>

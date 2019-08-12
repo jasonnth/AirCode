@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <FrameLayout android:background="@drawable/n2_filter_suggestion_pill_background" android:paddingLeft="@dimen/n2_horizontal_padding_small" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:paddingRight="@dimen/n2_horizontal_padding_small" android:paddingBottom="@dimen/n2_vertical_padding_tiny" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.airbnb.p027n2.primitives.AirTextView android:textStyle="bold" android:textColor="@color/n2_babu" android:ellipsize="end" android:id="@+id/filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/n2_SmallText"/>
+    </FrameLayout>
+</merge>

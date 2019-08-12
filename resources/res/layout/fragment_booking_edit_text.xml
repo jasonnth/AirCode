@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/n2_view_model_toolbar_spacer"/>
+                <com.airbnb.p027n2.components.KickerMarquee android:id="@+id/marquee" app:n2_showDivider="false" app:n2_kickerMarqueeStyle="2" style="@style/n2_KickerMarquee.NoTopPadding"/>
+                <FrameLayout android:id="@+id/quoteContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.airbnb.p027n2.primitives.imaging.HaloImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/hostImage" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium"/>
+                    <com.airbnb.p027n2.primitives.messaging.MessageItemReceiver android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/messageItem" app:n2_messageTextSize="@dimen/n2_regular_text_size" style="@style/n2_MessageItem"/>
+                </FrameLayout>
+                <View android:layout_marginTop="@dimen/n2_horizontal_padding_small" style="@style/n2_SubsectionDivider"/>
+                <com.airbnb.p027n2.primitives.AirEditTextView android:textColor="@color/n2_text_color_main" android:gravity="top" android:id="@+id/edit_text" android:background="@color/white" android:padding="@dimen/n2_horizontal_padding_medium" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:minLines="5" android:inputType="textMultiLine" app:n2_font="4"/>
+                <android.support.p000v4.widget.Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+            </LinearLayout>
+        </com.airbnb.p027n2.collections.VerboseScrollView>
+        <com.airbnb.p027n2.components.BookingNavigationView android:layout_gravity="bottom" android:id="@+id/nav_view" style="@style/n2_BookingNavButtonContent"/>
+        <com.airbnb.p027n2.primitives.AirButton android:id="@+id/bookingNavButton" android:visibility="gone" android:text="@string/next" style="@style/n2_BookingNavButton.RegularText"/>
+    </LinearLayout>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_scrollWith="@+id/scroll_view" app:n2_navigationIcon="1" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+</FrameLayout>

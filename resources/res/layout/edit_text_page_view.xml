@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.components.DocumentMarquee android:id="@+id/marquee" app:n2_showDivider="false" style="@style/n2_DocumentMarquee"/>
+        <FrameLayout android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.primitives.AirEditTextView android:gravity="top" android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/edit_text" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="none|text|textCapSentences|textMultiLine" android:textCursorDrawable="@drawable/n2_babu_cursor_drawable" style="@style/n2_LargeText"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:layout_gravity="bottom" android:id="@+id/char_count" android:paddingBottom="@dimen/text_edit_page_text_view_bottom_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_SmallText.PlusPlus"/>
+        </FrameLayout>
+        <View android:id="@+id/space_click_target" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+</merge>

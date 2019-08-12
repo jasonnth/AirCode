@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="96dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.components.DocumentMarquee android:id="@+id/document_marquee" app:n2_showDivider="true" style="@style/n2_DocumentMarquee.NoTopPadding"/>
+        <TextView android:textColor="@color/n2_text_color_actionable" android:id="@+id/write_review" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_vertical_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:paddingBottom="@dimen/n2_vertical_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_RegularText"/>
+        <View style="@style/n2_SubsectionDivider"/>
+        <TextView android:textColor="@color/white" android:id="@+id/text_review_comments" android:background="@drawable/n2_button_bar_button_background" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginTop="@dimen/n2_vertical_padding_medium" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" style="@style/n2_RegularText"/>
+    </LinearLayout>
+</ScrollView>

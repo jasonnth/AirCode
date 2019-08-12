@@ -1,0 +1,1 @@
+__d(function(_,R,O,T){Object.defineProperty(T,"__esModule",{value:!0});T.RESERVATION_ALTERATION_FORMAT_FOR_GUEST="for_mobile_alterations_v4_guest",T.RESERVATION_ALTERATION_FORMAT_FOR_HOST="for_mobile_alterations_v4_host",T.RESERVATION_FORMAT_FOR_GUEST="for_guest_alteration_v2",T.RESERVATION_FORMAT_FOR_HOST="for_host_alteration_v2"},1542);

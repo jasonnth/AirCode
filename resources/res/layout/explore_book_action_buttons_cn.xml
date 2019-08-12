@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/contact_host_button" android:layout_marginRight="@dimen/p3_book_button_with_contact_btn_buttons_margin" android:text="@string/contact_host" style="@style/ExploreBookButtonContactHostBtn"/>
+    <FrameLayout android:id="@+id/explore_book_button" android:background="@drawable/explore_book_button_background" style="@style/ExploreBookButtonWithContactBtnContent">
+        <com.airbnb.p027n2.primitives.AirTextView android:textStyle="bold" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/button_text" android:paddingLeft="@dimen/p3_book_button_with_contact_btn_horizontal_padding" android:paddingRight="@dimen/p3_book_button_with_contact_btn_horizontal_padding" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="2" android:includeFontPadding="false" android:drawablePadding="4dp" style="@style/n2_SmallText.Inverse"/>
+        <com.airbnb.p027n2.components.LoadingView android:layout_gravity="center" android:id="@+id/loading_view" android:visibility="gone" app:n2_color="@android:color/white" style="@style/n2_LoadingView"/>
+    </FrameLayout>
+</merge>

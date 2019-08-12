@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.android.lib.views.LinearListView android:orientation="vertical" android:id="@+id/list_property_types" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="#ddd" android:showDividers="none|beginning|middle|end" app:dividerThickness="@dimen/line_thickness"/>
+    <RelativeLayout android:id="@+id/other_cell" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="@dimen/lys_choice_icon_size">
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:id="@+id/txt_collapsed_more_options" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more" android:drawablePadding="10dp" android:layout_centerInParent="true" style="@style/Canonical.Text.E.Red"/>
+    </RelativeLayout>
+    <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:id="@+id/other_cell_expanded" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/more" android:textAllCaps="@bool/caps_headers" style="@style/Canonical.Text.F"/>
+    <com.airbnb.android.lib.views.LinearListView android:orientation="vertical" android:id="@+id/list_other_property_types" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="#ddd" android:showDividers="middle" app:dividerThickness="@dimen/line_thickness"/>
+</merge>

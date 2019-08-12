@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/booking_settings_title" android:text="@string/instant_book" style="@style/TextSectionHeader"/>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/c_grouped_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/instant_book_sell" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" app:srcCompat="@drawable/instant_book_upsell_image"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textSize="16sp" android:textColor="@color/c_hof" android:gravity="center_horizontal" android:id="@+id/instant_book_sell_title" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" app:n2_font="3"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_foggy" android:gravity="center_horizontal" android:id="@+id/instant_book_sell_desc" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/instant_book_detailed_settings_container" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.GroupedLayout">
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/ml_ib_who_can_book_instantly" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentColor="@color/c_rausch" app:title="@string/ml_ib_who_can_book_instantly"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/ml_ib_first_message" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentColor="@color/c_rausch" app:title="@string/ib_pre_booking_message" app:withRightCaret="true"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/ml_ib_house_rules" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentColor="@color/c_rausch" app:title="@string/house_rules" app:withRightCaret="true"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/ml_ib_check_in" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentColor="@color/c_rausch" app:title="@string/check_in" app:withRightCaret="true"/>
+            <com.airbnb.android.lib.views.GroupedCell android:id="@+id/ml_ib_cancellation_policy" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentColor="@color/c_rausch" app:title="@string/cancellation_policy" app:withRightCaret="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/booking_setting_tip" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_gray_2" android:paddingTop="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/ml_ib_tooltip" android:layout_weight="1"/>
+        <com.airbnb.android.core.views.ColorizedIconView android:background="?attr/selectableItemBackground" android:layout_width="@dimen/tooltip_image_size" android:layout_height="@dimen/tooltip_image_size" android:scaleType="center" app:drawableId="@drawable/icon_lightbulb_lg_blue" app:colorStates="@color/c_babu"/>
+    </LinearLayout>
+</LinearLayout>

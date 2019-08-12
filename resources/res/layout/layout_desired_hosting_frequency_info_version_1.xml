@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/section_divider"/>
+    <com.airbnb.p027n2.collections.VerboseScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.airbnb.p027n2.primitives.AirTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/gutter_padding" android:text="@string/demand_based_pricing_ideal_nights_info_tool_tip_header" style="@style/Canonical.Text.D"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/gutter_padding" android:text="@string/capital_example_colon" style="@style/Canonical.Text.D"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/gutter_padding" android:text="@string/desired_hosting_frequency_description_intro" style="@style/Canonical.Text.D"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.p027n2.primitives.AirTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/manage_listing_hosting_frequency_as_often_as_possible_title" app:n2_font="3" style="@style/Canonical.Text.D"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/gutter_padding" android:text="@string/desired_hosting_frequency_description_as_often_as_possible" style="@style/Canonical.Text.D"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.p027n2.primitives.AirTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/manage_listing_hosting_frequency_part_time_title" app:n2_font="3" style="@style/Canonical.Text.D"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/gutter_padding" android:text="@string/manage_listing_hosting_frequency_part_time_info" style="@style/Canonical.Text.D"/>
+            </LinearLayout>
+            <com.airbnb.p027n2.primitives.AirTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/desired_hosting_frequency_description_conclusion" style="@style/Canonical.Text.D"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+</LinearLayout>

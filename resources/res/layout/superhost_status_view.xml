@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.components.SectionHeader android:id="@+id/superhost_title" android:layout_marginBottom="@dimen/n2_vertical_padding_medium" app:n2_buttonText="@string/host_stats_button_view_details" style="@style/n2_SectionHeader.First"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginRight="@dimen/n2_horizontal_padding_medium">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/date_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/host_standards_next_superhost_assessment_title" style="@style/n2_RegularText.Plus"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/next_assessment_date" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_RegularText"/>
+        </LinearLayout>
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/superhost_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:layout_marginTop="@dimen/n2_vertical_padding_medium" android:layout_marginBottom="@dimen/n2_vertical_padding_medium" style="@style/n2_SubsectionDivider"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/about_assessment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" style="@style/n2_RegularText"/>
+    <View android:layout_marginTop="@dimen/n2_vertical_padding_medium" style="@style/n2_SubsectionDivider"/>
+    <com.airbnb.p027n2.components.LinkActionRow android:id="@+id/learn_more" app:n2_showDivider="false" app:n2_text="@string/superhost_program_learn_more" style="@style/n2_LinkActionRow"/>
+</merge>

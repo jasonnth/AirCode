@@ -1,0 +1,1 @@
+__d(function(e,t,i,u){"use strict";Object.defineProperty(u,"__esModule",{value:!0}),u.GiftingContext=void 0;var n=t(412),r=function(e){return e&&e.__esModule?e:{default:e}}(n);u.GiftingContext={defaultProps:{},propTypes:{currency:r.default.string.isRequired,gifting_value:r.default.number.isRequired,gifting_message:r.default.string}}},1883);

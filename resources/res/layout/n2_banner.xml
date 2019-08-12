@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginRight="4dp" android:foreground="?attr/selectableItemBackground">
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/image" android:background="@color/n2_loading_background" android:visibility="gone" android:scaleType="centerCrop" app:layout_widthPercent="100%" app:layout_aspectRatio="150%" app:n2_scrimForText="true"/>
+    <com.airbnb.p027n2.collections.AirVideoView android:id="@+id/video_view" app:layout_widthPercent="100%" app:layout_aspectRatio="150%"/>
+    <LinearLayout android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:orientation="vertical" android:background="@drawable/n2_place_card_gradient" android:paddingLeft="12dp" android:paddingBottom="@dimen/n2_vertical_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@android:color/white" android:id="@+id/subtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/n2_MicroText"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+            <com.airbnb.p027n2.primitives.AirTextView android:textSize="32sp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@+id/title_text" android:paddingTop="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="2" app:n2_font="5"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@drawable/n2_recommendation_card_frame" app:layout_widthPercent="100%" app:layout_aspectRatio="150%"/>
+</android.support.percent.PercentFrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <android.support.percent.PercentFrameLayout android:paddingBottom="@dimen/n2_vertical_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/image" android:background="@color/n2_loading_background" style="@style/n2_EditorialMarqueeImage"/>
+        <com.airbnb.p027n2.collections.AirVideoView android:id="@+id/video_view" android:visibility="gone" android:scaleType="centerCrop" app:layout_widthPercent="100%" app:layout_aspectRatio="150%"/>
+        <View android:background="@drawable/n2_scrim_gradient" android:layout_width="match_parent" android:layout_height="@dimen/n2_toolbar_gradient_height"/>
+    </android.support.percent.PercentFrameLayout>
+    <include layout="@layout/n2_toolbar_pusher"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/kicker" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:paddingBottom="@dimen/n2_vertical_padding_tiny" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" style="@style/n2_SmallText.PlusPlus"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/title" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_TitleText2"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/description" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_vertical_padding_small" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_LargeText"/>
+</merge>

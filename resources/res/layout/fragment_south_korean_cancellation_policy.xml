@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.DocumentMarquee android:id="@+id/sk_cancellation_marquee" style="@style/n2_DocumentMarquee"/>
+    <android.support.p000v4.widget.Space android:layout_width="match_parent" android:layout_height="40dp"/>
+    <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="left" android:id="@+id/continue_button" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:text="@string/continue_text" style="@style/n2_AirButton.BabuFill"/>
+</LinearLayout>

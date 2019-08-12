@@ -1,0 +1,1 @@
+__d(function(e,r,s,t){Object.defineProperty(t,"__esModule",{value:!0});var i=r(834);t.default=(0,i.Shape)({author:(0,i.Shape)({first_name:i.Types.string,picture_url:i.Types.string}),comments:i.Types.string,created_at:i.Types.string,reviewer:(0,i.Shape)({first_name:i.Types.string,profile_pic_url_small:i.Types.string})})},1668);

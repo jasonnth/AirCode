@@ -1,0 +1,1 @@
+__d(function(e,a,s,t){s.exports=a(164).registerAsset({__packager_asset:!0,httpServerLocation:"/assets/apps/Guidebook/images",width:157,height:19,scales:[1,2,3],hash:"a1f383fa4edb975d1105a51a083dd13d",name:"poweredByFoursquare",type:"png"})},2126);

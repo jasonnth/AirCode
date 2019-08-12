@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+    <View android:id="@+id/top_divider" style="@style/n2_FullSectionDivider"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.primitives.AirEditTextView android:scrollbarStyle="insideInset" android:textColor="@color/n2_text_color_main" android:gravity="top" android:id="@+id/edit_text" android:background="@color/transparent" android:padding="@dimen/n2_horizontal_padding_medium" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:inputType="textMultiLine" android:overScrollMode="always"/>
+            <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/save_button" android:text="@string/bt_trip_note_add_message" style="@style/n2_AirButton.BabuFill.RightCaret.WithText"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

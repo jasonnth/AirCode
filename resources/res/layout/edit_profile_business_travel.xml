@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/c_foggy_white" android:paddingLeft="@dimen/c_layout_padding_horizontal" android:paddingRight="@dimen/c_layout_padding_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp">
+    <com.airbnb.p027n2.primitives.AirTextView android:layout_marginBottom="15dp" android:text="@string/edit_profile_business_travel_header" style="@style/TextSectionHeader"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bt_container" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.GroupedLayout">
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.primitives.AirTextView android:textSize="15sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bt_profile_work_email_title" style="@style/Canonical.Text.E"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textSize="15sp" android:textColor="@color/c_gray_3" android:gravity="right" android:id="@+id/work_email" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/bt_profile_work_email_add_hint" android:layout_weight="1" style="@style/Canonical.Text.E"/>
+        </LinearLayout>
+        <include layout="@layout/section_divider"/>
+        <Space android:layout_width="match_parent" android:layout_height="10dp"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textSize="13sp" android:textColor="@color/c_gray_3" android:id="@+id/work_email_status" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.Text.E"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textSize="13sp" android:textColor="@color/c_gray_3" android:id="@+id/work_email_status_details" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/bt_profile_work_email_add_details" style="@style/Canonical.Text.E"/>
+    </LinearLayout>
+</LinearLayout>

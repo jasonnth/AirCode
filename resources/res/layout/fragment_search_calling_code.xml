@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.primitives.AirEditTextView android:id="@+id/search_calling_code_editText" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:hint="@string/search" android:drawableLeft="@drawable/action_search" android:textCursorDrawable="@drawable/toolbar_searchview_cursor" style="@style/Canonical.EditText"/>
+    <View android:background="@color/c_gray_3" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginLeft="@dimen/gutter_padding" android:layout_marginRight="@dimen/gutter_padding"/>
+    <ListView android:id="@+id/calling_code_listView" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/c_gray_4" android:dividerHeight="@dimen/line_thickness"/>
+</LinearLayout>

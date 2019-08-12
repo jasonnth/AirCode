@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_vertical_padding_small" android:paddingBottom="@dimen/n2_vertical_padding_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.imaging.HaloImageView android:id="@+id/user_image" android:layout_width="@dimen/n2_halo_image_width_small" android:layout_height="@dimen/n2_halo_image_height_small"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/title_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_small" android:maxLines="1" android:layout_weight="1" style="@style/n2_RegularText"/>
+        <ImageView android:id="@+id/remove_button" android:background="?attr/selectableItemBackgroundBorderless" android:padding="@dimen/n2_horizontal_padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_small" app:srcCompat="@drawable/n2_participant_row_remove_icon"/>
+    </LinearLayout>
+    <View android:id="@+id/section_divider" style="@style/n2_SubsectionDivider"/>
+</merge>

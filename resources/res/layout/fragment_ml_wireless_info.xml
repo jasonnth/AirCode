@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/c_foggy_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ml_vertical_padding" android:animateLayoutChanges="true">
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vertical_margin_top" android:text="@string/ml_wireless_info_description" style="@style/TextSectionHeader"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/current_connection_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/ml_wireless_use_current_connection" style="@style/Canonical.Button.RauschHollow"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:text="@string/ml_wireless_info_network_name" style="@style/TextSectionHeader"/>
+        <com.airbnb.p027n2.primitives.AirEditTextView android:id="@+id/wireless_network_name" android:background="@drawable/c_grouped_edittext" android:paddingLeft="@dimen/gutter_padding" style="@style/Canonical.GroupedEditText"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:text="@string/ml_wireless_info_network_password" style="@style/TextSectionHeader"/>
+        <com.airbnb.p027n2.primitives.AirEditTextView android:id="@+id/wireless_network_password" android:background="@drawable/c_grouped_edittext" android:paddingLeft="@dimen/gutter_padding" android:inputType="textPassword" style="@style/Canonical.GroupedEditText"/>
+    </LinearLayout>
+</ScrollView>

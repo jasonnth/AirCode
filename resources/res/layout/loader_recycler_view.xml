@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.android.lib.views.EmptyResults android:layout_gravity="center" android:id="@+id/empty_results" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <android.support.p002v7.widget.RecyclerView android:id="@+id/recycler_view" android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+    <com.airbnb.android.core.views.LoaderFrame android:id="@+id/loader_frame" android:background="@color/c_gray_6" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_vertical_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:paddingBottom="@dimen/n2_vertical_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/button1" style="@style/n2_ButtonBarButton">
+            <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/icon1" style="@style/n2_ButtonBarIcon"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/label1" style="@style/n2_ButtonBarLabel"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/button2" android:layout_marginLeft="@dimen/n2_button_bar_spacing" style="@style/n2_ButtonBarButton">
+            <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/icon2" style="@style/n2_ButtonBarIcon"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/label2" style="@style/n2_ButtonBarLabel"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/button3" android:layout_marginLeft="@dimen/n2_button_bar_spacing" style="@style/n2_ButtonBarButton">
+            <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/icon3" style="@style/n2_ButtonBarIcon"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/label3" style="@style/n2_ButtonBarLabel"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/button4" android:layout_marginLeft="@dimen/n2_button_bar_spacing" style="@style/n2_ButtonBarButton">
+            <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/icon4" style="@style/n2_ButtonBarIcon"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/label4" style="@style/n2_ButtonBarLabel"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/divider" style="@style/n2_SubsectionDivider"/>
+</merge>

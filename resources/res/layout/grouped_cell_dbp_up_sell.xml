@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/grouped_cell_top_border" layout="@layout/section_divider"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="32dp" android:layout_height="match_parent" android:adjustViewBounds="true" app:srcCompat="@drawable/ic_dbp"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textSize="14sp" android:textColor="@color/c_foggy" android:gravity="center_vertical" android:id="@+id/grouped_cell_content" android:paddingLeft="14dp" android:layout_width="0dp" android:layout_height="match_parent" android:minLines="2" android:layout_weight="1"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/grouped_cell_title" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp"/>
+    </LinearLayout>
+</LinearLayout>

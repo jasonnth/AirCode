@@ -1,0 +1,1 @@
+__d(function(e,i,r,t){Object.defineProperty(t,"__esModule",{value:!0});var n=i(834),s=i(815),u=i(750),d=babelHelpers.interopRequireDefault(u);t.default=(0,n.Shape)({actionTitle:n.Types.string,divider:d.default,icon:s.IconPropType,onPress:n.Types.func.isRequired,title:n.Types.string.isRequired})},2007);

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_weight="1" android:layout_above="@+id/continue_button">
+            <LinearLayout android:orientation="vertical" android:layout_height="wrap_content" style="@style/n2_FocusPane">
+                <include layout="@layout/n2_view_model_toolbar_spacer"/>
+                <com.airbnb.p027n2.components.DocumentMarquee android:id="@+id/marquee" app:n2_showDivider="false" app:n2_titleText="@string/how_many_guests" style="@style/n2_DocumentMarquee.NoTopPadding"/>
+                <com.airbnb.android.core.views.guestpicker.GuestsPickerView android:id="@+id/guests_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </com.airbnb.p027n2.collections.VerboseScrollView>
+        <com.airbnb.p027n2.components.BookingNavigationView android:layout_gravity="bottom" android:id="@+id/nav_view" style="@style/n2_BookingNavButtonContent"/>
+        <com.airbnb.p027n2.components.fixed_footers.FixedActionFooter android:layout_gravity="bottom" android:id="@+id/continue_button" app:n2_buttonText="@string/save" style="@style/n2_FixedActionFooter"/>
+    </LinearLayout>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_scrollWith="@+id/scroll_view" app:n2_navigationIcon="1" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+</RelativeLayout>

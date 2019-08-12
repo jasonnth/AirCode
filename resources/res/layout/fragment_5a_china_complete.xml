@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.jellyfish.JellyfishView android:id="@+id/jellyfish_view" android:layout_width="match_parent" android:layout_height="match_parent" app:n2_palette="1"/>
+    <LinearLayout style="@style/n2_SheetInputFieldContainer">
+        <com.airbnb.p027n2.components.SheetMarquee android:id="@+id/sheet_marquee" app:n2_titleText="@string/china_verification_complete_title" style="@style/n2_SheetMarquee"/>
+        <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="left" android:id="@+id/confirm_button" android:text="@string/account_verifications_finish_booking" style="@style/n2_AirButton.WhiteFill"/>
+    </LinearLayout>
+</FrameLayout>

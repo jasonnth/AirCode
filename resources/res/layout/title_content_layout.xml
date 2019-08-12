@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:textSize="21sp" android:layout_gravity="center_vertical" android:id="@+id/layout_title" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="48dp" android:lines="2" android:layout_weight="1" style="@style/Canonical.Text.C.Medium"/>
+        <com.airbnb.p027n2.primitives.imaging.HaloImageView android:id="@+id/subtitle_image" android:layout_width="48dp" android:layout_height="48dp"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/custom_layout_placeholder" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="center_vertical" android:id="@+id/layout_content" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.Text.E"/>
+    </FrameLayout>
+</merge>

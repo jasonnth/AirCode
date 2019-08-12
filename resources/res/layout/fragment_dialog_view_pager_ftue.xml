@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/img_ftue_icon" android:layout_width="75dp" android:layout_height="75dp" android:layout_marginTop="25dp" android:layout_marginBottom="15dp" android:scaleType="fitCenter"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center_horizontal|center" android:id="@+id/txt_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="15dp" android:maxLines="4" android:lineSpacingMultiplier="1" style="@style/Canonical.Text.B"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_gray_1_5" android:gravity="center" android:id="@+id/txt_subtitle" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="20dp" style="@style/Canonical.Text.D"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

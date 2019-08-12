@@ -1,0 +1,1 @@
+__d(function(e,n,t,o){function a(e){var n=e.event_data||{};return[e.event_name,n.page,n.section,n.sub_section,n.operation].filter(Boolean).join(".")}Object.defineProperty(o,"__esModule",{value:!0}),o.default=a},695);

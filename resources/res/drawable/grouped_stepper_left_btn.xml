@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:shape="rectangle">
+    <size android:height="@dimen/grouped_stepper_btn_height" android:width="@dimen/grouped_stepper_btn_width"/>
+    <corners android:topLeftRadius="@dimen/grouped_stepper_btn_radius" android:bottomLeftRadius="@dimen/grouped_stepper_btn_radius"/>
+    <solid android:color="@color/transparent"/>
+</shape>

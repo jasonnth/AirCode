@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="vertical" android:id="@+id/explore_book_button_root_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/referral_credit_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@+id/referral_credit_border" style="@style/n2_FullSectionDivider"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:paddingBottom="@dimen/n2_vertical_padding_tiny" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/referral_credit_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/n2_SmallText"/>
+                <ImageView android:id="@+id/referral_credit_more_info" android:layout_width="20dp" android:layout_height="wrap_content" android:adjustViewBounds="true" android:tint="@color/n2_foggy" app:srcCompat="@drawable/ic_question_mark"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@+id/top_border" style="@style/n2_FullSectionDivider"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/book_button_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/price_reviews_container" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" android:layout_weight="1" style="@style/ExploreBookButtonContent">
+                <com.airbnb.p027n2.primitives.AirTextView android:textSize="16sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/price_details" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" style="@style/n2_RegularText"/>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/book_button_reviews_container" android:background="?attr/selectableItemBackground" android:paddingTop="4dp" android:paddingRight="4dp" android:paddingBottom="4dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RatingBar android:id="@+id/rating_bar" android:visibility="gone" android:layout_marginRight="2dp" style="@style/n2_StarRatingBar.Babu"/>
+                    <com.airbnb.p027n2.primitives.AirTextView android:textSize="11sp" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/num_reviews" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" style="@style/n2_MiniText"/>
+                </LinearLayout>
+                <com.airbnb.p027n2.primitives.AirTextView android:layout_gravity="center_vertical" android:id="@+id/percentage_recommend" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:minLines="1" style="@style/n2_MiniText"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/action_button_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/n2_horizontal_padding_medium"/>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

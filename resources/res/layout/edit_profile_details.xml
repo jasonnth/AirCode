@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/c_foggy_white" android:paddingLeft="@dimen/c_layout_padding_horizontal" android:paddingRight="@dimen/c_layout_padding_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.airbnb.p027n2.primitives.AirTextView android:layout_marginTop="25dp" android:layout_marginBottom="15dp" android:text="@string/edit_profile_private_details" style="@style/TextSectionHeader"/>
+    <com.airbnb.android.lib.views.LinearListView android:id="@+id/list_private_details" style="@style/Canonical.GroupedLayout"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:layout_marginTop="25dp" android:layout_marginBottom="15dp" android:text="@string/edit_profile_optional_details" style="@style/TextSectionHeader"/>
+    <com.airbnb.android.lib.views.LinearListView android:id="@+id/list_optional_details" style="@style/Canonical.GroupedLayout"/>
+</LinearLayout>

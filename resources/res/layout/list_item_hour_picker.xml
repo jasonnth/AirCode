@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp">
+    <com.airbnb.p027n2.primitives.AirTextView android:textSize="17sp" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/hour_text" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <com.airbnb.android.core.views.ColorizedIconView android:id="@+id/zen_checkmark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" app:drawableId="@drawable/checkmark_selected" app:colorStates="@color/c_rausch"/>
+</LinearLayout>

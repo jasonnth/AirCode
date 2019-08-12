@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:padding="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.airbnb.p027n2.primitives.AirTextView android:textSize="14sp" android:textColor="@color/c_rausch" android:id="@+id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="0sp"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/btr_briefcase_icon" android:visibility="gone" android:layout_width="9dp" android:layout_height="9dp" android:layout_marginLeft="4dp" app:srcCompat="@drawable/ic_btr_briefcase_map"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/ib_bolt_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="4dp" app:srcCompat="@drawable/ic_ib_bolt_map"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/wl_heart_icon" android:visibility="gone" android:layout_width="9dp" android:layout_height="9dp" android:layout_marginLeft="4dp" app:srcCompat="@drawable/ic_wl_heart_map"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_theme="3" app:n2_navigationIcon="2" style="@style/n2_AirToolbar"/>
+    <com.airbnb.p027n2.components.DocumentMarquee android:id="@+id/write_feedback_intro" app:n2_captionText="@string/community_commitment_feedback_description" app:n2_showDivider="true" style="@style/n2_DocumentMarquee.NoTopPadding"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/write_feedback" android:text="@string/enter_feedback" style="@style/CommunityCommitmentFeedbackIntroText"/>
+    <View style="@style/n2_SubsectionDivider"/>
+</LinearLayout>

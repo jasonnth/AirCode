@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/menu_current_caption" android:title="@string/ml_current_photo_caption" app:showAsAction="always"/>
+    <item android:icon="@drawable/icon_prev" android:id="@+id/menu_prev" android:title="@string/lys_previous_screen" app:showAsAction="always"/>
+    <item android:icon="@drawable/icon_next" android:id="@+id/menu_next" android:title="@string/lys_next_screen" app:showAsAction="always"/>
+</menu>

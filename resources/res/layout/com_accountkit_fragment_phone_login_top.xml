@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.accountkit.p029ui.ConstrainedLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_marginTop="22dp" style="@style/AccountKit.Container">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.facebook.accountkit.p029ui.CountryCodeSpinner android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/com_accountkit_country_code" android:background="@null" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/com_accountkit_country_code_image" android:paddingLeft="60dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/com_accountkit_spinner_triangle"/>
+        <View android:id="@+id/com_accountkit_country_code_underline" android:visibility="gone" android:layout_width="95dp" android:layout_height="2dp" android:layout_marginBottom="7dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <Space android:layout_width="@dimen/com_accountkit_input_spacing" android:layout_height="0dp"/>
+    <EditText android:id="@+id/com_accountkit_phone_number" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:ems="10" android:maxLength="21" android:digits="1234567890" android:layout_weight="1" android:inputType="number" android:imeOptions="actionNext" style="@style/AccountKit.InputText"/>
+</com.facebook.accountkit.p029ui.ConstrainedLinearLayout>

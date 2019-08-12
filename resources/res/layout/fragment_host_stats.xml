@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.android.core.views.AirSwipeRefreshLayout android:id="@+id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.p027n2.components.DocumentCarouselMarquee android:id="@+id/document_carousel_marquee" android:visibility="gone" app:n2_titleText="@string/host_stats_page_title" style="@style/n2_DocumentMarquee"/>
+                <com.airbnb.p027n2.components.DocumentMarquee android:id="@+id/document_marquee" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_titleText="@string/host_stats_page_title" style="@style/n2_DocumentMarquee"/>
+                <com.airbnb.p027n2.components.RefreshLoader android:id="@+id/loading_row" android:visibility="gone" style="@style/n2_RefreshLoader"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/content_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/earnings_layout" style="@style/HostStatsTopLevelRow">
+                        <com.airbnb.p027n2.components.SectionHeader android:id="@+id/earnings_section_header" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_buttonText="@string/host_stats_button_view_details" style="@style/n2_SectionHeader.First"/>
+                        <com.airbnb.p027n2.components.StandardRow android:id="@+id/earnings_empty_state_view" android:visibility="gone" app:n2_showDivider="false" app:n2_titleText="@string/host_stats_earnings_section_content_no_payouts_for_month" style="@style/n2_StandardRow"/>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/monthly_earnings_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <com.airbnb.p027n2.components.StandardRow android:id="@+id/paid_out_yearly_row" android:background="@color/transparent" android:visibility="gone" style="@style/n2_StandardRow"/>
+                        <com.airbnb.p027n2.components.LinkActionRow android:id="@+id/view_transactions_row" android:visibility="gone" app:n2_showDivider="false" style="@style/n2_LinkActionRow"/>
+                        <View style="@style/HostStatsSectionDivider"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/ratings_layout" style="@style/HostStatsTopLevelRow">
+                        <com.airbnb.p027n2.components.SectionHeader android:id="@+id/ratings_section_header" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_buttonText="@string/host_stats_button_view_details" app:n2_descriptionText="@string/host_stats_overall_rating_subtitle" app:n2_titleText="@string/host_stats_overall_rating_title" style="@style/n2_SectionHeader.First"/>
+                        <com.airbnb.p027n2.components.StandardRow android:id="@+id/ratings_empty_state_view" android:visibility="gone" app:n2_showDivider="false" app:n2_titleText="@string/host_stats_ratings_section_content_no_ratings" style="@style/n2_StandardRow"/>
+                        <com.airbnb.p027n2.components.BigNumberRow android:id="@+id/ratings_row" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_showDivider="false"/>
+                        <View style="@style/HostStatsSectionDivider"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/listing_views_layout" style="@style/HostStatsTopLevelRow">
+                        <com.airbnb.p027n2.components.SectionHeader android:id="@+id/listing_views_section_header" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_buttonText="@string/host_stats_button_view_details" app:n2_titleText="@string/host_stats_listing_views_title" style="@style/n2_SectionHeader.First"/>
+                        <com.airbnb.p027n2.components.StandardRow android:id="@+id/listing_views_empty_state_view" android:visibility="gone" app:n2_showDivider="false" app:n2_titleText="@string/host_stats_listing_views_section_content_no_views" style="@style/n2_StandardRow"/>
+                        <com.airbnb.p027n2.components.BigNumberRow android:id="@+id/listing_views_row" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_primarySubtitleText="@string/host_stats_listing_views_cell_subtitle"/>
+                        <com.airbnb.p027n2.components.BigNumberRow android:id="@+id/new_bookings_row" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_showDivider="false" app:n2_primarySubtitleText="@string/host_stats_new_bookings_cell_subtitle"/>
+                        <View style="@style/HostStatsSectionDivider"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/hosting_standards_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.airbnb.p027n2.components.SectionHeader android:id="@+id/hosting_standards_header" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_descriptionText="@string/host_stats_hosting_standards_section_description" app:n2_titleText="@string/host_stats_standards_section_title" style="@style/n2_SectionHeader.First"/>
+                        <com.airbnb.p027n2.components.BarRow android:id="@+id/commitment_rate_standards_bar" app:n2_titleText="@string/host_standards_commitment_rate_section_title" style="@style/n2_BarRow"/>
+                        <com.airbnb.p027n2.components.BarRow android:id="@+id/response_rate_standards_bar" app:n2_titleText="@string/host_standards_response_rate_section_title" style="@style/n2_BarRow"/>
+                        <com.airbnb.p027n2.components.BarRow android:id="@+id/five_star_rating_rate_standards_bar" app:n2_titleText="@string/host_standards_rating_section_title" style="@style/n2_BarRow"/>
+                        <View android:layout_marginTop="@dimen/n2_vertical_padding_medium" style="@style/n2_SubsectionDivider"/>
+                        <com.airbnb.p027n2.components.LinkActionRow android:id="@+id/hosting_standards_learn_more_link" app:n2_showDivider="false" app:n2_text="@string/host_standards_section_learn_more" style="@style/n2_LinkActionRow"/>
+                        <View style="@style/HostStatsSectionDivider"/>
+                    </LinearLayout>
+                    <com.airbnb.android.lib.host.stats.views.SuperhostStatusView android:id="@+id/superhost_status" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/cohosting_standards_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <View style="@style/HostStatsSectionDivider"/>
+                        <com.airbnb.p027n2.components.SectionHeader android:id="@+id/cohosting_standards_header" android:layout_marginBottom="@dimen/n2_vertical_padding_medium" app:n2_buttonText="@string/host_stats_button_view_details" app:n2_showBoldTitle="true" app:n2_titleText="@string/cohosting_generic_title" style="@style/n2_SectionHeader"/>
+                        <com.airbnb.p027n2.components.StandardRow android:id="@+id/cohosting_standards_summary" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <com.airbnb.p027n2.components.BarRow android:id="@+id/cohosting_response_rate_standards_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_titleText="@string/cohosting_stats_response_rate_title" style="@style/n2_BarRow"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.airbnb.p027n2.collections.VerboseScrollView>
+    </com.airbnb.android.core.views.AirSwipeRefreshLayout>
+</FrameLayout>

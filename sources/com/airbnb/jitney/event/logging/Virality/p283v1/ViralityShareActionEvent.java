@@ -1,0 +1,138 @@
+package com.airbnb.jitney.event.logging.Virality.p283v1;
+
+import com.airbnb.android.core.analytics.BaseAnalytics;
+import com.airbnb.android.core.intents.ShareActivityIntents;
+import com.airbnb.jitney.event.logging.Operation.p165v1.C2451Operation;
+import com.airbnb.jitney.event.logging.OperationResult.p166v1.C2452OperationResult;
+import com.airbnb.jitney.event.logging.SharedItemType.p256v1.C2740SharedItemType;
+import com.airbnb.jitney.event.logging.core.context.p025v2.Context;
+import com.facebook.places.model.PlaceFields;
+import com.microsoft.thrifty.Adapter;
+import com.microsoft.thrifty.Struct;
+import com.microsoft.thrifty.protocol.Protocol;
+import java.io.IOException;
+import java.util.List;
+import org.jmrtd.PassportService;
+
+/* renamed from: com.airbnb.jitney.event.logging.Virality.v1.ViralityShareActionEvent */
+public final class ViralityShareActionEvent implements Struct {
+    public static final Adapter<ViralityShareActionEvent, Object> ADAPTER = new ViralityShareActionEventAdapter();
+    public final Context context;
+    public final String entry_point;
+    public final String event_name;
+    public final Boolean is_share_sheet;
+    public final C2451Operation operation;
+    public final C2452OperationResult operation_result;
+    public final Long photo_index;
+    public final List<String> recipients;
+    public final String schema;
+    public final Long share_service;
+    public final Long shared_item_id;
+    public final C2740SharedItemType shared_item_type;
+    public final String target;
+    public final Long total_shares_sent;
+
+    /* renamed from: com.airbnb.jitney.event.logging.Virality.v1.ViralityShareActionEvent$ViralityShareActionEventAdapter */
+    private static final class ViralityShareActionEventAdapter implements Adapter<ViralityShareActionEvent, Object> {
+        private ViralityShareActionEventAdapter() {
+        }
+
+        public void write(Protocol protocol, ViralityShareActionEvent struct) throws IOException {
+            protocol.writeStructBegin("ViralityShareActionEvent");
+            if (struct.schema != null) {
+                protocol.writeFieldBegin("schema", 31337, PassportService.SF_DG11);
+                protocol.writeString(struct.schema);
+                protocol.writeFieldEnd();
+            }
+            protocol.writeFieldBegin("event_name", 1, PassportService.SF_DG11);
+            protocol.writeString(struct.event_name);
+            protocol.writeFieldEnd();
+            protocol.writeFieldBegin(PlaceFields.CONTEXT, 2, PassportService.SF_DG12);
+            Context.ADAPTER.write(protocol, struct.context);
+            protocol.writeFieldEnd();
+            protocol.writeFieldBegin("shared_item_type", 3, 8);
+            protocol.writeI32(struct.shared_item_type.value);
+            protocol.writeFieldEnd();
+            if (struct.shared_item_id != null) {
+                protocol.writeFieldBegin("shared_item_id", 4, 10);
+                protocol.writeI64(struct.shared_item_id.longValue());
+                protocol.writeFieldEnd();
+            }
+            if (struct.photo_index != null) {
+                protocol.writeFieldBegin("photo_index", 5, 10);
+                protocol.writeI64(struct.photo_index.longValue());
+                protocol.writeFieldEnd();
+            }
+            if (struct.entry_point != null) {
+                protocol.writeFieldBegin(ShareActivityIntents.ARG_ENTRY_POINT, 6, PassportService.SF_DG11);
+                protocol.writeString(struct.entry_point);
+                protocol.writeFieldEnd();
+            }
+            protocol.writeFieldBegin(BaseAnalytics.OPERATION, 7, 8);
+            protocol.writeI32(struct.operation.value);
+            protocol.writeFieldEnd();
+            protocol.writeFieldBegin(BaseAnalytics.TARGET, 8, PassportService.SF_DG11);
+            protocol.writeString(struct.target);
+            protocol.writeFieldEnd();
+            protocol.writeFieldBegin("operation_result", 9, 8);
+            protocol.writeI32(struct.operation_result.value);
+            protocol.writeFieldEnd();
+            protocol.writeFieldBegin("share_service", 10, 10);
+            protocol.writeI64(struct.share_service.longValue());
+            protocol.writeFieldEnd();
+            if (struct.total_shares_sent != null) {
+                protocol.writeFieldBegin("total_shares_sent", 11, 10);
+                protocol.writeI64(struct.total_shares_sent.longValue());
+                protocol.writeFieldEnd();
+            }
+            if (struct.recipients != null) {
+                protocol.writeFieldBegin("recipients", 12, 15);
+                protocol.writeListBegin(PassportService.SF_DG11, struct.recipients.size());
+                for (String item0 : struct.recipients) {
+                    protocol.writeString(item0);
+                }
+                protocol.writeListEnd();
+                protocol.writeFieldEnd();
+            }
+            protocol.writeFieldBegin("is_share_sheet", 13, 2);
+            protocol.writeBool(struct.is_share_sheet.booleanValue());
+            protocol.writeFieldEnd();
+            protocol.writeFieldStop();
+            protocol.writeStructEnd();
+        }
+    }
+
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (other == null) {
+            return false;
+        }
+        if (!(other instanceof ViralityShareActionEvent)) {
+            return false;
+        }
+        ViralityShareActionEvent that = (ViralityShareActionEvent) other;
+        if ((this.schema == that.schema || (this.schema != null && this.schema.equals(that.schema))) && ((this.event_name == that.event_name || this.event_name.equals(that.event_name)) && ((this.context == that.context || this.context.equals(that.context)) && ((this.shared_item_type == that.shared_item_type || this.shared_item_type.equals(that.shared_item_type)) && ((this.shared_item_id == that.shared_item_id || (this.shared_item_id != null && this.shared_item_id.equals(that.shared_item_id))) && ((this.photo_index == that.photo_index || (this.photo_index != null && this.photo_index.equals(that.photo_index))) && ((this.entry_point == that.entry_point || (this.entry_point != null && this.entry_point.equals(that.entry_point))) && ((this.operation == that.operation || this.operation.equals(that.operation)) && ((this.target == that.target || this.target.equals(that.target)) && ((this.operation_result == that.operation_result || this.operation_result.equals(that.operation_result)) && ((this.share_service == that.share_service || this.share_service.equals(that.share_service)) && ((this.total_shares_sent == that.total_shares_sent || (this.total_shares_sent != null && this.total_shares_sent.equals(that.total_shares_sent))) && ((this.recipients == that.recipients || (this.recipients != null && this.recipients.equals(that.recipients))) && (this.is_share_sheet == that.is_share_sheet || this.is_share_sheet.equals(that.is_share_sheet))))))))))))))) {
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        int i = 0;
+        int code = (((((((((((((((((((((((16777619 ^ (this.schema == null ? 0 : this.schema.hashCode())) * -2128831035) ^ this.event_name.hashCode()) * -2128831035) ^ this.context.hashCode()) * -2128831035) ^ this.shared_item_type.hashCode()) * -2128831035) ^ (this.shared_item_id == null ? 0 : this.shared_item_id.hashCode())) * -2128831035) ^ (this.photo_index == null ? 0 : this.photo_index.hashCode())) * -2128831035) ^ (this.entry_point == null ? 0 : this.entry_point.hashCode())) * -2128831035) ^ this.operation.hashCode()) * -2128831035) ^ this.target.hashCode()) * -2128831035) ^ this.operation_result.hashCode()) * -2128831035) ^ this.share_service.hashCode()) * -2128831035) ^ (this.total_shares_sent == null ? 0 : this.total_shares_sent.hashCode())) * -2128831035;
+        if (this.recipients != null) {
+            i = this.recipients.hashCode();
+        }
+        return (((code ^ i) * -2128831035) ^ this.is_share_sheet.hashCode()) * -2128831035;
+    }
+
+    public String toString() {
+        return "ViralityShareActionEvent{schema=" + this.schema + ", event_name=" + this.event_name + ", context=" + this.context + ", shared_item_type=" + this.shared_item_type + ", shared_item_id=" + this.shared_item_id + ", photo_index=" + this.photo_index + ", entry_point=" + this.entry_point + ", operation=" + this.operation + ", target=" + this.target + ", operation_result=" + this.operation_result + ", share_service=" + this.share_service + ", total_shares_sent=" + this.total_shares_sent + ", recipients=" + this.recipients + ", is_share_sheet=" + this.is_share_sheet + "}";
+    }
+
+    public void write(Protocol protocol) throws IOException {
+        ADAPTER.write(protocol, this);
+    }
+}

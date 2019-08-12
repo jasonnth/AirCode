@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/sticky_continue_button">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.primitives.AirTextView android:text="@string/edit_profile_first_name" style="@style/TextSectionHeader"/>
+            <com.airbnb.p027n2.primitives.AirEditTextView android:id="@+id/editable_field_first_name" android:hint="@string/enter_your_first_name" android:scrollHorizontally="false" android:inputType="textPersonName" style="@style/Canonical.EditText.Grouped"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:text="@string/edit_profile_last_name" style="@style/TextSectionHeader"/>
+            <com.airbnb.p027n2.primitives.AirEditTextView android:id="@+id/editable_field_last_name" android:hint="@string/enter_your_last_name" android:scrollHorizontally="false" android:inputType="textPersonName" style="@style/Canonical.EditText.Grouped"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:text="@string/edit_profile_email" style="@style/TextSectionHeader"/>
+            <com.airbnb.p027n2.primitives.AirEditTextView android:id="@+id/editable_field_email" android:hint="@string/enter_your_email_address" android:scrollHorizontally="false" android:inputType="textEmailAddress" style="@style/Canonical.EditText.Grouped"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.airbnb.android.lib.views.StickyButton android:id="@+id/sticky_continue_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:title="@string/continue_text"/>
+</RelativeLayout>

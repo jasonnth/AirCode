@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/n2_grid_card_outer_horizontal_padding">
+    <FrameLayout android:background="@drawable/help_thread_add_photo_background" android:layout_width="match_parent" app:layout_widthPercent="100%" app:layout_aspectRatio="100%">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.android.core.views.ColorizedIconView android:layout_gravity="center" android:layout_width="32dp" android:layout_height="wrap_content" app:drawableId="@drawable/help_thread_camera_icon" app:colorStates="@color/white"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/n2_vertical_padding_small" android:text="@string/help_thread_add_photo" style="@style/n2_LargeText.Inverse"/>
+        </LinearLayout>
+    </FrameLayout>
+</android.support.percent.PercentFrameLayout>

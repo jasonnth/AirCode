@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/n2_vertical_padding_tiny_half">
+    <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.airbnb.p027n2.primitives.SquareImageView android:id="@+id/share_your_trip_photo_row_item_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop"/>
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/share_your_trip_delete_photo_1" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/n2_vertical_padding_tiny_half" android:layout_marginRight="@dimen/n2_vertical_padding_tiny_half" app:srcCompat="@drawable/ic_action_close_white"/>
+    </FrameLayout>
+    <android.support.p000v4.widget.Space android:layout_width="5dp" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.airbnb.p027n2.primitives.SquareImageView android:id="@+id/share_your_trip_photo_row_item_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop"/>
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/share_your_trip_delete_photo_2" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/n2_vertical_padding_tiny_half" android:layout_marginRight="@dimen/n2_vertical_padding_tiny_half" app:srcCompat="@drawable/ic_action_close_white"/>
+    </FrameLayout>
+</LinearLayout>

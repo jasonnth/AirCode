@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <com.airbnb.p027n2.primitives.imaging.HaloImageView android:id="@+id/img_profile_small" app:n2_drawBorder="false" style="@style/Canonical.ImageView.Halo.Light.XXSmall"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/text_host_name_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" style="@style/Canonical.Text.E"/>
+    </LinearLayout>
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_alignParentLeft="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentStart="false" android:layout_alignParentEnd="false" app:n2_drawableColor="@color/c_hof"/>
+</RelativeLayout>

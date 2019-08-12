@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:paddingTop="@dimen/verifications_header_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/container_phone_number_entry" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:text="@string/verifications_phone_confirm_phone" style="@style/Canonical.Text.B"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/btn_calling_code" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Canonical.Button.GrayHollow"/>
+                    <com.airbnb.p027n2.primitives.AirEditTextView android:textColorHint="@color/c_gray_4" android:gravity="center" android:id="@+id/edittext_phone_number" android:background="@null" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:inputType="phone" android:imeOptions="actionGo" style="@style/Canonical.Text.E"/>
+                </LinearLayout>
+                <include layout="@layout/verification_horizontal_separator"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/verifications_phone_explanation"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/btn_text_code" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gutter_padding" android:layout_marginTop="25dp" android:layout_marginRight="@dimen/gutter_padding" android:text="@string/verifications_phone_text_me" style="@style/Canonical.Button.Rausch"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/container_confirmation_code_entry" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0">
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="50dp" android:text="@string/verifications_phone_enter_code" style="@style/Canonical.Text.B"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.airbnb.p027n2.primitives.AirEditTextView android:textColorHint="@color/c_foggy" android:layout_gravity="center" android:id="@+id/edittext_confirmation_code" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/verifications_phone_code_hint" android:inputType="phone"/>
+                <include layout="@layout/verification_horizontal_separator"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:id="@+id/txt_confirmation_code_notification" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:text="@string/verifications_phone_instructions" android:freezesText="true"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_rausch" android:gravity="center" android:id="@+id/btn_having_trouble" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@string/verifications_phone_having_trouble"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <include layout="@layout/verifications_skip_container"/>
+</LinearLayout>

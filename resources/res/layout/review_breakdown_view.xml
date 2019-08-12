@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.primitives.StarBar android:id="@+id/five_stars_row" android:layout_marginTop="@dimen/n2_vertical_padding_small" app:n2_starLabel="5" style="@style/ReviewBreakdownStarbar"/>
+    <com.airbnb.p027n2.primitives.StarBar android:id="@+id/four_stars_row" app:n2_starLabel="4" style="@style/ReviewBreakdownStarbar"/>
+    <com.airbnb.p027n2.primitives.StarBar android:id="@+id/three_stars_row" app:n2_starLabel="3" style="@style/ReviewBreakdownStarbar"/>
+    <com.airbnb.p027n2.primitives.StarBar android:id="@+id/two_stars_row" app:n2_starLabel="2" style="@style/ReviewBreakdownStarbar"/>
+    <com.airbnb.p027n2.primitives.StarBar android:id="@+id/one_stars_row" app:n2_starLabel="1" style="@style/ReviewBreakdownStarbar"/>
+    <View android:id="@+id/divider" android:layout_marginTop="@dimen/n2_vertical_padding_medium" style="@style/n2_FullSectionDivider"/>
+</merge>

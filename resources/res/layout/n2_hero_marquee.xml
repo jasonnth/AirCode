@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/image" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:scaleType="centerCrop" android:layout_alignTop="@+id/content_container" android:layout_alignBottom="@+id/content_container" app:n2_fade="true" app:n2_useARGB8888="true"/>
+    <View android:id="@+id/gradient" android:background="@drawable/n2_scrim_gradient" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/n2_toolbar_gradient_height"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Space style="@style/n2_ToolbarSpacer"/>
+        <include layout="@layout/n2_toolbar_pusher_with_margin"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/content_container" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_hero_marquee_top_padding" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:paddingBottom="@dimen/n2_hero_marquee_bottom_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/icon" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginBottom="@dimen/n2_vertical_padding_medium" style="@style/n2_HeroMarqueeIcon"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/n2_vertical_padding_small" style="@style/n2_TitleText2.Inverse"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/caption_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_LargeText.Inverse"/>
+        <Space android:layout_width="match_parent" android:layout_height="@dimen/n2_vertical_padding_large"/>
+        <com.airbnb.p027n2.primitives.AirButton android:id="@+id/button_first" android:layout_marginBottom="@dimen/n2_vertical_padding_small" style="@style/n2_HeroMarqueeButton.Primary"/>
+        <com.airbnb.p027n2.primitives.AirButton android:id="@+id/button_second" style="@style/n2_HeroMarqueeButton.Secondary"/>
+    </LinearLayout>
+</merge>

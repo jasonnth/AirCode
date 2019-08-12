@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.primitives.AirTextView android:textAppearance="@style/Canonical.Text.E" android:textColor="@color/white" android:id="@+id/txt_count" android:paddingLeft="4dp" android:paddingRight="4dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:textIsSelectable="false"/>
+</FrameLayout>

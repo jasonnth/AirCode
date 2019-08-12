@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.jellyfish.JellyfishView android:id="@+id/jellyfish_view" android:layout_width="match_parent" android:layout_height="match_parent" app:n2_palette="1"/>
+    <com.airbnb.p027n2.collections.ProfilePhotoSheet android:id="@+id/verification_profile_photo_sheet" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize" app:n2_subtitleText="@string/account_verification_profile_photo_desc" app:n2_titleText="@string/account_verification_profile_photo_header" app:n2_placeholder="@drawable/profile_photo_add"/>
+    <include layout="@layout/n2_sheet_bottom_baby_secondary_button_toolbar"/>
+    <include layout="@layout/account_verification_choices"/>
+</FrameLayout>

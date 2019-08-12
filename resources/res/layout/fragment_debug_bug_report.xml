@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/n2_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.p002v7.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="LinearLayoutManager"/>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" android:layout_alignParentTop="true" app:n2_scrollWith="@+id/recycler_view" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+    <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/send_button" android:text="@string/send" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:layout_behavior="com.airbnb.n2.utils.SnackbarDodger" style="@style/n2_AirButton.BabuFill"/>
+</android.support.design.widget.CoordinatorLayout>

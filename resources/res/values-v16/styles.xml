@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AccountKit.AgreementText">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="AccountKit.Button">
+        <item name="android:fontFamily">Roboto-Medium</item>
+    </style>
+    <style name="AccountKit.InputText">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="AccountKit.Text">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="AccountKit.TitleText">
+        <item name="android:fontFamily">Roboto-Light</item>
+    </style>
+</resources>

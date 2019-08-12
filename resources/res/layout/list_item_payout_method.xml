@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="@dimen/payout_padding" android:paddingRight="@dimen/payout_padding" android:paddingBottom="@dimen/payout_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/c_grouped_layout" android:padding="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:textAppearance="@style/Canonical.Text.B" android:textColor="@color/c_rausch" android:id="@+id/payout_method_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:background="@color/c_gray_4" android:layout_width="match_parent" android:layout_height="@dimen/line_thickness" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textAppearance="@style/Canonical.Text.E" android:id="@+id/payout_method_description" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

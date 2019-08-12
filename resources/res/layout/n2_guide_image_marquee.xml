@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <android.support.percent.PercentFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/marquee_image" android:background="@color/n2_loading_background" style="@style/n2_GuideImageMarquee_Image"/>
+        <View android:background="@drawable/n2_scrim_gradient" android:layout_width="match_parent" android:layout_height="@dimen/n2_toolbar_gradient_height"/>
+    </android.support.percent.PercentFrameLayout>
+    <include layout="@layout/n2_toolbar_pusher"/>
+</merge>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/c_grouped_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gutter_padding" android:layout_marginTop="@dimen/gutter_padding" android:layout_marginRight="@dimen/gutter_padding">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/gutter_padding" android:layout_alignParentLeft="true">
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_gray_1" android:id="@+id/full_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Canonical.Text.E"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_gray_3" android:id="@+id/identity_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" style="@style/Canonical.Text.F"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_gray_3" android:id="@+id/identity_info" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Canonical.Text.F"/>
+    </LinearLayout>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/selected_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/gutter_padding" android:text="@string/selected" android:drawableLeft="@drawable/icon_checkmark_black" android:drawablePadding="4dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

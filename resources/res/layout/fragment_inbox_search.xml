@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.p002v7.widget.RecyclerView android:id="@+id/search_recycler_view" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="LinearLayoutManager"/>
+    <FrameLayout android:id="@+id/loader" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.components.LoadingView android:layout_gravity="center" style="@style/n2_LoadingView.Vertical"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/no_results_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/inbox_search_no_results" style="@style/n2_RegularText"/>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.components.SheetMarquee android:id="@+id/offline_id_marquee" app:n2_subtitleText="@string/account_verification_offline_id_desc" app:n2_titleText="@string/account_verification_offline_id_header" app:n2_sheetStyle="1" style="@style/n2_SheetMarquee"/>
+        <com.airbnb.p027n2.components.StandardRow android:id="@+id/scan_id_driver_license" app:n2_titleText="@string/verified_id_offline_drivers_license" style="@style/n2_StandardRow"/>
+        <com.airbnb.p027n2.components.StandardRow android:id="@+id/scan_id_passport" app:n2_titleText="@string/account_verification_offline_id_us_passport" style="@style/n2_StandardRow"/>
+        <com.airbnb.p027n2.components.StandardRow android:id="@+id/scan_id_us_visa" app:n2_titleText="@string/account_verification_offline_id_us_visa" style="@style/n2_StandardRow"/>
+    </LinearLayout>
+</ScrollView>

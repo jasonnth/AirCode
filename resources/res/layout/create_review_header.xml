@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/review_header_background_image" android:layout_width="match_parent" android:layout_height="@dimen/review_header_height" android:scaleType="centerCrop"/>
+    <View android:background="@color/create_review_header_image_shade" android:layout_width="match_parent" android:layout_height="@dimen/review_header_height"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/create_review_header_bg_selector" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:layout_width="match_parent" android:layout_height="@dimen/review_header_height">
+        <com.airbnb.p027n2.primitives.imaging.HaloImageView android:layout_gravity="center_vertical" android:id="@+id/guest_image_view" android:scaleType="centerCrop" style="@style/Canonical.ImageView.Halo.Light.Small"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gutter_padding">
+            <com.airbnb.p027n2.primitives.AirTextView android:textSize="15sp" android:textColor="@android:color/white" android:id="@+id/guest_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textSize="13sp" android:textColor="@color/c_gray_4" android:id="@+id/listing_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textSize="13sp" android:textColor="@color/c_gray_4" android:id="@+id/reservation_dates" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

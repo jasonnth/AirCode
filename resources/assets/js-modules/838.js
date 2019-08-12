@@ -1,0 +1,1 @@
+__d(function(e,t,r,o){"use strict";function n(e){var t={};for(var r in e)p.call(e,r)&&("function"!=typeof e[r]?t[r]=n(e[r]):t[r]=e[r]);return a.PropTypes.shape(t)}Object.defineProperty(o,"__esModule",{value:!0}),o.default=n;var a=t(271),p=Object.prototype.hasOwnProperty;r.exports=o.default},838);

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="32dp" android:layout_weight="1" style="@style/n2_TitleText3.Inverse"/>
+        <ImageButton android:layout_gravity="center_vertical" android:id="@+id/minus_button" android:background="@drawable/n2_sheet_stepper_background" android:layout_width="@dimen/n2_sheet_stepper_size" android:layout_height="@dimen/n2_sheet_stepper_size" app:srcCompat="@drawable/n2_ic_sheet_stepper_minus"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@+id/value" android:paddingLeft="@dimen/n2_horizontal_padding_tiny" android:paddingRight="@dimen/n2_horizontal_padding_tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="48dp" android:maxLines="1" android:singleLine="true" style="@style/n2_TitleText3.Inverse"/>
+        <ImageButton android:layout_gravity="center_vertical" android:id="@+id/plus_button" android:background="@drawable/n2_sheet_stepper_background" android:layout_width="@dimen/n2_sheet_stepper_size" android:layout_height="@dimen/n2_sheet_stepper_size" app:srcCompat="@drawable/n2_ic_sheet_stepper_plus"/>
+    </LinearLayout>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/description" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_RegularText.Inverse"/>
+</LinearLayout>

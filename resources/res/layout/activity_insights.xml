@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" android:visibility="gone" style="@style/n2_AirToolbar"/>
+        <FrameLayout android:id="@+id/content_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.airbnb.p027n2.components.LoadingView android:layout_gravity="center" android:id="@+id/loading_view" android:visibility="gone" style="@style/n2_LoadingView.Vertical"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

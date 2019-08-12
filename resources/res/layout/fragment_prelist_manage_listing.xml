@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/ml_prelist_item_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.android.lib.views.StickyStepProgressBar android:layout_gravity="top" android:id="@+id/step_progress_bar" android:layout_width="match_parent" android:layout_height="6dp"/>
+    <ScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/step_progress_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/prelist_manage_listing_photo_section"/>
+            <include layout="@layout/prelist_manage_listing_details_section"/>
+            <include layout="@layout/prelist_manage_listing_laws_section"/>
+            <View android:layout_width="match_parent" android:layout_height="@dimen/sticky_btn_height"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.airbnb.android.lib.views.StickyButton android:id="@+id/list_space" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.airbnb.p027n2.primitives.imaging.AirImageView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="200dp" android:layout_margin="4dp" android:scaleType="fitCenter" app:n2_placeholder="@color/white"/>

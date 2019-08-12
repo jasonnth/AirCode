@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.android.core.views.AirbnbMapView android:id="@+id/airmapview" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.airbnb.p027n2.components.AirToolbar android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/toolbar" android:layout_width="wrap_content" android:layout_height="?attr/actionBarSize" app:n2_theme="3" app:n2_navigationIcon="2" style="@style/n2_AirToolbar"/>
+    <com.airbnb.p027n2.components.MapSearchButton android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/redo_search_button" android:visibility="gone" android:layout_margin="14dp" app:n2_buttonText="@string/find_redo_search_on_map" style="@style/n2_MapSearchButton"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/carousel_and_coordinator_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.design.widget.CoordinatorLayout android:id="@+id/coordinator_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.airbnb.p027n2.components.NavigationPill android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/trips_toggle_pill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" app:layout_behavior="com.airbnb.n2.utils.SnackbarDodger" app:n2_rightText="@string/filter_pill_caps" app:n2_rightDrawable="@drawable/n2_navigation_pill_filters_icon" app:n2_mode="1"/>
+        </android.support.design.widget.CoordinatorLayout>
+        <com.airbnb.p027n2.collections.Carousel android:id="@+id/map_listings_carousel" android:background="@android:color/white" android:paddingTop="@dimen/explore_map_carousel_with_selector_top_padding" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_Carousel"/>
+    </LinearLayout>
+</merge>

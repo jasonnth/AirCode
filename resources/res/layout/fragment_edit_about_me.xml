@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingTop="?attr/actionBarSize" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <com.airbnb.p027n2.components.SectionHeader android:id="@+id/header" app:n2_descriptionText="@string/profile_completion_edit_about_me_subtitle" app:n2_titleText="@string/edit_profile_about_me" style="@style/n2_SectionHeader.First"/>
+        <com.airbnb.p027n2.primitives.AirEditTextView android:textColor="@color/n2_text_color_muted" android:gravity="top" android:id="@+id/about_me_edit_text" android:background="@android:color/transparent" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/n2_vertical_padding_small" android:scrollHorizontally="false" android:selectAllOnFocus="false" android:inputType="none|text|textCapSentences|textAutoCorrect|textMultiLine" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/n2_babu_cursor_drawable" style="@style/n2_SmallText">
+            <requestFocus/>
+        </com.airbnb.p027n2.primitives.AirEditTextView>
+    </LinearLayout>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:layout_scrollFlags="1" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+</FrameLayout>

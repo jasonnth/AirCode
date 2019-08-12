@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:id="@+id/tip_container" android:background="@color/n2_hof" android:paddingTop="@dimen/n2_vertical_padding_small" android:paddingBottom="@dimen/n2_vertical_padding_small" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="72dp">
+        <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tip_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" android:minHeight="40dp" android:maxLines="4" android:layout_weight="1" style="@style/n2_SmallText.Inverse.HighContrastBackground"/>
+        <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="center_vertical" android:id="@+id/tip_button" android:background="@null" android:visibility="gone" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" app:n2_drawableLeftCompat="@drawable/tip_button_drawable"/>
+    </LinearLayout>
+</merge>

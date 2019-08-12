@@ -1,0 +1,1 @@
+__d(function(e,i,s,a){Object.defineProperty(a,"__esModule",{value:!0});var r=i(834),u=i(1792),t=babelHelpers.interopRequireDefault(u);a.default=(0,r.Shape)({associatedTripInstanceId:r.Types.number.isRequired,associatedTripReservationId:r.Types.number.isRequired,nativePayout:t.default.isRequired,payoutSuccess:r.Types.bool.isRequired,payoutProviderName:r.Types.string})},1822);

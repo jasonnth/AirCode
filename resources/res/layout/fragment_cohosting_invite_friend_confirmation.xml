@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/n2_babu" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.SheetMarquee android:id="@+id/confirmation_marquee" android:layout_marginBottom="8dp" app:n2_titleText="@string/cohosting_invite_friend_confirmation_title" style="@style/n2_SheetMarquee"/>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/okay_button" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginTop="@dimen/n2_vertical_padding_small" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" android:text="@string/okay" style="@style/n2_AirButton.BabuFill"/>
+</LinearLayout>

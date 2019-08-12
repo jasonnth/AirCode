@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_menu="@menu/fragment_p3" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+    <com.airbnb.p027n2.collections.Carousel android:id="@+id/room_item_carousel" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/home_tour_bottombar" android:layout_below="@+id/toolbar"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/home_tour_bottombar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.airbnb.p027n2.components.InfiniteDotIndicator android:id="@+id/home_tour_dot_indicator" app:n2_activeCircleColor="@color/n2_babu" app:n2_inactiveCircleColor="@color/n2_hof_40" app:n2_numCirclesShown="5" style="@style/n2_InfiniteDotIndicator"/>
+        <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="center_horizontal" android:id="@+id/show_all_rooms_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Show all rooms" style="@style/n2_AirButton_V2.Link"/>
+    </LinearLayout>
+</RelativeLayout>

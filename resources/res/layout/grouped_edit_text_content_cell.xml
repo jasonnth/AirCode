@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <View android:id="@+id/grouped_cell_top_border" android:background="@color/c_gray_4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/line_thickness" android:layout_marginLeft="@dimen/gutter_padding" android:layout_marginRight="@dimen/gutter_padding" android:layout_alignParentTop="true"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gutter_padding" android:layout_marginRight="@dimen/gutter_padding" android:minHeight="48dp">
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/grouped_cell_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:minHeight="48dp" android:lines="1" style="@style/GroupedTitle"/>
+        <com.airbnb.android.lib.views.GroupedTooltip android:id="@+id/grouped_cell_tooltip" style="@style/Canonical.GroupedTooltip"/>
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <com.airbnb.p027n2.primitives.AirEditTextView android:gravity="left" android:layout_gravity="center_vertical" android:id="@+id/grouped_cell_edit_text" android:visibility="gone" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/gutter_padding" android:hint="@string/gift_credit_amount_other_label" android:maxLength="3" android:inputType="number" android:imeOptions="actionNext" style="@style/Canonical.GroupedEditText"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/grouped_cell_content" android:visibility="visible" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/gutter_padding" android:lines="1" style="@style/Canonical.Text.E.Red"/>
+        <com.airbnb.android.core.views.ColorizedIconView android:layout_gravity="center_vertical" android:id="@+id/next_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/gutter_padding" app:drawableId="@drawable/icon_expand_collapse_caret" app:colorStates="@color/c_gray_2"/>
+    </LinearLayout>
+</merge>

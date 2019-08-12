@@ -1,0 +1,1 @@
+__d(function(n,o,t,r){"use strict";function a(n){return"function"==typeof n?(0,p.wrapMapToPropsFunc)(n,"mapStateToProps"):void 0}function e(n){return n?void 0:(0,p.wrapMapToPropsConstant)(function(){return{}})}r.__esModule=!0,r.whenMapStateToPropsIsFunction=a,r.whenMapStateToPropsIsMissing=e;var p=o(801);r.default=[a,e]},803);

@@ -1,0 +1,50 @@
+package com.airbnb.android.listing.utils;
+
+import android.content.Context;
+import com.airbnb.android.listing.C7213R;
+import com.airbnb.android.utils.AirbnbConstants;
+import com.google.common.collect.ImmutableMap;
+import com.google.common.collect.Lists;
+import java.util.ArrayList;
+import java.util.Map;
+
+public class AddressFormUtil {
+    static final Map<String, ArrayList<AddressFieldType>> nonCountryFieldOrdersMap = ImmutableMap.builder().put("IL", orderedFieldSet1).put("SG", orderedFieldSet1).put(AirbnbConstants.COUNTRY_CODE_GERMANY, orderedFieldSet1).put(AirbnbConstants.COUNTRY_CODE_NETHERLANDS, orderedFieldSet2).put("DK", orderedFieldSet2).put("FR", orderedFieldSet2).put("US", orderedFieldSet3).put("IE", orderedFieldSet3).put("IT", orderedFieldSet3).put(AirbnbConstants.COUNTRY_CODE_AUSTRALIA, orderedFieldSet3).put("GB", orderedFieldSet3).put("CA", orderedFieldSet3).put(AirbnbConstants.COUNTRY_CODE_BRAZIL, orderedFieldSet3).put("ES", Lists.newArrayList((E[]) new AddressFieldType[]{AddressFieldType.Street, AddressFieldType.Apt, AddressFieldType.City, AddressFieldType.Zipcode, AddressFieldType.State})).put("HK", Lists.newArrayList((E[]) new AddressFieldType[]{AddressFieldType.State, AddressFieldType.City, AddressFieldType.Street, AddressFieldType.Apt})).put(AirbnbConstants.COUNTRY_CODE_CHINA, Lists.newArrayList((E[]) new AddressFieldType[]{AddressFieldType.State, AddressFieldType.City, AddressFieldType.Zipcode, AddressFieldType.Street, AddressFieldType.Apt})).put(AirbnbConstants.COUNTRY_CODE_JAPAN, Lists.newArrayList((E[]) new AddressFieldType[]{AddressFieldType.Zipcode, AddressFieldType.State, AddressFieldType.City, AddressFieldType.Street, AddressFieldType.Apt})).put(AirbnbConstants.COUNTRY_CODE_KOREA, Lists.newArrayList((E[]) new AddressFieldType[]{AddressFieldType.State, AddressFieldType.City, AddressFieldType.Street, AddressFieldType.Apt, AddressFieldType.Zipcode})).build();
+    static ArrayList<AddressFieldType> orderedFieldSet1 = Lists.newArrayList((E[]) new AddressFieldType[]{AddressFieldType.Street, AddressFieldType.Apt, AddressFieldType.City, AddressFieldType.Zipcode});
+    static ArrayList<AddressFieldType> orderedFieldSet2 = Lists.newArrayList((E[]) new AddressFieldType[]{AddressFieldType.Street, AddressFieldType.Apt, AddressFieldType.Zipcode, AddressFieldType.City});
+    static ArrayList<AddressFieldType> orderedFieldSet3 = Lists.newArrayList((E[]) new AddressFieldType[]{AddressFieldType.Street, AddressFieldType.Apt, AddressFieldType.City, AddressFieldType.State, AddressFieldType.Zipcode});
+    static final Map<String, ImmutableMap<AddressFieldType, String>> placeholdersMap = ImmutableMap.builder().put("US", ImmutableMap.m1297of(AddressFieldType.Street, "e.g. 123 Main St.", AddressFieldType.Apt, "e.g. Apt #7", AddressFieldType.City, "e.g. San Francisco", AddressFieldType.State, "e.g. CA", AddressFieldType.Zipcode, "e.g. 94103")).put("CA", ImmutableMap.m1297of(AddressFieldType.Street, "e.g. 11108 108th Avenue", AddressFieldType.Apt, "e.g. Suite #7", AddressFieldType.City, "e.g. Edmonton", AddressFieldType.State, "e.g. Alberta", AddressFieldType.Zipcode, "e.g. T5H 3Z3")).put(AirbnbConstants.COUNTRY_CODE_BRAZIL, ImmutableMap.m1297of(AddressFieldType.Street, "ex. Rua Bossoroca, 1", AddressFieldType.Apt, "ex. apt 50", AddressFieldType.City, "ex. Campinas", AddressFieldType.State, "ex. SP", AddressFieldType.Zipcode, "ex. 4377190")).put("FR", ImmutableMap.m1296of(AddressFieldType.Street, "ex : 27 rue Jean Goujon", AddressFieldType.Apt, "ex : Bât. B", AddressFieldType.City, "ex : Paris", AddressFieldType.Zipcode, "ex : 75010")).put(AirbnbConstants.COUNTRY_CODE_GERMANY, ImmutableMap.m1296of(AddressFieldType.Street, "z. B Kurfürstendamm 67", AddressFieldType.Apt, "z. B Gebäude 1", AddressFieldType.City, "z. B Berlin", AddressFieldType.Zipcode, "z. B 10719")).put("GB", ImmutableMap.m1297of(AddressFieldType.Street, "e.g. 20 Deans Yd", AddressFieldType.Apt, "e.g. Apart. 2", AddressFieldType.City, "e.g. London", AddressFieldType.State, "e.g. Greater London", AddressFieldType.Zipcode, "e.g. SW1P 3PA")).put("ES", ImmutableMap.m1297of(AddressFieldType.Street, "ej.: Gran Vía, 41", AddressFieldType.Apt, "ej.: 2º 4ª", AddressFieldType.City, "ej.: Madrid", AddressFieldType.State, "ej.: Madrid", AddressFieldType.Zipcode, "ej.: 28013")).put("IL", ImmutableMap.m1296of(AddressFieldType.Street, "ex. 7 Bloch", AddressFieldType.Apt, "ex. apartment 1", AddressFieldType.City, "ex. Tel Aviv", AddressFieldType.Zipcode, "ex. 64312")).put(AirbnbConstants.COUNTRY_CODE_NETHERLANDS, ImmutableMap.m1296of(AddressFieldType.Street, "b.v. Kerklaan 1", AddressFieldType.Apt, "b.v. Gebouw A", AddressFieldType.City, "b.v. Amsterdam", AddressFieldType.Zipcode, "b.v. 1234 AB")).put("DK", ImmutableMap.m1296of(AddressFieldType.Street, "f.eks.: Gæstgivergade 1", AddressFieldType.Apt, "f.eks.: stuen", AddressFieldType.City, "f.eks.: København K", AddressFieldType.Zipcode, "f.eks.: 1000")).put("IT", ImmutableMap.m1297of(AddressFieldType.Street, "ad es. Via Garibaldi, 90", AddressFieldType.Apt, "ad es. Int. 21", AddressFieldType.City, "ad es. Milano", AddressFieldType.State, "ad es. (MI)", AddressFieldType.Zipcode, "ad es. 20121")).put(AirbnbConstants.COUNTRY_CODE_AUSTRALIA, ImmutableMap.m1297of(AddressFieldType.Street, "e.g. 123 Main St", AddressFieldType.Apt, "e.g. Unit 401", AddressFieldType.City, "e.g. Surry Hills", AddressFieldType.State, "e.g. NSW", AddressFieldType.Zipcode, "e.g. 2010")).put(AirbnbConstants.COUNTRY_CODE_JAPAN, ImmutableMap.m1297of(AddressFieldType.Street, "例）銀座1丁目１−１", AddressFieldType.Apt, "例）101号室", AddressFieldType.City, "例）中央区", AddressFieldType.State, "例）東京都", AddressFieldType.Zipcode, "例）123-4567")).put(AirbnbConstants.COUNTRY_CODE_KOREA, ImmutableMap.m1297of(AddressFieldType.Street, "예) 언주로 406", AddressFieldType.Apt, "예) 35동 4층 407호", AddressFieldType.City, "예) 강남구", AddressFieldType.State, "예) 서울특별시", AddressFieldType.Zipcode, "예) 135-919")).put(AirbnbConstants.COUNTRY_CODE_CHINA, ImmutableMap.m1297of(AddressFieldType.Street, "例如：东山一路8号", AddressFieldType.Apt, "例如：莲花小区1幢202室", AddressFieldType.City, "例如：青岛市李沧区", AddressFieldType.State, "例如：山东省", AddressFieldType.Zipcode, "例如：266100")).put("HK", ImmutableMap.m1296of(AddressFieldType.Street, "例如：廣東道88號", AddressFieldType.Apt, "例如：雅佳大廈1108室", AddressFieldType.City, "例如：尖沙咀", AddressFieldType.State, "例如：九龍")).put("IE", ImmutableMap.m1297of(AddressFieldType.Street, "e.g. 12 Drumcondra Road", AddressFieldType.Apt, "e.g. Apt. 2", AddressFieldType.City, "e.g. Dublin", AddressFieldType.State, "e.g. Galway", AddressFieldType.Zipcode, "e.g. 14")).put("SG", ImmutableMap.m1296of(AddressFieldType.Street, "e.g. Blk 35 Mandalay Road", AddressFieldType.Apt, "e.g. # 13–37 Mandalay Towers", AddressFieldType.City, "e.g. Singapore", AddressFieldType.Zipcode, "e.g. 308215")).build();
+    static ArrayList<AddressFieldType> requiredFieldSet1 = Lists.newArrayList((E[]) new AddressFieldType[]{AddressFieldType.Street, AddressFieldType.City, AddressFieldType.Country});
+    static ArrayList<AddressFieldType> requiredFieldSet2 = Lists.newArrayList((E[]) new AddressFieldType[]{AddressFieldType.Street, AddressFieldType.City, AddressFieldType.Country, AddressFieldType.State});
+    static ArrayList<AddressFieldType> requiredFieldSet3 = Lists.newArrayList((E[]) new AddressFieldType[]{AddressFieldType.Street, AddressFieldType.City, AddressFieldType.Country, AddressFieldType.Zipcode});
+    static ArrayList<AddressFieldType> requiredFieldSet4 = Lists.newArrayList((E[]) new AddressFieldType[]{AddressFieldType.Street, AddressFieldType.City, AddressFieldType.Country, AddressFieldType.Zipcode, AddressFieldType.State});
+    static final Map<String, ArrayList<AddressFieldType>> requiredFieldsMap = ImmutableMap.builder().put("IL", requiredFieldSet1).put("IE", requiredFieldSet1).put("HK", requiredFieldSet2).put(AirbnbConstants.COUNTRY_CODE_GERMANY, requiredFieldSet3).put(AirbnbConstants.COUNTRY_CODE_NETHERLANDS, requiredFieldSet3).put("FR", requiredFieldSet3).put("GB", requiredFieldSet3).put("US", requiredFieldSet4).put("IT", requiredFieldSet4).put(AirbnbConstants.COUNTRY_CODE_AUSTRALIA, requiredFieldSet4).put("ES", requiredFieldSet4).put(AirbnbConstants.COUNTRY_CODE_CHINA, requiredFieldSet4).put(AirbnbConstants.COUNTRY_CODE_JAPAN, requiredFieldSet4).put(AirbnbConstants.COUNTRY_CODE_KOREA, requiredFieldSet4).build();
+
+    public static class AddressForm {
+        private final ArrayList<AddressFieldType> nonCountryOrderedFields;
+        private final ImmutableMap<AddressFieldType, String> placeholders;
+        private final ArrayList<AddressFieldType> requiredFields;
+
+        public AddressForm(Context context, String countryCode) {
+            this.nonCountryOrderedFields = AddressFormUtil.nonCountryFieldOrdersMap.containsKey(countryCode) ? (ArrayList) AddressFormUtil.nonCountryFieldOrdersMap.get(countryCode) : (ArrayList) AddressFormUtil.nonCountryFieldOrdersMap.get("US");
+            this.requiredFields = AddressFormUtil.requiredFieldsMap.containsKey(countryCode) ? (ArrayList) AddressFormUtil.requiredFieldsMap.get(countryCode) : AddressFormUtil.requiredFieldSet1;
+            this.placeholders = AddressFormUtil.placeholdersMap.containsKey(countryCode) ? (ImmutableMap) AddressFormUtil.placeholdersMap.get(countryCode) : ImmutableMap.m1294of(AddressFieldType.Street, context.getResources().getString(C7213R.string.listing_street_hint), AddressFieldType.Apt, context.getResources().getString(C7213R.string.listing_apt_hint));
+        }
+
+        public ArrayList<AddressFieldType> getNonCountryOrderedFields() {
+            return this.nonCountryOrderedFields;
+        }
+
+        public ArrayList<AddressFieldType> getRequiredFields() {
+            return this.requiredFields;
+        }
+
+        public ImmutableMap<AddressFieldType, String> getPlaceholders() {
+            return this.placeholders;
+        }
+    }
+
+    public static AddressForm forCountryCode(Context context, String countryCode) {
+        return new AddressForm(context, countryCode);
+    }
+}

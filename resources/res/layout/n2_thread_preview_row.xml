@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/swipe_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:id="@+id/bottom_wrapper" android:background="@color/n2_babu" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:id="@+id/archive_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" style="@style/n2_LargeText.Inverse.Plus"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/thread_preview" android:paddingTop="@dimen/n2_vertical_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@+id/image_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp">
+                <com.airbnb.p027n2.primitives.CircleCollageImageView android:id="@+id/image" android:layout_width="52dp" android:layout_height="52dp"/>
+                <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/image_square" android:visibility="gone" android:layout_width="52dp" android:layout_height="52dp" android:scaleType="centerCrop"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:id="@+id/thumbnail_text_placeholder" android:visibility="gone" android:layout_width="52dp" android:layout_height="52dp" style="@style/n2_LargeText.Inverse"/>
+            </FrameLayout>
+            <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_toLeftOf="@+id/time_ago" android:layout_toRightOf="@+id/image_container" style="@style/n2_RegularText.Plus"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="center_vertical" android:id="@+id/time_ago" android:paddingLeft="@dimen/n2_horizontal_padding_tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/title_text" android:layout_alignBottom="@+id/title_text" android:layout_alignParentRight="true" style="@style/n2_SmallText.Muted"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/n2_hof" android:ellipsize="end" android:id="@+id/subtitle_text" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_toLeftOf="@+id/unread_indicator" android:layout_toRightOf="@+id/image_container" android:layout_below="@+id/title_text" style="@style/n2_RegularText"/>
+            <ImageView android:id="@+id/unread_indicator" android:layout_below="@+id/time_ago" style="@style/n2_UnreadIndicator"/>
+            <com.airbnb.p027n2.primitives.AirButton android:id="@+id/action_button" android:visibility="gone" android:layout_marginLeft="0dp" android:layout_marginTop="@dimen/n2_vertical_padding_small" android:layout_toRightOf="@+id/image_container" android:layout_below="@+id/subtitle_text" style="@style/n2_AirButton.BabuOutline"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/third_row_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@+id/image_container" android:layout_below="@+id/action_button" style="@style/n2_SmallText"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/n2_hof" android:id="@+id/fourth_row_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@+id/image_container" android:layout_below="@+id/third_row_text" style="@style/n2_SmallText.ListingName"/>
+        </RelativeLayout>
+        <Space android:id="@+id/space" android:layout_width="match_parent" android:layout_height="@dimen/n2_vertical_padding_medium"/>
+        <View android:layout_marginLeft="0dp" android:layout_marginRight="0dp" style="@style/n2_SubsectionDivider"/>
+    </LinearLayout>
+</com.daimajia.swipe.SwipeLayout>

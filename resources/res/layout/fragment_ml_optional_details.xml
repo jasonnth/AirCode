@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/c_gray_5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/gutter_padding" android:paddingRight="@dimen/gutter_padding" android:paddingBottom="@dimen/ml_vertical_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:text="@string/ml_price_title" style="@style/TextSectionHeader"/>
+        <com.airbnb.android.lib.views.LinearListView android:id="@+id/list_price" style="@style/Canonical.GroupedLayout"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:text="@string/ml_details_title" style="@style/TextSectionHeader"/>
+        <com.airbnb.android.lib.views.LinearListView android:id="@+id/list_details" style="@style/Canonical.GroupedLayout"/>
+        <com.airbnb.p027n2.primitives.AirButton android:id="@+id/delete_listing_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@string/ml_delete_listing" style="@style/Canonical.Button.RauschHollow"/>
+    </LinearLayout>
+</ScrollView>

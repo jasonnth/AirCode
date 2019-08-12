@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_menu="@menu/reset_filters" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+        <com.airbnb.p027n2.components.TweenRow android:id="@+id/wish_list_tween_dates_row" app:n2_titleText="@string/dates" style="@style/n2_TweenRow"/>
+        <com.airbnb.p027n2.components.TweenRow android:id="@+id/wish_list_tween_guests_row" app:n2_titleText="@string/guests" style="@style/n2_TweenRow"/>
+        <com.airbnb.p027n2.components.SimpleTextRow android:id="@+id/filters_reason_text" app:n2_showDivider="false" app:n2_text="@string/wishlistdetails_filters_add_filters_reason" style="@style/n2_SimpleTextRow.Regular"/>
+        <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/wish_list_tween_save_button" android:text="@string/done" style="@style/n2_AirButton.BabuFill.RightCaret.WithText"/>
+    </LinearLayout>
+</ScrollView>

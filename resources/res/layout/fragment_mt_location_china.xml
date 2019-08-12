@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" android:background="@color/n2_transparent" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:n2_navigationIcon="2">
+            <com.airbnb.p027n2.primitives.AirEditTextView android:textSize="@dimen/n2_small_text_size" android:textColorHint="#7f767676" android:layout_gravity="center_vertical" android:id="@+id/search_edit_text" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/explore_location_placeholder_collapsed" android:singleLine="true" android:textCursorDrawable="@drawable/n2_black_cursor_drawable" style="@style/n2_SmallText"/>
+        </com.airbnb.p027n2.components.AirToolbar>
+        <View android:id="@+id/input_divider" android:background="@color/n2_horizontal_rule_gray" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <com.airbnb.p027n2.collections.AirRecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:layoutManager="LinearLayoutManager"/>
+    </LinearLayout>
+</FrameLayout>

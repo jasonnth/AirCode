@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="55dp">
+            <com.airbnb.android.lib.views.CircleBadgeView android:id="@+id/circle_badge_view_completed" app:iconSrc="@drawable/checkmark_selected" style="@style/CompletedVerifiedIdBadge"/>
+            <FrameLayout android:id="@+id/reservation_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+                <ImageView android:id="@+id/listing_hero_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" app:srcCompat="@color/c_gray_4"/>
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/verified_id_screen_margin" android:layout_marginRight="@dimen/verified_id_screen_margin">
+                    <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/verified_id_completed_reservation_request_delivered" style="@style/Canonical.Text.B"/>
+                    <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/white" android:gravity="center" android:id="@+id/listing_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" style="@style/Canonical.Text.E"/>
+                    <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/white" android:gravity="center" android:id="@+id/reservation_description" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.Text.E"/>
+                </LinearLayout>
+            </FrameLayout>
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/verified_id_screen_margin" android:layout_marginRight="@dimen/verified_id_screen_margin" android:text="@string/verified_id_completed_congratulations" style="@style/Canonical.Text.B"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/verified_id_screen_margin" android:layout_marginRight="@dimen/verified_id_screen_margin" android:text="@string/verified_id_completed_youre_verified" style="@style/Canonical.Text.B"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:id="@+id/completion_details" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/verified_id_screen_margin" android:layout_marginRight="@dimen/verified_id_screen_margin" android:layout_marginBottom="160dp" android:text="@string/verified_id_completed_thanks_for_verifying" style="@style/Canonical.Text.E"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.airbnb.android.lib.views.StickyButton android:id="@+id/done_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

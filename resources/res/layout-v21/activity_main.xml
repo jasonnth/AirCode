@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/content" android:background="@color/white" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/bottom_bar_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.components.BottomBarBanner android:id="@+id/bottom_bar_banner" android:visibility="gone" style="@style/n2_BottomBarBanner"/>
+            <View style="@style/n2_FullSectionDivider"/>
+            <com.roughike.bottombar.BottomBar android:layout_gravity="bottom" android:id="@+id/bottom_bar" android:layout_width="match_parent" android:layout_height="56dp" app:bb_tabXmlResource="@xml/bottom_bar_guest" app:bb_inActiveTabColor="@color/n2_hof" app:bb_activeTabColor="@color/n2_rausch" app:bb_titleTypeFace="fonts/CircularAir-Bold.otf" app:bb_showShadow="false"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.airbnb.android.lib.activities.AppModeTransitionLayout android:id="@+id/mode_transition_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:translationZ="1dp" android:elevation="@dimen/n2_toolbar_elevation"/>
+</FrameLayout>

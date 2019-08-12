@@ -1,0 +1,1 @@
+__d(function(t,a,o,n){"use strict";var e=a(18),r={tagsStartAt:1,tagCount:1,allocateTag:function(){for(;this.reactTagIsNativeTopRootID(r.tagCount);)r.tagCount++;var t=r.tagCount;return r.tagCount++,t},assertRootTag:function(t){e(this.reactTagIsNativeTopRootID(t),"Expect a native root tag, instead got %s",t)},reactTagIsNativeTopRootID:function(t){return t%10==1}};o.exports=r},135);

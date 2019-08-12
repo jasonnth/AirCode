@@ -1,0 +1,1 @@
+__d(function(t,r,o,e){function n(t){if(a(t)&&!i(t)&&!(t instanceof p)){if(t instanceof c)return t;if(s.call(t,"__wrapped__"))return u(t)}return new c(t)}var p=r(1154),c=r(1160),f=r(1155),i=r(459),a=r(458),u=r(1161),_=Object.prototype,s=_.hasOwnProperty;n.prototype=f.prototype,n.prototype.constructor=n,o.exports=n},1159);

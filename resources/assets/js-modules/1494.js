@@ -1,0 +1,1 @@
+__d(function(e,s,t,a){t.exports=s(164).registerAsset({__packager_asset:!0,httpServerLocation:"/assets/apps/Airlock/icons",width:72,height:72,scales:[1],hash:"ebb32e4e448db85be5641d79b4a2e579",name:"email",type:"png"})},1494);

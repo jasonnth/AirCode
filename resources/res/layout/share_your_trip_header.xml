@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_width="@dimen/share_your_trip_header_icon_size" android:layout_height="wrap_content" android:tint="@color/n2_rausch" app:srcCompat="@drawable/share_your_trip_airbnb_logo"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:paddingLeft="@dimen/n2_horizontal_padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_your_trip_branding_header" style="@style/n2_SmallText"/>
+    </LinearLayout>
+    <View style="@style/n2_FullSectionDivider"/>
+    <Space android:layout_width="match_parent" android:layout_height="@dimen/n2_vertical_padding_large"/>
+</LinearLayout>

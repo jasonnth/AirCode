@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/n2_babu" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView style="@style/n2_FocusPane">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.components.SheetMarquee app:n2_subtitleText="@string/payout_landing_subtitle" app:n2_titleText="@string/payout_landing_title" style="@style/n2_SheetMarquee"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/next_button" android:text="@string/payment_info_continue" style="@style/n2_AirButton.WhiteFill.RightCaret.WithText"/>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" style="@style/n2_AirToolbar.Transparent.LightForeground"/>
+</FrameLayout>

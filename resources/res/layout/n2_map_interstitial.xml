@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/listing_detail_map">
+    <com.airbnb.p027n2.primitives.StaticMapView android:id="@+id/static_map" android:layout_width="match_parent" android:layout_height="match_parent" app:n2_keyed="true"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="top" android:orientation="vertical" android:id="@+id/map_interstitial_text_container" android:background="@drawable/n2_signpost" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="34dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12dp">
+        <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/map_interstitial_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/n2_RegularText.Plus"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/map_interstitial_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_SmallText"/>
+    </LinearLayout>
+</merge>

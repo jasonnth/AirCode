@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/n2_wl_voting_row_background" android:layout_width="wrap_content" android:layout_height="32dp" android:layout_marginBottom="@dimen/n2_horizontal_padding_medium">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/up_vote_container" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:baselineAligned="false">
+            <ImageView android:id="@+id/btn_up_vote" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/wish_list_voting_row_up_vote"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/txt_up_vote_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:includeFontPadding="false" style="@style/n2_MiniText"/>
+        </LinearLayout>
+        <View android:background="@color/wl_voting_row_background_outline" android:layout_width="@dimen/wl_voting_row_background_stroke_width" android:layout_height="16dp"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/down_vote_container" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:baselineAligned="false">
+            <ImageView android:id="@+id/btn_down_vote" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/wish_list_voting_row_down_vote"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/txt_down_vote_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:includeFontPadding="false" style="@style/n2_MiniText"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/section_divider" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" style="@style/n2_SubsectionDivider"/>
+</merge>

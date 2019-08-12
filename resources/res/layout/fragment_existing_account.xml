@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.collections.SheetScrollView android:layout_marginTop="?attr/actionBarSize" style="@style/n2_SheetScrollView">
+        <LinearLayout style="@style/n2_SheetInputFieldContainer">
+            <com.airbnb.p027n2.components.SheetMarquee android:orientation="vertical" android:id="@+id/sheet_marquee" app:n2_subtitleText="@string/registration_account_exist_subtitle_no_service" app:n2_titleText="@string/registration_account_exist_title" style="@style/n2_SheetMarquee.NoTopPadding"/>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_vertical_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:paddingBottom="@dimen/n2_vertical_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.p027n2.primitives.imaging.HaloImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/user_photo" android:layout_width="@dimen/n2_halo_image_length" android:layout_height="@dimen/n2_halo_image_length" android:layout_marginRight="@dimen/n2_horizontal_padding_small"/>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.airbnb.p027n2.primitives.AirTextView android:textSize="17sp" android:textColor="@android:color/white" android:id="@+id/first_name" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+                    <com.airbnb.p027n2.primitives.AirTextView android:textSize="15sp" android:textColor="@android:color/white" android:id="@+id/email" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <com.airbnb.android.registration.views.PasswordSheetInputText android:id="@+id/sign_in_password" android:visibility="gone" android:clickable="true" android:imeOptions="actionDone" app:n2_hintText="@string/password_stars" style="@style/n2_SheetInputText.Password"/>
+            <com.airbnb.android.login.p339ui.views.OAuthOptionButton android:id="@+id/oauth_option_button" android:visibility="gone" android:layout_width="match_parent" android:layout_marginTop="@dimen/n2_vertical_padding_small" android:layout_marginBottom="0dp" style="@style/n2_AirButton.WhiteFill"/>
+            <com.airbnb.p027n2.primitives.AirButton android:id="@+id/create_password_button" android:visibility="gone" android:layout_width="match_parent" android:layout_marginTop="@dimen/n2_vertical_padding_small" android:layout_marginBottom="0dp" android:text="@string/registration_create_password" style="@style/n2_AirButton.TransparentFill"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.SheetScrollView>
+    <com.airbnb.p027n2.primitives.AirButton android:enabled="false" android:id="@+id/sign_in_button" android:visibility="gone" style="@style/n2_AirButton.WhiteFill.RightCaret"/>
+</FrameLayout>

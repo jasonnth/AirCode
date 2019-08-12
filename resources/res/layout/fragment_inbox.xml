@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/content_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.android.core.views.AirSwipeRefreshLayout android:id="@+id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.p002v7.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="LinearLayoutManager"/>
+    </com.airbnb.android.core.views.AirSwipeRefreshLayout>
+    <com.airbnb.android.lib.views.EmptyResultsCardView android:id="@+id/empty_results_card" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize" app:topTitleText="@string/messages" app:cardTitleText="@string/no_messages_title_text" app:cardSubTitleText="@string/no_messages_subtitle_text"/>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_menu="@menu/inbox" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+</android.support.design.widget.CoordinatorLayout>

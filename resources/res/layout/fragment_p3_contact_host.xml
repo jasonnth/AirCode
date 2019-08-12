@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_above="@+id/button" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:paddingTop="?attr/actionBarSize" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.p027n2.components.DocumentMarquee android:id="@+id/marquee" android:layout_weight="1" app:n2_titleText="@string/contact_host" style="@style/n2_DocumentMarquee.NoTopPadding"/>
+                <com.airbnb.p027n2.primitives.imaging.HaloImageView android:layout_gravity="center_vertical" android:id="@+id/host_photo" android:visibility="gone" android:layout_width="@dimen/n2_halo_image_length" android:layout_height="@dimen/n2_halo_image_length" android:layout_marginRight="@dimen/n2_horizontal_padding_small"/>
+            </LinearLayout>
+            <com.airbnb.p027n2.components.StandardRow android:id="@+id/dates" app:n2_inputText="@string/filter_add" app:n2_titleText="@string/dates" style="@style/n2_StandardRow"/>
+            <com.airbnb.p027n2.components.StandardRow android:id="@+id/guests" app:n2_inputText="@string/filter_add" app:n2_titleText="@string/guests" style="@style/n2_StandardRow"/>
+            <com.airbnb.p027n2.components.StandardRow android:id="@+id/message" app:n2_inputText="@string/filter_add" app:n2_titleText="@string/your_message" style="@style/n2_StandardRow"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/china_disclaimer" android:visibility="gone" style="@style/n2_TextRow"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+    <com.airbnb.p027n2.components.PrimaryButton android:id="@+id/button" android:layout_alignParentBottom="true" app:n2_buttonText="@string/send" style="@style/n2_PrimaryButton"/>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/step_through_button" android:visibility="gone" android:text="@string/enter_dates" android:layout_alignParentBottom="true" style="@style/StepThroughButton"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root_container" android:background="@color/n2_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/content_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/modal_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.airbnb.p027n2.components.RefreshLoader android:layout_gravity="center" android:id="@+id/loading_row" android:visibility="gone" style="@style/n2_RefreshLoader"/>
+    <com.airbnb.p027n2.components.SheetProgressBar android:id="@+id/sheet_progress_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/n2_sheet_progress_bar_height" app:n2_color="@color/n2_babu"/>
+</FrameLayout>

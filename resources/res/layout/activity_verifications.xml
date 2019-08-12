@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/include_toolbar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <FrameLayout android:id="@+id/activity_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/ab_shadow">
+            <FrameLayout android:id="@+id/content_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <com.airbnb.android.lib.views.DotsProgressBar android:gravity="center" android:orientation="horizontal" android:id="@+id/dots_progress_bar" android:layout_width="match_parent" android:layout_height="@dimen/dot_progress_bar_dot_size" android:layout_margin="30dp"/>
+            <com.airbnb.android.core.views.LoaderFrame android:id="@+id/loading_overlay" android:background="@color/loader_overlay_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

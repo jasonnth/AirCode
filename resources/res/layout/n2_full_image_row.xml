@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <Space android:layout_width="match_parent" android:layout_height="@dimen/n2_vertical_padding_small"/>
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/image" style="@style/n2_FullImageRowImage"/>
+    <Space android:layout_width="match_parent" android:layout_height="@dimen/n2_vertical_padding_small"/>
+    <View android:id="@+id/divider" style="@style/n2_SubsectionDivider"/>
+</merge>

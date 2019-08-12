@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.components.jellyfish.JellyfishView android:id="@+id/jellyfish_background" android:layout_width="match_parent" android:layout_height="0dp" android:layout_alignTop="@+id/marquee_content" android:layout_alignBottom="@+id/marquee_content" android:alpha="0"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/marquee_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/mt_trips_search_view" layout="@layout/mt_search_view"/>
+        <com.airbnb.android.core.views.SlidingTabLayout android:id="@+id/tabs" style="@style/MTSlidingTabLayoutStyle"/>
+        <View android:id="@+id/bottom_divider" android:background="@android:color/black" android:layout_alignParentBottom="true" android:alpha="0.15" style="@style/n2_FullSectionDivider"/>
+    </LinearLayout>
+</merge>

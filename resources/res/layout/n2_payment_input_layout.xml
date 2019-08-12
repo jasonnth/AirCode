@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="?attr/n2_horizontal_side_padding" android:layout_marginRight="?attr/n2_horizontal_side_padding" android:maxLines="1" style="@style/n2_SmallText"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="?attr/n2_horizontal_side_padding" android:layout_marginTop="@dimen/n2_vertical_padding_small" android:layout_marginRight="?attr/n2_horizontal_side_padding">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/payment_logo" android:paddingRight="@dimen/n2_horizontal_padding_small" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.airbnb.p027n2.primitives.AirEditTextView android:ellipsize="end" android:id="@+id/input_text" android:maxLines="1" android:inputType="number" android:imeOptions="actionNext" style="@style/n2_PaymentInputLayoutEditText"/>
+    </LinearLayout>
+    <View android:id="@+id/divider" android:layout_width="wrap_content" android:layout_marginLeft="?attr/n2_horizontal_side_padding" android:layout_marginTop="@dimen/n2_vertical_padding_small" android:layout_marginRight="?attr/n2_horizontal_side_padding" style="@style/n2_SubsectionDivider"/>
+</merge>

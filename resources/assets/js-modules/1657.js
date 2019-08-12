@@ -1,0 +1,1 @@
+__d(function(e,i,n,t){function o(){return{height:d.Dimensions.get("window").height-("android"===d.Platform.OS?d.StatusBar.currentHeight:0),width:d.Dimensions.get("window").width}}Object.defineProperty(t,"__esModule",{value:!0}),t.getWindowDimension=o;var d=i(44)},1657);

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/calendar_update_frame" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" style="@style/n2_FocusPane">
+            <com.airbnb.p027n2.components.DocumentMarquee android:id="@+id/calendar_update_marquee" style="@style/n2_DocumentMarquee"/>
+            <com.airbnb.p027n2.components.SectionHeader android:id="@+id/availability_header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_titleText="@string/calendar_update_availability_title" style="@style/n2_SectionHeader.First"/>
+            <com.airbnb.p027n2.components.ToggleActionRow android:id="@+id/available_toggle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_titleText="@string/calendar_update_available_option" style="@style/n2_ToggleActionRow"/>
+            <com.airbnb.p027n2.components.ToggleActionRow android:id="@+id/blocked_toggle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_titleText="@string/calendar_update_blocked_option" style="@style/n2_ToggleActionRow"/>
+            <com.airbnb.p027n2.components.ToggleActionRow android:id="@+id/blocked_until_toggle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_ToggleActionRow"/>
+            <com.airbnb.p027n2.components.SwitchRow android:id="@+id/available_switch" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_showDivider="true" app:n2_titleText="@string/calendar_update_available_title" style="@style/n2_SwitchRow"/>
+            <com.airbnb.p027n2.components.TriStateSwitchRow android:id="@+id/available_tri_switch" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_showDivider="true" app:n2_titleText="@string/calendar_update_available_title" app:n2_triStateSwitchStyle="1"/>
+            <com.airbnb.p027n2.components.SectionHeader android:id="@+id/pricing_header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_titleText="@string/calendar_update_pricing_title" style="@style/n2_SectionHeader.Secondary"/>
+            <com.airbnb.p027n2.components.SwitchRow android:id="@+id/smart_price_switch" android:visibility="gone" app:n2_showDivider="true" app:n2_titleText="@string/calendar_update_smart_pricing_title" style="@style/n2_SwitchRow"/>
+            <com.airbnb.p027n2.components.TriStateSwitchRow android:id="@+id/smart_price_tri_switch" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_showDivider="true" app:n2_titleText="@string/calendar_update_smart_pricing_title" app:n2_triStateSwitchStyle="1"/>
+            <com.airbnb.p027n2.components.InlineFormattedIntegerInputRow android:id="@+id/price_field" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.airbnb.p027n2.components.SimpleTextRow android:id="@+id/reasons" android:visibility="gone" style="@style/n2_SimpleTextRow.Small"/>
+            <com.airbnb.p027n2.components.SimpleTextRow android:id="@+id/view_price_tips" android:visibility="gone" style="@style/n2_SimpleTextRow.Small"/>
+            <com.airbnb.p027n2.components.SimpleTextRow android:id="@+id/disclaimer" android:visibility="gone" app:n2_showDivider="false" style="@style/n2_SimpleTextRow.Small"/>
+            <android.support.p002v7.widget.RecyclerView android:id="@+id/smart_promo" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="LinearLayoutManager"/>
+            <Space android:layout_width="0dp" android:layout_height="@dimen/n2_sheet_bottom_bar_height"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+    <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/save_button" android:text="@string/save" android:drawablePadding="@dimen/n2_vertical_padding_tiny" app:n2_drawableRightCompat="@drawable/n2_icon_chevron_right_white" app:layout_behavior="com.airbnb.n2.utils.SnackbarDodger" style="@style/n2_AirButton.BabuFill"/>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_menu="@menu/fragment_calendar_update_menu" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+</android.support.design.widget.CoordinatorLayout>

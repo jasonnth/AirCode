@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/c_foggy_white" android:layout_width="@dimen/dialog_fragment_width" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="24dp" android:paddingTop="16dp" android:paddingRight="24dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ViewStub android:id="@+id/zen_stub_header" android:layout="@layout/zen_stub_header_material" android:inflatedId="@+id/zen_header" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ViewStub android:id="@+id/zen_stub_large_header" android:layout="@layout/zen_stub_large_header_material" android:inflatedId="@+id/zen_header" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ViewStub android:id="@+id/zen_stub_text" android:layout="@layout/zen_stub_text_material" android:inflatedId="@+id/zen_text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ViewStub android:id="@+id/zen_stub_frame" android:layout="@layout/zen_stub_frame_material" android:inflatedId="@+id/zen_frame" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <ViewStub android:id="@+id/zen_stub_listview" android:layout="@layout/zen_stub_listview_material" android:inflatedId="@+id/zen_listview" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/btn_layout" android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ViewStub android:layout_gravity="right" android:id="@+id/zen_stub_single_button" android:layout="@layout/zen_stub_single_button_material" android:inflatedId="@+id/zen_single_button" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ViewStub android:layout_gravity="right" android:id="@+id/zen_stub_dual_button" android:layout="@layout/zen_stub_dual_button_material" android:inflatedId="@+id/zen_dual_button" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ViewStub android:layout_gravity="right" android:id="@+id/zen_stub_cancel_button" android:layout="@layout/zen_stub_cancel_button_material" android:inflatedId="@+id/zen_cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

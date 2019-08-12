@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.jellyfish.JellyfishView android:id="@+id/jellyfish_view" android:layout_width="match_parent" android:layout_height="match_parent" app:n2_palette="1"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.components.SheetMarquee android:id="@+id/offline_id_marquee" android:paddingBottom="0dp" app:n2_subtitleText="@string/verifications_id_desc_v1_1" app:n2_titleText="@string/verifications_id_header" style="@style/n2_SheetMarquee"/>
+        <android.support.p000v4.widget.Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:layout_gravity="center_horizontal" android:id="@+id/offline_id_image" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/account_verification_id_illustration"/>
+        <android.support.p000v4.widget.Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <android.support.p000v4.widget.Space android:layout_width="0dp" android:layout_height="@dimen/n2_sheet_bottom_bar_height"/>
+    </LinearLayout>
+    <include layout="@layout/n2_sheet_bottom_baby_secondary_button_toolbar"/>
+</FrameLayout>

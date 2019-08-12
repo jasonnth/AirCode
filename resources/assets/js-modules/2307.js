@@ -1,0 +1,1 @@
+__d(function(e,i,t,_){"use strict";Object.defineProperty(_,"__esModule",{value:!0}),_.IdentityVerificationType=void 0;var E=i(412);(function(e){e&&e.__esModule})(E),_.IdentityVerificationType={PHOTO_WITH_FACE:1,GOVERNMENT_ID:2,SELFIE:3,ID_SELFIE_MATCH:4,EMAIL:5,PHONE_NUMBER:6}},2307);

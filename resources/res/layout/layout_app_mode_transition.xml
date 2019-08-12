@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/content_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:id="@+id/animation_view" android:layout_width="64dp" android:layout_height="64dp"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:layout_gravity="center_horizontal" android:id="@+id/txt_mode_switch" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_vertical_padding_small" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_LargeText.PlusPlus"/>
+    </LinearLayout>
+</merge>

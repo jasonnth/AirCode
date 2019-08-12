@@ -1,0 +1,1 @@
+__d(function(t,n,r,e){var u=n(650),i=n(674),o=function(t){return function(){var n=arguments.length>0&&void 0!==arguments[0]?arguments[0]:void 0,r=arguments[1];switch(r.type){case i.BATCHING_UPDATE_NOTIFICATION:return n;case u.LOGOUT:return t(void 0,r);default:return t(n,r)}}};r.exports=o},675);

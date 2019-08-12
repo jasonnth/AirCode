@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="bottom" android:id="@+id/sheet_bottom_toolbar_container" android:background="@color/n2_transparent" android:focusable="false" android:layout_width="match_parent" android:layout_height="@dimen/n2_sheet_bottom_bar_height">
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/sheet_bottom_secondary_button" android:visibility="gone" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/n2_AirButton.TransparentFill.Baby"/>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/sheet_bottom_secondary_button_white" android:visibility="gone" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/n2_AirButton.WhiteFill.BabuBorder.Baby"/>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/sheet_bottom_primary_button" android:visibility="gone" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/n2_AirButton.WhiteFill.RightCaret"/>
+    <com.airbnb.p027n2.primitives.AirButton android:id="@+id/sheet_bottom_next_button" android:visibility="gone" android:layout_marginBottom="@dimen/n2_vertical_padding_medium" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/n2_BookingNavButton"/>
+</RelativeLayout>

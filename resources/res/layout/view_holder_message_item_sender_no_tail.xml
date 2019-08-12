@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.airbnb.p027n2.primitives.messaging.MessageItemSender xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_marginBottom="@dimen/ro_msg_item_margin" app:n2_messageTextColor="@color/n2_text_color_main_inverted" app:n2_statusTextColor="@color/n2_text_color_main_inverted" app:n2_withTail="false" style="@style/n2_MessageItem"/>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/image" android:background="@color/n2_loading_background" android:scaleType="centerCrop" app:layout_widthPercent="100%" app:layout_aspectRatio="150%" app:n2_fade="true"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:gravity="left" android:id="@+id/marketing_text" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/image" style="@style/n2_RegularText"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:gravity="left" android:id="@+id/call_to_action" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_below="@+id/marketing_text" style="@style/n2_RegularText.Actionable"/>
+    <View android:id="@+id/click_overlay" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="0dp" android:layout_alignTop="@+id/image" android:layout_alignBottom="@+id/call_to_action"/>
+    <Space android:id="@+id/bottom_space" android:layout_width="match_parent" android:layout_height="@dimen/n2_card_bottom_spacing" android:layout_below="@+id/call_to_action"/>
+    <View android:layout_gravity="bottom" android:id="@+id/divider" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:layout_below="@+id/bottom_space" style="@style/n2_SubsectionDivider"/>
+</merge>

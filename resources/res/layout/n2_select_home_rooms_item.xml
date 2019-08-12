@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <android.support.percent.PercentRelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/room_image" android:background="@color/n2_loading_background" android:scaleType="centerCrop" app:layout_widthPercent="100%" app:layout_aspectRatio="150%"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/room_title" android:paddingTop="@dimen/n2_vertical_padding_tiny_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_below="@+id/room_image" app:n2_font="3" style="@style/n2_RegularText"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/room_description" android:paddingTop="@dimen/n2_vertical_padding_tiny_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_below="@+id/room_title" style="@style/n2_RegularText"/>
+    </android.support.percent.PercentRelativeLayout>
+</merge>

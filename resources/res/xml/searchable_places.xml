@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:label="@string/application_name" android:hint="@string/search_hint" android:searchSuggestAuthority="com.airbnb.android.contentproviders.PlacesSearchSuggestionProvider" android:searchSuggestIntentAction="android.intent.action.VIEW" android:imeOptions="actionSearch"/>

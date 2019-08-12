@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.p027n2.components.DocumentMarquee android:id="@+id/marquee" app:n2_showDivider="false" style="@style/n2_DocumentMarquee"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.p027n2.components.PaymentInputLayout android:id="@+id/first_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/n2_PaymentInputLayout_Brazil"/>
+                <com.airbnb.p027n2.components.PaymentInputLayout android:id="@+id/last_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/n2_PaymentInputLayout_Brazil"/>
+            </LinearLayout>
+            <com.airbnb.p027n2.components.PaymentInputLayout android:id="@+id/birthdate" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_PaymentInputLayout_Brazil"/>
+            <com.airbnb.p027n2.components.PaymentInputLayout android:id="@+id/mobile_number" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_PaymentInputLayout_Brazil"/>
+            <com.airbnb.p027n2.components.PaymentInputLayout android:id="@+id/taxpayer_id" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_PaymentInputLayout_Brazil"/>
+            <com.airbnb.p027n2.components.PaymentInputLayout android:id="@+id/street_address" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_PaymentInputLayout_Brazil"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.p027n2.components.PaymentInputLayout android:id="@+id/building_number" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/n2_PaymentInputLayout_Brazil"/>
+                <com.airbnb.p027n2.components.PaymentInputLayout android:id="@+id/complement" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/n2_PaymentInputLayout_Brazil"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.p027n2.components.PaymentInputLayout android:id="@+id/city" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/n2_PaymentInputLayout_Brazil"/>
+                <com.airbnb.p027n2.components.PaymentInputLayout android:id="@+id/state" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/n2_PaymentInputLayout_Brazil"/>
+            </LinearLayout>
+            <com.airbnb.p027n2.primitives.AirButton android:enabled="false" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/next_button" android:layout_marginTop="@dimen/n2_payment_input_layout_margin_top" style="@style/n2_AirButton.BabuFill.RightCaret"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.VerboseScrollView>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_theme="3" app:n2_scrollWith="@+id/scroll_view" style="@style/n2_AirToolbar"/>
+</FrameLayout>

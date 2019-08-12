@@ -1,0 +1,1 @@
+__d(function(e,s,a,t){a.exports=s(164).registerAsset({__packager_asset:!0,httpServerLocation:"/assets/apps/Guidebook/images/icons",width:16,height:16,scales:[1,2,3],hash:"fa3aad270b582c175201ad6e444cdbcd",name:"detour",type:"png"})},2123);

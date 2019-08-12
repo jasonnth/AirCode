@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.android.lib.views.RatingsViewPager android:id="@+id/view_pager_ratings" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/dots_counter" android:layout_below="@+id/review_ratings_header"/>
+    <com.airbnb.p027n2.primitives.DotsCounter android:gravity="center" android:orientation="horizontal" android:id="@+id/dots_counter" android:layout_width="match_parent" android:layout_height="@dimen/dot_size" android:layout_marginBottom="@dimen/reviews_dots_margin_bottom" android:layout_alignParentBottom="true" app:n2_selectedColor="@color/c_gray_2" app:n2_unselectedColor="@color/c_gray_5" app:n2_dotMargin="@dimen/dot_margin" app:n2_unselectedAlpha="255"/>
+    <include android:id="@+id/review_ratings_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/create_review_header"/>
+</RelativeLayout>

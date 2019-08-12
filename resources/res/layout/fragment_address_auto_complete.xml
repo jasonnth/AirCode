@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/n2_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingTop="?attr/actionBarSize" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.airbnb.p027n2.components.InlineInputRow android:id="@+id/input_row_address" app:n2_titleText="@string/street" style="@style/n2_InlineInputRow"/>
+            <android.support.p002v7.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:layoutManager="LinearLayoutManager"/>
+        </LinearLayout>
+        <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_navigationIcon="2" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+    </FrameLayout>
+    <include layout="@layout/n2_loading_overlay"/>
+</FrameLayout>

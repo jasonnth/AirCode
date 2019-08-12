@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/c_gray_6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/address_layout" android:background="@drawable/c_list_selector" android:paddingLeft="@dimen/c_layout_padding_horizontal" android:paddingTop="10dp" android:paddingRight="@dimen/c_layout_padding_horizontal" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/address" android:paddingRight="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/Canonical.Text.E"/>
+        <com.airbnb.android.core.views.ColorizedIconView android:id="@+id/editable_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:drawableId="@drawable/icon_edit_crayon_lrg" app:colorStates="@color/c_gray_2"/>
+    </LinearLayout>
+    <include layout="@layout/section_divider"/>
+    <RelativeLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.airbnb.android.core.views.AirbnbMapView android:id="@+id/map_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/map_location_marker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:srcCompat="@drawable/icon_home_pin"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/pin_bubble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/map_location_marker" android:layout_centerHorizontal="true">
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200dp" android:text="@string/ml_pin_space_title" style="@style/Canonical.Text.D"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_gray_1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/ml_pin_location_subtitle_max_width" android:text="@string/ml_pin_space_subtitle" style="@style/Canonical.Text.E"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

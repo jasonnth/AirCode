@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingTop="@dimen/n2_vertical_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:paddingBottom="@dimen/n2_vertical_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/start_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_TitleText3"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/start_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_TitleText3"/>
+        </LinearLayout>
+        <View android:layout_gravity="center" android:background="@drawable/n2_range_display_divider" android:layout_width="60dp" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="right" android:id="@+id/end_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="gravity" style="@style/n2_TitleText3"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="right" android:id="@+id/end_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="gravity" style="@style/n2_TitleText3"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/divider" style="@style/n2_SubsectionDivider"/>
+</merge>

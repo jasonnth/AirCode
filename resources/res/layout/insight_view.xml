@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.primitives.AirTextView android:layout_gravity="right" android:id="@+id/dismiss_button" android:paddingTop="@dimen/n2_horizontal_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dismiss" style="@style/n2_SmallText"/>
+        <com.airbnb.p027n2.components.DocumentMarquee android:id="@+id/document_marquee" style="@style/n2_DocumentMarquee.NoTopPadding"/>
+        <com.airbnb.p027n2.components.TextRow android:id="@+id/description_text" android:layout_marginBottom="@dimen/n2_vertical_padding_small" app:n2_showDivider="false" style="@style/n2_TextRow"/>
+        <com.airbnb.android.insights.InsightIncreaseGraphView android:id="@+id/increase_graph" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <com.airbnb.android.insights.InsightTrendGraphView android:id="@+id/trend_graph" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <android.support.p000v4.widget.Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <com.airbnb.p027n2.primitives.AirButton android:id="@+id/primary_button" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" style="@style/n2_AirButton.BabuFill.RightCaret.WithText"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/secondary_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/insight_secondary_left_margin" android:layout_marginBottom="@dimen/n2_horizontal_padding_medium" style="@style/n2_SmallText.Actionable"/>
+    </LinearLayout>
+</merge>

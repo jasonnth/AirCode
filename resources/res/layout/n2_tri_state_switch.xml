@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/n2_tri_state_switch_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.primitives.TriStateSwitchHalf android:id="@+id/left_x" android:background="@drawable/n2_tri_state_switch_left_selector" android:layout_width="@dimen/n2_tri_state_switch_width_half" android:layout_height="@dimen/n2_tri_state_switch_height"/>
+    <View android:background="@android:color/white" android:layout_width="@dimen/n2_tri_state_switch_divider_width" android:layout_height="@dimen/n2_tri_state_switch_divider_height"/>
+    <com.airbnb.p027n2.primitives.TriStateSwitchHalf android:id="@+id/right_check" android:background="@drawable/n2_tri_state_switch_right_selector" android:layout_width="@dimen/n2_tri_state_switch_width_half" android:layout_height="@dimen/n2_tri_state_switch_height"/>
+</LinearLayout>

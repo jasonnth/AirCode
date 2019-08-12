@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/dual_button_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirButton android:textColor="?android:attr/textColorPrimary" android:id="@+id/negative_button" android:background="?attr/selectableItemBackground" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="64dp" android:minHeight="48dp" style="@style/Canonical.Text.Material.Dialog.Button"/>
+        <com.airbnb.p027n2.primitives.AirButton android:textColor="?attr/colorAccent" android:id="@+id/positive_button" android:background="?attr/selectableItemBackground" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="64dp" android:minHeight="48dp" style="@style/Canonical.Text.Material.Dialog.Button"/>
+    </LinearLayout>
+</LinearLayout>

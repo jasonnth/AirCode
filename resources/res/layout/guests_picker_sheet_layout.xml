@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.components.SheetStepperRow android:id="@+id/adult_stepper" app:n2_textRes="@string/adults" style="@style/n2_SheetStepperRow"/>
+    <com.airbnb.p027n2.components.SheetStepperRow android:id="@+id/child_stepper" app:n2_descriptionText="@string/children_description" app:n2_textRes="@string/children" style="@style/n2_SheetStepperRow"/>
+    <com.airbnb.p027n2.components.SheetStepperRow android:id="@+id/infant_stepper" app:n2_descriptionText="@string/infants_age_description" app:n2_textRes="@string/infants" style="@style/n2_SheetStepperRow"/>
+    <com.airbnb.p027n2.components.SmallSheetSwitchRow android:id="@+id/pets_switch" app:n2_titleText="@string/pets" style="@style/n2_SmallSheetSwitchRow"/>
+    <com.airbnb.p027n2.components.SimpleTextRow android:id="@+id/no_pets" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_showDivider="false" app:n2_text="@string/home_not_suitable_for_pets" style="@style/n2_SimpleTextRow.Regular.Inverse"/>
+</merge>

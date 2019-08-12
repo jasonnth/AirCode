@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/n2_babu" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.lottie.LottieAnimationView android:orientation="vertical" android:id="@+id/lottie_animation_view" android:layout_width="match_parent" android:scaleType="centerCrop" app:layout_heightPercent="@dimen/lottie_nux_view_pager_image_height"/>
+    <android.support.p000v4.view.ViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="@dimen/lottie_nux_view_pager_bottom_bar_height">
+        <android.support.design.widget.TabLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/dots_counter" android:layout_width="wrap_content" android:layout_height="wrap_content" app:tabIndicatorHeight="0dp" app:tabBackground="@drawable/dots_selector" app:tabMode="1" app:tabGravity="1"/>
+        <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/next_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginRight="?attr/n2_horizontal_side_padding" android:layout_marginBottom="@dimen/n2_vertical_padding_medium" style="@style/n2_AirButton_V2.Babu"/>
+    </FrameLayout>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_menu="@menu/nux_view_pager" app:n2_navigationIcon="0" style="@style/n2_AirToolbar.Transparent.LightForeground"/>
+</android.support.percent.PercentFrameLayout>

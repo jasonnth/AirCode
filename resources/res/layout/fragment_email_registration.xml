@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/registration_edit_email_root" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/n2_Sheet">
+    <com.airbnb.p027n2.components.jellyfish.JellyfishView android:id="@+id/jellyfish_view" android:layout_width="match_parent" android:layout_height="match_parent" app:n2_palette="1"/>
+    <com.airbnb.p027n2.collections.SheetScrollView style="@style/n2_SheetScrollView">
+        <LinearLayout style="@style/n2_SheetInputFieldContainer">
+            <com.airbnb.p027n2.components.SheetMarquee app:n2_titleText="@string/registration_email_header" style="@style/n2_SheetMarquee"/>
+            <com.airbnb.p027n2.components.SheetInputText android:id="@+id/registration_edit_email_input" android:inputType="textEmailAddress" android:imeOptions="actionNext" app:n2_hintText="@string/email_address" style="@style/n2_SheetInputText.AutoComplete">
+                <requestFocus/>
+            </com.airbnb.p027n2.components.SheetInputText>
+            <com.airbnb.p027n2.components.SwitchRow android:id="@+id/promo_email_opt_in_switch" app:n2_titleStyle="@style/n2_SmallText.Inverse" app:n2_titleText="@string/registration_promo_email_opt_in_desc" style="@style/n2_SwitchRow.Sheet"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.SheetScrollView>
+    <RelativeLayout android:layout_gravity="bottom" android:background="@color/n2_transparent" android:focusable="false" android:layout_width="match_parent" android:layout_height="@dimen/n2_sheet_bottom_bar_height">
+        <com.airbnb.p027n2.primitives.AirButton android:id="@+id/registration_email_btn_swap_to_phone" android:focusable="false" android:visibility="gone" android:text="@string/switch_to_use_phone_number" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/n2_AirButton.TransparentFill.Baby"/>
+        <com.airbnb.p027n2.primitives.AirButton android:enabled="false" android:id="@+id/registration_email_btn_next" android:focusable="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/n2_AirButton.WhiteFill.RightCaret"/>
+    </RelativeLayout>
+</FrameLayout>

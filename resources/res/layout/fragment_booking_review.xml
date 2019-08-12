@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/content_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.airbnb.p027n2.collections.VerboseScrollView android:id="@+id/scroll_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.airbnb.p027n2.components.KickerMarquee android:id="@+id/marquee" app:n2_showDivider="false" app:n2_titleText="@string/p4_review_trip_details" app:n2_kickerMarqueeStyle="2" style="@style/n2_KickerMarquee"/>
+                    <com.airbnb.p027n2.components.UserDetailsActionRow android:id="@+id/listing_details_summary" android:paddingTop="0dp" android:paddingBottom="0dp" app:n2_showHomePhoto="true" app:n2_titleMaxLines="1" app:n2_homeImageTopPadding="0dp" style="@style/n2_UserDetailsActionRow"/>
+                    <com.airbnb.p027n2.components.StandardRow android:id="@+id/dates_standard_row" app:n2_titleText="@string/dates" style="@style/n2_StandardRow"/>
+                    <com.airbnb.p027n2.components.StandardRow android:id="@+id/guests_standard_row" app:n2_titleText="@string/guests" style="@style/n2_StandardRow"/>
+                    <com.airbnb.p027n2.components.SwitchRow android:id="@+id/business_trip_toggle_row" android:visibility="gone" app:n2_showDivider="false" app:n2_titleText="@string/bt_toggle_label" style="@style/n2_SwitchRow.Outline"/>
+                    <com.airbnb.p027n2.components.StandardRow android:id="@+id/cancellation_row" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_StandardRow"/>
+                    <com.airbnb.android.core.views.UrgencyView android:id="@+id/urgency_row" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </com.airbnb.p027n2.collections.VerboseScrollView>
+            <com.airbnb.p027n2.components.BookingNavigationView android:layout_gravity="bottom" android:id="@+id/nav_view" style="@style/n2_BookingNavButtonContent"/>
+        </LinearLayout>
+        <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_scrollWith="@+id/scroll_view" style="@style/n2_AirToolbar.Transparent.DarkForeground"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/modal_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

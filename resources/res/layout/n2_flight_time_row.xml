@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/title" android:paddingBottom="@dimen/n2_horizontal_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/n2_TitleText2"/>
+    <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TableRow>
+            <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/flight_date" android:paddingRight="@dimen/n2_vertical_padding_small" android:layout_column="1" style="@style/n2_SmallText"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/gate_label" android:paddingRight="@dimen/n2_vertical_padding_small" android:layout_column="2" android:text="@string/n2_flight_gate" style="@style/n2_SmallText"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/terminal_label" android:layout_column="3" android:text="@string/n2_flight_terminal" style="@style/n2_SmallText"/>
+        </TableRow>
+        <TableRow>
+            <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/flight_time" android:paddingRight="@dimen/n2_vertical_padding_small" android:layout_column="1" style="@style/n2_TitleText3"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/gate" android:paddingRight="@dimen/n2_vertical_padding_small" android:layout_column="2" style="@style/n2_TitleText3"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/terminal" android:layout_column="3" style="@style/n2_TitleText3"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,1 @@
+__d(function(e,n,t,r){function o(){return d.collection().then(function(e){return e.supported_government_ids})}Object.defineProperty(r,"__esModule",{value:!0}),r.getIDCountries=o;var u=n(727),i=babelHelpers.interopRequireDefault(u),d=new i.default("supported_government_ids")},2302);

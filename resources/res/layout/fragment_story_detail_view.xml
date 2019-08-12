@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.p002v7.widget.RecyclerView android:id="@+id/recycler_view" android:paddingBottom="@dimen/story_engagement_bar_height" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_menu="@menu/story_detail_page" app:n2_scrollWith="@+id/recycler_view" app:n2_navigationIcon="1" style="@style/n2_AirToolbar"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:background="@drawable/story_engagement_bar_background" android:paddingLeft="@dimen/n2_horizontal_padding_medium" android:paddingRight="@dimen/n2_horizontal_padding_medium" android:layout_width="match_parent" android:layout_height="@dimen/story_engagement_bar_height">
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/like_button" style="@style/StoryEngagementBarButton">
+            <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/like_icon" app:srcCompat="@drawable/ic_like" style="@style/StoryEngagementBarButtonIcon"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/like_count" style="@style/StoryEngagementBarButtonText"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/view_comment_button" style="@style/StoryEngagementBarButton">
+            <com.airbnb.p027n2.primitives.imaging.AirImageView app:srcCompat="@drawable/ic_comment" style="@style/StoryEngagementBarButtonIcon"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/comment_count" style="@style/StoryEngagementBarButtonText"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/write_comment_button" style="@style/StoryEngagementBarButton">
+            <com.airbnb.p027n2.primitives.imaging.AirImageView app:srcCompat="@drawable/ic_write_comment" style="@style/StoryEngagementBarButtonIcon"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:text="@string/story_add_comment" style="@style/StoryEngagementBarButtonText"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.airbnb.android.core.views.LoaderFrame android:id="@+id/loading_overlay" android:background="@color/loader_overlay_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/n2_LargeText"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/subtitle" android:visibility="gone" android:layout_height="wrap_content" android:layout_marginTop="@dimen/n2_row_inner_vertical_padding" android:layout_below="@+id/title" app:layout_widthPercent="@dimen/n2_row_subtitle_width" style="@style/n2_SmallText"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:ellipsize="end" android:id="@+id/link_text" android:paddingTop="@dimen/n2_vertical_padding_medium" android:visibility="gone" android:layout_height="wrap_content" android:layout_below="@+id/subtitle" app:layout_widthPercent="@dimen/n2_row_subtitle_width" style="@style/n2_RegularText.Actionable"/>
+</android.support.percent.PercentRelativeLayout>

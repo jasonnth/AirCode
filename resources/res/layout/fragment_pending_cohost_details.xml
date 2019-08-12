@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.components.AirToolbar android:id="@+id/toolbar" app:n2_navigationIcon="1" style="@style/n2_AirToolbar"/>
+    <com.airbnb.p027n2.components.UserDetailsActionRow android:id="@+id/pending_cohost_row" style="@style/n2_UserDetailsActionRow"/>
+    <com.airbnb.p027n2.components.StandardRow android:id="@+id/shared_earnings" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:n2_titleText="@string/cohosting_shared_earnings_title"/>
+    <com.airbnb.p027n2.components.LinkActionRow android:id="@+id/resend_invite_link" app:n2_text="@string/resend_invite_text" style="@style/n2_LinkActionRow"/>
+    <com.airbnb.p027n2.components.LinkActionRow android:id="@+id/cancel_invite_link" app:n2_showDivider="false" style="@style/n2_LinkActionRow"/>
+    <com.airbnb.p027n2.components.RefreshLoader android:id="@+id/loading_row" android:visibility="gone" style="@style/n2_RefreshLoader"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/image" android:background="@color/n2_loading_background" android:scaleType="centerCrop" app:layout_widthPercent="100%" app:layout_aspectRatio="150%"/>
+    <View android:layout_gravity="top" android:id="@+id/selection_highlight" android:background="@color/n2_babu" android:visibility="gone" android:layout_width="match_parent" android:layout_height="4dp"/>
+    <View android:id="@+id/icon_visibility_gradient" android:background="@drawable/n2_top_right_icon_visibility_gradient" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_alignTop="@+id/image" android:layout_alignBottom="@+id/image"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/details_box" android:paddingTop="@dimen/n2_vertical_padding_small" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/image">
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/listing_details" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/n2_RegularText"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/listing_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/n2_RegularText"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/secondary_details_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/n2_vertical_padding_tiny_half">
+            <RatingBar android:id="@+id/rating_bar" android:visibility="gone" android:layout_marginRight="4dp" style="@style/n2_StarRatingBar.Babu"/>
+            <com.airbnb.p027n2.primitives.AirTextView android:layout_gravity="center_vertical" android:id="@+id/num_reviews" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:maxLines="1" android:singleLine="true" style="@style/n2_MiniText"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/click_overlay" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/image" android:layout_alignBottom="@+id/details_box"/>
+    <com.airbnb.p027n2.primitives.WishListIconView android:id="@+id/wish_list_heart" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/n2_WishListHeart"/>
+    <Space android:id="@+id/bottom_space" android:layout_width="match_parent" android:layout_height="@dimen/n2_card_bottom_spacing" android:layout_below="@+id/details_box"/>
+    <View android:layout_gravity="bottom" android:id="@+id/divider" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:layout_below="@+id/bottom_space" style="@style/n2_SubsectionDivider"/>
+</merge>

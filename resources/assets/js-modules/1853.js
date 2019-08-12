@@ -1,0 +1,1 @@
+__d(function(s,e,t,a){t.exports=e(164).registerAsset({__packager_asset:!0,httpServerLocation:"/assets/apps/CityHostsManager/images",width:15,height:16,scales:[1,2],hash:"f7da9b13f8f7175431cf7153760e561b",name:"thumbs-down",type:"png"})},1853);

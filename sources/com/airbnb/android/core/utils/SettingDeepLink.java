@@ -1,0 +1,31 @@
+package com.airbnb.android.core.utils;
+
+public enum SettingDeepLink {
+    CalendarSettings,
+    AdvanceNotice,
+    BookingWindow,
+    TurnoverDays,
+    TripLength,
+    NumberOfGuests,
+    Photos,
+    Name,
+    Description,
+    Amenities,
+    Location,
+    Wifi,
+    HouseManual,
+    Directions,
+    InstantBook,
+    HouseRules,
+    AdditionalHouseRules,
+    CancellationPolicy,
+    CheckInWindow,
+    ExtraCharges,
+    LongTermPricing,
+    Currency,
+    Price,
+    CityRegistration,
+    NestedListings,
+    CheckInInformation,
+    CheckInGuide
+}

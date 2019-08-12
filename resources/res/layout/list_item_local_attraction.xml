@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/local_attraction_view_pager_height">
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/local_attraction_thumbnail" android:layout_width="@dimen/local_attraction_view_pager_photo_width" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_hof" android:ellipsize="end" android:gravity="bottom" android:id="@+id/local_attraction_name" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="0dp" android:maxLines="2" android:layout_weight="1" style="@style/Canonical.Text.F"/>
+        <com.airbnb.p027n2.primitives.AirTextView android:textColor="@color/c_foggy_light" android:gravity="top" android:id="@+id/local_attraction_description" android:paddingTop="2dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" style="@style/Canonical.Text.F"/>
+    </LinearLayout>
+</LinearLayout>

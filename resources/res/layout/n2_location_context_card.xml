@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/location_img" android:background="@color/n2_loading_background" android:layout_width="@dimen/n2_location_context_card_side" android:layout_height="@dimen/n2_location_context_card_side" android:layout_marginLeft="@dimen/n2_horizontal_padding_small" android:layout_marginTop="@dimen/n2_vertical_padding_medium" android:layout_marginRight="@dimen/n2_horizontal_padding_medium" android:scaleType="centerCrop" android:layout_alignParentRight="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/left_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium" android:layout_marginTop="@dimen/n2_vertical_padding_medium" android:layout_marginBottom="@dimen/n2_vertical_padding_medium" android:layout_toLeftOf="@+id/location_img" android:layout_alignParentLeft="true">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/title_row" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/n2_vertical_padding_tiny">
+                <com.airbnb.p027n2.primitives.AirTextView android:gravity="left" android:id="@+id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/n2_RegularText.PlusPlus"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/recommended_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/n2_horizontal_padding_tiny" style="@style/n2_LocationContextCardRecommendedLabel"/>
+            </LinearLayout>
+            <com.airbnb.p027n2.primitives.AirTextView android:gravity="left" android:id="@+id/body_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="5" style="@style/n2_SmallText.Plus"/>
+            <com.airbnb.p027n2.primitives.AirButton android:layout_gravity="left" android:id="@+id/button" android:layout_marginTop="@dimen/n2_vertical_padding_small" style="@style/n2_LocationContextCardButton"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@+id/divider" style="@style/n2_SubsectionDivider"/>
+</merge>

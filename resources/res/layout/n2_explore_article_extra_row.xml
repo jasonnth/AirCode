@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/accessory" android:paddingTop="@dimen/n2_vertical_padding_tiny" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/tag" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_MiniText.Muted"/>
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/like_icon" android:paddingLeft="@dimen/n2_horizontal_padding_tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/n2_icon_explore_tab_like"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/like_count" android:paddingLeft="@dimen/n2_horizontal_padding_tiny_half" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_MiniText.Muted"/>
+    <com.airbnb.p027n2.primitives.imaging.AirImageView android:id="@+id/comment_icon" android:paddingLeft="@dimen/n2_horizontal_padding_tiny" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/n2_icon_explore_tab_comment"/>
+    <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/comment_count" android:paddingLeft="@dimen/n2_horizontal_padding_tiny_half" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/n2_MiniText.Muted"/>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:background="@color/lys_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:paddingLeft="@dimen/gutter_padding" android:paddingTop="10dp" android:paddingRight="@dimen/gutter_padding" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.android.core.views.ColorizedIconView android:layout_width="60dp" android:layout_height="60dp" android:scaleType="center" app:drawableId="@drawable/icon_account_private" app:colorStates="@color/c_rausch"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:paddingLeft="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/ml_edit_location_info" android:layout_weight="1" style="@style/Canonical.Text.E"/>
+            </LinearLayout>
+            <include layout="@layout/section_divider"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/address_layout" android:background="@color/c_gray_3" android:padding="@dimen/line_thickness" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/gutter_padding">
+                <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/edit_location_address" android:background="@drawable/c_bg_white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.Text.E"/>
+                <com.airbnb.p027n2.primitives.StaticMapView android:id="@+id/static_map" android:layout_width="match_parent" android:layout_height="150dp" android:layout_marginTop="@dimen/line_thickness"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/directions" android:background="@drawable/c_grouped_layout" android:paddingLeft="@dimen/gutter_padding" android:paddingTop="10dp" android:paddingRight="@dimen/gutter_padding" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gutter_padding" android:layout_marginRight="@dimen/gutter_padding" android:layout_marginBottom="@dimen/gutter_padding">
+                <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/txt_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/GroupedTitle"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/txt_desc" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Canonical.Text.E.Light"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/section_legal" android:background="@drawable/c_grouped_layout" android:paddingLeft="@dimen/gutter_padding" android:paddingTop="10dp" android:paddingRight="@dimen/gutter_padding" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gutter_padding" android:layout_marginRight="@dimen/gutter_padding" android:layout_marginBottom="@dimen/gutter_padding">
+                <com.airbnb.p027n2.primitives.AirTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/your_local_laws" style="@style/Canonical.Text.E"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/your_local_laws_subtext" style="@style/Canonical.Text.F"/>
+                <com.airbnb.p027n2.primitives.AirTextView android:id="@+id/inline_local_laws" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" style="@style/Canonical.Text.H.Foggy"/>
+            </LinearLayout>
+            <Space android:layout_width="match_parent" android:layout_height="@dimen/sticky_btn_height"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

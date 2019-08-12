@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.p027n2.collections.SheetScrollView android:id="@+id/sign_in_scroll_view" style="@style/n2_SheetScrollView">
+        <LinearLayout android:id="@+id/sign_in_field_container" style="@style/n2_SheetInputFieldContainer">
+            <com.airbnb.p027n2.components.SheetMarquee app:n2_titleText="@string/sign_in" style="@style/n2_SheetMarquee"/>
+            <com.airbnb.p027n2.components.SheetInputText android:id="@+id/sign_in_email" android:inputType="textEmailAddress" android:imeOptions="actionNext" app:n2_hintText="@string/email_address" style="@style/n2_SheetInputText.AutoComplete"/>
+            <com.airbnb.android.core.views.PhoneNumberInputSheet android:id="@+id/sign_in_phone" android:visibility="gone" android:imeOptions="actionNext" style="@style/n2_SheetInputText"/>
+            <com.airbnb.android.registration.views.PasswordSheetInputText android:id="@+id/sign_in_password" android:clickable="true" android:imeOptions="actionNext" app:n2_hintText="@string/password_stars" style="@style/n2_SheetInputText.Password"/>
+        </LinearLayout>
+    </com.airbnb.p027n2.collections.SheetScrollView>
+    <RelativeLayout android:layout_gravity="bottom" android:background="@color/n2_transparent" android:focusable="false" android:layout_width="match_parent" android:layout_height="@dimen/n2_sheet_bottom_bar_height">
+        <com.airbnb.p027n2.primitives.AirButton android:id="@+id/signin_mode_swap_button" android:focusable="false" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/n2_AirButton.TransparentFill.Baby"/>
+        <com.airbnb.p027n2.primitives.AirButton android:enabled="false" android:id="@+id/sign_in_button" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/n2_AirButton.WhiteFill.RightCaret"/>
+    </RelativeLayout>
+</FrameLayout>

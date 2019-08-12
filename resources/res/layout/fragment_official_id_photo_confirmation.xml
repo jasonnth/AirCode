@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="80dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.p027n2.primitives.AirTextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginRight="25dp" android:text="@string/verified_id_offline_verifying" style="@style/Canonical.Text.E"/>
+        <ImageView android:id="@+id/photo_preview" android:background="@drawable/imageview_photo_background_white_border" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginTop="20dp" android:layout_marginRight="50dp" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+    </LinearLayout>
+</ScrollView>

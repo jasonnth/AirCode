@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <FrameLayout android:id="@+id/reservation_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/calendar_rows" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/n2_vertical_padding_small"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/n2_horizontal_padding_medium">
+            <com.airbnb.android.hostcalendar.views.CalendarDetailReservationBlock android:id="@+id/reservation_block" android:paddingLeft="@dimen/n2_horizontal_padding_small" android:paddingTop="@dimen/n2_vertical_padding_small" android:paddingRight="@dimen/n2_horizontal_padding_small" android:paddingBottom="@dimen/n2_vertical_padding_medium" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/calendar_day_text_size" android:layout_marginTop="@dimen/n2_vertical_padding_tiny" android:layout_marginRight="@dimen/host_calendar_detail_side_padding"/>
+        </FrameLayout>
+    </FrameLayout>
+</merge>
